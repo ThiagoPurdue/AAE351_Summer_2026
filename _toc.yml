@@ -1,0 +1,21 @@
+format: jb-book
+root: intro
+chapters:
+  - file: chapters/01_Introduction_to_aerospace_system_design 2
+  - file: chapters/02_The_system_developement_process
+  - file: chapters/03_Needs_Analysis
+  - file: chapters/04_Requirements_Analysis (1)
+  - file: chapters/04_Requirements_Analysis
+  - file: chapters/05_Concept_Generation_and_Selection
+  - file: chapters/06_Functional_Analysis
+  - file: chapters/07_Evaluation_and_Selection
+  - file: chapters/08_Risk_Management
+  - file: chapters/09_Introduction_to_Probability
+  - file: chapters/10_Conditional_Probability
+  - file: chapters/11_Unconditional_Probability
+  - file: chapters/12_Independence
+  - file: chapters/13_Discrete_Random_Variables_and_Distributions
+  - file: chapters/14_Continuous_Random_Variables_and_Distributions
+  - file: chapters/15_Introduction_to_Reliability
+  - file: chapters/16_Hazard_Functions
+  - file: chapters/17_System_Reliability
