@@ -1,9 +1,12 @@
+# Discrete Random Variables and Distributions
+
+## Core Principles of Discrete Random Variables and Distributions
+
 # 13 Discrete Random Variables and Distributions
 
 Discrete Random Variables 
 and Distributions
-AAE35103
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p1_i1.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p1_i2.png)\n\nIntuition First
+AAE35103 Intuition First
 2
 Weapon accuracy is defined as the point of impact for a 
 given aim point at the target
@@ -19,8 +22,7 @@ Weapon performance parameters:
 - reliability
 -range
 - effectiveness
-- time to target
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p2_i3.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p2_i4.jpeg)\n\nWeapon system performance
+- time to target Weapon system performance
 3
 Aiming 
 point
@@ -68,8 +70,7 @@ given the data you have collected from the experiment?
 Lockheed AC-130 Gunship
 D2
 ↑n
-Fan
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p3_i5.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p3_i6.jpeg)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p3_i7.jpeg)\n\nWeapon system performance
+Fan Weapon system performance
 4
 Assume you fired 100 rounds. You measure D in increments of 1 m from the aiming 
 point (i.e., number of rounds between 0 and 1 m (in the first bucket, number of 
@@ -165,8 +166,7 @@ w
 -
 ↑
 Tanger
-D = O m
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p4_i8.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p4_i9.png)\n\nAnalyzing weapon system performance
+D = O m Analyzing weapon system performance
 5
 Empirical average of D:
 Frequency (or sample) histogram
@@ -195,8 +195,7 @@ impacts within…
 5
 D = {1,1, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, …}
 000
-= Dil = (d +D.DI
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p5_i10.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p5_i11.png)\n\nFrequency (or sample) histogram
+= Dil = (d +D.DI Frequency (or sample) histogram
 Number of 
 impacts within…
 … D (m)
@@ -231,8 +230,7 @@ Or, in another way:
 -
 &
 FG
-= 20:
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p6_i12.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p6_i13.png)\n\nD =
+= 20: D =
 f1D1 + f2D2 + ...+ fNDN
 (
 )
@@ -292,8 +290,7 @@ Pi =Pi
 N-0
 Di = #
 is
-the probability
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p7_i14.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p7_i15.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p7_i16.png)\n\n8
+the probability 8
 What are some other examples of random variables in our world? 
 How would you go about measuring / characterizing their randomness?
 Notice for all these “random variables,” there is are underlying 
@@ -325,15 +322,13 @@ BEFORE I
 LOSE
 MY
 KEYS
-:
-\n\nFormal definition of a random variable
+: Formal definition of a random variable
 9
 A random variable consists of an experiment with a probability measure P(.) defined on a sample 
 space and a function that assigns a real number to each outcome in the sample space
 A random variable is a real-valued function of an experimental outcome
 For a given sample space S of some experiment, a random variable is any rule that associates a 
-number with each outcome in S
-\n\nAnother way of defining a random variable
+number with each outcome in S Another way of defining a random variable
 10
 Random variables: My definition
 The “variable” in “random variable” can be misleading. 
@@ -378,8 +373,7 @@ ALL
 K
 P(X = k)
 OUTCOMES
-PROBABILITIES
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p10_i17.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p10_i18.png)\n\n11
+PROBABILITIES 11
 Let’s apply this to our weapon accuracy example
 Our random variable is the bucket containing the distance between the target and the impact
 It’s a bundle k and P(k) for a range bin of D 
@@ -411,8 +405,7 @@ impacts within…
 10
 5
 D = 4k
-; p(k)]
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p11_i19.png)\n\nDiscrete and continuous random variables
+; p(k)] Discrete and continuous random variables
 12
 !
 Notation:
@@ -435,8 +428,7 @@ will receive today
 • It can be finite or “countably infinite”,
       e.g., 0, 1, 2, …
 -
-Eme
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p12_i20.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p12_i21.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p12_i22.png)\n\nWe can use a probability mass function (pmf) to characterize 
+Eme We can use a probability mass function (pmf) to characterize 
 a discrete random variable
 13
 pmf of X (capital letter X, it’s the pmf of the random variable), 
@@ -453,15 +445,13 @@ have
 P(X = K)20
 and
 EP(X = K = 1 .0
-all K
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p13_i23.png)\n\nFollow these steps to calculate the pmf of a random variable, X
+all K Follow these steps to calculate the pmf of a random variable, X
 14
 How to calculate the pmf of a random variable X:
 1.
 Collect all possible outcomes that give rise to the event X = k
 2.
-Add their probabilities to obtain PX(k)
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p14_i24.png)\n\nWhat’s the pmf of the weapon accuracy random variable?
+Add their probabilities to obtain PX(k) What’s the pmf of the weapon accuracy random variable?
 15
 How to calculate the pmf of a random variable X?
 1. Collect all possible outcomes that give rise to the 
@@ -508,8 +498,7 @@ O
 &
 OTHERWISE < HAVE
 NO
-DATA
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p15_i25.png)\n\nProbability mass function (pmf): Theorem
+DATA Probability mass function (pmf): Theorem
 16
 4.
 For any
@@ -534,8 +523,7 @@ B2SX
 P(B)
 = [Px(k)
 all
-17 => B
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p16_i26.png)\n\nAverage or central tendencies of random variables
+17 => B Average or central tendencies of random variables
 17
 The average or central tendency of a random variable (or a collection of numerical observations) is 
 a statistic of the collection, a scalar or a single number, that “summarizes” the information of all k, 
@@ -577,8 +565,7 @@ Mean
 > splits data
 m half
 -
-> average value
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p17_i27.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p17_i28.png)\n\nAverage or central tendencies of random variables
+> average value Average or central tendencies of random variables
 18
 Frequency (or sample) histogram
 Number of 
@@ -619,8 +606,7 @@ NOTE
 IfFIF
 AND
 ONLY
-If
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p18_i29.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p18_i30.png)\n\nAverage or central tendencies of random variables
+If Average or central tendencies of random variables
 19
 Frequency (or sample) histogram
 Number of 
@@ -688,8 +674,7 @@ Satisfy Definition
 mas = 5. 01,
 =
 53
-= 65
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p19_i31.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p19_i32.png)\n\nAverage or central tendencies of random variables
+= 65 Average or central tendencies of random variables
 20
 Frequency (or sample) histogram
 Number of 
@@ -737,8 +722,7 @@ pmF
 or
 the
 mean value
-.
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p20_i33.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p20_i34.png)\n\nBeyond central tendency of a random variable: Need a 
+. Beyond central tendency of a random variable: Need a 
 measure of dispersion. Why?
 21
 Frequency histogram for M1
@@ -809,8 +793,7 @@ Select ?
 very
 to target
 .
-the target
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p21_i35.png)\n\nBeyond central tendency of a random variable: Need a 
+the target Beyond central tendency of a random variable: Need a 
 measure of dispersion. Why?
 22
 Frequency histogram for M1
@@ -864,8 +847,7 @@ dispersion of a random variable around its mean. Think of it as addressing the f
 •
 How typical is the average?
 •
-What are the chances of observing an event far from the average?
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p22_i36.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p22_i37.png)\n\nVariance, standard deviation, and moments of a random 
+What are the chances of observing an event far from the average? Variance, standard deviation, and moments of a random 
 variable: Definition
 23
 1.
@@ -919,8 +901,7 @@ VALUES
 Of X
 ARE
 Within [Mx-6x
-, Mx +GX]
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p23_i38.png)\n\n24
+, Mx +GX] 24
 Example: Consider the random variable X with the following pmf:
 PX (x) = 1/9  if x is an integer in the range [−4;4]
 0     otherwise
@@ -940,8 +921,7 @@ k
 =0
 = MX
 2)y = (X
-- ux)" = X
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p24_i39.png)\n\n25
+- ux)" = X 25
 Example: Consider the random variable X with the following pmf:
 PX (x) = 1/9  if x is an integer in the range [−4;4]
 0     otherwise
@@ -986,8 +966,7 @@ ProBABILITY
 0
 ./9
 = 60/9
-8x = Via = Vote,
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p25_i40.png)\n\n26
+8x = Via = Vote, 26
 The variance of a random variable X is defined by:
 It can be calculated by:
 It is always ≥ 0. Its square root is the standard deviation of the random variable 
@@ -1003,8 +982,7 @@ WAR[X]
 - 2km
 + mijP(x = k)
 -
->
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p26_i41.png)\n\n27
+> 27
 = P(=)
 - (((X
 = 1))u+
@@ -1023,8 +1001,7 @@ I
 VARIX]
 = E[x]
 - (E[X])
-<
-\n\n28
+< 28
 We can linearly transform expected value and variance using 
 the following rules
 Try to prove these results using 
@@ -1059,8 +1036,7 @@ COD 2 . 3
 I FOR
 YOU
 TO DERIVE
-En
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p28_i42.png)\n\n29
+En 29
 Mean and variance of some families of random variables
 In practical applications, a few families of random variables appear repeatedly
 Within each family, the probability mass functions have the same mathematical 
@@ -1068,8 +1044,7 @@ form; they differ only in the values of one or two parameters
                  Bernoulli, binomial, Poisson, uniform, geometric
 “Very few real-life situations satisfy perfectly the requirements for a binomial model, 
 but for many the lack of agreement is so small that the binomial experiment still 
-provides a very good model for reality” (Ott and Longnecker, 2001)
-\n\n30
+provides a very good model for reality” (Ott and Longnecker, 2001) 30
 Bernoulli  random variable
 X is a Bernoulli random variable if its pmf has the following form:
 Example of experiments: one coin flip;  outcome of a test procedure on an integrated circuit (the 
@@ -1099,8 +1074,7 @@ O
 I
 OTHERWISE
 Nor
-[orPx(X ; P)]
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p30_i43.png)\n\n31
+[orPx(X ; P)] 31
 Calculate the mean and the variance of a Bernoulli random variable:
 MEAN
 #[x]
@@ -1129,8 +1103,7 @@ p
 - p
 =
 p(1
--4))
-\n\n32
+-4)) 32
 Bernoulli  random variable
 X is a binomial (n, p) random variable if its pmf has the following form:
 1.
@@ -1175,8 +1148,7 @@ n !
 .
 .
 . (2)
-. (1)
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p32_i44.png)\n\n33
+. (1) 33
 Notice that you have/need two parameters (n, p) to characterize a binomial 
 random variable
 • n: number of identical independent trials 
@@ -1188,8 +1160,7 @@ n
 . p
 VAR[X]
 = up(1
-- p)
-\n\nExample
+- p) Example
 34
 p(H)=p=
 0.5
@@ -1256,8 +1227,7 @@ Fair
 COIN
 5 times
 -
--
-\n\nHow does the pmf change as we vary p?
+- How does the pmf change as we vary p?
 35
 0
 0.05
@@ -1314,8 +1284,7 @@ Probability, P(x)
 Recall that you have/need two parameters (n, p) to characterize a binomial random variable
 SKEWS
 THE
-PMF
-\n\n36
+PMF 36
 Poisson random variable
 1. Its time of occurrence is completely random 
 (no dependence on time) 
@@ -1360,8 +1329,7 @@ puf
 of
 arrivals
 in the time
-intervalI
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p36_i45.png)\n\n37
+intervalI 37
 Poisson random variable
 PX (x) =
 α x e−α
@@ -1458,8 +1426,7 @@ aug.
 . # in the time
 interval -
 ARRIVALS
-V
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p37_i46.png)\n\n38
+V 38
 Poisson random variable
 How many variables are required to characterize a 
 Poisson random variable?
@@ -1564,8 +1531,7 @@ x!    for  x = 0, 1, 2, ...
 -
 Vary a
 -
--
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p38_i47.png)\n\n39
+- 39
 Poisson random variable: Mean and variance
 PX (x) =
 α x e−α
@@ -1582,8 +1548,7 @@ x!    for  x = 0, 1, 2, ...
 E[X]
 =
 X
-VAR[X] = X
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p39_i48.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p39_i49.png)\n\n40
+VAR[X] = X 40
 Poisson random variable: Mean and variance
 Binomial random variable:
 Geometric random variable:
@@ -1629,8 +1594,7 @@ EQUALLY
 LIKELY with probability
 P
 (X
-= x)
-\n\nDefinition
+= x) Definition
 41
 The cumulative distribution function (cdf) F(x) of a discrete random variable X with pmf p(x) is defined for every 
 number x by
@@ -1668,8 +1632,7 @@ F(4)
 i
 F(16)
 =
-1 .8
-\n\n42
+1 .8 42
 F(X)
 1.0
 1 . 0
@@ -1734,8 +1697,7 @@ I
 8
 10
 1516
-28 X
-\n\n43
+28 X 43
 We
 can
 derive
@@ -1778,8 +1740,7 @@ p(z)
 P(xX3)
 - P(X1) =
 F3
-- F2
-\n\nBetween
+- F2 Between
 2
 and
 4
@@ -1819,8 +1780,7 @@ X 2
 is
 NOT
 INCLUDED
-Subtract it
-\n\nProposition
+Subtract it Proposition
 44
 For any two numbers a and b with a £ b,
 ! " ≤$ ≤% = ' % −'("−)
@@ -1829,8 +1789,7 @@ only possible values are integers and if a and b are integers, then
 ! " ≤$ ≤% = ! $ = " or " + 1 or … or %
  
 = ' % −'(" −1)
-Taking a = b yields P(X = a) = F(a) –  F(a – 1) in this case
-\n\nBinomial cdf
+Taking a = b yields P(X = a) = F(a) –  F(a – 1) in this case Binomial cdf
 45
 For
 XN
@@ -1867,8 +1826,7 @@ X
 &
 O
 ,
-OTHERWISE
-\n\n46
+OTHERWISE 46
 C&D Example 2.31: Each of six randomly selected cola drinkers is given a glass containing cola S and one containing cola F. 
 The glasses are identical in appearance except for a code on the bottom to identify the cola. Suppose there is actually no 
 tendency among cola drinkers to prefer one cola to the other. Then, p = P(a selected individual prefers S) = .5, so with X = the 
@@ -1904,8 +1862,7 @@ P(X = 3)
 0 . 313
 =
 3 ! (6-3)
-.
-\n\n47
+. 47
 C&D Example 2.31: Each of six randomly selected cola drinkers is given a glass containing cola S and one containing cola F. 
 The glasses are identical in appearance except for a code on the bottom to identify the cola. Suppose there is actually no 
 tendency among cola drinkers to prefer one cola to the other. Then, p = P(a selected individual prefers S) = .5, so with X = the 
@@ -1924,8 +1881,7 @@ P(X( 3) = b(X ; G
 +
 + 1
 0
-.5561,
-\n\n48
+.5561, 48
 C&D Example 2.31: Each of six randomly selected cola drinkers is given a glass containing cola S and one containing cola F. 
 The glasses are identical in appearance except for a code on the bottom to identify the cola. Suppose there is actually no 
 tendency among cola drinkers to prefer one cola to the other. Then, p = P(a selected individual prefers S) = .5, so with X = the 
@@ -1942,8 +1898,7 @@ t
 -
 E
 0
-. 109
-\n\n49
+. 109 49
 C&D Example 2.32: Suppose that 20% of all copies of a particular textbook fail a binding strength test. Let X 
 denote the number among 15 randomly selected copies that fail the test. Then X has a binomial distribution with n 
 = 15 and p = .2.
@@ -1976,13 +1931,11 @@ B(8 ;
 ↑
 ↑
 row
-column
-\n\n50
+column 50
 C&D p. 597-
 599 
 de
--
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p51_i50.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p51_i51.png)\n\n51
+- 51
 C&D Example 2.32: Suppose that 20% of all copies of a particular textbook fail a binding strength test. Let X 
 denote the number among 15 randomly selected copies that fail the test. Then X has a binomial distribution with n 
 = 15 and p = .2.
@@ -2012,8 +1965,7 @@ P(X
 0 . 996
 =
 0
-. 003
-\n\n52
+. 003 52
 C&D Example 2.32: Suppose that 20% of all copies of a particular textbook fail a binding strength test. Let X 
 denote the number among 15 randomly selected copies that fail the test. Then X has a binomial distribution with n 
 = 15 and p = .2.
@@ -2031,8 +1983,7 @@ P(Xz8)
 -
 0, 996
 =
-0 . 004
-\n\n53
+0 . 004 53
 C&D Example 2.32: Suppose that 20% of all copies of a particular textbook fail a binding strength test. Let X 
 denote the number among 15 randomly selected copies that fail the test. Then X has a binomial distribution with n 
 = 15 and p = .2.
@@ -2056,8 +2007,7 @@ F(z)
 -
 0 . 698
 =
-0 . 348
-\n\n54
+0 . 348 54
 C&D Example 2.35: Let X denote the number of creatures of a particular type captured in a trap during a given time period. 
 Suppose that X has a Poisson distribution with μ = 4.5, so on average traps will contain 4.5 creatures. [Notation: the textbook 
 uses μ as a ]
@@ -2073,21 +2023,18 @@ P (x (5) =145
 + 45+ ...
 =
 0
-. 7029
-\n\n55
+. 7029 55
 C&D p. 600 
 [Note: the textbook uses μ as a ]
 (continues on next slide)
-E
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p56_i52.png)\n\n56
+E 56
 C&D p. 600 
 [Note: the textbook uses μ as a ]
 C&D p. 600 
 P(XiM)
 up
 X
-Qu
-\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p57_i53.png)\n\n\n\n![Image](../images/13_Discrete_Random_Variables_and_Distributions_p57_i54.png)\n\n57
+Qu 57
 C&D Problem 2.76: Let X be the number of material anomalies occurring in a particular region of an aircraft gas-
 turbine disk. A Poisson distribution for X is proposed. Suppose a = 4.
 (a) Compute both P(X ≤ 4) and P(X < 4)
@@ -2105,8 +2052,7 @@ P(X(4)
 =
 P(3 ; 4)
 =
-0 . 433
-\n\n58
+0 . 433 58
 C&D Problem 2.76: Let X be the number of material anomalies occurring in a particular region of an aircraft gas-
 turbine disk. A Poisson distribution for X is proposed. Suppose a = 4.
 (b) Compute P(4 ≤ X ≤ 8)
@@ -2131,8 +2077,7 @@ F(z)
 0
 . 433
 =
-0 . 546
-\n\n59
+0 . 546 59
 C&D Problem 2.76: Let X be the number of material anomalies occurring in a particular region of an aircraft gas-
 turbine disk. A Poisson distribution for X is proposed. Suppose a = 4.
 (c) Compute P(8 ≤ X)
@@ -2160,8 +2105,7 @@ T
 . 949
 =
 0
-. 0511,
-\n\n60
+. 0511, 60
 C&D Problem 2.76: Let X be the number of material anomalies occurring in a particular region of an aircraft gas-
 turbine disk. A Poisson distribution for X is proposed. Suppose a = 4.
 (d) What is the probability that the observed number of anomalies exceeds the expected number by no more than 
@@ -2198,10 +2142,13 @@ P(X(y + 2)
 =
 p(x16)
 =
-4(6 ; 4)=
-\n\nReading
+4(6 ; 4)= Reading
 61
 Chapter 2.1 to 2.5 and 2.8 of Carlton and Devore, 
 Probability with Applications in Engineering, Science, and 
 Technology, 2nd ed., 2017
-\n\n
+
+
+## System Integration
+
+Discrete distributions are highly applicable to analyzing the RCUAV's fleet operations, such as predicting the number of failed print jobs out of a batch, or the number of successful cargo deliveries before a major maintenance overhaul is required.

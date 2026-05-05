@@ -1,8 +1,11 @@
+# Evaluation and Selection
+
+## Core Principles of Evaluation and Selection
+
 # 07 Evaluation and Selection
 
 Evaluation and Selection
-AAE35103
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p1_i1.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p1_i2.png)\n\nEvaluating and selecting the system 
+AAE35103 Evaluating and selecting the system 
 concept
 2
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -41,8 +44,7 @@ Make A
 Liri) Prostam cost
 and
 schedule
-Decision
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p2_i3.png)\n\nEvaluating and selecting the system 
+Decision Evaluating and selecting the system 
 concept
 3
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -87,8 +89,7 @@ SCHEDULES
 IN
 A
 DEDICATED
-LECTURE
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p3_i4.png)\n\nEvaluating and selecting the system 
+LECTURE Evaluating and selecting the system 
 concept
 4
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -129,8 +130,7 @@ Cycle Costing
 OTHER
 issues
 ,
-e . g., environment impact
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p4_i5.png)\n\nBusiness decisions are not simple
+e . g., environment impact Business decisions are not simple
 5
 • Which engineering projects are worthwhile?
 o Has the space engineer shown that the space system is worth developing? 
@@ -142,8 +142,7 @@ o Has the mechanical engineer chosen the best thickness for insulation?
 • All decisions are interrelated.
 o You can’t make one without affecting many others
 o Especially true when multiple products, periods, and stages are involved
-Miller et al 2004
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p5_i6.png)\n\nWhy cost estimation?
+Miller et al 2004 Why cost estimation?
 6
 • Critically important part of system design
 o  
@@ -167,8 +166,7 @@ low
 over-run costs/company
 loss
 S
-total working hours
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p6_i7.png)\n\nCost estimation process
+total working hours Cost estimation process
 7
 • Determine objectives
 o Who needs what data for what purpose(s)?
@@ -182,8 +180,7 @@ o Effective monitoring
 o Refine and make changes as necessary
 • Compare end costs with estimated costs
 o That is, if project actually completes!
-Prakash, Grewal and Chen, 2008
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p7_i8.png)\n\nCost estimation process
+Prakash, Grewal and Chen, 2008 Cost estimation process
 8
 NASA Cost Estimating Handbook, v4.0
 • Calibrate estimates based on actual 
@@ -197,8 +194,7 @@ reality to allow the project leadership to make good decisions about how to cont
 the project to hit its targets”
 Steve McConnell
  
-Figure C-1. Use of Cost Estimating Methodologies by Phase1 
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p8_i9.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p8_i10.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p8_i11.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p8_i12.png)\n\nCost estimation methods
+Figure C-1. Use of Cost Estimating Methodologies by Phase1 Cost estimation methods
 9
 Analogy
 • Data-driven
@@ -266,8 +262,7 @@ Most time consuming
 o
 Not suitable for a quick ROM
 ~
-&
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p9_i13.png)\n\nAnalogy cost estimation example
+& Analogy cost estimation example
 10
 •
 Estimate the cost of a spacecraft by analogy method
@@ -284,8 +279,7 @@ Then, by similarity we can say
 •
 So, new the spacecraft cost is estimated as =
 -K=
-N 67M
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p10_i14.png)\n\nCost estimation relationships (CERs)
+N 67M Cost estimation relationships (CERs)
 11
 •
 A parametric cost model is a series of mathematical relationships that relate a 
@@ -320,8 +314,7 @@ a + bM'pd
 a ,b ,a, d
 - Power
 REGRESSION
-DEFFS .
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p11_i15.png)\n\nCost estimation relationships (CERs)
+DEFFS . Cost estimation relationships (CERs)
 12
 mass
 cost
@@ -341,8 +334,7 @@ SYSTEM
 BEST FIT MODELI(
 I data
 1
-ofmartem
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p12_i16.png)\n\nExample of CER use
+ofmartem Example of CER use
 13
 • Historical data has enabled the organization to have a previously developed 
 CER to estimate a new IT system based on SLOC
@@ -361,8 +353,7 @@ historical data = Measure size of A computer program
 . JUDGEMENT
 2, 600 , 000
 x
-$25 =$65M
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p13_i17.png)\n\nRDT&E and production CERs for large 
+$25 =$65M RDT&E and production CERs for large 
 satellites
 14
 Miller et al 2004
@@ -373,8 +364,7 @@ RESEARCH
 DEVELOPMENT
 TEST
 AND
-ENGINEERING
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p14_i18.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p14_i19.jpeg)\n\nHigher-level cost factors
+ENGINEERING Higher-level cost factors
 15
 Miller et al 2004
 • Wraps model non-physical factors
@@ -388,8 +378,7 @@ o Activities, systems and hardware development outside the prime contract
 § Analyses
 § Government test facilities, equipment and personnel
 § Program office support contractors for technical oversight
-o Advanced development studies
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p15_i20.png)\n\nManagement reserves
+o Advanced development studies Management reserves
 16
 Miller et al 2004
 • Account for cost and schedule uncertainty
@@ -408,12 +397,10 @@ o Are long-lead procurements involved?
 o Is an iterative test and retest program required? 
 o Availability of people and facilities
 • Reserves should be held at management level
-• Should not be used to accommodate scope changes
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p16_i21.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p16_i22.png)\n\nImpact of technological risk on cost
+• Should not be used to accommodate scope changes Impact of technological risk on cost
 17
 Miller et al 2004
-TRL
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p17_i23.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p17_i24.jpeg)\n\nPros and cons of parametric models
+TRL Pros and cons of parametric models
 18
 • Pros:
 o Can be excellent predictors when implemented correctly
@@ -435,8 +422,7 @@ the
 CER
 is
 valid
-.
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p18_i25.png)\n\nEngineering/grassroot build-up cost 
+. Engineering/grassroot build-up cost 
 estimates
 19
  
@@ -460,8 +446,7 @@ Perform
 Aggregate Into 
 “Total Estimate” 
 NASA Cost Estimating Handbook v4.0
-we
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i26.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i27.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i28.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i29.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i30.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i31.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i32.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i33.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i34.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i35.png)\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p19_i36.png)\n\nWork breakdown structure (WBS) 
+we Work breakdown structure (WBS) 
 example
 20
 Project Mgmt 
@@ -600,8 +585,7 @@ Mission & Nav. Design
 Mission Syst. V&V 
 07.07 
 Launch System 
-08.01 
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p20_i37.png)\n\nAttributes of a good cost estimate
+08.01 Attributes of a good cost estimate
 21
 • Aligned with integrated master schedule
 • Grass-roots estimation performed by cognizant engineers with sound basis of 
@@ -610,8 +594,7 @@ estimate
 • Key cost drivers and risk are understood
 • Validated with several independent cost models
 • Well documented work content and basis of estimate
-• Developed at lowest level of the work breakdown structure (WBS)
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p21_i38.png)\n\nResources
+• Developed at lowest level of the work breakdown structure (WBS) Resources
 22
 • Aircraft
 o Aircraft Airframe Cost Estimating Relationships by Hess and Romanoff
@@ -625,8 +608,7 @@ o NASA cost guidance
 § https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh
 § Lots of interesting information, check it out!
 § Especially Appendix C
-o Space mission engineering: the new SMAD by Wertz, Everett, and Puschell
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p22_i39.png)\n\nIdeas for your project
+o Space mission engineering: the new SMAD by Wertz, Everett, and Puschell Ideas for your project
 23
 •
 Development cost
@@ -651,8 +633,14 @@ Discuss qualitatively the operating costs
 For
 comparison of
 CONCEPTS , NOT
-BUDGETING
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p23_i40.png)\n\nReading
+BUDGETING Reading
+24
+Chapter 8 of Kossiakoff et al., Systems Engineering Principles and Practice, 
+Third ed., Wiley, 2020
+Aircraft Airframe Cost Estimating Relationships 
+https://www.rand.org/pubs/reports/R1854.html 
+NASA cost guidance
+https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh Reading
 24
 Chapter 8 of Kossiakoff et al., Systems Engineering Principles and Practice, 
 Third ed., Wiley, 2020
@@ -660,12 +648,8 @@ Aircraft Airframe Cost Estimating Relationships
 https://www.rand.org/pubs/reports/R1854.html 
 NASA cost guidance
 https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p24_i41.png)\n\nReading
-24
-Chapter 8 of Kossiakoff et al., Systems Engineering Principles and Practice, 
-Third ed., Wiley, 2020
-Aircraft Airframe Cost Estimating Relationships 
-https://www.rand.org/pubs/reports/R1854.html 
-NASA cost guidance
-https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh
-\n\n\n\n![Image](../images/07_Evaluation_and_Selection_p25_i42.png)\n\n
+
+
+## System Integration
+
+Using tools like the Pugh Matrix, you will evaluate competing RCUAV architectures. The evaluation criteria must heavily weight Additive Manufacturing constraints—such as print time, required support structures, and assembly complexity—against aerodynamic efficiency and payload capacity.

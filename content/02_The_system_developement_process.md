@@ -1,9 +1,12 @@
+# The system developement process
+
+## Core Principles of The system developement process
+
 # 02 The system developement process
 
 The System 
 Development Process
-AAE35103
-\n\n\n\n![Image](../images/02_The_system_developement_process_p1_i1.png)\n\n\n\n![Image](../images/02_The_system_developement_process_p1_i2.png)\n\nA typical major system development process 
+AAE35103 A typical major system development process 
 exhibits the following characteristics:
 2
 COMPLEX
@@ -52,8 +55,7 @@ validated
 basis
 for good decisions
 before taking the next step
-.
-\n\n\n\n![Image](../images/02_The_system_developement_process_p2_i3.png)\n\nPrincipal stages in system life cycle
+. Principal stages in system life cycle
 3
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 stepwise
@@ -117,8 +119,7 @@ to
 satisfy a valid need
 a physical system
 support throught
-the system life
-\n\n\n\n![Image](../images/02_The_system_developement_process_p3_i4.png)\n\nConcept development
+the system life Concept development
 4
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 =
@@ -193,8 +194,7 @@ Explore potential
 new
 system
 concepts
-technology (may be needed)
-\n\n\n\n![Image](../images/02_The_system_developement_process_p4_i5.png)\n\nEngineering development
+technology (may be needed) Engineering development
 5
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 from
@@ -260,15 +260,13 @@ REQUIREMENTS
 Economical
 Production
 AND
-USE
-\n\n\n\n![Image](../images/02_The_system_developement_process_p5_i6.png)\n\nPrincipal participants in typical aerospace 
+USE Principal participants in typical aerospace 
 system development
 6
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 INCREASiNS
 EFFORT-
-= -88
-\n\n\n\n![Image](../images/02_The_system_developement_process_p6_i7.png)\n\n\n\n![Image](../images/02_The_system_developement_process_p6_i8.jpeg)\n\nThe systems engineering method
+= -88 The systems engineering method
 7
 Can
 be thought
@@ -312,8 +310,7 @@ on test
 ,
 interate ,
 analyse
-Solutions)
-\n\n\n\n![Image](../images/02_The_system_developement_process_p7_i9.png)\n\nThe systems engineering method: top-level flow
+Solutions) The systems engineering method: top-level flow
 8
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 Customer
@@ -324,8 +321,7 @@ of the flow
 revise
 revise
 revise
-revise
-\n\n\n\n![Image](../images/02_The_system_developement_process_p8_i10.png)\n\n\n\n![Image](../images/02_The_system_developement_process_p8_i11.jpeg)\n\nThe systems engineering method: flow 
+revise The systems engineering method: flow 
 diagram
 9
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -347,8 +343,7 @@ FEBACK
 N
 ③
 CREVISE)
-④
-\n\n\n\n![Image](../images/02_The_system_developement_process_p9_i12.png)\n\n\n\n![Image](../images/02_The_system_developement_process_p9_i13.jpeg)\n\nSystems engineering method over life cycle
+④ Systems engineering method over life cycle
 10
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 system concept
@@ -372,8 +367,7 @@ Of
 EACH
 Step
 And
-PHASE
-\n\n\n\n![Image](../images/02_The_system_developement_process_p10_i14.png)\n\n\n\n![Image](../images/02_The_system_developement_process_p10_i15.jpeg)\n\nOther system engineering approaches: 
+PHASE Other system engineering approaches: 
 The spiral model
 11
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -384,8 +378,7 @@ nature
 of the process.
 2
 4
-3
-\n\n\n\n![Image](../images/02_The_system_developement_process_p11_i16.png)\n\n\n\n![Image](../images/02_The_system_developement_process_p11_i17.jpeg)\n\nOther system engineering approaches: 
+3 Other system engineering approaches: 
 The “V”
 12
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -399,9 +392,12 @@ STAEMODELES
 ↑
 ④
 ↓
-③-
-\n\n\n\n![Image](../images/02_The_system_developement_process_p12_i18.png)\n\n\n\n![Image](../images/02_The_system_developement_process_p12_i19.jpeg)\n\nReading
+③- Reading
 13
 Chapter 3 of Kossiakoff et al., Systems Engineering Principles 
 and Practice, Third ed., Wiley, 2020
-\n\n\n\n![Image](../images/02_The_system_developement_process_p13_i20.png)\n\n
+
+
+## System Integration
+
+Applying the V-Model to our RCUAV project requires a clear mapping from stakeholder needs down to the physical 3D-printed components. The system development process dictates that before any CAD is generated, the logical and functional architectures must be solidified. You will use System Composer to define these early development stages, laying the groundwork for a traceable Digital Thread.

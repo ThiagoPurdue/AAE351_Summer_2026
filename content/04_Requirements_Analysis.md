@@ -1,8 +1,11 @@
+# Requirements Analysis
+
+## Core Principles of Requirements Analysis
+
 # 04 Requirements Analysis
 
 Requirements Analysis
-AAE35103
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p1_i1.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p1_i2.png)\n\nOur class is focused on the concept development
+AAE35103 Our class is focused on the concept development
 2
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 C
@@ -13,23 +16,20 @@ and viable
 system
 CONCEPT
 .
-3
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p2_i3.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p2_i4.jpeg)\n\n\n\n![Image](../images/04_Requirements_Analysis_p2_i5.jpeg)\n\nLast Lecture, we discussed the needs analysis phase 
+3 Last Lecture, we discussed the needs analysis phase 
 3
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 OUTCOMES
 MISSION
 STATEMENTS
-CONOPS
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p3_i6.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p3_i7.jpeg)\n\nSystem materialization at the needs analysis phase
+CONOPS System materialization at the needs analysis phase
 4
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 need analysis at
 SYSTEM
 LEVEL
 -
-CHIGHEST LEVEL)
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p4_i8.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p4_i9.jpeg)\n\nIn this lecture, we discuss the concept 
+CHIGHEST LEVEL) In this lecture, we discuss the concept 
 exploration phase
 5
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -51,8 +51,7 @@ aerospace industry
 Typically, includes
 specific requirements
 and
-system level objectives
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p5_i10.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p5_i11.jpeg)\n\nIn this lecture, we discuss the concept 
+system level objectives In this lecture, we discuss the concept 
 exploration phase
 6
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -60,8 +59,7 @@ APARTFROM
 NEXT
 Lecture
 fo
-this Lecture
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p6_i12.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p6_i13.jpeg)\n\nConcept 
+this Lecture Concept 
 exploration 
 phase flow 
 diagram
@@ -105,8 +103,7 @@ funcional Description
 Generate and evaluate
 - system
 components
-OPERATIONAL OBJECTIVES .
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p7_i14.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p7_i15.jpeg)\n\nRequirements
+OPERATIONAL OBJECTIVES . Requirements
 8
 Design is based on requirements. There's no justification for 
 designing something one bit "better" than the requirements dictate.
@@ -116,8 +113,7 @@ https://spacecraft.ssl.umd.edu/akins_laws.html
 Don't
 add
 requirements
-unless really needed !!!
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p8_i16.png)\n\nRequirements definition myths
+unless really needed !!! Requirements definition myths
 9
 • Everyone knows what this project is about
 oWriting good requirements requires a clear understanding of 
@@ -126,8 +122,7 @@ oWriting good requirements requires a clear understanding of
 oThe manager involved in early customer interaction typically
 § Fails to communicate all information
 § Overestimates his requirement developer’s understanding
-oRegular two-way communication is required
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p9_i17.png)\n\nRequirements definition myths
+oRegular two-way communication is required Requirements definition myths
 10
 • Everyone knows how to write requirements
 oThis is the major cause of bad requirements
@@ -136,8 +131,7 @@ oThe stakeholder / customer gave it to us; so, we are stuck with it
 oNOT TRUE – You can and must help your stakeholder / customer define 
 good requirements early
 oYour stakeholder / customer won’t remember their poorly defined 
-requirements when your product does not satisfy their need
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p10_i18.png)\n\nThe importance of requirements
+requirements when your product does not satisfy their need The importance of requirements
 11
 • Requirements problems are the single biggest cause of project problems
 • Requirements define what is to be done, how well, and under what constraints
@@ -147,8 +141,7 @@ what the problem is
 • Requirements and their associated constraints and assumptions quantify the 
 problem to be solved - they establish how project success will be determined
 cost, design ,
-skills required , verification plans, .. everything!
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p11_i19.png)\n\nThe cost of error recovery or a requirement change 
+skills required , verification plans, .. everything! The cost of error recovery or a requirement change 
 increases dramatically with the project phase
 12
 Operations &
@@ -181,8 +174,7 @@ REQUIREMENTS
 AS
 EARLY AS
 POSSIBLE
-.
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p12_i20.png)\n\nWhy do requirements change?
+. Why do requirements change?
 13
 • New requirements are added or discovered
 • Priorities change 
@@ -215,8 +207,7 @@ THEM
 5
 -REQUIREMENTS
 CrEEP
-, BAD !
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p13_i21.png)\n\nVisualization of new requirements using 
+, BAD ! Visualization of new requirements using 
 a context diagram
 15
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -230,8 +221,7 @@ additional
 users
 or
 New
-Functions
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p14_i22.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p14_i23.jpeg)\n\nAutomobile example
+Functions Automobile example
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 16
 CONTEXT
@@ -242,8 +232,7 @@ NEW FUEL
 => Improve/ADD TECHNOLOSY
 TYPE
 · NEW/update
-REQUIREMENT
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p15_i24.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p15_i25.jpeg)\n\nRequirements Features
+REQUIREMENT Requirements Features
 17
 • A feature is
 • An example of a feature is a vehicle that can support travel soccer game 
@@ -258,8 +247,7 @@ o Vehicle can transport a minimum of two full‐size coolers of food and beverag
 .
 a set of requirements that will
 Satisfy an objective
-)
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p16_i26.png)\n\nRequirements attributes
+) Requirements attributes
 18
 Attributes describe the requirements.
 SMART = 
@@ -290,8 +278,7 @@ Control,
 VENIFICATION
 AND
 VALIDATION
-.
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p17_i27.png)\n\nConsider a public transportation system 
+. Consider a public transportation system 
 concept. Examples of good requirements:
 19
 • The system shall be able to transport up to 20 passengers within a 50-mile 
@@ -318,8 +305,7 @@ NOT mention type
 or format of data
 or
 how it is
-comunicated
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p18_i28.png)\n\nConsider a public transportation system 
+comunicated Consider a public transportation system 
 concept. Examples of poor requirements:
 20
 • The system shall be able to operate in all weather.
@@ -341,8 +327,7 @@ occur, not
 how it is
 built
 It
-pressuposes the solution
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p19_i29.png)\n\nRequirements development process
+pressuposes the solution Requirements development process
 21
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 GENERAL
@@ -376,8 +361,7 @@ AUTOMATED FOLLS
 ↑
 ANALYSTS/ EXPERTS
 SURVEYS / INTERVIEWS
-CUSTUMENS
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p20_i30.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p20_i31.jpeg)\n\nRequirements Analysis
+CUSTUMENS Requirements Analysis
 22
 A set of tests is conducted to determine each requirement's validity.
 1. Is the requirement traceable to a user need or operational requirement? 
@@ -395,8 +379,7 @@ or
 force
 the engineer
 to
-an infeasible solution .
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p21_i32.png)\n\nRequirements Analysis
+an infeasible solution . Requirements Analysis
 23
 Apart from individual requirement tests, a comprehensive set of tests is conducted.
 1.
@@ -409,8 +392,7 @@ These tests
 need to be
 terated
 before a final set of performance requirement
-exists.
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p22_i33.png)\n\nRequirements hierarchy
+exists. Requirements hierarchy
 24
 • Requirements are organized into different levels:
 o Operational-level
@@ -462,8 +444,7 @@ sys
 4
 focused
 on technical and Design aspects of the system
-.
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p23_i34.png)\n\nRequirements metrics
+. Requirements metrics
 25
 • Metrics are used to inform the analyst, engineer, and decision 
 maker whether the system will successfully accomplish its intended 
@@ -476,8 +457,7 @@ MOE always refers to the system as a whole
 • Measure of performance (MOP): A quantitative metric of a 
 system’s characteristics or performance of a particular attribute or 
 subsystem. An MOP typically measures a level of physical 
-performance below that of the system as a whole
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p24_i35.png)\n\nRequirements metrics
+performance below that of the system as a whole Requirements metrics
 26
 Typically, an MOE and MOP will have three parts:
 The metric , the unit
@@ -510,8 +490,7 @@ likelihood
 -
 > probability
 BINARY -
-logical value (event happens or not(
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p25_i36.png)\n\nRequirements verification and validation
+logical value (event happens or not( Requirements verification and validation
 27
 • Requirement verification is establishing confidence that the requirement has 
 been met
@@ -522,8 +501,7 @@ environment
 • Requirement validation is a process of ensuring that: 
 o The set of requirements is correct, complete, and consistent,
 o A model can be created that satisfies the requirements, and
-o A real-world solution can be built and tested to prove that it satisfies the requirements
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p26_i37.png)\n\nGoodness checklist: is this a requirement…?
+o A real-world solution can be built and tested to prove that it satisfies the requirements Goodness checklist: is this a requirement…?
 28
 q Dependent
 q Verifiable
@@ -543,8 +521,7 @@ q “Does the developer have control over this?”
 q “Is this a need the product must satisfy or an activity involving the product?”
 q Free of TBDs (To Be Determined)? 
 q Use a best estimate and a TBR (To Be Resolved) with rationale when possible.
-Ulrich and Eppinger, 2000
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p27_i38.png)\n\nSetting requirements for aerospace systems
+Ulrich and Eppinger, 2000 Setting requirements for aerospace systems
 29
 • How do you show that your aerospace system meets the stakeholder/customer 
 needs?
@@ -574,8 +551,7 @@ mention
 current
 solution
 => COLLECT
-DATA !
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p28_i39.png)\n\nSetting requirements for aerospace systems
+DATA ! Setting requirements for aerospace systems
 30
 • Recent trend towards “capability-based acquisition” in government / defense
 e . g.,
@@ -589,14 +565,12 @@ are responsable
 for developing
 requirements
 that satisfy the
-capability.
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p29_i40.png)\n\nSetting requirements for aerospace systems
+capability. Setting requirements for aerospace systems
 31
 Recommended external video. 
 https://www.youtube.com/watch?v=3afHlAwBudM
 VERYPORTANT !
-6
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p30_i41.png)\n\n\n\n![Image](../images/04_Requirements_Analysis_p30_i42.jpeg)\n\nTarget and threshold requirement values
+6 Target and threshold requirement values
 32
 • Target values
 • Threshold values
@@ -612,16 +586,14 @@ Important !
 Limit
 for
 acceptable
-performance
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p31_i43.png)\n\nCompliance Matrix
+performance Compliance Matrix
 33
 Included all stated and derived requirements
 Requirement
 Threshold
 Target
 Current Value
-Note: avoid making something a requirement if it does not need to be limited
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p32_i44.png)\n\nExample: Aircraft requirements compliance matrix
+Note: avoid making something a requirement if it does not need to be limited Example: Aircraft requirements compliance matrix
 34
 Requirement
 Threshold
@@ -655,8 +627,7 @@ Nominal mission total flight time
 [min]
 45
 40
-45
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p33_i45.png)\n\nOther aerospace requirement sources
+45 Other aerospace requirement sources
 35
 • External requirements (e.g., FAA, EASA, MIL-STD, MIL-SPEC, SAE, etc.) 
 • Internal requirements (manufacturing, product improvement, etc.)
@@ -666,9 +637,12 @@ REQUIREMENTS
 Produceability
 ->
 use existing tools
-a family of aircraft/spacecraft
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p34_i46.png)\n\nReading
+a family of aircraft/spacecraft Reading
 36
 Chapter 6 of Kossiakoff et al., Systems Engineering Principles 
 and Practice, Third ed., Wiley, 2020
-\n\n\n\n![Image](../images/04_Requirements_Analysis_p35_i47.png)\n\n
+
+
+## System Integration
+
+Translating the RCUAV stakeholder needs into formal 'Shall' statements is the foundation of our Digital Thread. In the Requirements Toolbox, you must specify structural requirements that account for the 'Print-to-Weight' trade-offs of materials like PLA+ or PETG, ensuring every requirement is verifiable and traceable to the mission ConOps.

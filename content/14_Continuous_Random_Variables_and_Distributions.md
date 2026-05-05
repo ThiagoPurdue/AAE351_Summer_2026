@@ -1,9 +1,12 @@
+# Continuous Random Variables and Distributions
+
+## Core Principles of Continuous Random Variables and Distributions
+
 # 14 Continuous Random Variables and Distributions
 
 Continuous Random 
 Variables and Distributions
-AAE35103
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p1_i1.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p1_i2.png)\n\nFrom discrete to continuous random variables
+AAE35103 From discrete to continuous random variables
 2
 From a discrete random variable…
 Countable set of numbers (e.g., roll of a die)
@@ -21,8 +24,7 @@ Plus they allow use of powerful tools from calculus
 And they admit insightful analysis that’s not possible with discrete models
 All the concepts that we saw previously in the discrete case have 
 continuous analogs (e.g., expectation, pmf, cdf). These analogs 
-are the subject of this lecture
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p2_i3.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p2_i4.png)\n\nContinuous random variables
+are the subject of this lecture Continuous random variables
 3
 We assign a number between zero and ten to all events (elements) within the sample 
 space
@@ -48,8 +50,7 @@ to getoo
 = Probability
 of
 that
-is zero
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p3_i5.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p3_i6.png)\n\nContinuous random variables
+is zero Continuous random variables
 4
 A random variable is called continuous if there is a nonnegative function fX, called the probability density 
 function of X, or pdf, such that:
@@ -72,8 +73,7 @@ Pa=x
 = b)
 curve between
 &
-and b
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p4_i7.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p4_i8.png)\n\nContinuous random variables
+and b Continuous random variables
 5
 For any single value, a:
 P(x = a)
@@ -90,8 +90,7 @@ X (> b)
 <x = b)
 = P(a =
 X
-< b)
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p5_i9.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p5_i10.png)\n\nContinuous random variables
+< b) Continuous random variables
 6
 Note that fX is used to calculate probabilities, but it is not a probability 
 itself (only its integral over an interval is)
@@ -105,8 +104,7 @@ JEx(x)x
 = 1
 . 0
 (Normalization Axiom)
-·
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p6_i11.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p6_i12.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p6_i13.png)\n\nContinuous random variables
+· Continuous random variables
 7
 Example: Is this a valid pdf?
 fX (x) =
@@ -137,8 +135,7 @@ fx (x) > 0 , Xt 10
 2nd
 _ /xdx
 = VALID
-P.D. F .
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p7_i14.png)\n\nExpected value of a continuous random variable
+P.D. F . Expected value of a continuous random variable
 8
 Similar to the discrete case: pmf is replaced 
 by the pdf, and the summation replaced by 
@@ -158,8 +155,7 @@ E(x)
 = (*
 X Fx(x)dx
 #(x) = [KP, (x)
-Al K
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p8_i15.png)\n\nExpected value of a continuous random variable
+Al K Expected value of a continuous random variable
 9
 Any real valued function of a random variable is also a random variable:
 Y = g(X)
@@ -178,8 +174,7 @@ Elg(x)]
 a
 , b
 AN Exercise)
-const.
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p9_i16.png)\n\nVariance of a continuous random variable
+const. Variance of a continuous random variable
 10
 The variance, as in the discrete case, is defined as the expected value of the 
 random variable (X - E[X])2
@@ -215,8 +210,7 @@ Wan[x]
 O < An[X]
 = E[X]
 - (E[X])
-?
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p10_i17.png)\n\nContinuous random variables
+? Continuous random variables
 11
 fX (x) =
 3x 2
@@ -260,8 +254,7 @@ I
 CURVE is
 - 1
 I
-X
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p11_i18.png)\n\n12
+X 12
 3. E[X]
 = (*xExdx=dxd
 4.[x] : [xxdx ...
@@ -273,8 +266,7 @@ X
 x =
 5
 Sx = Nan] =
-s
-\n\nUniform random variables
+s Uniform random variables
 13
 Calculate the mean and variance of a uniform random variable over an interval [a; b]
 fX (x) =
@@ -303,8 +295,7 @@ E(X)
 = (xdx ......
 WAR(x)
 = E(x2)
-- II(x))"=
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p13_i19.png)\n\n14
+- II(x))"= 14
 Exponential random variables: definition
 Definition: An exponential random variable X has the following pdf
 x
@@ -346,8 +337,7 @@ YAR(X)
 · (x)
 = My =x
 HIGHER J =S EVENTS GUSTERED
-AROUND X = 0
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p14_i20.png)\n\n15
+AROUND X = 0 15
 Exponential random variables: proposition
 Let
 X
@@ -372,8 +362,7 @@ E
 - ⑪
 -XX
 ,
-XXO
-\n\n16
+XXO 16
 Exponential random variables: applications
 Suppose the wait time X for service at the post office has an exponential distribution 
 with mean 3 minutes. If you enter the post office immediately behind another 
@@ -417,8 +406,7 @@ F(5
 -
 e
 =
-0 . 18 . 9
-\n\n17
+0 . 18 . 9 17
 Exponential random variables: applications
 Under the same conditions, what is the probability of waiting between 2 and 4 
 minutes? 
@@ -439,8 +427,7 @@ X(min
 e
 -
 c
-= 201
-\n\n18
+= 201 18
 Exponential random variables: the memoryless property
 • If X ~ exponential(l) represents a waiting time, the probability of waiting a given length of time 
 is not affected by how long you have already waited:
@@ -471,8 +458,7 @@ thom
 a +
 b
 Zero
-a
-\n\n19
+a 19
 Exponential random variables: the memoryless property
 • Does this seem reasonable in practice? Can you give examples?
 • What other distribution did we learn about that was also memoryless?
@@ -527,8 +513,7 @@ on where
 you are
 MEMORY LESS
 does
-not satisfy this property
-\n\n20
+not satisfy this property 20
 Cdf of continuous random variable
 cdf, F(#), for a continuous rv X is defined for every # by
 For each #, F(#) is the area under the density curve to the left of #
@@ -557,8 +542,7 @@ under the
 D
 curre
 =>
-F(X)
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p20_i21.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p20_i22.png)\n\n21
+F(X) 21
 pdf and cdf of a continuous random variable
 For a continuous random variable, its cdf is continuous (i.e., it has no jumps). The 
 second equation is valid for those x for which the cdf has a derivative
@@ -571,8 +555,7 @@ P(X =X) = ) x
 E(x) =x
 ~
 DischENE
--
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p21_i23.png)\n\n22
+- 22
 Using cdf to calculate probabilities
 Let X be a continuous rv with pdf f(x) and cdf F(x). Then for any number 
 a,
@@ -585,8 +568,7 @@ F(a)
 P(a = X(b)
 =
 f(b)
-- F(a)
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p22_i24.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p22_i25.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p22_i26.png)\n\n23
+- F(a) 23
 Example
 Suppose the pdf of the magnitude X of a dynamic load on a bridge (in Newtons) is 
 given by
@@ -607,8 +589,7 @@ f(x)
 + 30 xxz
 1
 ,
-X)2
-\n\n24
+X)2 24
 b. Find the probability that the load is between 1 and 1.5 N:
 c. Find the probability that the load exceeds 1 N:
 P(1 = x = 1
@@ -636,16 +617,14 @@ P(X(1)
 = 1- [t(1) + 2 (1
 =
 0
-. 688
-\n\n25
+. 688 25
 Gaussian or normal random variables
 Bell-shaped curves appear very frequently in many applications of probability*, e.g., often used 
 in signal processing
 Their probability models are members of the family of Gaussian random variables
 Because they appear so frequently, Gaussian random variables are also referred to as normal 
 random variables (or normally distributed random variables)
-* Why so many? The central limit theorem explains why many phenomena produce data that can modeled as Gaussian random variables
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p25_i27.png)\n\n26
+* Why so many? The central limit theorem explains why many phenomena produce data that can modeled as Gaussian random variables 26
 Gaussian or normal random variables
 X is a Gaussian random variable if the pdf of X is:
 -0.1
@@ -695,8 +674,7 @@ X- N(u
 9((x)dx
 = 1
 .0
--
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p26_i28.png)\n\n27
+- 27
 Gaussian or normal random variables
 6
 SMALIEn
@@ -718,8 +696,7 @@ the real
 line
 and the weight of
 the
-peak.
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p27_i29.png)\n\n28
+peak. 28
 Gaussian or normal random variables
 1. The center of the bell is
 2. The height of the peak is given by:
@@ -752,8 +729,7 @@ in narrow bell
 -> large
 reflects
 in
-a wide bell , flat peal
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p28_i30.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p28_i31.png)\n\n29
+a wide bell , flat peal 29
 How do we compute !(# ≤% ≤&) when %~) *, , ?
 FX (x) = P X ≤x
 (
@@ -784,8 +760,7 @@ No closed form expression of FX(x) for a normal random variable. What can we do?
 Can we integrate that?
 (pdf)
 YES ,
-NUMERICALLY
-\n\n30
+NUMERICALLY 30
 We define a “standard” normal random variable to be a normal variable with μ = 0 and σ = 1
 Let’s denote the standard normal random variable by Z
 …and we tabulate Φ(z)
@@ -812,10 +787,8 @@ P(z)
 du
 ↑
 2π
-RANDOM VARIABLE
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p30_i32.png)\n\n31
-Table A.3 Standard normal cdf
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p31_i33.png)\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p31_i34.png)\n\n32
+RANDOM VARIABLE 31
+Table A.3 Standard normal cdf 32
 pdf and cdf of the standard normal variable
 0
 0.2
@@ -860,8 +833,7 @@ zx+x
 ↓
 PDF
 G = 1 .0
-M = 0
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p32_i35.png)\n\n33
+M = 0 33
 Standard normal random variable
 Design for six sigma: A business and design process methodology 
 adopted in various industries for product design and improvement
@@ -871,8 +843,7 @@ n
 26
 h
 +36
-E
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p33_i36.png)\n\n34
+E 34
 Let’s look at a few examples
 P(z
 =
@@ -916,8 +887,7 @@ P) - 38 1 z
 = 0
 . 5454
 (T . A
-. 3)
-\n\n35
+. 3) 35
 Linear Transformations
 fX (x) =
 1
@@ -937,8 +907,7 @@ E(x)
 = aE(X)
 + b
 NAR(x)
-= aWAR(X)
-\n\n36
+= aWAR(X) 36
 Non-standardized normal distributions
 What if the mean is non-zero and standard 
 deviation not 1? 
@@ -974,8 +943,7 @@ deviation
 with M = 0
 and
 6=1 .0
-of X
-\n\n\n\n![Image](../images/14_Continuous_Random_Variables_and_Distributions_p36_i37.png)\n\n37
+of X 37
 Standardizing example
 Normal distribution
 Standardized 
@@ -1011,8 +979,7 @@ x
 0 .5478
 E
 10
-= P(X(51 . 2)
-\n\n38
+= P(X(51 . 2) 38
 Standardizing example
 Normal distribution
 Standardized 
@@ -1055,8 +1022,7 @@ P( - 0 ,211 x <
 = 0 .5832 -04168
 (TA3)
 =
-0.1654 = P(47 .9 XX52.1)
-\n\n0.6217
+0.1654 = P(47 .9 XX52.1) 0.6217
 Finding Z  values for known probabilities
 0     
 1
@@ -1075,8 +1041,7 @@ What is Z given probability of 0.6217?
 . 6277
 =>
 T . A . 3
-z = 0, 31
-\n\nWhat is Z given probability of 0.6217?
+z = 0, 31 What is Z given probability of 0.6217?
 Normal distribution
 Standardized 
 normal distribution
@@ -1105,10 +1070,13 @@ zX
 50
 +
 3
-.10
-\n\nReading
+.10 Reading
 41
 Chapter 3.1 to 3.4 and 3.8 of Carlton and Devore, 
 Probability with Applications in Engineering, Science, and 
 Technology, 2nd ed., 2017
-\n\n
+
+
+## System Integration
+
+Continuous variables like flight time, battery degradation, and cumulative stress on the 3D-printed wings are modeled using continuous distributions. These models will feed directly into your sizing scripts, ensuring the UAV meets the 100-flight lifecycle requirement.

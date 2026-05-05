@@ -1,9 +1,12 @@
+# Introduction to Probability
+
+## Core Principles of Introduction to Probability
+
 # 09 Introduction to Probability
 
 Introduction to 
 Probability
-AAE35103
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p1_i1.png)\n\n\n\n![Image](../images/09_Introduction_to_Probability_p1_i2.png)\n\n2
+AAE35103 2
 “It appears incontrovertible that understanding failure plays a key role 
 in error-free design of all kinds, and that indeed all successful design is 
 the proper and complete anticipation of what can go wrong.”
@@ -22,8 +25,7 @@ your reliability analysis of
 your design
 and
 vehicle
-mission.
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p2_i3.png)\n\nSpace Shuttle Challenger disaster
+mission. Space Shuttle Challenger disaster
 3
 “It appears that there are enormous 
 differences of opinion as to the probability 
@@ -37,8 +39,7 @@ consequences of this lack of agreement?”
 Richard Feynman, opening of 
 Appendix F to the Challenger Accident 
 Report
--
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p3_i4.png)\n\n\n\n![Image](../images/09_Introduction_to_Probability_p3_i5.jpeg)\n\nSpace Shuttle Challenger disaster
+- Space Shuttle Challenger disaster
 4
 Complex system
 (several
@@ -49,8 +50,7 @@ rocket boosters
 of trust & launch
 Accident
 CAUSED by burn-through of
-O-Rings
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p4_i6.png)\n\n\n\n![Image](../images/09_Introduction_to_Probability_p4_i7.jpeg)\n\nSpace Shuttle Challenger disaster
+O-Rings Space Shuttle Challenger disaster
 5
 ruber
 o-rings
@@ -85,8 +85,7 @@ KEY Point :
 COURELATED I
 I N Sufficient
 RIGOROUS
-ACCESSMENT Of ProB.
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p5_i8.png)\n\n\n\n![Image](../images/09_Introduction_to_Probability_p5_i9.jpeg)\n\nHow do we go about determining what can go wrong 
+ACCESSMENT Of ProB. How do we go about determining what can go wrong 
 and whether and how we should address it?
 6
 How might we identify problems?
@@ -115,8 +114,7 @@ operations
 cost
 benefit analysis
 -
-OTHERS ???
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p6_i10.png)\n\nCommon expressions in the aerospace community
+OTHERS ??? Common expressions in the aerospace community
 7
 • Reliability of 0.997
 • No single point failure mode design
@@ -139,8 +137,7 @@ on
 /noun
 Ens
 An Average
-Number
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p7_i11.png)\n\nCommon expressions in the aerospace community
+Number Common expressions in the aerospace community
 8
 • Graceful degradation is OK
 • Fully redundant system
@@ -172,8 +169,7 @@ Hard
 toFulfill
 all , maybe
 two
-of three.
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p8_i12.png)\n\nOur goals for this module
+of three. Our goals for this module
 9
 • Understand the application of probability and statistics within 
 systems engineering, particularly in the aerospace industry
@@ -183,8 +179,7 @@ within systems engineering, particularly in the aerospace industry
 mean-time-between failure, and the “bathtub” curve
 • Introduce different forms of system redundancy, including fault 
 tolerance, functional redundancy, and fault avoidance
-• Review ways to calculate reliability and the use of block diagrams
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p9_i13.png)\n\nReliability is the probability that the system-of-
+• Review ways to calculate reliability and the use of block diagrams Reliability is the probability that the system-of-
 interest will not fail for a given period of time under 
 specified operating conditions
 10
@@ -227,8 +222,7 @@ to/BETWEEN Failure
 (M+TF) - how long on average it takes to fail ?
 FAILURE Rate -> fixed time , find
 how many
-on average will fail
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p10_i14.png)\n\nReliability is the probability that the system-of-
+on average will fail Reliability is the probability that the system-of-
 interest will not fail for a given period of time under 
 specified operating conditions
 11
@@ -240,13 +234,11 @@ Trade studies—reliability as a figure of merit. Often traded with cost
 Modeling—reliability prediction models, reflecting environmental considerations and applicable 
 experience from previous projects
 Test—making independent predictions of system reliability for test planning/program; sets 
-environmental test requirements and specifications for hardware qualification
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p11_i15.png)\n\nOur ultimate goal : finding out where the bathtub 
+environmental test requirements and specifications for hardware qualification Our ultimate goal : finding out where the bathtub 
 failure rate curve comes from
 12
 (or cycles)
-N-
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p12_i16.png)\n\n\n\n![Image](../images/09_Introduction_to_Probability_p12_i17.jpeg)\n\nWhere we’re heading? 
+N- Where we’re heading? 
 13
 1. Cumulative distribution 
 function of Time to 
@@ -259,9 +251,12 @@ function of TF (or simply
 failure pdf)
 4. Hazard function (or 
 failure rate)
-n
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p13_i18.png)\n\n\n\n![Image](../images/09_Introduction_to_Probability_p13_i19.png)\n\n\n\n![Image](../images/09_Introduction_to_Probability_p13_i20.png)\n\nReading
+n Reading
 14
 Feynman, Appendix F to the Roger’s Commission Report 
 (available on Brightspace)
-\n\n\n\n![Image](../images/09_Introduction_to_Probability_p14_i21.png)\n\n
+
+
+## System Integration
+
+The foundational principles of probability allow us to quantify the uncertainties inherent in 3D-printing manufacturing tolerances. By modeling the variation in print quality and material strength as probabilistic events, we can begin to predict the overall structural reliability of the RCUAV.

@@ -1,9 +1,12 @@
+# Unconditional Probability
+
+## Core Principles of Unconditional Probability
+
 # 11 Unconditional Probability
 
 Unconditional 
 Probability
-AAE35103
-\n\n\n\n![Image](../images/11_Unconditional_Probability_p1_i1.png)\n\n\n\n![Image](../images/11_Unconditional_Probability_p1_i2.png)\n\n2
+AAE35103 2
 Roll two fair four-sided dice. Let x1 outcome of first roll, x2 outcome of second roll
 A is the event x1 ≥ 2. What is the probability of A? Draw the 2-D grid sample space. Show event A on 
 the grid
@@ -38,8 +41,7 @@ AndPla
 = A
 =
 P(A)
-= 1
-\n\n3
+= 1 3
 In many cases, we start with information about conditional probabilities, and we seek to calculate 
 unconditional probability. How can we do that?
 In math: we know all the P(B|Ai), how do we calculate P(B)? (and what do we mean by “all”?)
@@ -64,8 +66,7 @@ AYMB
 -
 his Labris
 Sti
--
-\n\nAnd so we can write:
+- And so we can write:
 4
 A1
 A2
@@ -86,8 +87,7 @@ P(Ain B)
 . P(Ai)
 TOTAL
 PROBABILITY
-P(B)
-\n\n\n\n![Image](../images/11_Unconditional_Probability_p4_i3.png)\n\n5
+P(B) 5
 Three boxes contain red and green balls. Box 1 has 5 red balls and 5 green balls, Box 2 has 7 red 
 balls and 3 green balls and Box 3 contains 6 red balls and 4 green balls. The respective 
 probabilities of choosing a box are 1/3, 1/3, 1/3 
@@ -120,8 +120,7 @@ GREEN
 P (c)= P(G/Bi) P(Bi)
 =PICTP(B1)
 + P(G/Bc)P(b))
-+ P(s(B3)P(B3)=+
-\n\n6
++ P(s(B3)P(B3)=+ 6
 Let’s visualize this problem with a probability tree diagram
 DECISION 1
 SELECT
@@ -143,8 +142,7 @@ R
 +
 P(G/B3)P(B3)
 =
-P(G)
-\n\n7
+P(G) 7
 Tree diagrams will help you visualize and solve some types of 
 problems. Let’s look at another example:
 If you toss a fair coin, there are two potential outcomes, H, or T. We can 
@@ -160,8 +158,7 @@ THESE
 ARE
 POTENTIAL
 Two
-OUTCOMES
-\n\n8
+OUTCOMES 8
 Since the coin is fair, each outcome has an equal probability of occurring.
 P(H) = P(T) = ½ 
 ---
@@ -169,8 +166,7 @@ P(H) = P(T) = ½
 => 112
 ⑧
 = 1/2
-⑧
-\n\nAfter tossing the coin, we can choose a ball from a bag. The bag 
+⑧ After tossing the coin, we can choose a ball from a bag. The bag 
 has three balls: a green ball, a blue ball, and a red ball 
 We can now add information to our tree diagram
 9
@@ -202,8 +198,7 @@ T
 1, 113
 ↑
 · R
-ACTION 2
-\n\nIn general, if you see “OR” in the problem, you add. If you see 
+ACTION 2 In general, if you see “OR” in the problem, you add. If you see 
 “AND” in the problem, you multiply
 For example, what is the probability of getting H or T?
 We can now add information to our tree diagram
@@ -226,8 +221,7 @@ P(M) +
 p(t)
 = y
 +-
-= 1
-\n\nIn general, if you see “OR” in the problem, you add. If you see 
+= 1 In general, if you see “OR” in the problem, you add. If you see 
 “AND” in the problem, you multiply
 For example, what is the probability of getting H and R?
 11
@@ -245,8 +239,7 @@ I
 P(HR) =
 P(H)
 . PTR)
-= -- =
-\n\nWe add down the tree, we multiply across
+= -- = We add down the tree, we multiply across
 H
 T
 ½ 
@@ -296,8 +289,7 @@ Independent: multiply
 12
 ↓
 let
-2na
-\n\nWe can add to the complexity of the problem…
+2na We can add to the complexity of the problem…
 What is the probability of getting T and R or H and B?
 Let’s calculate T and R first
 Then H and B
@@ -321,8 +313,7 @@ P(T 1r) = P(T)
 =I
 . t
 = &
-=
-\n\nWe can add to the complexity of the problem…
+= We can add to the complexity of the problem…
 What is the probability of getting T and R or H and B?
 And now let’s put them together
 14
@@ -341,8 +332,7 @@ I
 + E
 13
 · R
-= -
-\n\nLet’s change it up a bit
+= - Let’s change it up a bit
 What is the probability of getting a red ball?
 Well, this is the probability of getting T and R or H and R!
 15
@@ -363,8 +353,7 @@ of
 I +
 + 1
 13 R
-= 4
-\n\nNow, let’s add another layer of complexity
+= 4 Now, let’s add another layer of complexity
 Our coin is biased and has a probability of 0.6 of landing on tails
 Also, if the coin lands on heads, I choose a ball from Bag 1, if the coin lands on tails, I choose a ball 
 from Bag 2
@@ -388,8 +377,7 @@ R
 3
 + 36
 1)
-R
-\n\nWith our new tree diagram, what is the probability of getting a red ball?
+R With our new tree diagram, what is the probability of getting a red ball?
 This is still the probability of getting T and R or H and R
 17
 ⑮
@@ -411,8 +399,7 @@ R
 =
 1)
 R
-=
-\n\n18
+= 18
 Here’s a different type of problem
 A fair coin is tossed. If the coin lands on heads a bag is filled with one black ball and three white balls. 
 If the coin landed on tails the bag is filled with one black ball and nine white balls. A ball is then 
@@ -446,8 +433,7 @@ W
 w
 B
 P(H(B)
-= ?
-\n\n19
+= ? 19
 Bayes’ Theorem will help, and we can easily derive it ourselves:
 Assume we have: 
 P(A|B), P(A), and P(B)
@@ -468,8 +454,7 @@ CAN
 WRITE=
 =>
 P(ANB) = P(B1A)(3)
--
-\n\n\n\n![Image](../images/11_Unconditional_Probability_p19_i4.jpeg)\n\n20
+- 20
 Thomas Bayes
 1701 - 1761
 Bayes’ Theorem will help, and we can easily derive it ourselves:
@@ -489,8 +474,7 @@ In
 P(BIA) =
 AIB) P(B)
 BAVES
-THEOREM
-\n\n\n\n![Image](../images/11_Unconditional_Probability_p20_i5.jpeg)\n\n21
+THEOREM 21
 Now try to solve our previous problem
 A fair coin is tossed. If the coin lands on heads a bag is filled with one black ball and three white balls. 
 If the coin landed on tails the bag is filled with one black ball and nine white balls. A ball is then 
@@ -528,8 +512,7 @@ P(H(B)
 05
 =
 0 .714
-(71 . 4 %
-\n\n22
+(71 . 4 % 22
 The Bayesian trap
 An engine-driven alternator keeps a Purdue airplane’s battery charged and runs many of the aircraft’s 
 electronics
@@ -540,8 +523,7 @@ place to alert the pilot
 The warning light will correctly identify a failed alternator 99% of the time, and only give a false 
 positive 1% of the time 
 The alternator warning light goes off during a flight
-What is the probability that the alternator has actually failed?
-\n\n23
+What is the probability that the alternator has actually failed? 23
 The Bayesian trap
 ALTERNATOR
 ⑧
@@ -573,8 +555,7 @@ P (DIF')
 FALSE
 POSITIVE
 P(F(x)
-= ???
-\n\n24
+= ??? 24
 The Bayesian trap
 BAYES' THEOREM
 P(FID) = IHDIFIPS
@@ -615,10 +596,13 @@ RELIABLE
 # MOST DETECTIONS
 DUETo
 FALSE
-POSITIVES
-\n\nReading
+POSITIVES Reading
 25
 Chapter 1.1-1.4 of Carlton and Devore, Probability with 
 Applications in Engineering, Science, and Technology, 2nd 
 ed., 2017
-\n\n
+
+
+## System Integration
+
+Understanding the baseline, unconditional probabilities of component failures (e.g., motor burnout, avionics fault) is essential. These baseline metrics will be integrated into the Digital Thread, allowing the MATLAB models to simulate the unconditioned lifespan of the cargo UAV.

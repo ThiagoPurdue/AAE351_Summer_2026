@@ -1,8 +1,11 @@
+# Functional Analysis
+
+## Core Principles of Functional Analysis
+
 # 06 Functional Analysis
 
 Functional Analysis
-AAE35103
-\n\n\n\n![Image](../images/06_Functional_Analysis_p1_i1.png)\n\n\n\n![Image](../images/06_Functional_Analysis_p1_i2.png)\n\nIn this lecture, we discuss the concept 
+AAE35103 In this lecture, we discuss the concept 
 definition phase
 2
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -23,8 +26,7 @@ I
 SOFTWARE
 I
 Specify the architecture of system concepted including the components.
-I
-\n\n\n\n![Image](../images/06_Functional_Analysis_p2_i3.png)\n\n\n\n![Image](../images/06_Functional_Analysis_p2_i4.jpeg)\n\nSystem materialization at the concept 
+I System materialization at the concept 
 definition phase
 3
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
@@ -40,8 +42,7 @@ to be
 ENGINEERED
 of system
 and
-Major components.
-\n\n\n\n![Image](../images/06_Functional_Analysis_p3_i5.png)\n\n\n\n![Image](../images/06_Functional_Analysis_p3_i6.jpeg)\n\nConcept 
+Major components. Concept 
 definition 
 phase flow 
 diagram
@@ -70,8 +71,7 @@ COUPLED
 DOES SYSTEM MEET
 -
 >
-requirement?
-\n\n\n\n![Image](../images/06_Functional_Analysis_p4_i7.png)\n\n\n\n![Image](../images/06_Functional_Analysis_p4_i8.jpeg)\n\nDescribing the system functions
+requirement? Describing the system functions
 5
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 • Functional system building blocks
@@ -106,8 +106,7 @@ to
 DESCRIBE THE
 SYSTEM
 AND COMPONENT
-FUNCTIONALITY
-\n\n\n\n![Image](../images/06_Functional_Analysis_p5_i9.png)\n\n\n\n![Image](../images/06_Functional_Analysis_p5_i10.jpeg)\n\nStandard coffee maker example
+FUNCTIONALITY Standard coffee maker example
 6
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 • Input functions
@@ -127,8 +126,7 @@ FUNCTIONS of
 A
 STANDARD
 Coffee
-MAKER
-\n\n\n\n![Image](../images/06_Functional_Analysis_p6_i11.png)\n\nStandard coffee maker example
+MAKER Standard coffee maker example
 7
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 SIGNAL
@@ -144,8 +142,7 @@ EXTERNAL
 Entities&
 unt Energy
 ,once
-A
-\n\n\n\n![Image](../images/06_Functional_Analysis_p7_i12.png)\n\n\n\n![Image](../images/06_Functional_Analysis_p7_i13.jpeg)\n\nStandard coffee maker example
+A Standard coffee maker example
 8
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 Materials
@@ -168,8 +165,7 @@ CAN Categorize
 FUNCTIONS
 INTO
 FIVE
-BASIC Elements :
-\n\n\n\n![Image](../images/06_Functional_Analysis_p8_i14.png)\n\nFunctional flow block diagram (FFBD)
+BASIC Elements : Functional flow block diagram (FFBD)
 9
 1. Formulate the overall 
 product function
@@ -238,8 +234,7 @@ ELEMENTS
 BEAMS
 HEATER
 I
-- ----------
-\n\n\n\n![Image](../images/06_Functional_Analysis_p9_i15.png)\n\nFunctional flow diagram (FFD)
+- ---------- Functional flow diagram (FFD)
 10
 System functions:
 F1.  
@@ -289,8 +284,7 @@ AND -F5-F6-F2-F8-AND-F10-AND >END
 -F11
 Function
 VFEEDBACK
-Loop
-\n\n\n\n![Image](../images/06_Functional_Analysis_p10_i16.png)\n\nSequence diagram (SD)
+Loop Sequence diagram (SD)
 11
 System functions:
 F1.  
@@ -341,8 +335,7 @@ FED
 ASSIST IN
 CONSTRUCTING
 A
-SD.
-\n\n\n\n![Image](../images/06_Functional_Analysis_p11_i17.png)\n\nStarship delivery functional analysis
+SD. Starship delivery functional analysis
 12
 • Your system is rarely doing just one thing at a time
 • Need to capture all the different activities that are happening concurrently as well 
@@ -371,8 +364,7 @@ AUX .
 FUNCTIONS
 &TOP LEVEL, FUNCTIONAL
 FLOWS
-BLOCK DIAGAm
-\n\n\n\n![Image](../images/06_Functional_Analysis_p12_i18.png)\n\n\n\n![Image](../images/06_Functional_Analysis_p12_i19.jpeg)\n\nStarship delivery functional analysis
+BLOCK DIAGAm Starship delivery functional analysis
 13
 -Store Coffee / Energy
 Store Coffee
@@ -416,8 +408,7 @@ THAT
 FUNGION
 ↳MAY
 NOT BE
-NEEDED
-\n\n\n\n![Image](../images/06_Functional_Analysis_p13_i20.png)\n\nStarship delivery functional analysis
+NEEDED Starship delivery functional analysis
 14
 Sense local 
 environment
@@ -471,8 +462,7 @@ INFORMATION
 FEEDS
 INT
 >
-FUNCTION
-\n\n\n\n![Image](../images/06_Functional_Analysis_p14_i21.png)\n\nStarship delivery functional analysis
+FUNCTION Starship delivery functional analysis
 15
 Give Coffee
 Unlock 
@@ -499,17 +489,19 @@ Y
 These
 functional diagrams
 will help you to generate
-REQUIREMENTS.
-\n\n\n\n![Image](../images/06_Functional_Analysis_p15_i22.png)\n\nIn conclusion
+REQUIREMENTS. In conclusion
 16
 • Functional analysis is a useful way of identifying requirements
 • Functions are not the same as subsystems but can help us identify 
 system concepts
-oConcept generation and selection (last lecture)
-\n\n\n\n![Image](../images/06_Functional_Analysis_p16_i23.png)\n\nReading
+oConcept generation and selection (last lecture) Reading
 17
 Chapter 7 of Kossiakoff et al., Systems Engineering 
 Principles and Practice, Third ed., Wiley, 2020
 Anon, Chapter 5 Functional Analysis and Allocation 
 of Systems Engineering Fundamentals
-\n\n\n\n![Image](../images/06_Functional_Analysis_p17_i24.png)\n\n
+
+
+## System Integration
+
+Functional decomposition of the RCUAV forces us to break down 'Deliver Cargo' into sub-functions like 'Generate Lift', 'Provide Thrust', and 'Maintain Structural Integrity'. In System Composer, these functions must be modeled logically before they are allocated to specific physical components, ensuring that the 3D-printed airframe adequately supports all avionics and payloads.

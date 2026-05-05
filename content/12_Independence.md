@@ -1,8 +1,11 @@
+# Independence
+
+## Core Principles of Independence
+
 # 12 Independence
 
 Independence
-AAE35103
-\n\n\n\n![Image](../images/12_Independence_p1_i1.png)\n\n\n\n![Image](../images/12_Independence_p1_i2.png)\n\n2
+AAE35103 2
 In probability, independence means that knowing something about A, tells me 
 nothing about B
 Dependence means that if I know A happened, B’s probability must also change
@@ -20,8 +23,7 @@ Sequential assignment of rooms in a dorm
 ~
 ~
 ~
-z
-\n\n3
+z 3
 In probability, independence means that knowing something about  A tells us nothing about B.
 In math, two events, A and B, are independent if
 Dependence means that if we know A happened, B’s probability must also change.
@@ -36,8 +38,7 @@ P(A)
 P(BIA)
 =
 P(B)
-~INDEPENDENCE
-\n\n4
+~INDEPENDENCE 4
 The definition of conditional probability gives us another convenient way of checking for independence:
 Two events A and B are independent if and only if
 P (AnB)
@@ -89,8 +90,7 @@ IF
 EITHER
 P(A) = O
 or
-P(B) = 0
-\n\n5
+P(B) = 0 5
 What does that have to do with “disjoint” and “mutually exclusive”? 
 3
 DEPENDENCE
@@ -123,8 +123,7 @@ event
 (No
 Outcomes
 In that
-event.
-\n\n6
+event. 6
 a)
 ZERO
 OVERLAP
@@ -162,10 +161,7 @@ BECAUSE
 THEY
 DON'T
 satisfy
-PlAIBl = YA
-\n\n7
-\n\n8
-\n\n9
+PlAIBl = YA 9
 Consider an experiment consisting of two successive rolls of a 4-sided fair die.
 Ai = {first roll result in i}, Bj = {second roll result in j}, i = 1,…,4 and j = 1, …,4
 Are Ai and Bj independent?
@@ -203,8 +199,7 @@ and Bj
 are
 P(Ain3j) = PlAi)
 . P(Bj)=
-INDEPENDENT
-\n\n10
+INDEPENDENT 10
 Consider an experiment consisting of two successive rolls of a 4-sided fair die
 Event A = {first roll is 1}, B = {sum of the two rolls is 5}
 Are A and B independent?
@@ -237,13 +232,11 @@ P1ANB( = P(A)
 16
 A
 AND B are
-INDEPENDENT
-\n\n11
+INDEPENDENT 11
 You throw two fair 6-sided dice, one green and one red, and observe the numbers. 
 Decide which of the following pairs of events are independent
 A: the sum is 5 
-B: the red die shows a 2
-\n\n12
+B: the red die shows a 2 12
 You throw two fair 6-sided dice, one green and one red, and observe the numbers. 
 Decide which of the following pairs of events are independent
 A: the sum is 5
@@ -282,8 +275,7 @@ P(A)
 . P(B)
 ↓.
 INDEPENDENT
-T
-\n\n13
+T 13
 Independence of more than two events
 DEFINITION
 :
@@ -308,8 +300,7 @@ them
 9) Ai 1 Az 1 ... Aik)
 = P(A)
 . P(Aiz)
-... PlAin)
-\n\n14
+... PlAin) 14
 Solar panel array from Example 1.39 from C&D 
 Each cell has a 90% chance of surviving a mission
 What is the chance that the system in (a) will be fully operational 
@@ -342,8 +333,7 @@ i = 1,
 .
 . ., 6
 MUTUALLY
-independent
-\n\n\n\n![Image](../images/12_Independence_p14_i3.png)\n\n15
+independent 15
 - -
 ↑(Op
 String Functional)
@@ -375,13 +365,11 @@ P(rot)
 +
 0 .93
 -0
-.927
-\n\n16
+.927 16
 Solar panel array from Example 1.39 from C&D 
 Each cell has a 90% chance of surviving a mission
 What is the chance that the system in (b) will be fully operational at 
-the end?
-\n\n\n\n![Image](../images/12_Independence_p16_i4.png)\n\n17
+the end? 17
 P(SYS
 FUNCTIONAL) = P)(AUAn)n(AAs)n/A]
 -
@@ -431,8 +419,7 @@ Forc.)
 0
 .97
 -
->
-\n\n18
+> 18
 Computer simulation provides us an effective way to estimate probabilities of very complicated events
 o Modern system problem can be too difficult to address analytically
 o Simulations help predict and quantify impact of uncertainty on system behavior and performance
@@ -446,13 +433,11 @@ amiform
 distribution
 (0
 , 1)
-interval
-\n\n19
+interval 19
 Let’s repeat the solar panel array example 1.39 from C&D part (b), but this time use MATLAB
 Each cell has a 90% chance of surviving a mission
 What is the chance that the system in (b) will be fully operational at the end?
-=> MATLAB script on next slides: SolarArray.m
-\n\n\n\n![Image](../images/12_Independence_p19_i5.png)\n\n20
+=> MATLAB script on next slides: SolarArray.m 20
 % Program: SolarArray.m
 % Author: The ghost of John Purdue
 % Description: Script to calculate the reliability of a solar array
@@ -495,8 +480,7 @@ A
 DIFERENT
 RELIABILITY
 Guest
-survivenacity
-\n\n21
+survivenacity 21
 ParraySurvives =
     0.9702
 Running SolarArray.m in MATLAB will print the following to the Command Window:
@@ -513,10 +497,13 @@ WILL
 SHOW A
 Reset
 ~
-v
-\n\nReading
+v Reading
 22
 Chapter 1.5 & 1.6 of Carlton and Devore, Probability with 
 Applications in Engineering, Science, and Technology, 2nd 
 ed., 2017
-\n\n
+
+
+## System Integration
+
+When designing the RCUAV's modular print blocks, assuming failure independence between physical blocks simplifies early analysis. However, you must carefully analyze whether a thermal failure in an avionics bay (printed in heat-sensitive PLA) is truly independent of a structural failure in the adjacent fuselage block.

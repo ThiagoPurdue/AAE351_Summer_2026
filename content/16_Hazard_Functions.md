@@ -1,8 +1,11 @@
+# Hazard Functions
+
+## Core Principles of Hazard Functions
+
 # 16 Hazard Functions
 
 Hazard Functions
-AAE35103
-\n\n\n\n![Image](../images/16_Hazard_Functions_p1_i1.png)\n\n\n\n![Image](../images/16_Hazard_Functions_p1_i2.png)\n\nR(t) = Pr TF > t
+AAE35103 R(t) = Pr TF > t
 (
 ) =1−F(t)
 F(t) = P TF ≤t
@@ -67,8 +70,7 @@ MEAN TIME
 TO
 FAIWRE
 OF TF
-j
-\n\n\n\n![Image](../images/16_Hazard_Functions_p2_i3.png)\n\n\n\n![Image](../images/16_Hazard_Functions_p2_i4.png)\n\n\n\n![Image](../images/16_Hazard_Functions_p2_i5.png)\n\n\n\n![Image](../images/16_Hazard_Functions_p2_i6.png)\n\nConditional failure rate: intuition first
+j Conditional failure rate: intuition first
 3
 Recall the conditional probability of an event:
 P A | B
@@ -109,8 +111,7 @@ conditional
 Failure rate
 , but, conditional
 on
-what ?>Time
-\n\n\n\n![Image](../images/16_Hazard_Functions_p3_i7.png)\n\nConditional failure rate: intuition first
+what ?>Time Conditional failure rate: intuition first
 4
 Time
 t0
@@ -162,8 +163,7 @@ R(t21ts)
 R(t1)
 hops
 - 1
-- & tixe to
-\n\n\n\n![Image](../images/16_Hazard_Functions_p4_i8.png)\n\nConditional failure rate: intuition first
+- & tixe to Conditional failure rate: intuition first
 5
 Time
 t0
@@ -212,8 +212,7 @@ d - 2
 #w=At
 I
 is the
-Feilure rate
-\n\n\n\n![Image](../images/16_Hazard_Functions_p5_i9.png)\n\nHazard function : derivation
+Feilure rate Hazard function : derivation
 6
 Consider the conditional probability that  an item will fail between t and t +dt, knowing that it 
 was operational/fully functional at time t:
@@ -236,8 +235,7 @@ using the CDF
 R()
 *
 K
-reliability
-\n\n\n\n![Image](../images/16_Hazard_Functions_p6_i10.png)\n\nHazard function : derivation
+reliability Hazard function : derivation
 7
 per
 unit of
@@ -261,8 +259,7 @@ FAIWRE
 RATE
 Note : X(t) (t)
 Since
-R(t) < 1
-\n\n\n\n![Image](../images/16_Hazard_Functions_p7_i11.png)\n\nHazard function : derivation
+R(t) < 1 Hazard function : derivation
 8
 ↓(
 =
@@ -282,8 +279,7 @@ divided by the
 survaving
 to that
 duration
-who experiencing the event .
-\n\n\n\n![Image](../images/16_Hazard_Functions_p8_i12.png)\n\nHazard function: definition
+who experiencing the event . Hazard function: definition
 9
 Probability density function f(t):
 f (t) = dF t( )
@@ -307,8 +303,7 @@ Hazard rate
 •
 Force of mortality
 λ(t) = f (t)
-R(t)
-\n\n\n\n![Image](../images/16_Hazard_Functions_p9_i13.png)\n\n\n\n![Image](../images/16_Hazard_Functions_p9_i14.png)\n\nFind the failure rate of the exponential distribution
+R(t) Find the failure rate of the exponential distribution
 10
 Answer: 
 The reliability is
@@ -340,8 +335,7 @@ solar storm - malfunction of components,
 but failures may
 also
 increase/decrease
-with time .
-\n\n\n\n![Image](../images/16_Hazard_Functions_p10_i15.png)\n\nYou have probably heard of the bathtub curve…
+with time . You have probably heard of the bathtub curve…
 11
 Failure rate of an item as a function of time: bathtub 
 curve and the three periods of operations 
@@ -365,8 +359,7 @@ to this model
 F(t)
 f(t)
 Time
-R(t)
-\n\n\n\n![Image](../images/16_Hazard_Functions_p11_i16.png)\n\n\n\n![Image](../images/16_Hazard_Functions_p11_i17.png)\n\nYou have probably heard of the bathtub curve…
+R(t) You have probably heard of the bathtub curve…
 12
 λ(t) = f (t)
 R(t)
@@ -398,8 +391,7 @@ corrosion
 -depends on-parts
 replacement
 - quality screening
-the context
-\n\n\n\n![Image](../images/16_Hazard_Functions_p12_i18.png)\n\n\n\n![Image](../images/16_Hazard_Functions_p12_i19.png)\n\n13
+the context 13
 Source: A. M. Smith. “Reliability-Centered Maintenance.” McGraw-Hill, New York, 1993
 Don’t take these 
 numbers seriously
@@ -422,16 +414,14 @@ SoFUNE
 DECLEASING
 EWE
 MATE
-CDFR)
-\n\n\n\n![Image](../images/16_Hazard_Functions_p13_i20.png)\n\n\n\n![Image](../images/16_Hazard_Functions_p13_i21.jpeg)\n\nBathtub and non-bathtub curves
+CDFR) Bathtub and non-bathtub curves
 14
 Source: W. Kuo, M. J. Zuo. “Optimal Reliability Modeling.” Wiley, New Jersey, 
 2003
 time
 λ(t)
 Don’t take these too seriously. Just know that bathtub and non-bathtub like failure rate models exist and are 
-appropriate for different items
-\n\n\n\n![Image](../images/16_Hazard_Functions_p14_i22.png)\n\nExample
+appropriate for different items Example
 15
 The reliability of a widget is given by:
 R t = & 1 −t
@@ -474,8 +464,7 @@ Increases With time
 -
 "
 -t
-=> widget experiences wear-out
-\n\n\n\n![Image](../images/16_Hazard_Functions_p15_i23.png)\n\nDerive an expression for the mttf. Explain in words what this 
+=> widget experiences wear-out Derive an expression for the mttf. Explain in words what this 
 value means
 16
 metf
@@ -492,8 +481,7 @@ average
 the widget
 will
 LAST
-to/3.
-\n\nDerive an expression for the median lifetime. Explain in 
+to/3. Derive an expression for the median lifetime. Explain in 
 words what this value means
 17
 R()
@@ -508,8 +496,7 @@ prob.
 that any given widget
 is
 operating at
-that time.
-\n\nDerive an expression for the design life, i.e., the life at which 
+that time. Derive an expression for the design life, i.e., the life at which 
 the reliability reaches a minimum acceptable value Rmin
 18
 here
@@ -531,8 +518,7 @@ YPlot
 Rmin
 , + (Rmin , to
 ↑
-2 parameters
-\n\n19
+2 parameters 19
 0
 0.1
 0.2
@@ -566,8 +552,7 @@ HENS
 90% PROB .
 Hers work
 FAILED
-work
-\n\n20
+work 20
 Discuss qualitatively what factors the manufacturer should consider 
 in setting the required design life. In our example we have two 
 “levers” we can use to set design life, Rmin, and t0. What does each 
@@ -590,8 +575,7 @@ Rmin
 700h
 Wait untila took to
 do inspection/maintenance
-or replacement
-\n\n21
+or replacement 21
 Another formula… -
 We have
 = -
@@ -614,8 +598,7 @@ CAN
 Calculate
 RELIABILITY given An
 Arbitrary
-Failure Rate Ch
-\n\n22
+Failure Rate Ch 22
 From this we see quite trivially that constant λ (as in the 
 case of the exponential distribution) implies:
 Reliability 
@@ -639,8 +622,7 @@ f(t)
 -
 e
 -xt
-f() = d
-\n\n23
+f() = d 23
 Example
 A machine has the following hazard function:
 4 t = 5.002
@@ -674,8 +656,7 @@ I exp)-10tonda
 ,0+ 3 20
 ·xp(-0
 .2-0. 001t)
-, +> 20
-\n\n24
+, +> 20 24
 (b) Determine the probability density function of the machine’s lifetime:
 f(t)
 = -
@@ -695,8 +676,7 @@ exp
 exp (-0 . 001t -0 .2)
 ,
 +
-> 200
-\n\n25
+> 200 25
 ↓
 rate of
 /
@@ -705,8 +685,7 @@ Marianence
 Went
 IfP
 ↓/
-discontinuity
-\n\n\n\n![Image](../images/16_Hazard_Functions_p25_i24.png)\n\n26
+discontinuity 26
 (c) Find the mean time to failure:
 Mr= metf=RHdt
 =
@@ -720,8 +699,7 @@ exp(-0 , 002t)d+
 - 4)) + 1000 exp(-0.4)
 =
 835
-.2h/,
-\n\n27
+.2h/, 27
 Non-constant failure rate systems
 • Many systems may not be appropriately characterized by a constant failure rate 
 • In such cases, the most commonly assumed hazard function follows a power-law 
@@ -748,8 +726,7 @@ weibull
 modulus
 conmos
 the
-sharpe
-\n\n28
+sharpe 28
 Power law hazard function
 1
 1.5
@@ -797,8 +774,7 @@ B < 1
 DECREASING
 ↓(f)
 "
-11
-\n\n29
+11 29
 Weibull distribution
 *
 is
@@ -838,8 +814,7 @@ S
 , X30
 O
 ,
-X < 0
-\n\n30
+X < 0 30
 Weibull distribution
 (exponential)
 A 13
@@ -854,10 +829,13 @@ M
 = 2 , 5 = 0,6
 i
 17 X
-10
-\n\nReading
+10 Reading
 31
 Chapter 3.5.1 and 4.8 of Carlton and Devore, Probability 
 with Applications in Engineering, Science, and 
 Technology, 2nd ed., 2017
-\n\n
+
+
+## System Integration
+
+Modeling the hazard function, $\lambda(t)$, for the RCUAV requires understanding how 3D-printed materials fatigue over time. Unlike metal, plastics may exhibit an accelerated 'wear-out' phase due to cyclic loading on the layer lines. This hazard function will directly drive the state transitions in your reliability models.

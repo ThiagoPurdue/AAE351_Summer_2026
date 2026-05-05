@@ -1,8 +1,11 @@
+# System Reliability
+
+## Core Principles of System Reliability
+
 # 17 System Reliability
 
 System Reliability
-AAE35103
-\n\n\n\n![Image](../images/17_System_Reliability_p1_i1.png)\n\n\n\n![Image](../images/17_System_Reliability_p1_i2.png)\n\nIntroduction
+AAE35103 Introduction
 2
 Reliability is one of the core performance measures for any 
 system under study
@@ -27,8 +30,7 @@ OF
 -
 Magnitude Higher
 ---------------
-·
-\n\n\n\n![Image](../images/17_System_Reliability_p2_i3.png)\n\n\n\n![Image](../images/17_System_Reliability_p2_i4.jpeg)\n\nBasic system models
+· Basic system models
 3
 Most systems are composed of many subsystems, each of which can be composed of hundreds or thousands of 
 components
@@ -41,8 +43,7 @@ Usually, a system’s functional and physical decompositions are used to help co
 block diagram. 
 We utilize this structure to compute system level reliability performance in terms of the component and 
 subsystem reliabilities
-We will use basic probability concepts to explore the basic structures, series and parallel systems
-\n\n\n\n![Image](../images/17_System_Reliability_p3_i5.png)\n\nSeries system
+We will use basic probability concepts to explore the basic structures, series and parallel systems Series system
 4
 R1
 R2
@@ -81,8 +82,7 @@ denote lifetime
 of
 the
 series
-system.
-\n\n\n\n![Image](../images/17_System_Reliability_p4_i6.png)\n\nSeries system
+system. Series system
 5
 The
 system reliability
@@ -114,8 +114,7 @@ P(TN > +)
 . Rz(t)
 ...
 Rw(t)
-= Ri
-\n\nParallel system
+= Ri Parallel system
 6
 R1
 R2
@@ -132,8 +131,7 @@ function
 R()
 = P(T > t)
 = P)the system's lifetime
-exceeds + (
-\n\nParallel system
+exceeds + ( Parallel system
 7
 = P) at
 least
@@ -163,8 +161,7 @@ P(T ,
 .
 ... [1
 - RNH)]
-= 0- [0-Ri(t)
-\n\nExample 01
+= 0- [0-Ri(t) Example 01
 8
 R1
 R2
@@ -192,8 +189,7 @@ Ri
 ~0
 . 974
 (i = 1
-... 4)
-\n\nExample 02
+... 4) Example 02
 9
 Consider three independently operating devices, each with lifetime exponentially distributed with mean 100 
 hours and a failure rate " = 0.01/hour. Find the system reliability function if:
@@ -218,8 +214,7 @@ R(t)
 (1
 - exp(
 - 0
-. 01 +))3
-\n\nExample 02
+. 01 +))3 Example 02
 10
 (c) Sketch the reliability functions:·
 -----
@@ -231,8 +226,7 @@ t
 100
 100
 300
-400
-\n\nExample 02
+400 Example 02
 11
 (d) Find the probability that the system’s lifetime exceeds 100 hours (i.e., the expected lifetime of a single 
 component):
@@ -255,8 +249,7 @@ Rp(100)
 =
 0
 . 7974
-(74 %)
-\n\nExample 03
+(74 %) Example 03
 12
 R1
 R2
@@ -280,8 +273,7 @@ R (H)
 = R, (t)
 . Rz(t)
 + Rs(t)
-- R . C)Rz()Ry(t)
-\n\nExample 03
+- R . C)Rz()Ry(t) Example 03
 13
 If the components have $! % = exp(−0.01%) and mean lifetime of 100 hours (same as last example), write the 
 reliability function and find the reliability at the mean lifetime:
@@ -313,8 +305,7 @@ R (100)
 =
 0
 . 4534(45
-, 3% )
-\n\nExample 04
+, 3% ) Example 04
 14
 R1
 R2
@@ -341,8 +332,7 @@ exp(-0
 .003t)
 Rez(t) = exp(x2t)
 = exp)
-- 0 .0001t)
-\n\nExample 04
+- 0 .0001t) Example 04
 15
 R(t)
 = P- (
@@ -359,8 +349,7 @@ n
 - exp(-0
 ,00st))()
 - exp(
-- 0. 000+))]
-\n\nExample 04
+- 0. 000+))] Example 04
 16
 (b) Compute the reliability of the system for the first 1000 hours:
 R11000
@@ -369,10 +358,13 @@ R11000
 =
 0
 . 94020
-Eit
-\n\nReading
+Eit Reading
 17
 Chapter 4.8 of Carlton and Devore, Probability with 
 Applications in Engineering, Science, and Technology, 2nd 
 ed., 2017
-\n\n
+
+
+## System Integration
+
+The culmination of the RCUAV reliability analysis is combining component-level data into a system-level Markov Chain model. Using MATLAB, you will simulate the vehicle's state transitions over its 100-flight lifecycle, proving to stakeholders that the fully integrated, 3D-printed architecture meets all safety and performance requirements.

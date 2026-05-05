@@ -1,9 +1,12 @@
+# Concept Generation and Selection
+
+## Core Principles of Concept Generation and Selection
+
 # 05 Concept Generation and Selection
 
 Concept Generation and 
 Selection
-AAE35103
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p1_i1.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p1_i2.png)\n\nPurpose
+AAE35103 Purpose
 2
 • Generating system concepts
 oWhat does the system look like? What is the overall arrangement? Where 
@@ -14,8 +17,7 @@ and weight
 oDo not want to miss very promising concepts
 oCannot address a large number of concepts in detail
 oWith little to no analysis, want to select most promising concepts for further 
-development and comparison
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p2_i3.png)\n\nPurpose
+development and comparison Purpose
 3
 • Will discuss two approaches in some detail
 oBrainstorming
@@ -29,8 +31,7 @@ oWeighted objectives for concept selection
 > GENERATION+ SELECTION
 IREAD
 CLAUSING
-TEXT & BrightSPACE)
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p3_i4.png)\n\nBrainstorming
+TEXT & BrightSPACE) Brainstorming
 4
 • Most widely known creative design method
 • Generate large number of ideas
@@ -47,8 +48,7 @@ A
 Friend who
 isNoT Part ofThe
 Course
-.
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p4_i5.png)\n\nBrainstorming
+. Brainstorming
 5
 • Start with a problem statement or question.
 • Take, for example, the firefighting vehicle student project from Spring 
@@ -60,8 +60,7 @@ MakeSure
 your questions fit your
 MISSION STATEMENT ,
 CONOPS and
-REQUIREMENTS
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p5_i6.png)\n\nBrainstorming
+REQUIREMENTS Brainstorming
 6
 • Allow each member to write down / sketch ideas
 oConsider doing this individually before the group meeting
@@ -78,15 +77,13 @@ sketches
 , only few words
 , as
 needed
-·
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p6_i7.png)\n\nBrainstorming rules
+· Brainstorming rules
 7
 1. No criticism during the session
 2. A large quantity of ideas is wanted
 3. Seemingly crazy ideas are welcome
 4. Present ideas briefly and concisely
-5. Try to combine and improve on the ideas of others
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p7_i8.png)\n\nOther concept generation methods
+5. Try to combine and improve on the ideas of others Other concept generation methods
 8
 1) Morphological charts
 oUseful for concept generation
@@ -101,8 +98,7 @@ or subsystem
 MORE
 STRUCTURED
 THAN
-BRAINSTORMING
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p8_i9.png)\n\nMorphological chart Example
+BRAINSTORMING Morphological chart Example
 9
 CAIRCRAFT)
 iSTTTO
@@ -117,19 +113,15 @@ I
 Pick one option for
 Each
 now to suggest a
-concept.
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p9_i10.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p9_i11.jpeg)\n\nConcept generation outcomes example
+concept. Concept generation outcomes example
 (Firefighting Vehicles, Spring 2022)
 10
 AAE451
-Em
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p10_i12.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p10_i13.jpeg)\n\nConcept generation outcomes example
+Em Concept generation outcomes example
 (Firefighting Vehicles, Spring 2022)
-11
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p11_i14.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p11_i15.jpeg)\n\nConcept generation outcomes example
+11 Concept generation outcomes example
 (Firefighting Vehicles, Spring 2022)
-12
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p12_i16.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p12_i17.jpeg)\n\nCommon dysfunctions  during concept 
+12 Common dysfunctions  during concept 
 generation
 13
 • Consideration of only one or two alternatives, often proposed by most assertive members of 
@@ -139,8 +131,7 @@ unrelated products
 • Involvement of only one or two people in the process, resulting in lack of confidence and 
 commitment by the rest of the team
 • Ineffective integration of promising partial solutions
-• Failure to consider entire categories of solutions
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p13_i18.png)\n\nStructured approaches reduce the 
+• Failure to consider entire categories of solutions Structured approaches reduce the 
 likelihood of costly problems
 14
 • Encourages gathering of information from disparate information sources
@@ -150,8 +141,7 @@ likelihood of costly problems
 KEEP In mind THE
 cost
 Of
-Centification
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p14_i19.png)\n\nPugh’s Method
+Centification Pugh’s Method
 15
 • Combines features of concept generation and selection
 o Named after Stuart Pugh
@@ -166,8 +156,7 @@ brainstorming)
 E TEAM
 OWNERSHIP
 Of
-FINAL CONCEPT.
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p15_i20.png)\n\nPugh’s Method
+FINAL CONCEPT. Pugh’s Method
 16
 • Ten steps
 oIt may take several hours in multiple sessions with breaks between sessions
@@ -183,8 +172,7 @@ FOR COMPLEX SYSTEMS
 -
 -
 SUBSYSTEMS TEND To BE
-FAST
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p16_i21.png)\n\nPugh’s method
+FAST Pugh’s method
 17
 2. Form the matrix
 CONCEPTS
@@ -238,8 +226,7 @@ S
 i
 J
 baseline
-concept to benchmarch/compare against
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p17_i22.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p17_i23.jpeg)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p17_i24.jpeg)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p17_i25.jpeg)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p17_i26.jpeg)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p17_i27.jpeg)\n\nPugh’s Method
+concept to benchmarch/compare against Pugh’s Method
 18
 3. Clarify concepts
 oShare individual concepts with rest of team
@@ -253,8 +240,7 @@ Describe configuration
 and technologies
 ~
 or
-spacecraft /subsystem
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p18_i28.png)\n\nPugh’s Method
+spacecraft /subsystem Pugh’s Method
 19
 5. Run the matrix
 oUse “+”, “-” and “S” scale to compare each concept to the Datum concept
@@ -274,8 +260,7 @@ USE ENGINEERING JUDGMENT
 DON'T
 OVERTHINK
 AND
-SPEND Too LONG
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p19_i29.png)\n\nPugh’s Method
+SPEND Too LONG Pugh’s Method
 20
 6. Evaluate ratings
 oAdd totals for each concept’s “+”, “-” and “S” separately
@@ -289,8 +274,7 @@ This
 Forces the team to improve
 on
 concepts
-with ideas.
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p20_i30.png)\n\nPugh’s Method
+with ideas. Pugh’s Method
 21
 8.
 Choose new Datum and run matrix again
@@ -323,8 +307,7 @@ CONCESUS
 ON
 ROMINANT
 CONCEPTS
-.
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p21_i31.png)\n\nComments about Pugh’s Method
+. Comments about Pugh’s Method
 22
 • Pugh’s method is used in many engineering design settings but is 
 comparatively uncommon in aircraft/spacecraft design.
@@ -342,8 +325,7 @@ STUDIES
 to
 SELECT
 BEST
-CONCEPT .
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p22_i32.png)\n\nOther concept selection methods
+CONCEPT . Other concept selection methods
 23
 2) Weighted objectives
 oDetermine objectives concept needs to satisfy
@@ -353,8 +335,7 @@ oScore each concept against each objective
 § This can introduce “dubious arithmetic.”
 oTop-rated concepts are likely the most promising
 § Weighted objectives are not a rigorous trade study E
-NOT QUANTITATIVE !
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p23_i33.png)\n\nWeighted objectives evaluation matrix 
+NOT QUANTITATIVE ! Weighted objectives evaluation matrix 
 example
 24
 DEFINE
@@ -373,14 +354,12 @@ Z1.8
 RANK On
 BaselT&
 Score
-= Zweights score
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p24_i34.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p24_i35.png)\n\nConcept selection outcomes example
+= Zweights score Concept selection outcomes example
 (student firefighting vehicles, spring 2022)
 25
 ↑
 most promissing
-DATUM
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p25_i36.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p25_i37.jpeg)\n\nConcept selection outcomes example
+DATUM Concept selection outcomes example
 (student firefighting vehicles, spring 2022)
 26
 Consider
@@ -390,20 +369,16 @@ IMAGES
 -
 ↳TAKE
 FORWARD For
-ANALYSIS
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p26_i38.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p26_i39.jpeg)\n\nConcept selection outcomes example
+ANALYSIS Concept selection outcomes example
 (student firefighting vehicles, spring 2022)
 27
-S
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p27_i40.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p27_i41.jpeg)\n\nConcept selection outcomes example
+S Concept selection outcomes example
 (student firefighting vehicles, spring 2022)
 28
-!
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p28_i42.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p28_i43.jpeg)\n\nConcept selection outcomes example
+! Concept selection outcomes example
 (student firefighting vehicles, spring 2022)
 29
-Y
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p29_i44.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p29_i45.jpeg)\n\nIn summary
+Y In summary
 30
 • A large number of concepts are needed
 • We need a process that
@@ -419,21 +394,21 @@ divergent process
 • Don’t overemphasize numbers!
 • Do be aware of how product / system attributes combine
 Source: ESD33 lecture notes 2007
-F
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p30_i46.png)\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p30_i47.png)\n\nReading
+F Reading
+31
+“Selecting a Winning Concept” by Clausen 
+(available on the class Brightspace webpage) Reading
+31
+“Selecting a Winning Concept” by Clausen 
+(available on the class Brightspace webpage) Reading
+31
+“Selecting a Winning Concept” by Clausen 
+(available on the class Brightspace webpage) Reading
 31
 “Selecting a Winning Concept” by Clausen 
 (available on the class Brightspace webpage)
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p31_i48.png)\n\nReading
-31
-“Selecting a Winning Concept” by Clausen 
-(available on the class Brightspace webpage)
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p32_i49.png)\n\nReading
-31
-“Selecting a Winning Concept” by Clausen 
-(available on the class Brightspace webpage)
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p33_i50.png)\n\nReading
-31
-“Selecting a Winning Concept” by Clausen 
-(available on the class Brightspace webpage)
-\n\n\n\n![Image](../images/05_Concept_Generation_and_Selection_p34_i51.png)\n\n
+
+
+## System Integration
+
+When generating concepts for the RCUAV, the choice between Electric and Hybrid propulsion directly impacts the vehicle's mass fraction. Because 3D-printed structures typically have lower strength-to-weight ratios than composites, your concept selection must aggressively trade off propulsion weight against structural infill density using formal decision matrices.

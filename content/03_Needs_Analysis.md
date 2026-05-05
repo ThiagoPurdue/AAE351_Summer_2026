@@ -1,8 +1,11 @@
+# Needs Analysis
+
+## Core Principles of Needs Analysis
+
 # 03 Needs Analysis
 
 Needs Analysis
-AAE35103
-\n\n\n\n![Image](../images/03_Needs_Analysis_p1_i1.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p1_i2.png)\n\nNeeds Analysis:
+AAE35103 Needs Analysis:
 2
 - Ensure the system
 is
@@ -45,8 +48,7 @@ need
 > Autonomy need
 · TECHNOLOGICAL-DriVEN -
 NEW TECH DILIVES An
-A
-\n\n\n\n![Image](../images/03_Needs_Analysis_p2_i3.png)\n\nNeeds Analysis Phase
+A Needs Analysis Phase
 3
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 stablish
@@ -65,8 +67,7 @@ Identified NEED
 And To
 MEET
 EFFECTIVENESS
-TANGETS
-\n\n\n\n![Image](../images/03_Needs_Analysis_p3_i4.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p3_i5.jpeg)\n\nNeeds Analysis Phase
+TANGETS Needs Analysis Phase
 4
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 ↳Devint the need
@@ -86,8 +87,7 @@ This
 For
 2nd Concept of Operations
 (CONOPS) b
-YOUR PROJECT
-\n\n\n\n![Image](../images/03_Needs_Analysis_p4_i6.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p4_i7.jpeg)\n\nMission Statements
+YOUR PROJECT Mission Statements
 5
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 • 1st step in requirements analysis
@@ -116,8 +116,7 @@ assess
 mission
 ⑳,
 SUB-SYSTEM
-LEVEL
-\n\n\n\n![Image](../images/03_Needs_Analysis_p5_i8.png)\n\nElements of mission statements
+LEVEL Elements of mission statements
 6
 Brief description of the product capabilities with key stakeholder 
 benefits
@@ -130,8 +129,7 @@ An affordable, reliable attack vehicle to enhance Air Force operations
 •
 (We can probably conclude that it will be an airplane, but not necessarily manned or 
 unmanned or a fighter or a bomber)
-KEY PART !!!
-\n\n\n\n![Image](../images/03_Needs_Analysis_p6_i9.png)\n\nElements of mission statements
+KEY PART !!! Elements of mission statements
 7
 • Key business goals
 o Cost, time, quality
@@ -163,8 +161,7 @@ you put in
 the
 mission statement
 ↳Purchase and users; manufacturing operations,
-service operations...
-\n\n\n\n![Image](../images/03_Needs_Analysis_p7_i10.png)\n\nSpacecraft Example 
+service operations... Spacecraft Example 
 8
 https://www.esa.int/Science_Exploration/Space_Science/Anatomy_of_a_spacecraft
 &
@@ -174,8 +171,7 @@ Goo
 SPECIFIC -
 >
 Looks
-Like a requirement.
-\n\n\n\n![Image](../images/03_Needs_Analysis_p8_i11.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p8_i12.jpeg)\n\n\n\n![Image](../images/03_Needs_Analysis_p8_i13.png)\n\nSpacecraft Example 
+Like a requirement. Spacecraft Example 
 9
 https://www.esa.int/Science_Exploration/Space_Science/Anatomy_of_a_spacecraft
 THESE Anew't mission statements
@@ -183,10 +179,8 @@ RATHER EXAMPLES
 OF
 REQUIREMENTS
 -NEED TO DE
-SPECIFIC FOR THOSE
-\n\n\n\n![Image](../images/03_Needs_Analysis_p9_i14.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p9_i15.jpeg)\n\n\n\n![Image](../images/03_Needs_Analysis_p9_i16.png)\n\nFirefighting aircraft system (student project)
-10
-\n\n\n\n![Image](../images/03_Needs_Analysis_p10_i17.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p10_i18.jpeg)\n\nConcept of Operations (CONOPS)
+SPECIFIC FOR THOSE Firefighting aircraft system (student project)
+10 Concept of Operations (CONOPS)
 11
 Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020 
 CONOPS “describes how the system will be operated during life-cycle 
@@ -195,8 +189,7 @@ phases to meet stakeholder expectations” (NASA SP-2007-6105)
 • Understand system goals from an operational perspective
 • Basis for subsequent system definition
 ·Think about telling a story of"n day in the life of your system"
-NOT JUST THE MISSION Profile !
-\n\n\n\n![Image](../images/03_Needs_Analysis_p11_i19.png)\n\nCONOPS
+NOT JUST THE MISSION Profile ! CONOPS
 ·
 CONTENT
 INCLUDE
@@ -222,8 +215,7 @@ Your
 opentron will
 USE
 YOUR
-SYSTEM
-\n\nCONOPS : The ballistic missile defense System
+SYSTEM CONOPS : The ballistic missile defense System
 12
 Source: www.mda.mil
 Show the major steps in the process !
@@ -231,15 +223,13 @@ Show the major steps in the process !
 TO
 Project
 .
-YOUR
-\n\n\n\n![Image](../images/03_Needs_Analysis_p13_i20.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p13_i21.jpeg)\n\nFireSat Operational Concept
+YOUR FireSat Operational Concept
 13
 shows
 Integration
 AND
 PROVIDES
-r BIG-PICTURE"
-\n\n\n\n![Image](../images/03_Needs_Analysis_p14_i22.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p14_i23.jpeg)\n\nCONOPS: Aircraft design mission profile
+r BIG-PICTURE" CONOPS: Aircraft design mission profile
 14
 Source: Nicolai
 ONLY
@@ -249,14 +239,16 @@ Strow
 GROUND
 AND
 T-O .
-Activities.
-\n\n\n\n![Image](../images/03_Needs_Analysis_p15_i24.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p15_i25.jpeg)\n\nCONOPS : Firefighting aircraft system 
+Activities. CONOPS : Firefighting aircraft system 
 15
 ANOTHER
 GOOD
-ETAMPLE !!!
-\n\n\n\n![Image](../images/03_Needs_Analysis_p16_i26.png)\n\n\n\n![Image](../images/03_Needs_Analysis_p16_i27.jpeg)\n\nReading
+ETAMPLE !!! Reading
 16
 Chapter 5 of Kossiakoff et al., Systems Engineering Principles 
 and Practice, Third ed., Wiley, 2020
-\n\n\n\n![Image](../images/03_Needs_Analysis_p17_i28.png)\n\n
+
+
+## System Integration
+
+For the Regional Cargo UAV, stakeholder needs encompass not only the payload (50kg) and range (200km), but also the specific operational realities of a 3D-printed airframe. Needs analysis must capture the requirement for modular printability and material anisotropy. These needs will be formalized in the MATLAB Requirements Toolbox as the authoritative source of truth.

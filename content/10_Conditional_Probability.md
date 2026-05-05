@@ -1,8 +1,11 @@
+# Conditional Probability
+
+## Core Principles of Conditional Probability
+
 # 10 Conditional Probability
 
 Conditional Probability
-AAE35103
-\n\n\n\n![Image](../images/10_Conditional_Probability_p1_i1.png)\n\n\n\n![Image](../images/10_Conditional_Probability_p1_i2.png)\n\nThe probabilistic mindset is different from traditional, 
+AAE35103 The probabilistic mindset is different from traditional, 
 say physics or engineering, deterministic mindsets
 2
 Probabilistic mindset
@@ -35,8 +38,7 @@ output
 is
 distributed
 SYSTEM
-SAMEInputs Diferent output
-\n\n\n\n![Image](../images/10_Conditional_Probability_p2_i3.png)\n\nSome vocabulary
+SAMEInputs Diferent output Some vocabulary
 3
 Sample space
 Event
@@ -86,8 +88,7 @@ the dice roll .
 ,
 or
 3
-or 5
-\n\n\n\n![Image](../images/10_Conditional_Probability_p3_i4.png)\n\nExample: roll a six-sided dice; observe number of 
+or 5 Example: roll a six-sided dice; observe number of 
 dots on side facing upward
 4
 1) Sample space? (all possible outcomes)
@@ -101,8 +102,7 @@ dots on side facing upward
 42
 , 4
 , 63
-[1 . 43
-\n\n\n\n![Image](../images/10_Conditional_Probability_p4_i5.jpeg)\n\n\n\n![Image](../images/10_Conditional_Probability_p4_i6.png)\n\nWhy is all this relevant? Seems kind of basic
+[1 . 43 Why is all this relevant? Seems kind of basic
 5
 Defining the sample space and its outcomes are key elements of the solution of 
 any probability problem
@@ -111,8 +111,7 @@ experiment
 To address the problem, it is important to carefully define the experiment and 
 derive the sample space
 Getting it right is important to gain an intuition about the problem, selecting the 
-right mathematical tools, and a major step towards solving it
-\n\n\n\n![Image](../images/10_Conditional_Probability_p5_i7.png)\n\nA probabilistic model is a mathematical description 
+right mathematical tools, and a major step towards solving it A probabilistic model is a mathematical description 
 of an uncertain phenomenon
 6
 Experiment
@@ -146,15 +145,13 @@ G
 OUTCOMES
 OUTCOMES
 P(B) =1=
-OUTCOMES
-\n\n\n\n![Image](../images/10_Conditional_Probability_p6_i8.png)\n\nLet’s think about aerospace examples
+OUTCOMES Let’s think about aerospace examples
 7
 95% of objects shown are non-
 functional spacecraft
 Damage to spacecraft 
 from orbital debris
-Figures: NASA image - NASA Orbital Debris Program Office
-\n\n\n\n![Image](../images/10_Conditional_Probability_p7_i9.jpeg)\n\n\n\n![Image](../images/10_Conditional_Probability_p7_i10.jpeg)\n\n\n\n![Image](../images/10_Conditional_Probability_p7_i11.jpeg)\n\n\n\n![Image](../images/10_Conditional_Probability_p7_i12.png)\n\nLet’s think about aerospace examples
+Figures: NASA image - NASA Orbital Debris Program Office Let’s think about aerospace examples
 8
 LET'S
 TAKE
@@ -206,8 +203,7 @@ spacecraft
 of colision
 you could minimize
 theCross-sectional
-area (rotate
-\n\n\n\n![Image](../images/10_Conditional_Probability_p8_i13.png)\n\nMany experiments in probability have an 
+area (rotate Many experiments in probability have an 
 intrinsic sequential character, such as a 
 mission to the Moon…
 9
@@ -238,8 +234,7 @@ HAPPENING
 SEQUENTIALLY
 THE
 LAST
-ONE .
-\n\n\n\n![Image](../images/10_Conditional_Probability_p9_i14.png)\n\n\n\n![Image](../images/10_Conditional_Probability_p9_i15.png)\n\n… or simple dice rolling
+ONE . … or simple dice rolling
 10
 Example: roll a 4-sided dice twice
 Sample space of this experiment: 
@@ -274,8 +269,7 @@ j
 =
 outcome
 of
-Second roll
-\n\n\n\n![Image](../images/10_Conditional_Probability_p10_i16.jpeg)\n\n\n\n![Image](../images/10_Conditional_Probability_p10_i17.png)\n\nThe entire theory of probability (theorems that will 
+Second roll The entire theory of probability (theorems that will 
 follow) is built on just three axioms
 11
 What is an axiom?
@@ -287,8 +281,7 @@ Consider
 self-evident
 truth
 NEED
-no proof
-\n\n\n\n![Image](../images/10_Conditional_Probability_p11_i18.png)\n\nThe entire theory of probability (theorems that will 
+no proof The entire theory of probability (theorems that will 
 follow) is built on just three axioms
 12
 The three axioms:
@@ -316,8 +309,7 @@ AUB
 PLAUB)
 =
 P(A) +
-P(B)
-\n\n\n\n![Image](../images/10_Conditional_Probability_p12_i19.png)\n\nTHE
+P(B) THE
 DISCRETE
 PROBABILITY
 LAW
@@ -378,8 +370,7 @@ used
 to
 create this
 law ? ADDI
--
-\n\nNotation
+- Notation
 14
 More precise notation
 Simpler, abbreviated notation
@@ -426,8 +417,7 @@ ASB
 :
 A
 is
-m B
-\n\n\n\n![Image](../images/10_Conditional_Probability_p14_i20.png)\n\nLet’s use the axioms to make some useful 
+m B Let’s use the axioms to make some useful 
 observations
 15
 (1)
@@ -474,8 +464,7 @@ P(A) + P(π) = P(s)
 =>
 P(A)
 = 1 - P(A)
--
-\n\n\n\n![Image](../images/10_Conditional_Probability_p15_i21.png)\n\nLet’s use the axioms to make some useful 
+- Let’s use the axioms to make some useful 
 observations
 16
 (2)
@@ -509,8 +498,7 @@ DiSJOINT
 PA)
 30
 SINCE D)120
-(non negative) = P(A) = P(B)
-\n\n\n\n![Image](../images/10_Conditional_Probability_p16_i22.png)\n\nLet’s use the axioms to make some useful 
+(non negative) = P(A) = P(B) Let’s use the axioms to make some useful 
 observations
 17
 (3)
@@ -554,8 +542,7 @@ A OR B
 All
 "B11
 OVERLAPY
-Y P(A1B)
-\n\n\n\n![Image](../images/10_Conditional_Probability_p17_i23.png)\n\nSome observations get to be called laws
+Y P(A1B) Some observations get to be called laws
 18
 The discrete uniform probability law lets us solve the dice problems (and some more useful 
 problems too!)
@@ -588,8 +575,7 @@ A
 , them
 P(A)
 = 2/10
-= As
-\n\n\n\n![Image](../images/10_Conditional_Probability_p18_i24.png)\n\nSome Roll a pair of 4-sided dice. 
+= As Some Roll a pair of 4-sided dice. 
 Assume the dice are “fair” get to be called laws
 20
 What is the sample space of this experiment? Draw it as a 2-D grid 
@@ -617,8 +603,7 @@ SPACE
 has 16
 Possible
 OUTCOMES
-Plai ,jhete
-\n\n\n\n![Image](../images/10_Conditional_Probability_p19_i25.png)\n\nSome Roll a pair of 4-sided dice. 
+Plai ,jhete Some Roll a pair of 4-sided dice. 
 Assume the dice are “fair” get to be called laws
 19
 What is the probability that the sum of the rolls is even?
@@ -645,8 +630,7 @@ P([i + j
 = even])
 = = 1
 25
-2
-\n\n\n\n![Image](../images/10_Conditional_Probability_p20_i26.png)\n\nSome Roll a pair of 4-sided dice. 
+2 Some Roll a pair of 4-sided dice. 
 Assume the dice are “fair” get to be called laws
 21
 What is the probability that the first roll is equal to the second? 
@@ -670,8 +654,7 @@ Show this event on the 2-D grid sample space
 First D4
 Second D4
 P([i =j)) =t
--
-\n\n\n\n![Image](../images/10_Conditional_Probability_p21_i27.png)\n\nSome Roll a pair of 4-sided dice. 
+- Some Roll a pair of 4-sided dice. 
 Assume the dice are “fair” get to be called laws
 22
 What is the probability that at least one roll is equal to 4? 
@@ -695,8 +678,7 @@ Show this event on the 2-D grid sample space
 First D4
 Second D4
 P(i = 4Vj = 4y)
-=
-\n\n\n\n![Image](../images/10_Conditional_Probability_p22_i28.png)\n\n23
+= 23
 So far, we’ve learned how to answer questions like “What is the 
 probability of rolling a 4?” and “What is the probability of rolling an odd 
 number?”
@@ -716,8 +698,7 @@ an
 example
 of
 CONDITIONAL
-PROBABILITY ?
-\n\n24
+PROBABILITY ? 24
 We need the concept of conditional probability to answer these questions
 Let’s start by remembering how we defined P(A) in the first place
 “amount of Nutella in S” = 1… because of which axiom?
@@ -728,8 +709,7 @@ P(A) = "amount  of  Nutella  in  A"
 S
 A
 B
-NORMALIZATION
-\n\n25
+NORMALIZATION 25
 S
 A
 B
@@ -744,8 +724,7 @@ P(A , GIVEN Bl = ADA)
 P(B)
 a
 -
--
-\n\n26
+- 26
 We need a way to calculate P(A|B) for all possible situations
 Our Nutella diagram was easy because A was a subset of B:
 What about the more general case, like this?
@@ -756,8 +735,7 @@ B
 S
 A
 B
-And
-\n\n27
+And 27
 S
 A
 B
@@ -774,8 +752,7 @@ PAIB)=
 AB)Probabilitya
 B
 VERY
-IMPORTANT !
-\n\n28
+IMPORTANT ! 28
 Conditional probability allows us to reason about the outcome of an experiment given partial 
 information
 What is the probability that I get a “2” rolling a fair six-sided die?
@@ -787,8 +764,7 @@ letter is a “t”?
 What is the probability that a Purdue student can derive Bernoulli’s equation?
 Conditional probability: What is the probability that a Purdue student can derive Bernoulli’s 
 equation given that the student is in AAE?
-!
-\n\n\n\n![Image](../images/10_Conditional_Probability_p28_i29.png)\n\n29
+! 29
 S
 A
 B
@@ -806,8 +782,7 @@ What is P(A|A)?
 -
 &
 P(AIA)-
-B =
-\n\n\n\n![Image](../images/10_Conditional_Probability_p29_i30.png)\n\n30
+B = 30
 S
 A
 B
@@ -837,8 +812,7 @@ S
 of
 S given A
 corred is
-guaranteed
-\n\n\n\n![Image](../images/10_Conditional_Probability_p30_i31.png)\n\n31
+guaranteed 31
 S
 A
 B
@@ -867,10 +841,13 @@ normalization
 =
 A
 =
-P(A)
-\n\n\n\n![Image](../images/10_Conditional_Probability_p31_i32.png)\n\nReading
+P(A) Reading
 32
 Chapter 1.1-1.4 of Carlton and Devore, Probability with 
 Applications in Engineering, Science, and Technology, 2nd 
 ed., 2017
-\n\n
+
+
+## System Integration
+
+In the context of the RCUAV, conditional probability helps us understand cascading failures. For instance, what is the probability of a structural failure *given* that a layer adhesion defect occurred during printing? These conditional relationships will inform the transition rates in your final Markov Chain reliability models.

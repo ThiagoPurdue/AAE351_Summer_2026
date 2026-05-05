@@ -1,9 +1,12 @@
+# Introduction to Reliability
+
+## Core Principles of Introduction to Reliability
+
 # 15 Introduction to Reliability
 
 Introduction to 
 Reliability
-AAE35103
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p1_i1.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p1_i2.png)\n\nObjectives and Outline
+AAE35103 Objectives and Outline
 2
 • Provide a solid conceptual 
 understanding of reliability, 
@@ -24,8 +27,7 @@ Characterizing the failure process: four
 related probability functions
 •
 Failure rate models
-!
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p2_i3.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p2_i4.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p2_i5.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p2_i6.png)\n\nR(t) = Pr TF > t
+! R(t) = Pr TF > t
 (
 ) =1−F(t)
 F(t) = P TF ≤t
@@ -69,8 +71,7 @@ survivor) function
 function of TF (or 
 simply failure pdf)
 4. Hazard function (or 
-failure rate)
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p3_i7.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p3_i8.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p3_i9.png)\n\nWhat is reliability?
+failure rate) What is reliability?
 4
 Your definition
 repeatability
@@ -87,8 +88,7 @@ a system performs
 with respect to
 specified
 criteria
-.
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p4_i10.png)\n\nWhat is reliability?
+. What is reliability?
 5
 Reliability is the probability that an item (component, subsystem, or 
 system) or process operates properly for a speciﬁed amount of time 
@@ -101,8 +101,7 @@ of
 EXTRA
 words ,
 important but obscure the
-definition
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p5_i11.png)\n\nWhat is reliability?
+definition What is reliability?
 6
 A stripped-down version
 RELIABILITY
@@ -119,8 +118,7 @@ a
 specified
 amount
 of
-time.
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p6_i12.png)\n\nWhat is reliability?
+time. What is reliability?
 7
 So, for any given system, the primary parameter of interest is
 T
@@ -147,10 +145,8 @@ is
 a
 continuous random
 variable
-on [0 , 0]
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p7_i13.png)\n\nWhat is reliability?
-8
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p8_i14.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p8_i15.png)\n\nWhat is reliability?
+on [0 , 0] What is reliability?
+8 What is reliability?
 9
 Definition
 Let T denote the lifetime of some system. The reliability function of T (or of the 
@@ -175,8 +171,7 @@ RH)
 is
 sometimes
 called
-the survival function of T.
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p9_i16.png)\n\nIntuitively, what should a reliability curve look like?
+the survival function of T. Intuitively, what should a reliability curve look like?
 10
 R(t)
 Time
@@ -191,8 +186,7 @@ Goes to
 In the
 /Erowith
 beginning
-t=0
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p10_i17.png)\n\nHow does the cdf F(t) look like?
+t=0 How does the cdf F(t) look like?
 11
 the
 pdf
@@ -210,25 +204,21 @@ found by integrating from
 O tot :
 I F(t)
 1) F(t)↳
-O
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p11_i18.png)\n\nAnd, since we have R(t) = 1 – F(t):
+O And, since we have R(t) = 1 – F(t):
 12
 R(t)
 Time
-Use our equation for R(t) and plot examples of points for R(0), R(t>>1), and R(t ~ medium)
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p12_i19.png)\n\nHow can we calculate reliability?
+Use our equation for R(t) and plot examples of points for R(0), R(t>>1), and R(t ~ medium) How can we calculate reliability?
 13
 F(t) = P(T(t)
 R(t)
 = 1 - F(t)
 = fuldu
 = 1- Fulda
-=Tofuldu
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p13_i20.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p13_i21.png)\n\nHow about going from reliability to the pdf?
+=Tofuldu How about going from reliability to the pdf?
 14
 From the cdf of the time to failure to its pdf:
-(t) ==
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p14_i22.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p14_i23.png)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p14_i24.png)\n\nHow might we characterize reliability for a real component?
+(t) == How might we characterize reliability for a real component?
 15
 USING
 NUMBERS
@@ -263,8 +253,7 @@ the
 UNCERTAINTY of
 the
 mean time to
-failure
-\n\nMean time to failure (mttf) is popular…
+failure Mean time to failure (mttf) is popular…
 16
 • Relatively easy to determine on a component basis based on test for components that are run continuously or 
 for fixed periods of time
@@ -285,8 +274,7 @@ CURVE
 -
 >
 APPLICATIONS
-OF R()
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p16_i25.jpeg)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p16_i26.jpeg)\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p16_i27.jpeg)\n\nThe mean time to failure or mttf is simply the expectation on T:
+OF R() The mean time to failure or mttf is simply the expectation on T:
 17
 I
 is
@@ -303,8 +291,7 @@ mttF
 = (t
 . f()dt
 recall :
-E(x) = (*xx(x
-\n\nWe’d like to be able to calculate mttf directly from R(t):
+E(x) = (*xx(x We’d like to be able to calculate mttf directly from R(t):
 18
 metF
 = (tridt
@@ -327,8 +314,7 @@ O
 +
 0
 + )R()dt
-= foRIH de
-\n\nRelation to failure rates
+= foRIH de Relation to failure rates
 19
 A lot of reliability calculations assume that the failure rate is constant
 It makes calculations simple (mttf fully characterizes the distribution)
@@ -348,8 +334,7 @@ described by
 defects
 7
 Weiball distribution
-Flaws
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p19_i28.png)\n\n20
+Flaws 20
 Reminder : Exponential random variables
 x
 fX
@@ -385,8 +370,7 @@ lower X
 -
 EVENTS
 2x =0 . 5
-SPREAD our
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p20_i29.png)\n\nNow consider an exponential random variable where x is the time to failure
+SPREAD our Now consider an exponential random variable where x is the time to failure
 21
 T
 them,
@@ -404,8 +388,7 @@ where
 X
 =
 failure
-rate
-\n\nMean time to failure : example
+rate Mean time to failure : example
 22
 The time to failure of a light bulb is modeled with the following pdf:
 f (t) = 0.002e−0.002t        t ≥0
@@ -432,8 +415,7 @@ rather
 short
 compared to
 light bulbs
-NOWADAYS.
-\n\n\n\n![Image](../images/15_Introduction_to_Reliability_p22_i30.png)\n\n2. What is the reliability for the light bulb at mttf?
+NOWADAYS. 2. What is the reliability for the light bulb at mttf?
 23
 R(t)
 =
@@ -487,8 +469,7 @@ low
 => zenis
 are
 spread
-out
-\n\n3. What is the median life of the light bulb?
+out 3. What is the median life of the light bulb?
 24
 medium
 life
@@ -505,10 +486,13 @@ e
 - port
 = In (0 . 5)
 =
-346 . h -
-\n\nReading
+346 . h - Reading
 25
 Chapter 4.8 of Carlton and Devore, Probability with 
 Applications in Engineering, Science, and Technology, 2nd 
 ed., 2017
-\n\n
+
+
+## System Integration
+
+The core of the RCUAV's safety case lies in reliability engineering. You must synthesize the failure rates of traditional COTS components with the specific failure modes of 3D-printed structures (e.g., delamination). This synthesis forms the basis of the FMEA you will develop for the final Digital Thread.
