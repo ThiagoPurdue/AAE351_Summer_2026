@@ -4,10 +4,7 @@ chapters:
   - file: content/01_Introduction_to_aerospace_system_design 2
   - file: content/02_The_system_developement_process
   - file: content/03_Needs_Analysis
-  - file: content/04_Requirements_Analysis (1)
-  - file: content/04_Requirements_Analysis
-  - file: content/05_Concept_Generation_and_Selection
-  - file: content/06_Functional_Analysis
+  - file: content/04_Functional_and_Concept_Synthesis
   - file: content/07_Evaluation_and_Selection
   - file: content/08_Risk_Management
   - file: content/09_Introduction_to_Probability
