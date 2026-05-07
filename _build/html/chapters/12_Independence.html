@@ -1,0 +1,1936 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>12 Independence &#8212; AAE351: Aerospace Systems Design - Summer 2026</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/12_Independence';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="13 Discrete Random Variables and Distributions" href="13_Discrete_Random_Variables_and_Distributions.html" />
+    <link rel="prev" title="11 Unconditional Probability" href="11_Unconditional_Probability.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AAE351: Aerospace Systems Design - Summer 2026</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AAE351
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_Introduction_to_aerospace_system_design%202.html">01 Introduction to aerospace system design 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_The_system_developement_process.html">02 The system developement process</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="03_Needs_Analysis.html">03 Needs Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis%20%281%29.html">04 Requirements Analysis (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis.html">04 Requirements Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="05_Concept_Generation_and_Selection.html">05 Concept Generation and Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_Functional_Analysis.html">06 Functional Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="07_Evaluation_and_Selection.html">07 Evaluation and Selection</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="08_Risk_Management.html">08 Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_Introduction_to_Probability.html">09 Introduction to Probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_Conditional_Probability.html">10 Conditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="11_Unconditional_Probability.html">11 Unconditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">12 Independence</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="13_Discrete_Random_Variables_and_Distributions.html">13 Discrete Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="14_Continuous_Random_Variables_and_Distributions.html">14 Continuous Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="15_Introduction_to_Reliability.html">15 Introduction to Reliability</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="16_Hazard_Functions.html">16 Hazard Functions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="17_System_Reliability.html">17 System Reliability</a></li>
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/12_Independence.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>12 Independence</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">12 Independence</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independence-aae35103-n-n-n-nimage-n-n-n-nimage-n-n2-in-probability-independence-means-that-knowing-something-about-a-tells-me-nothing-about-b-dependence-means-that-if-i-know-a-happened-bs-probability-must-also-change-lets-think-about-some-examples-first-example-independent-dependent-two-consecutive-tosses-of-a-fair-coin-two-consecutive-tosses-of-a-biased-coin-four-year-graduation-and-sat-scores-cancer-and-smoking-sequential-assignment-of-rooms-in-a-dorm">Independence
+AAE35103
+\n\n\n\n\n\n\n\n\n\n2
+In probability, independence means that knowing something about A, tells me
+nothing about B
+Dependence means that if I know A happened, B’s probability must also change
+Let’s think about some examples first:
+Example
+Independent
+Dependent
+Two consecutive tosses of a fair coin
+Two consecutive tosses of a biased coin
+Four year graduation and SAT scores
+Cancer and smoking
+Sequential assignment of rooms in a dorm</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#z-n-n3-in-probability-independence-means-that-knowing-something-about-a-tells-us-nothing-about-b-in-math-two-events-a-and-b-are-independent-if-dependence-means-that-if-we-know-a-happened-bs-probability-must-also-change-and-we-use-our-definition-of-conditional-probability-to-update-p-b-p-a-b">~
+~
+~
+~
+z
+\n\n3
+In probability, independence means that knowing something about  A tells us nothing about B.
+In math, two events, A and B, are independent if
+Dependence means that if we know A happened, B’s probability must also change.
+And we use our definition of conditional probability to update P(B):
+P(A(B)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a-pa-p-bia-p-p-p-p-a-p-bia">P(A)
+PA
+P (BIA)= P
+.P P
+P(A)
+P(BIA)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-b-independence-n-n4-the-definition-of-conditional-probability-gives-us-another-convenient-way-of-checking-for-independence-two-events-a-and-b-are-independent-if-and-only-if-p-anb">P(B)
+~INDEPENDENCE
+\n\n4
+The definition of conditional probability gives us another convenient way of checking for independence:
+Two events A and B are independent if and only if
+P (AnB)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a-p-b-we-can-show-this-by-using-the-multiplication-rule-p-anb-p-aib-p-b">P(A)
+. P(B)
+We
+can
+show this by using the
+multiplication
+rule
+P (AnB)
+= P(AIB)
+. P(B)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a-p-b-if-and-only-if-p-aib-p-a-this-is-equivalent-to-our-definition-of-independence-the-multiplication-properly-is-satisfied-if-p-r-a-so-we-can-add-to-our-definition-that-a-and-b-are-also-independent-if-either-p-a-o-or-p-b-0-n-n5-what-does-that-have-to-do-with-disjoint-and-mutually-exclusive-3-dependence-and-independence-definition-when-a-andb-have-no-outcomes-in-common-they-are-said-to-be-disjoint-ormutually-exclusives-events-written-as-ald-0-denotes">=
+P(A)
+.
+P(B)
+/IF
+AND
+ONLY If P(AIB)
+= P(A))
+This
+is
+equivalent
+to
+our
+definition
+of
+INDEPENDENCE
+.
+the multiplication properly is
+satisfied
+if
+P(r) = a
+So
+,
+we
+can
+add
+to
+our
+definition that
+A and B
+are
+also independent
+IF
+EITHER
+P(A) = O
+or
+P(B) = 0
+\n\n5
+What does that have to do with “disjoint” and “mutually exclusive”?
+3
+DEPENDENCE
+AND INDEPENDENCE
+Definition :
+When
+A
+andB
+have
+no
+outcomes
+in
+common
+, they
+are
+said to
+be disjoint
+ormutually
+exclusives
+events.
+WRITTEN
+as
+Ald
+= 0 ;
+↓
+denotes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mull-or-emptyy-event-no-outcomes-in-that-event-n-n6-a-zero-overlap-s-a-b-mutually-exclusive-a-b-p-a-0-p-b-here-p-a-b-0-p-a-hance-by-definition-these-events-are-dependent-6-complete-overlap-us-here-p-aibl-1-0-ab-mence-they-are-dependent-because-they-don-t-satisfy-plaibl-ya-n-n7-n-n8-n-n9-consider-an-experiment-consisting-of-two-successive-rolls-of-a-4-sided-fair-die-ai-first-roll-result-in-i-bj-second-roll-result-in-j-i-1-4-and-j-1-4-are-ai-and-bj-independent-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2-s-s-ans-p-ai-4-16-al-p-bj-4-p-ai-1-bj-1-15-ai-and-bj-are-p-ain3j-plai-p-bj-independent-n-n10-consider-an-experiment-consisting-of-two-successive-rolls-of-a-4-sided-fair-die-event-a-first-roll-is-1-b-sum-of-the-two-rolls-is-5-are-a-and-b-independent-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2">·mull’or” EMPTYY
+event
+(No
+Outcomes
+In that
+event.
+\n\n6
+a)
+ZERO
+OVERLAP
+S
+~
+A , B mutually exclusive
+*
+A
+B
+P(A) &gt; 0
+,
+P(B)(@
+HERE
+P(A/B)
+=0
+P(A)
+HANCE
+, BY
+DEFINITION
+THESE
+EVENTS
+ARE
+DEPENDENT
+6) Complete
+OVERLAP
+uS
+HERE
+P(AIBL
+= 1
+.0
+AB
+MENCE THEY ARE
+DEPENDENT
+BECAUSE
+THEY
+DON’T
+satisfy
+PlAIBl = YA
+\n\n7
+\n\n8
+\n\n9
+Consider an experiment consisting of two successive rolls of a 4-sided fair die.
+Ai = {first roll result in i}, Bj = {second roll result in j}, i = 1,…,4 and j = 1, …,4
+Are Ai and Bj independent?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2
+S
+S
+Ans
+P(Ai)
+= 4
+16
+Al
+P(Bj)
+= 4
+P(Ai 1 Bj) = 1
+15
+↓Ai
+and Bj
+are
+P(Ain3j) = PlAi)
+. P(Bj)=
+INDEPENDENT
+\n\n10
+Consider an experiment consisting of two successive rolls of a 4-sided fair die
+Event A = {first roll is 1}, B = {sum of the two rolls is 5}
+Are A and B independent?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#and-pland-t-16-s-p1anb-p-a-plb-i-16-a-and-b-are-independent-n-n11-you-throw-two-fair-6-sided-dice-one-green-and-one-red-and-observe-the-numbers-decide-which-of-the-following-pairs-of-events-are-independent-a-the-sum-is-5-b-the-red-die-shows-a-2-n-n12-you-throw-two-fair-6-sided-dice-one-green-and-one-red-and-observe-the-numbers-decide-which-of-the-following-pairs-of-events-are-independent-a-the-sum-is-5-b-the-red-die-is-even-a-1-4-2-3-3-2-14-113">And
+PLAND) = t
+16
+S
+P1ANB( = P(A)
+. PLB)
+= I
+16
+A
+AND B are
+INDEPENDENT
+\n\n11
+You throw two fair 6-sided dice, one green and one red, and observe the numbers.
+Decide which of the following pairs of events are independent
+A: the sum is 5
+B: the red die shows a 2
+\n\n12
+You throw two fair 6-sided dice, one green and one red, and observe the numbers.
+Decide which of the following pairs of events are independent
+A: the sum is 5
+B: the red die is even
+A = &amp;
+(1 , 4)
+, (2, 3)
+, (3
+, 2)
+, 14
+, 113</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#outcomes-141-2-3-4-5-63-p-a">18
+outcomes
+· 141
+. 2 , 3
+, 4
+, 5
+, 63
+P(A)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a1b-2-1-4-3-2-36-p-b-36-i-p-a-p-b-independent-t-n-n13-independence-of-more-than-two-events-definition-events-an-an-are-mutually-independent-if-for-every-k-2-3-n-and-every-subset-of-molices-in-is-is-sk-them-9-ai-1-az-1-aik-p-a-p-aiz-plain-n-n14-solar-panel-array-from-example-1-39-from-c-d-each-cell-has-a-90-chance-of-surviving-a-mission-what-is-the-chance-that-the-system-in-a-will-be-fully-operational-at-the-end-7-7">4136
+P(A1B) = 2
+(1 , 4) , (3 , 2)
+36
+P(B) =
+36
+I
+P(A)
+. P(B)
+↓.
+INDEPENDENT
+T
+\n\n13
+Independence of more than two events
+DEFINITION
+:
+Events
+An
+, …., An
+are mutually independent
+If
+for
+every
+K
+= 2 , 3,
+…
+N
+and every
+subset
+of molices
+in
+, is
+, is …, sk
+them
+9) Ai 1 Az 1 … Aik)
+= P(A)
+. P(Aiz)
+… PlAin)
+\n\n14
+Solar panel array from Example 1.39 from C&amp;D
+Each cell has a 90% chance of surviving a mission
+What is the chance that the system in (a) will be fully operational
+at the end?
+7
+7
+↳</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sub-system-zell-we-want-to-find-p-system-functional-given-a-i">S
+(
+sub-system
+Zell
+WE
+WANT
+TO
+Find
+P(SYSTEM
+FUNCTIONAL) given
+A i</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#op-string-functional-p-a-1a21az">↑(Op
+String Functional)
+= P((A-1A21Az))</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a1-p-az-p-az">P(A1)
+. P(Az)
+. P(Az)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-bottom-p-top-0-729-4-3-6-and-p-system-functional-p-botntor">0 . 9
+=.729
+P
+(BOTTOM) = P(TOP)
+= 0 . 729
+4
+3
+6
+/AND
+P (SYSTEM
+FUNCTIONAL)
+= P) BOTNTOr)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n16-solar-panel-array-from-example-1-39-from-c-d-each-cell-has-a-90-chance-of-surviving-a-mission-what-is-the-chance-that-the-system-in-b-will-be-fully-operational-at-the-end-n-n-n-nimage-n-n17-p-sys-functional-p-auan-n-aas-n-a">0 . 93
++
+0 .93
+-0
+.927
+\n\n16
+Solar panel array from Example 1.39 from C&amp;D
+Each cell has a 90% chance of surviving a mission
+What is the chance that the system in (b) will be fully operational at
+the end?
+\n\n\n\n\n\n17
+P(SYS
+FUNCTIONAL) = P)(AUAn)n(AAs)n/A]</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#col-1-ed-2-p-a1uau">COL . 1
+ed. 2
+P (A1UAu)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#independente">Independente</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">0 . 9</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#d-a-uay-p-azuas-p-a3uas-0-99-events-a1vay-cal-as-as-as-are-independent-p-sys-forc-0-9-10-9-0-9">0
+. 92 =
+991,
+D(A + UAy)
+= P(AzUAs)
+= P(A3UAs) =
+0 . 99
+EVENTS
+(A1VAy) ,
+CAL , As)
+, (As
+, As)
+are
+Independent .
+P (sys
+.
+Forc.)
+= (0
+. 9)
+. 10
+. 9)
+. (0 . 9)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">0 .993 =
+0
+.97</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#col1survives-a1-a4-col2survives-a2-a5-col3survives-a3-a6-arraysurvives-col1survives-col2survives-col3survives-end-function-arraysurvives-number-of-runs-rand">col1Survives=(A1 || A4);
+col2Survives=(A2 || A5);
+col3Survives=(A3 || A6);
+arraySurvives=(col1Survives &amp;&amp; col2Survives &amp;&amp; col3Survives);
+end %function arraySurvives
+-number of
+runs
+RAND</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="independence">
+<h1>12 Independence<a class="headerlink" href="#independence" title="Permalink to this heading">#</a></h1>
+<section id="independence-aae35103-n-n-n-nimage-n-n-n-nimage-n-n2-in-probability-independence-means-that-knowing-something-about-a-tells-me-nothing-about-b-dependence-means-that-if-i-know-a-happened-bs-probability-must-also-change-lets-think-about-some-examples-first-example-independent-dependent-two-consecutive-tosses-of-a-fair-coin-two-consecutive-tosses-of-a-biased-coin-four-year-graduation-and-sat-scores-cancer-and-smoking-sequential-assignment-of-rooms-in-a-dorm">
+<h2>Independence
+AAE35103
+\n\n\n\n<img alt="Image" src="../_images/12_Independence_p1_i1.png" />\n\n\n\n<img alt="Image" src="../_images/12_Independence_p1_i2.png" />\n\n2
+In probability, independence means that knowing something about A, tells me
+nothing about B
+Dependence means that if I know A happened, B’s probability must also change
+Let’s think about some examples first:
+Example
+Independent
+Dependent
+Two consecutive tosses of a fair coin
+Two consecutive tosses of a biased coin
+Four year graduation and SAT scores
+Cancer and smoking
+Sequential assignment of rooms in a dorm<a class="headerlink" href="#independence-aae35103-n-n-n-nimage-n-n-n-nimage-n-n2-in-probability-independence-means-that-knowing-something-about-a-tells-me-nothing-about-b-dependence-means-that-if-i-know-a-happened-bs-probability-must-also-change-lets-think-about-some-examples-first-example-independent-dependent-two-consecutive-tosses-of-a-fair-coin-two-consecutive-tosses-of-a-biased-coin-four-year-graduation-and-sat-scores-cancer-and-smoking-sequential-assignment-of-rooms-in-a-dorm" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="z-n-n3-in-probability-independence-means-that-knowing-something-about-a-tells-us-nothing-about-b-in-math-two-events-a-and-b-are-independent-if-dependence-means-that-if-we-know-a-happened-bs-probability-must-also-change-and-we-use-our-definition-of-conditional-probability-to-update-p-b-p-a-b">
+<h1>~
+~
+~
+~
+z
+\n\n3
+In probability, independence means that knowing something about  A tells us nothing about B.
+In math, two events, A and B, are independent if
+Dependence means that if we know A happened, B’s probability must also change.
+And we use our definition of conditional probability to update P(B):
+P(A(B)<a class="headerlink" href="#z-n-n3-in-probability-independence-means-that-knowing-something-about-a-tells-us-nothing-about-b-in-math-two-events-a-and-b-are-independent-if-dependence-means-that-if-we-know-a-happened-bs-probability-must-also-change-and-we-use-our-definition-of-conditional-probability-to-update-p-b-p-a-b" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-a-pa-p-bia-p-p-p-p-a-p-bia">
+<h1>P(A)
+PA
+P (BIA)= P
+.P P
+P(A)
+P(BIA)<a class="headerlink" href="#p-a-pa-p-bia-p-p-p-p-a-p-bia" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-b-independence-n-n4-the-definition-of-conditional-probability-gives-us-another-convenient-way-of-checking-for-independence-two-events-a-and-b-are-independent-if-and-only-if-p-anb">
+<h1>P(B)
+~INDEPENDENCE
+\n\n4
+The definition of conditional probability gives us another convenient way of checking for independence:
+Two events A and B are independent if and only if
+P (AnB)<a class="headerlink" href="#p-b-independence-n-n4-the-definition-of-conditional-probability-gives-us-another-convenient-way-of-checking-for-independence-two-events-a-and-b-are-independent-if-and-only-if-p-anb" title="Permalink to this heading">#</a></h1>
+<section id="p-a-p-b-we-can-show-this-by-using-the-multiplication-rule-p-anb-p-aib-p-b">
+<h2>P(A)
+. P(B)
+We
+can
+show this by using the
+multiplication
+rule
+P (AnB)
+= P(AIB)
+. P(B)<a class="headerlink" href="#p-a-p-b-we-can-show-this-by-using-the-multiplication-rule-p-anb-p-aib-p-b" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="p-a-p-b-if-and-only-if-p-aib-p-a-this-is-equivalent-to-our-definition-of-independence-the-multiplication-properly-is-satisfied-if-p-r-a-so-we-can-add-to-our-definition-that-a-and-b-are-also-independent-if-either-p-a-o-or-p-b-0-n-n5-what-does-that-have-to-do-with-disjoint-and-mutually-exclusive-3-dependence-and-independence-definition-when-a-andb-have-no-outcomes-in-common-they-are-said-to-be-disjoint-ormutually-exclusives-events-written-as-ald-0-denotes">
+<h2>=
+P(A)
+.
+P(B)
+/IF
+AND
+ONLY If P(AIB)
+= P(A))
+This
+is
+equivalent
+to
+our
+definition
+of
+INDEPENDENCE
+.
+the multiplication properly is
+satisfied
+if
+P(r) = a
+So
+,
+we
+can
+add
+to
+our
+definition that
+A and B
+are
+also independent
+IF
+EITHER
+P(A) = O
+or
+P(B) = 0
+\n\n5
+What does that have to do with “disjoint” and “mutually exclusive”?
+3
+DEPENDENCE
+AND INDEPENDENCE
+Definition :
+When
+A
+andB
+have
+no
+outcomes
+in
+common
+, they
+are
+said to
+be disjoint
+ormutually
+exclusives
+events.
+WRITTEN
+as
+Ald
+= 0 ;
+↓
+denotes<a class="headerlink" href="#p-a-p-b-if-and-only-if-p-aib-p-a-this-is-equivalent-to-our-definition-of-independence-the-multiplication-properly-is-satisfied-if-p-r-a-so-we-can-add-to-our-definition-that-a-and-b-are-also-independent-if-either-p-a-o-or-p-b-0-n-n5-what-does-that-have-to-do-with-disjoint-and-mutually-exclusive-3-dependence-and-independence-definition-when-a-andb-have-no-outcomes-in-common-they-are-said-to-be-disjoint-ormutually-exclusives-events-written-as-ald-0-denotes" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="mull-or-emptyy-event-no-outcomes-in-that-event-n-n6-a-zero-overlap-s-a-b-mutually-exclusive-a-b-p-a-0-p-b-here-p-a-b-0-p-a-hance-by-definition-these-events-are-dependent-6-complete-overlap-us-here-p-aibl-1-0-ab-mence-they-are-dependent-because-they-don-t-satisfy-plaibl-ya-n-n7-n-n8-n-n9-consider-an-experiment-consisting-of-two-successive-rolls-of-a-4-sided-fair-die-ai-first-roll-result-in-i-bj-second-roll-result-in-j-i-1-4-and-j-1-4-are-ai-and-bj-independent-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2-s-s-ans-p-ai-4-16-al-p-bj-4-p-ai-1-bj-1-15-ai-and-bj-are-p-ain3j-plai-p-bj-independent-n-n10-consider-an-experiment-consisting-of-two-successive-rolls-of-a-4-sided-fair-die-event-a-first-roll-is-1-b-sum-of-the-two-rolls-is-5-are-a-and-b-independent-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2">
+<h2>·mull’or” EMPTYY
+event
+(No
+Outcomes
+In that
+event.
+\n\n6
+a)
+ZERO
+OVERLAP
+S
+~
+A , B mutually exclusive
+*
+A
+B
+P(A) &gt; 0
+,
+P(B)(&#64;
+HERE
+P(A/B)
+=0
+P(A)
+HANCE
+, BY
+DEFINITION
+THESE
+EVENTS
+ARE
+DEPENDENT
+6) Complete
+OVERLAP
+uS
+HERE
+P(AIBL
+= 1
+.0
+AB
+MENCE THEY ARE
+DEPENDENT
+BECAUSE
+THEY
+DON’T
+satisfy
+PlAIBl = YA
+\n\n7
+\n\n8
+\n\n9
+Consider an experiment consisting of two successive rolls of a 4-sided fair die.
+Ai = {first roll result in i}, Bj = {second roll result in j}, i = 1,…,4 and j = 1, …,4
+Are Ai and Bj independent?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2
+S
+S
+Ans
+P(Ai)
+= 4
+16
+Al
+P(Bj)
+= 4
+P(Ai 1 Bj) = 1
+15
+↓Ai
+and Bj
+are
+P(Ain3j) = PlAi)
+. P(Bj)=
+INDEPENDENT
+\n\n10
+Consider an experiment consisting of two successive rolls of a 4-sided fair die
+Event A = {first roll is 1}, B = {sum of the two rolls is 5}
+Are A and B independent?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2<a class="headerlink" href="#mull-or-emptyy-event-no-outcomes-in-that-event-n-n6-a-zero-overlap-s-a-b-mutually-exclusive-a-b-p-a-0-p-b-here-p-a-b-0-p-a-hance-by-definition-these-events-are-dependent-6-complete-overlap-us-here-p-aibl-1-0-ab-mence-they-are-dependent-because-they-don-t-satisfy-plaibl-ya-n-n7-n-n8-n-n9-consider-an-experiment-consisting-of-two-successive-rolls-of-a-4-sided-fair-die-ai-first-roll-result-in-i-bj-second-roll-result-in-j-i-1-4-and-j-1-4-are-ai-and-bj-independent-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2-s-s-ans-p-ai-4-16-al-p-bj-4-p-ai-1-bj-1-15-ai-and-bj-are-p-ain3j-plai-p-bj-independent-n-n10-consider-an-experiment-consisting-of-two-successive-rolls-of-a-4-sided-fair-die-event-a-first-roll-is-1-b-sum-of-the-two-rolls-is-5-are-a-and-b-independent-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="and-pland-t-16-s-p1anb-p-a-plb-i-16-a-and-b-are-independent-n-n11-you-throw-two-fair-6-sided-dice-one-green-and-one-red-and-observe-the-numbers-decide-which-of-the-following-pairs-of-events-are-independent-a-the-sum-is-5-b-the-red-die-shows-a-2-n-n12-you-throw-two-fair-6-sided-dice-one-green-and-one-red-and-observe-the-numbers-decide-which-of-the-following-pairs-of-events-are-independent-a-the-sum-is-5-b-the-red-die-is-even-a-1-4-2-3-3-2-14-113">
+<h2>And
+PLAND) = t
+16
+S
+P1ANB( = P(A)
+. PLB)
+= I
+16
+A
+AND B are
+INDEPENDENT
+\n\n11
+You throw two fair 6-sided dice, one green and one red, and observe the numbers.
+Decide which of the following pairs of events are independent
+A: the sum is 5
+B: the red die shows a 2
+\n\n12
+You throw two fair 6-sided dice, one green and one red, and observe the numbers.
+Decide which of the following pairs of events are independent
+A: the sum is 5
+B: the red die is even
+A = &amp;
+(1 , 4)
+, (2, 3)
+, (3
+, 2)
+, 14
+, 113<a class="headerlink" href="#and-pland-t-16-s-p1anb-p-a-plb-i-16-a-and-b-are-independent-n-n11-you-throw-two-fair-6-sided-dice-one-green-and-one-red-and-observe-the-numbers-decide-which-of-the-following-pairs-of-events-are-independent-a-the-sum-is-5-b-the-red-die-shows-a-2-n-n12-you-throw-two-fair-6-sided-dice-one-green-and-one-red-and-observe-the-numbers-decide-which-of-the-following-pairs-of-events-are-independent-a-the-sum-is-5-b-the-red-die-is-even-a-1-4-2-3-3-2-14-113" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>Goutcomes
+B = (1 ., 2)
+, 1 :, 4)
+,
+1 ., 6) 3 + 5X3</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="outcomes-141-2-3-4-5-63-p-a">
+<h1>18
+outcomes
+· 141
+. 2 , 3
+, 4
+, 5
+, 63
+P(A)<a class="headerlink" href="#outcomes-141-2-3-4-5-63-p-a" title="Permalink to this heading">#</a></h1>
+<section id="p-a1b-2-1-4-3-2-36-p-b-36-i-p-a-p-b-independent-t-n-n13-independence-of-more-than-two-events-definition-events-an-an-are-mutually-independent-if-for-every-k-2-3-n-and-every-subset-of-molices-in-is-is-sk-them-9-ai-1-az-1-aik-p-a-p-aiz-plain-n-n14-solar-panel-array-from-example-1-39-from-c-d-each-cell-has-a-90-chance-of-surviving-a-mission-what-is-the-chance-that-the-system-in-a-will-be-fully-operational-at-the-end-7-7">
+<h2>4136
+P(A1B) = 2
+(1 , 4) , (3 , 2)
+36
+P(B) =
+36
+I
+P(A)
+. P(B)
+↓.
+INDEPENDENT
+T
+\n\n13
+Independence of more than two events
+DEFINITION
+:
+Events
+An
+, …., An
+are mutually independent
+If
+for
+every
+K
+= 2 , 3,
+…
+N
+and every
+subset
+of molices
+in
+, is
+, is …, sk
+them
+9) Ai 1 Az 1 … Aik)
+= P(A)
+. P(Aiz)
+… PlAin)
+\n\n14
+Solar panel array from Example 1.39 from C&amp;D
+Each cell has a 90% chance of surviving a mission
+What is the chance that the system in (a) will be fully operational
+at the end?
+7
+7
+↳<a class="headerlink" href="#p-a1b-2-1-4-3-2-36-p-b-36-i-p-a-p-b-independent-t-n-n13-independence-of-more-than-two-events-definition-events-an-an-are-mutually-independent-if-for-every-k-2-3-n-and-every-subset-of-molices-in-is-is-sk-them-9-ai-1-az-1-aik-p-a-p-aiz-plain-n-n14-solar-panel-array-from-example-1-39-from-c-d-each-cell-has-a-90-chance-of-surviving-a-mission-what-is-the-chance-that-the-system-in-a-will-be-fully-operational-at-the-end-7-7" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="s-sub-system-zell-we-want-to-find-p-system-functional-given-a-i">
+<h2>S
+(
+sub-system
+Zell
+WE
+WANT
+TO
+Find
+P(SYSTEM
+FUNCTIONAL) given
+A i<a class="headerlink" href="#s-sub-system-zell-we-want-to-find-p-system-functional-given-a-i" title="Permalink to this heading">#</a></h2>
+<p>EVENT THAT
+CELL i
+Survive
+P(Ai) =
+0 . 9
+Ai
+,
+i = 1,
+.
+.
+. ., 6
+MUTUALLY
+independent
+\n\n\n\n<img alt="Image" src="../_images/12_Independence_p14_i3.png" />\n\n15</p>
+<ul class="simple">
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="op-string-functional-p-a-1a21az">
+<h1>↑(Op
+String Functional)
+= P((A-1A21Az))<a class="headerlink" href="#op-string-functional-p-a-1a21az" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-a1-p-az-p-az">
+<h1>P(A1)
+. P(Az)
+. P(Az)<a class="headerlink" href="#p-a1-p-az-p-az" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-bottom-p-top-0-729-4-3-6-and-p-system-functional-p-botntor">
+<h1>0 . 9
+=.729
+P
+(BOTTOM) = P(TOP)
+= 0 . 729
+4
+3
+6
+/AND
+P (SYSTEM
+FUNCTIONAL)
+= P) BOTNTOr)<a class="headerlink" href="#p-bottom-p-top-0-729-4-3-6-and-p-system-functional-p-botntor" title="Permalink to this heading">#</a></h1>
+<p>P(rot)</p>
+<ul class="simple">
+<li><p>P(top) + RHOP BOT)
+=
+0 . 93</p></li>
+<li></li>
+</ul>
+<section id="n-n16-solar-panel-array-from-example-1-39-from-c-d-each-cell-has-a-90-chance-of-surviving-a-mission-what-is-the-chance-that-the-system-in-b-will-be-fully-operational-at-the-end-n-n-n-nimage-n-n17-p-sys-functional-p-auan-n-aas-n-a">
+<h2>0 . 93
++
+0 .93
+-0
+.927
+\n\n16
+Solar panel array from Example 1.39 from C&amp;D
+Each cell has a 90% chance of surviving a mission
+What is the chance that the system in (b) will be fully operational at
+the end?
+\n\n\n\n<img alt="Image" src="../_images/12_Independence_p16_i4.png" />\n\n17
+P(SYS
+FUNCTIONAL) = P)(AUAn)n(AAs)n/A]<a class="headerlink" href="#n-n16-solar-panel-array-from-example-1-39-from-c-d-each-cell-has-a-90-chance-of-surviving-a-mission-what-is-the-chance-that-the-system-in-b-will-be-fully-operational-at-the-end-n-n-n-nimage-n-n17-p-sys-functional-p-auan-n-aas-n-a" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="col-1-ed-2-p-a1uau">
+<h1>COL . 1
+ed. 2
+P (A1UAu)<a class="headerlink" href="#col-1-ed-2-p-a1uau" title="Permalink to this heading">#</a></h1>
+<p>P(A1)</p>
+<ul class="simple">
+<li><p>P(Ay)</p></li>
+</ul>
+<ul class="simple">
+<li><p>P(AnnA4)</p></li>
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="independente">
+<h1>Independente<a class="headerlink" href="#independente" title="Permalink to this heading">#</a></h1>
+<p>P(A1)</p>
+<ul class="simple">
+<li><p>P(A4)</p></li>
+</ul>
+<ul class="simple">
+<li><p>P(1)
+.P(Ay)
+=
+0 . e</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+<section id="id1">
+<h2>0 . 9<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="d-a-uay-p-azuas-p-a3uas-0-99-events-a1vay-cal-as-as-as-are-independent-p-sys-forc-0-9-10-9-0-9">
+<h1>0
+. 92 =
+991,
+D(A + UAy)
+= P(AzUAs)
+= P(A3UAs) =
+0 . 99
+EVENTS
+(A1VAy) ,
+CAL , As)
+, (As
+, As)
+are
+Independent .
+P (sys
+.
+Forc.)
+= (0
+. 9)
+. 10
+. 9)
+. (0 . 9)<a class="headerlink" href="#d-a-uay-p-azuas-p-a3uas-0-99-events-a1vay-cal-as-as-as-are-independent-p-sys-forc-0-9-10-9-0-9" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2>0 .993 =
+0
+.97<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>\n\n18
+Computer simulation provides us an effective way to estimate probabilities of very complicated events
+o Modern system problem can be too difficult to address analytically
+o Simulations help predict and quantify impact of uncertainty on system behavior and performance
+How to introduce uncertainty in computer simulations?
+o Random number generators
+§ Most software packages have a random number generator
+§ MATLAB à ‘rand’ generates a random number between 0 and 1
+random
+number from
+amiform
+distribution
+(0
+, 1)
+interval
+\n\n19
+Let’s repeat the solar panel array example 1.39 from C&amp;D part (b), but this time use MATLAB
+Each cell has a 90% chance of surviving a mission
+What is the chance that the system in (b) will be fully operational at the end?
+=&gt; MATLAB script on next slides: SolarArray.m
+\n\n\n\n<img alt="Image" src="../_images/12_Independence_p19_i5.png" />\n\n20</p>
+<p>clear variables; close all; clc;</p>
+<p>nTests=100000;
+cellReliability=0.9;
+nSurvived=0;</p>
+<p>for ii=1:nTests</p>
+<p>A1=rand&lt;cellReliability;
+A2=rand&lt;cellReliability;
+A3=rand&lt;cellReliability;
+A4=rand&lt;cellReliability;
+A5=rand&lt;cellReliability;
+A6=rand&lt;cellReliability;
+arraySurvives=testCellArray(A1,A2,A3,A4,A5,A6);
+if arraySurvives
+nSurvived=nSurvived+1;
+end
+end
+ParraySurvives=nSurvived/nTests % probability of system surviving
+function arraySurvives=testCellArray(A1,A2,A3,A4,A5,A6)</p>
+</section>
+<section id="col1survives-a1-a4-col2survives-a2-a5-col3survives-a3-a6-arraysurvives-col1survives-col2survives-col3survives-end-function-arraysurvives-number-of-runs-rand">
+<h2>col1Survives=(A1 || A4);
+col2Survives=(A2 || A5);
+col3Survives=(A3 || A6);
+arraySurvives=(col1Survives &amp;&amp; col2Survives &amp;&amp; col3Survives);
+end %function arraySurvives
+-number of
+runs
+RAND<a class="headerlink" href="#col1survives-a1-a4-col2survives-a2-a5-col3survives-a3-a6-arraysurvives-col1survives-col2survives-col3survives-end-function-arraysurvives-number-of-runs-rand" title="Permalink to this heading">#</a></h2>
+<p>EACH
+CELL
+HAS
+A
+DIFERENT
+RELIABILITY
+Guest
+survivenacity
+\n\n21
+ParraySurvives =
+0.9702
+Running SolarArray.m in MATLAB will print the following to the Command Window:
+Running again gives:
+And again:
+ParraySurvives =
+0.9697
+ParraySurvives =
+0.9708
+v
+EACH
+RUN
+WILL
+SHOW A
+Reset
+~
+v
+\n\nReading
+22
+Chapter 1.5 &amp; 1.6 of Carlton and Devore, Probability with
+Applications in Engineering, Science, and Technology, 2nd
+ed., 2017
+\n\n</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="11_Unconditional_Probability.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">11 Unconditional Probability</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="13_Discrete_Random_Variables_and_Distributions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">13 Discrete Random Variables and Distributions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">12 Independence</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independence-aae35103-n-n-n-nimage-n-n-n-nimage-n-n2-in-probability-independence-means-that-knowing-something-about-a-tells-me-nothing-about-b-dependence-means-that-if-i-know-a-happened-bs-probability-must-also-change-lets-think-about-some-examples-first-example-independent-dependent-two-consecutive-tosses-of-a-fair-coin-two-consecutive-tosses-of-a-biased-coin-four-year-graduation-and-sat-scores-cancer-and-smoking-sequential-assignment-of-rooms-in-a-dorm">Independence
+AAE35103
+\n\n\n\n\n\n\n\n\n\n2
+In probability, independence means that knowing something about A, tells me
+nothing about B
+Dependence means that if I know A happened, B’s probability must also change
+Let’s think about some examples first:
+Example
+Independent
+Dependent
+Two consecutive tosses of a fair coin
+Two consecutive tosses of a biased coin
+Four year graduation and SAT scores
+Cancer and smoking
+Sequential assignment of rooms in a dorm</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#z-n-n3-in-probability-independence-means-that-knowing-something-about-a-tells-us-nothing-about-b-in-math-two-events-a-and-b-are-independent-if-dependence-means-that-if-we-know-a-happened-bs-probability-must-also-change-and-we-use-our-definition-of-conditional-probability-to-update-p-b-p-a-b">~
+~
+~
+~
+z
+\n\n3
+In probability, independence means that knowing something about  A tells us nothing about B.
+In math, two events, A and B, are independent if
+Dependence means that if we know A happened, B’s probability must also change.
+And we use our definition of conditional probability to update P(B):
+P(A(B)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a-pa-p-bia-p-p-p-p-a-p-bia">P(A)
+PA
+P (BIA)= P
+.P P
+P(A)
+P(BIA)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-b-independence-n-n4-the-definition-of-conditional-probability-gives-us-another-convenient-way-of-checking-for-independence-two-events-a-and-b-are-independent-if-and-only-if-p-anb">P(B)
+~INDEPENDENCE
+\n\n4
+The definition of conditional probability gives us another convenient way of checking for independence:
+Two events A and B are independent if and only if
+P (AnB)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a-p-b-we-can-show-this-by-using-the-multiplication-rule-p-anb-p-aib-p-b">P(A)
+. P(B)
+We
+can
+show this by using the
+multiplication
+rule
+P (AnB)
+= P(AIB)
+. P(B)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a-p-b-if-and-only-if-p-aib-p-a-this-is-equivalent-to-our-definition-of-independence-the-multiplication-properly-is-satisfied-if-p-r-a-so-we-can-add-to-our-definition-that-a-and-b-are-also-independent-if-either-p-a-o-or-p-b-0-n-n5-what-does-that-have-to-do-with-disjoint-and-mutually-exclusive-3-dependence-and-independence-definition-when-a-andb-have-no-outcomes-in-common-they-are-said-to-be-disjoint-ormutually-exclusives-events-written-as-ald-0-denotes">=
+P(A)
+.
+P(B)
+/IF
+AND
+ONLY If P(AIB)
+= P(A))
+This
+is
+equivalent
+to
+our
+definition
+of
+INDEPENDENCE
+.
+the multiplication properly is
+satisfied
+if
+P(r) = a
+So
+,
+we
+can
+add
+to
+our
+definition that
+A and B
+are
+also independent
+IF
+EITHER
+P(A) = O
+or
+P(B) = 0
+\n\n5
+What does that have to do with “disjoint” and “mutually exclusive”?
+3
+DEPENDENCE
+AND INDEPENDENCE
+Definition :
+When
+A
+andB
+have
+no
+outcomes
+in
+common
+, they
+are
+said to
+be disjoint
+ormutually
+exclusives
+events.
+WRITTEN
+as
+Ald
+= 0 ;
+↓
+denotes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mull-or-emptyy-event-no-outcomes-in-that-event-n-n6-a-zero-overlap-s-a-b-mutually-exclusive-a-b-p-a-0-p-b-here-p-a-b-0-p-a-hance-by-definition-these-events-are-dependent-6-complete-overlap-us-here-p-aibl-1-0-ab-mence-they-are-dependent-because-they-don-t-satisfy-plaibl-ya-n-n7-n-n8-n-n9-consider-an-experiment-consisting-of-two-successive-rolls-of-a-4-sided-fair-die-ai-first-roll-result-in-i-bj-second-roll-result-in-j-i-1-4-and-j-1-4-are-ai-and-bj-independent-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2-s-s-ans-p-ai-4-16-al-p-bj-4-p-ai-1-bj-1-15-ai-and-bj-are-p-ain3j-plai-p-bj-independent-n-n10-consider-an-experiment-consisting-of-two-successive-rolls-of-a-4-sided-fair-die-event-a-first-roll-is-1-b-sum-of-the-two-rolls-is-5-are-a-and-b-independent-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2">·mull’or” EMPTYY
+event
+(No
+Outcomes
+In that
+event.
+\n\n6
+a)
+ZERO
+OVERLAP
+S
+~
+A , B mutually exclusive
+*
+A
+B
+P(A) &gt; 0
+,
+P(B)(@
+HERE
+P(A/B)
+=0
+P(A)
+HANCE
+, BY
+DEFINITION
+THESE
+EVENTS
+ARE
+DEPENDENT
+6) Complete
+OVERLAP
+uS
+HERE
+P(AIBL
+= 1
+.0
+AB
+MENCE THEY ARE
+DEPENDENT
+BECAUSE
+THEY
+DON’T
+satisfy
+PlAIBl = YA
+\n\n7
+\n\n8
+\n\n9
+Consider an experiment consisting of two successive rolls of a 4-sided fair die.
+Ai = {first roll result in i}, Bj = {second roll result in j}, i = 1,…,4 and j = 1, …,4
+Are Ai and Bj independent?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2
+S
+S
+Ans
+P(Ai)
+= 4
+16
+Al
+P(Bj)
+= 4
+P(Ai 1 Bj) = 1
+15
+↓Ai
+and Bj
+are
+P(Ain3j) = PlAi)
+. P(Bj)=
+INDEPENDENT
+\n\n10
+Consider an experiment consisting of two successive rolls of a 4-sided fair die
+Event A = {first roll is 1}, B = {sum of the two rolls is 5}
+Are A and B independent?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#and-pland-t-16-s-p1anb-p-a-plb-i-16-a-and-b-are-independent-n-n11-you-throw-two-fair-6-sided-dice-one-green-and-one-red-and-observe-the-numbers-decide-which-of-the-following-pairs-of-events-are-independent-a-the-sum-is-5-b-the-red-die-shows-a-2-n-n12-you-throw-two-fair-6-sided-dice-one-green-and-one-red-and-observe-the-numbers-decide-which-of-the-following-pairs-of-events-are-independent-a-the-sum-is-5-b-the-red-die-is-even-a-1-4-2-3-3-2-14-113">And
+PLAND) = t
+16
+S
+P1ANB( = P(A)
+. PLB)
+= I
+16
+A
+AND B are
+INDEPENDENT
+\n\n11
+You throw two fair 6-sided dice, one green and one red, and observe the numbers.
+Decide which of the following pairs of events are independent
+A: the sum is 5
+B: the red die shows a 2
+\n\n12
+You throw two fair 6-sided dice, one green and one red, and observe the numbers.
+Decide which of the following pairs of events are independent
+A: the sum is 5
+B: the red die is even
+A = &amp;
+(1 , 4)
+, (2, 3)
+, (3
+, 2)
+, 14
+, 113</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#outcomes-141-2-3-4-5-63-p-a">18
+outcomes
+· 141
+. 2 , 3
+, 4
+, 5
+, 63
+P(A)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a1b-2-1-4-3-2-36-p-b-36-i-p-a-p-b-independent-t-n-n13-independence-of-more-than-two-events-definition-events-an-an-are-mutually-independent-if-for-every-k-2-3-n-and-every-subset-of-molices-in-is-is-sk-them-9-ai-1-az-1-aik-p-a-p-aiz-plain-n-n14-solar-panel-array-from-example-1-39-from-c-d-each-cell-has-a-90-chance-of-surviving-a-mission-what-is-the-chance-that-the-system-in-a-will-be-fully-operational-at-the-end-7-7">4136
+P(A1B) = 2
+(1 , 4) , (3 , 2)
+36
+P(B) =
+36
+I
+P(A)
+. P(B)
+↓.
+INDEPENDENT
+T
+\n\n13
+Independence of more than two events
+DEFINITION
+:
+Events
+An
+, …., An
+are mutually independent
+If
+for
+every
+K
+= 2 , 3,
+…
+N
+and every
+subset
+of molices
+in
+, is
+, is …, sk
+them
+9) Ai 1 Az 1 … Aik)
+= P(A)
+. P(Aiz)
+… PlAin)
+\n\n14
+Solar panel array from Example 1.39 from C&amp;D
+Each cell has a 90% chance of surviving a mission
+What is the chance that the system in (a) will be fully operational
+at the end?
+7
+7
+↳</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-sub-system-zell-we-want-to-find-p-system-functional-given-a-i">S
+(
+sub-system
+Zell
+WE
+WANT
+TO
+Find
+P(SYSTEM
+FUNCTIONAL) given
+A i</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#op-string-functional-p-a-1a21az">↑(Op
+String Functional)
+= P((A-1A21Az))</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a1-p-az-p-az">P(A1)
+. P(Az)
+. P(Az)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-bottom-p-top-0-729-4-3-6-and-p-system-functional-p-botntor">0 . 9
+=.729
+P
+(BOTTOM) = P(TOP)
+= 0 . 729
+4
+3
+6
+/AND
+P (SYSTEM
+FUNCTIONAL)
+= P) BOTNTOr)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n16-solar-panel-array-from-example-1-39-from-c-d-each-cell-has-a-90-chance-of-surviving-a-mission-what-is-the-chance-that-the-system-in-b-will-be-fully-operational-at-the-end-n-n-n-nimage-n-n17-p-sys-functional-p-auan-n-aas-n-a">0 . 93
++
+0 .93
+-0
+.927
+\n\n16
+Solar panel array from Example 1.39 from C&amp;D
+Each cell has a 90% chance of surviving a mission
+What is the chance that the system in (b) will be fully operational at
+the end?
+\n\n\n\n\n\n17
+P(SYS
+FUNCTIONAL) = P)(AUAn)n(AAs)n/A]</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#col-1-ed-2-p-a1uau">COL . 1
+ed. 2
+P (A1UAu)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#independente">Independente</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">0 . 9</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#d-a-uay-p-azuas-p-a3uas-0-99-events-a1vay-cal-as-as-as-are-independent-p-sys-forc-0-9-10-9-0-9">0
+. 92 =
+991,
+D(A + UAy)
+= P(AzUAs)
+= P(A3UAs) =
+0 . 99
+EVENTS
+(A1VAy) ,
+CAL , As)
+, (As
+, As)
+are
+Independent .
+P (sys
+.
+Forc.)
+= (0
+. 9)
+. 10
+. 9)
+. (0 . 9)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">0 .993 =
+0
+.97</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#col1survives-a1-a4-col2survives-a2-a5-col3survives-a3-a6-arraysurvives-col1survives-col2survives-col3survives-end-function-arraysurvives-number-of-runs-rand">col1Survives=(A1 || A4);
+col2Survives=(A2 || A5);
+col3Survives=(A3 || A6);
+arraySurvives=(col1Survives &amp;&amp; col2Survives &amp;&amp; col3Survives);
+end %function arraySurvives
+-number of
+runs
+RAND</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lead Systems Engineering Instructor
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

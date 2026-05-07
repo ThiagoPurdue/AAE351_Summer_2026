@@ -1,0 +1,2180 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>10 Conditional Probability &#8212; AAE351: Aerospace Systems Design - Summer 2026</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/10_Conditional_Probability';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="11 Unconditional Probability" href="11_Unconditional_Probability.html" />
+    <link rel="prev" title="09 Introduction to Probability" href="09_Introduction_to_Probability.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AAE351: Aerospace Systems Design - Summer 2026</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AAE351
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_Introduction_to_aerospace_system_design%202.html">01 Introduction to aerospace system design 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_The_system_developement_process.html">02 The system developement process</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="03_Needs_Analysis.html">03 Needs Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis%20%281%29.html">04 Requirements Analysis (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis.html">04 Requirements Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="05_Concept_Generation_and_Selection.html">05 Concept Generation and Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_Functional_Analysis.html">06 Functional Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="07_Evaluation_and_Selection.html">07 Evaluation and Selection</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="08_Risk_Management.html">08 Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_Introduction_to_Probability.html">09 Introduction to Probability</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">10 Conditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="11_Unconditional_Probability.html">11 Unconditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="12_Independence.html">12 Independence</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="13_Discrete_Random_Variables_and_Distributions.html">13 Discrete Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="14_Continuous_Random_Variables_and_Distributions.html">14 Continuous Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="15_Introduction_to_Reliability.html">15 Introduction to Reliability</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="16_Hazard_Functions.html">16 Hazard Functions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="17_System_Reliability.html">17 System Reliability</a></li>
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/10_Conditional_Probability.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>10 Conditional Probability</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">10 Conditional Probability</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability-aae35103-n-n-n-nimage-n-n-n-nimage-n-nthe-probabilistic-mindset-is-different-from-traditional-say-physics-or-engineering-deterministic-mindsets-2-probabilistic-mindset-deterministic-mindset-x-y-x-y1-y2-y3-input-output-system-same-in-put">Conditional Probability
+AAE35103
+\n\n\n\n\n\n\n\n\n\nThe probabilistic mindset is different from traditional,
+say physics or engineering, deterministic mindsets
+2
+Probabilistic mindset
+Deterministic mindset
+X
+Y
+X
+Y1
+Y2
+Y3
+INPUT
+OUTPUT
+SYSTEM
+Same
+In Put</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#same-output-but-repeat-mony-many-times">SAME
+OUTPUT
+but, repeat mony
+, many times</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#we-see-patterns-in-the-input-way-the-output-is-distributed-system-sameinputs-diferent-output-n-n-n-nimage-n-nsome-vocabulary-3-sample-space-event-outcome-outcome-sample-space-space-that-contains-all-of-the-possible-outcomes-for-a-given-problem-event-a-e-g-six-sided-dice-11-2-3-4-5-54">=&gt; WE
+SEE
+patterns
+in the
+INPUT
+way
+the
+output
+is
+distributed
+SYSTEM
+SAMEInputs Diferent output
+\n\n\n\n\n\nSome vocabulary
+3
+Sample space
+Event
+Outcome
+OUTCOME
+sample
+·
+SPACE
+-&gt; Space that
+contains
+all
+of
+the
+&amp;
+possible
+outcomes
+for
+a given
+problem
+,
+EVENT A
+e. g .,
+six-sided dice
+:
+11 , 2
+, 3
+, 4
+, 5
+, 54</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-smaller-portion-of-the-sample-spare-e-g-1-3-53od">A
+smaller
+portion
+of
+the
+sample
+spare ,
+e . g., [1, 3 ,53OD</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization-the-probability-of-the-entire-sample-space-is-one-additivity-the-probabilities-of-two-disjoint-events-a-and-b-are-additive-s-p-a-o-b-a-disjont-events-s-1-a-or-b">Normalization: the probability of the entire sample space is one
+Additivity: the probabilities of two disjoint events, A and B, are additive
+S
+P(A) = O
+B
+A
+DISJONT
+Events
+↑(S)
+= 1
+A
+or
+B</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#aub-plaub">AUB
+PLAUB)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-nnotation-14-more-precise-notation-simpler-abbreviated-notation-p-is-the-probability-of-an-event-not-an-outcome-bi-is-the-event-that-consists-of-the-single-outcome-bi-u">\n\nNotation
+14
+More precise notation
+Simpler, abbreviated notation
+P(.) is the probability of an event, not an outcome
+{bi} is the event that consists of the single outcome bi
+U</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#union-a-u-b-m-a-or-b-intersection-amb-in-a-and-b-p-bib-p-bi-p-anb-p-ab-y">union
+A
+U
+B
+:
+m A
+or
+B
+&amp;
+= Intersection
+AMB :
+in A
+and
+B
+P([bib)
+P(bi)
+P(ANB)
+P(AB)
+&amp;
+Y</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#set-a-3-7-9-14-1">SET
+A = [3 , 7
+, 9
+, 14]
+1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#such-that-given-that-a-x-xer-x-ob">such that
+(GIVEN THAT)
+A
+= (x(XER
+, x&gt; ob</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-asb-a-is-m-b-n-n-n-nimage-n-nlets-use-the-axioms-to-make-some-useful-observations-15-1-s-a-b-ab-ab-event-b-sample-space-event-a-p">=
+subset
+ASB
+:
+A
+is
+m B
+\n\n\n\n\n\nLet’s use the axioms to make some useful
+observations
+15
+(1)
+S
+A
+B
+A∩B
+A∩B
+EVENT
+B
+SAMPLE SPACE
+EVENT A
+P()</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a">P(A)
+&amp;
+↑</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-probability-of-not-getting-of-event-event-a-a-a-not-a-also-written-on-a-not-a-4derivation-s-a-and-i-are-disjunt-events-a-p-a-p-p-s-1-p-a-1-p-a">Probability
+Probability
+of not getting
+of
+event
+event A
+A
+[A
+= not A]
+also
+written
+on [A
+= not A]
+4DERIVATION”
+S
+A
+and I
+are disjunt events
+*
+A
+P(A) + P(π) = P(s)
+= 1
+=&gt;
+P(A)
+= 1 - P(A)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-i-j-even-1-25-2-n-n-n-nimage-n-nsome-roll-a-pair-of-4-sided-dice-assume-the-dice-are-fair-get-to-be-called-laws-21-what-is-the-probability-that-the-first-roll-is-equal-to-the-second-show-this-event-on-the-2-d-grid-sample-space-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-first-d4-second-d4-p-i-j-t">P([i + j
+= even])
+= = 1
+25
+2
+\n\n\n\n\n\nSome Roll a pair of 4-sided dice.
+Assume the dice are “fair” get to be called laws
+21
+What is the probability that the first roll is equal to the second?
+Show this event on the 2-D grid sample space
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+First D4
+Second D4
+P([i =j)) =t</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n-n-nimage-n-nsome-roll-a-pair-of-4-sided-dice-assume-the-dice-are-fair-get-to-be-called-laws-22-what-is-the-probability-that-at-least-one-roll-is-equal-to-4-show-this-event-on-the-2-d-grid-sample-space-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-first-d4-second-d4-p-i-4vj-4y">\n\n\n\n\n\nSome Roll a pair of 4-sided dice.
+Assume the dice are “fair” get to be called laws
+22
+What is the probability that at least one roll is equal to 4?
+Show this event on the 2-D grid sample space
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+First D4
+Second D4
+P(i = 4Vj = 4y)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-generally-we-write-and-read-it-as-p-a-given-b-or-the-conditional-probability-that-a-occurs-given-that-b-has-occurred-p-a-given-bl-ada-p-b-a">More generally, we write:
+And read it as “P(A) given B, or the conditional probability that A occurs given that B has occurred”
+P(A , GIVEN Bl = ADA)
+P(B)
+a</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#so-we-can-write-a1b-a1b">So, we can write:
+A1B
+A1B</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-and-b-paib-ab-probabilitya-b-very-important-n-n28-conditional-probability-allows-us-to-reason-about-the-outcome-of-an-experiment-given-partial-information-what-is-the-probability-that-i-get-a-2-rolling-a-fair-six-sided-die-conditional-probability-what-is-the-probability-that-i-get-a-2-rolling-a-fair-six-sided-die-given-that-i-got-an-even-roll-what-is-the-probability-that-the-second-letter-in-a-word-in-the-english-language-is-an-h-conditional-probability-what-is-the-probability-that-the-second-letter-is-an-h-given-that-the-first-letter-is-a-t-what-is-the-probability-that-a-purdue-student-can-derive-bernoullis-equation-conditional-probability-what-is-the-probability-that-a-purdue-student-can-derive-bernoullis-equation-given-that-the-student-is-in-aae-n-n-n-nimage-n-n29-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-lets-check-does-this-definition-work-with-our-original-nutella-problem-what-is-p-a-a">A
+AND B
+PAIB)=
+AB)Probabilitya
+B
+VERY
+IMPORTANT !
+\n\n28
+Conditional probability allows us to reason about the outcome of an experiment given partial
+information
+What is the probability that I get a “2” rolling a fair six-sided die?
+Conditional probability: What is the probability that I get a 2 rolling a fair six-sided die, given that I
+got an even roll?
+What is the probability that the second letter in a word in the English language is an “h”?
+Conditional probability: what is the probability that the second letter is an “h” given that the first
+letter is a “t”?
+What is the probability that a Purdue student can derive Bernoulli’s equation?
+Conditional probability: What is the probability that a Purdue student can derive Bernoulli’s
+equation given that the student is in AAE?
+!
+\n\n\n\n\n\n29
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+Let’s check. Does this definition work with our original Nutella problem?
+What is P(A|A)?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-aia-b-n-n-n-nimage-n-n30-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-how-about-p-s-a-w-risia-ua-a-5">&amp;
+P(AIA)-
+B =
+\n\n\n\n\n\n30
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+How about P(S|A)?
+w
+RISIA)=
+UA =A
+5</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#all-sample-space-a-sub-space-of-s-probability-of-s-given-a-corred-is-guaranteed-n-n-n-nimage-n-n31-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-and-p-a-s-p-ais-pas">ALL
+SAMPLE
+SPACE
+A
+Sub Space
+of
+S
+=&gt; Probability
+of
+S given A
+corred is
+guaranteed
+\n\n\n\n\n\n31
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+And P(A|S)?
+P(AIS)
+= PAS)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overlap-of-a-ands-at-p-s">Overlap
+of
+A
+AndS ?
+“At
+P(s)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization-1">normalization
+= 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a">A</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="conditional-probability">
+<h1>10 Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conditional-probability-aae35103-n-n-n-nimage-n-n-n-nimage-n-nthe-probabilistic-mindset-is-different-from-traditional-say-physics-or-engineering-deterministic-mindsets-2-probabilistic-mindset-deterministic-mindset-x-y-x-y1-y2-y3-input-output-system-same-in-put">
+<h1>Conditional Probability
+AAE35103
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p1_i1.png" />\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p1_i2.png" />\n\nThe probabilistic mindset is different from traditional,
+say physics or engineering, deterministic mindsets
+2
+Probabilistic mindset
+Deterministic mindset
+X
+Y
+X
+Y1
+Y2
+Y3
+INPUT
+OUTPUT
+SYSTEM
+Same
+In Put<a class="headerlink" href="#conditional-probability-aae35103-n-n-n-nimage-n-n-n-nimage-n-nthe-probabilistic-mindset-is-different-from-traditional-say-physics-or-engineering-deterministic-mindsets-2-probabilistic-mindset-deterministic-mindset-x-y-x-y1-y2-y3-input-output-system-same-in-put" title="Permalink to this heading">#</a></h1>
+<section id="same-output-but-repeat-mony-many-times">
+<h2>SAME
+OUTPUT
+but, repeat mony
+, many times<a class="headerlink" href="#same-output-but-repeat-mony-many-times" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="we-see-patterns-in-the-input-way-the-output-is-distributed-system-sameinputs-diferent-output-n-n-n-nimage-n-nsome-vocabulary-3-sample-space-event-outcome-outcome-sample-space-space-that-contains-all-of-the-possible-outcomes-for-a-given-problem-event-a-e-g-six-sided-dice-11-2-3-4-5-54">
+<h2>=&gt; WE
+SEE
+patterns
+in the
+INPUT
+way
+the
+output
+is
+distributed
+SYSTEM
+SAMEInputs Diferent output
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p2_i3.png" />\n\nSome vocabulary
+3
+Sample space
+Event
+Outcome
+OUTCOME
+sample
+·
+SPACE
+-&gt; Space that
+contains
+all
+of
+the
+&amp;
+possible
+outcomes
+for
+a given
+problem
+,
+EVENT A
+e. g .,
+six-sided dice
+:
+11 , 2
+, 3
+, 4
+, 5
+, 54<a class="headerlink" href="#we-see-patterns-in-the-input-way-the-output-is-distributed-system-sameinputs-diferent-output-n-n-n-nimage-n-nsome-vocabulary-3-sample-space-event-outcome-outcome-sample-space-space-that-contains-all-of-the-possible-outcomes-for-a-given-problem-event-a-e-g-six-sided-dice-11-2-3-4-5-54" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="a-smaller-portion-of-the-sample-spare-e-g-1-3-53od">
+<h2>A
+smaller
+portion
+of
+the
+sample
+spare ,
+e . g., [1, 3 ,53OD<a class="headerlink" href="#a-smaller-portion-of-the-sample-spare-e-g-1-3-53od" title="Permalink to this heading">#</a></h2>
+<p>e . g .. Individual
+outomes
+of
+the dice roll .
+1
+,
+or
+3
+or 5
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p3_i4.png" />\n\nExample: roll a six-sided dice; observe number of
+dots on side facing upward
+4</p>
+<ol class="arabic simple">
+<li><p>Sample space? (all possible outcomes)</p></li>
+<li><p>Event E1 = even roll (subset of sample space) =&gt; E1 = {?}</p></li>
+<li><p>Event E2 = roll is a square of an integer =&gt; E2 = {?}
+[1 , 2
+, 3
+, 4
+, 5
+, 63
+42
+, 4
+, 63
+[1 . 43
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p4_i5.jpeg" />\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p4_i6.png" />\n\nWhy is all this relevant? Seems kind of basic
+5
+Defining the sample space and its outcomes are key elements of the solution of
+any probability problem
+Probability problems arise from a practical situation that can be modeled as an
+experiment
+To address the problem, it is important to carefully define the experiment and
+derive the sample space
+Getting it right is important to gain an intuition about the problem, selecting the
+right mathematical tools, and a major step towards solving it
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p5_i7.png" />\n\nA probabilistic model is a mathematical description
+of an uncertain phenomenon
+6
+Experiment
+Sample space
+Event A
+Event B
+Probability
+P(A)
+P(B)
+Events
+Example:
+roll a dice
+A = {x | x = square of an integer}
+B = {x | x &gt; 2}
+What is P(A)? and P(B)?
+43
+Y3
+EVENT
+end EVENT
+DES .
+SPACE
+5 1 , 2 ,3 , 4
+,5 ,6)
+A = G
+1
+, 44 B = 33, 4 ,5 ,5)
+P(A)==
+G
+2
+4
+OUTCOMES
+OUTCOMES
+P(B) =1=
+OUTCOMES
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p6_i8.png" />\n\nLet’s think about aerospace examples
+7
+95% of objects shown are non-
+functional spacecraft
+Damage to spacecraft
+from orbital debris
+Figures: NASA image - NASA Orbital Debris Program Office
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p7_i9.jpeg" />\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p7_i10.jpeg" />\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p7_i11.jpeg" />\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p7_i12.png" />\n\nLet’s think about aerospace examples
+8
+LET’S
+TAKE
+,
+FOR
+EXAMPLE ,
+TRADING
+SPACE
+DEBNIS
+AND
+Preventing
+COLLISIONS .
+Cross
+2
+SECTION
+of
+POSSIBLE
+SPACEAE
+Positions
+⑦F
+IOI
+DEBRIS
+orB
+(SAMPLE
+SPACE)
+I WE
+Don’t
+Know
+The exent
+would
+be
+if the
+WHERE
+THE
+DEBAIS
+IS
+Within
+ITS
+piece
+of debris
+is
+within
+=&gt;To
+minimize theProbability
+the
+area
+of the
+spacecraft
+of colision
+you could minimize
+theCross-sectional
+area (rotate
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p8_i13.png" />\n\nMany experiments in probability have an
+intrinsic sequential character, such as a
+mission to the Moon…
+9
+<a class="reference external" href="https://en.wikipedia.org/wiki/Flight_dynamics_%28spacecraft%29">https://en.wikipedia.org/wiki/Flight_dynamics_(spacecraft)</a>
+A
+mission will have mony
+course
+corrections
+EACH
+MANUEVER
+is a
+PROBABILiSt
+EVENT
+SINCE YOU
+DON’T
+KNOW
+HOW
+MUCH
+IS
+NEEDED
+MULTIPLE RANDON
+↑
+AND
+It DEPENDENS
+ONE
+=&gt; EVENTS
+HAPPENING
+SEQUENTIALLY
+THE
+LAST
+ONE .
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p9_i14.png" />\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p9_i15.png" />\n\n… or simple dice rolling
+10
+Example: roll a 4-sided dice twice
+Sample space of this experiment:
+Representing sample space:
+WRITE
+AS
+AN
+ORDERED
+PAIR
+&amp;
+21
+, 1)
+,
+21 , 23
+, 2 , 3)
+, (1 , 4)
+,
+I
+I
+&amp;
+i
+i
+i
+“
+(4 , 433
+i =
+outcome
+of first
+roll
+[(i , j)4
+j
+=
+outcome
+of
+Second roll
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p10_i16.jpeg" />\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p10_i17.png" />\n\nThe entire theory of probability (theorems that will
+follow) is built on just three axioms
+11
+What is an axiom?
+Start
+with
+the
+assumption of probability theory
+Consider
+self-evident
+truth
+NEED
+no proof
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p11_i18.png" />\n\nThe entire theory of probability (theorems that will
+follow) is built on just three axioms
+12
+The three axioms:
+A probability measure P(.) is a function that maps events in the sample space to real
+numbers such that:
+Non-negativity: for any event A</p></li>
+</ol>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="normalization-the-probability-of-the-entire-sample-space-is-one-additivity-the-probabilities-of-two-disjoint-events-a-and-b-are-additive-s-p-a-o-b-a-disjont-events-s-1-a-or-b">
+<h1>Normalization: the probability of the entire sample space is one
+Additivity: the probabilities of two disjoint events, A and B, are additive
+S
+P(A) = O
+B
+A
+DISJONT
+Events
+↑(S)
+= 1
+A
+or
+B<a class="headerlink" href="#normalization-the-probability-of-the-entire-sample-space-is-one-additivity-the-probabilities-of-two-disjoint-events-a-and-b-are-additive-s-p-a-o-b-a-disjont-events-s-1-a-or-b" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="aub-plaub">
+<h1>AUB
+PLAUB)<a class="headerlink" href="#aub-plaub" title="Permalink to this heading">#</a></h1>
+<p>P(A) +
+P(B)
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p12_i19.png" />\n\nTHE
+DISCRETE
+PROBABILITY
+LAW
+LET
+US
+BUILD” NENT
+PROBABILITIES
+Let’s
+start
+with
+outcomes
+.
+Let’s
+call
+on
+outcome bi
+All
+outcomes
+are by definition :
+EQUALLY
+LIKELY
+In
+MATH
+:
+P([bib)
+= P(bjb)
+for all i , j
+Now
+let’s
+define
+on
+event
+B
+= (b1, br , by
+,
+… but
+then theProBABILITY
+of
+an
+event
+B = b1 ,b … but is the
+sum of the
+probabities
+of
+the
+outcomes
+contained in the
+event :
+P(b) = P((bil)
+= P</p>
+<ul class="simple">
+<li><p>Put
+… Pr
+which
+axiom
+did
+we
+used
+to
+create this
+law ? ADDI</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="n-nnotation-14-more-precise-notation-simpler-abbreviated-notation-p-is-the-probability-of-an-event-not-an-outcome-bi-is-the-event-that-consists-of-the-single-outcome-bi-u">
+<h1>\n\nNotation
+14
+More precise notation
+Simpler, abbreviated notation
+P(.) is the probability of an event, not an outcome
+{bi} is the event that consists of the single outcome bi
+U<a class="headerlink" href="#n-nnotation-14-more-precise-notation-simpler-abbreviated-notation-p-is-the-probability-of-an-event-not-an-outcome-bi-is-the-event-that-consists-of-the-single-outcome-bi-u" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="union-a-u-b-m-a-or-b-intersection-amb-in-a-and-b-p-bib-p-bi-p-anb-p-ab-y">
+<h1>union
+A
+U
+B
+:
+m A
+or
+B
+&amp;
+= Intersection
+AMB :
+in A
+and
+B
+P([bib)
+P(bi)
+P(ANB)
+P(AB)
+&amp;
+Y<a class="headerlink" href="#union-a-u-b-m-a-or-b-intersection-amb-in-a-and-b-p-bib-p-bi-p-anb-p-ab-y" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="set-a-3-7-9-14-1">
+<h1>SET
+A = [3 , 7
+, 9
+, 14]
+1<a class="headerlink" href="#set-a-3-7-9-14-1" title="Permalink to this heading">#</a></h1>
+<section id="such-that-given-that-a-x-xer-x-ob">
+<h2>such that
+(GIVEN THAT)
+A
+= (x(XER
+, x&gt; ob<a class="headerlink" href="#such-that-given-that-a-x-xer-x-ob" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="subset-asb-a-is-m-b-n-n-n-nimage-n-nlets-use-the-axioms-to-make-some-useful-observations-15-1-s-a-b-ab-ab-event-b-sample-space-event-a-p">
+<h1>=
+subset
+ASB
+:
+A
+is
+m B
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p14_i20.png" />\n\nLet’s use the axioms to make some useful
+observations
+15
+(1)
+S
+A
+B
+A∩B
+A∩B
+EVENT
+B
+SAMPLE SPACE
+EVENT A
+P()<a class="headerlink" href="#subset-asb-a-is-m-b-n-n-n-nimage-n-nlets-use-the-axioms-to-make-some-useful-observations-15-1-s-a-b-ab-ab-event-b-sample-space-event-a-p" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2>1<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="p-a">
+<h2>P(A)
+&amp;
+↑<a class="headerlink" href="#p-a" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section id="probability-probability-of-not-getting-of-event-event-a-a-a-not-a-also-written-on-a-not-a-4derivation-s-a-and-i-are-disjunt-events-a-p-a-p-p-s-1-p-a-1-p-a">
+<h2>Probability
+Probability
+of not getting
+of
+event
+event A
+A
+[A
+= not A]
+also
+written
+on [A
+= not A]
+4DERIVATION”
+S
+A
+and I
+are disjunt events
+*
+A
+P(A) + P(π) = P(s)
+= 1
+=&gt;
+P(A)
+= 1 - P(A)<a class="headerlink" href="#probability-probability-of-not-getting-of-event-event-a-a-a-not-a-also-written-on-a-not-a-4derivation-s-a-and-i-are-disjunt-events-a-p-a-p-p-s-1-p-a-1-p-a" title="Permalink to this heading">#</a></h2>
+<p>\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p15_i21.png" />\n\nLet’s use the axioms to make some useful
+observations
+16
+(2)
+S
+A
+B
+A∩B
+A∩B
+If
+A S B
+then
+PLATE P(B)
+Let’s
+say that
+P(A)
+= P(da , an
+, a33)
+=&gt; P(an)</p>
+<ul class="simple">
+<li><p>P(uz)</p></li>
+<li><p>P(uz)
+P()
+= P((
+, 92 , 03 , bay) - M , 12, 93
+, b
+= P(ui)</p></li>
+<li><p>P(az)</p></li>
+<li><p>Plus) + P(b1)
+ARE
+DiSJOINT
+–
+PA)
+30
+SINCE D)120
+(non negative) = P(A) = P(B)
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p16_i22.png" />\n\nLet’s use the axioms to make some useful
+observations
+17
+(3)
+S
+A
+B
+A∩B
+A∩B
+And B
+not disjoint
+P (AUB)
+= P(A)</p></li>
+<li><p>P(B) - P(ANB)
+3
+↑
+↑
+Probability of
+Probability
+und
+event A or B
+of events A
+and
+B
+B
+DOESN’T
+Sketch
+A
+VEIM
+DIAGRAM :
+Double
+curt
+PLA)
+P(AVB) =
+P(A) + P(B)</p></li>
+</ul>
+<ul class="simple">
+<li><p>P(ANB)
+&amp;
+A “yy
+is
+~ P(B)
+A OR B
+All
+“B11
+OVERLAPY
+Y P(A1B)
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p17_i23.png" />\n\nSome observations get to be called laws
+18
+The discrete uniform probability law lets us solve the dice problems (and some more useful
+problems too!)
+For an experiment with n possible outcomes {ai} with i = 1 to n, and all outcomes equally likely, that is
+all single element events have the same probability, then:
+Plai) = Plan)
+= Px)</p></li>
+</ul>
+<ul class="simple">
+<li><p>Plan) + Plazi +…. Plom
+= I
+=&gt;
+n . Plail = 1
+P(A)
+= -
+ber of elements in
+EVENT
+A
+n
+EVENT
+A
+has multiple outcomes
+in the experiment
+.
+For example,
+If
+n = 10
+and
+A
+= Can
+, ash
+, them
+P(A)
+= 2/10
+= As
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p18_i24.png" />\n\nSome Roll a pair of 4-sided dice.
+Assume the dice are “fair” get to be called laws
+20
+What is the sample space of this experiment? Draw it as a 2-D grid
+What is the probability of each outcome?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+First D4
+Second D4
+~SAMPLE
+SPACE
+has 16
+Possible
+OUTCOMES
+Plai ,jhete
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p19_i25.png" />\n\nSome Roll a pair of 4-sided dice.
+Assume the dice are “fair” get to be called laws
+19
+What is the probability that the sum of the rolls is even?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+First D4
+Second D4</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section id="p-i-j-even-1-25-2-n-n-n-nimage-n-nsome-roll-a-pair-of-4-sided-dice-assume-the-dice-are-fair-get-to-be-called-laws-21-what-is-the-probability-that-the-first-roll-is-equal-to-the-second-show-this-event-on-the-2-d-grid-sample-space-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-first-d4-second-d4-p-i-j-t">
+<h2>P([i + j
+= even])
+= = 1
+25
+2
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p20_i26.png" />\n\nSome Roll a pair of 4-sided dice.
+Assume the dice are “fair” get to be called laws
+21
+What is the probability that the first roll is equal to the second?
+Show this event on the 2-D grid sample space
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+First D4
+Second D4
+P([i =j)) =t<a class="headerlink" href="#p-i-j-even-1-25-2-n-n-n-nimage-n-nsome-roll-a-pair-of-4-sided-dice-assume-the-dice-are-fair-get-to-be-called-laws-21-what-is-the-probability-that-the-first-roll-is-equal-to-the-second-show-this-event-on-the-2-d-grid-sample-space-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-first-d4-second-d4-p-i-j-t" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="n-n-n-nimage-n-nsome-roll-a-pair-of-4-sided-dice-assume-the-dice-are-fair-get-to-be-called-laws-22-what-is-the-probability-that-at-least-one-roll-is-equal-to-4-show-this-event-on-the-2-d-grid-sample-space-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-first-d4-second-d4-p-i-4vj-4y">
+<h1>\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p21_i27.png" />\n\nSome Roll a pair of 4-sided dice.
+Assume the dice are “fair” get to be called laws
+22
+What is the probability that at least one roll is equal to 4?
+Show this event on the 2-D grid sample space
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+First D4
+Second D4
+P(i = 4Vj = 4y)<a class="headerlink" href="#n-n-n-nimage-n-nsome-roll-a-pair-of-4-sided-dice-assume-the-dice-are-fair-get-to-be-called-laws-22-what-is-the-probability-that-at-least-one-roll-is-equal-to-4-show-this-event-on-the-2-d-grid-sample-space-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-first-d4-second-d4-p-i-4vj-4y" title="Permalink to this heading">#</a></h1>
+<p>\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p22_i28.png" />\n\n23
+So far, we’ve learned how to answer questions like “What is the
+probability of rolling a 4?” and “What is the probability of rolling an odd
+number?”
+What about the probability of rolling a 2, given that the roll is even
+How can we address this more generally?
+CONDITION
+=&gt; the sample space here
+is
+reduced to
+22 , 44
+=&gt;
+P(2) = 1
+2
+this
+is
+an
+example
+of
+CONDITIONAL
+PROBABILITY ?
+\n\n24
+We need the concept of conditional probability to answer these questions
+Let’s start by remembering how we defined P(A) in the first place
+“amount of Nutella in S” = 1… because of which axiom?
+In other words, you know you’re in “S”, the universal set or sample space, and the probability
+of being in A is the relative “size” of A to S
+P(A) = “amount  of  Nutella  in  A”
+“amount  of  Nutella  in  S”
+S
+A
+B
+NORMALIZATION
+\n\n25
+S
+A
+B
+What does the relative size of A to B represent?
+For example, let S be our dice roll’s event space, B even rolls, and A “2”
+Then this ratio is the probability of rolling a 2, given that the roll is even
+And since it’s a ratio, in math we write:</p>
+<section id="more-generally-we-write-and-read-it-as-p-a-given-b-or-the-conditional-probability-that-a-occurs-given-that-b-has-occurred-p-a-given-bl-ada-p-b-a">
+<h2>More generally, we write:
+And read it as “P(A) given B, or the conditional probability that A occurs given that B has occurred”
+P(A , GIVEN Bl = ADA)
+P(B)
+a<a class="headerlink" href="#more-generally-we-write-and-read-it-as-p-a-given-b-or-the-conditional-probability-that-a-occurs-given-that-b-has-occurred-p-a-given-bl-ada-p-b-a" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li></li>
+</ul>
+<p>\n\n26
+We need a way to calculate P(A|B) for all possible situations
+Our Nutella diagram was easy because A was a subset of B:
+What about the more general case, like this?
+What should go in the numerator? How about the denominator?
+S
+A
+B
+S
+A
+B
+And
+\n\n27
+S
+A
+B
+The numerator is the probability of the intersection of A and B, or
+And the denominator is the probability of B</p>
+</section>
+<section id="so-we-can-write-a1b-a1b">
+<h2>So, we can write:
+A1B
+A1B<a class="headerlink" href="#so-we-can-write-a1b-a1b" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="a-and-b-paib-ab-probabilitya-b-very-important-n-n28-conditional-probability-allows-us-to-reason-about-the-outcome-of-an-experiment-given-partial-information-what-is-the-probability-that-i-get-a-2-rolling-a-fair-six-sided-die-conditional-probability-what-is-the-probability-that-i-get-a-2-rolling-a-fair-six-sided-die-given-that-i-got-an-even-roll-what-is-the-probability-that-the-second-letter-in-a-word-in-the-english-language-is-an-h-conditional-probability-what-is-the-probability-that-the-second-letter-is-an-h-given-that-the-first-letter-is-a-t-what-is-the-probability-that-a-purdue-student-can-derive-bernoullis-equation-conditional-probability-what-is-the-probability-that-a-purdue-student-can-derive-bernoullis-equation-given-that-the-student-is-in-aae-n-n-n-nimage-n-n29-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-lets-check-does-this-definition-work-with-our-original-nutella-problem-what-is-p-a-a">
+<h2>A
+AND B
+PAIB)=
+AB)Probabilitya
+B
+VERY
+IMPORTANT !
+\n\n28
+Conditional probability allows us to reason about the outcome of an experiment given partial
+information
+What is the probability that I get a “2” rolling a fair six-sided die?
+Conditional probability: What is the probability that I get a 2 rolling a fair six-sided die, given that I
+got an even roll?
+What is the probability that the second letter in a word in the English language is an “h”?
+Conditional probability: what is the probability that the second letter is an “h” given that the first
+letter is a “t”?
+What is the probability that a Purdue student can derive Bernoulli’s equation?
+Conditional probability: What is the probability that a Purdue student can derive Bernoulli’s
+equation given that the student is in AAE?
+!
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p28_i29.png" />\n\n29
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+Let’s check. Does this definition work with our original Nutella problem?
+What is P(A|A)?<a class="headerlink" href="#a-and-b-paib-ab-probabilitya-b-very-important-n-n28-conditional-probability-allows-us-to-reason-about-the-outcome-of-an-experiment-given-partial-information-what-is-the-probability-that-i-get-a-2-rolling-a-fair-six-sided-die-conditional-probability-what-is-the-probability-that-i-get-a-2-rolling-a-fair-six-sided-die-given-that-i-got-an-even-roll-what-is-the-probability-that-the-second-letter-in-a-word-in-the-english-language-is-an-h-conditional-probability-what-is-the-probability-that-the-second-letter-is-an-h-given-that-the-first-letter-is-a-t-what-is-the-probability-that-a-purdue-student-can-derive-bernoullis-equation-conditional-probability-what-is-the-probability-that-a-purdue-student-can-derive-bernoullis-equation-given-that-the-student-is-in-aae-n-n-n-nimage-n-n29-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-lets-check-does-this-definition-work-with-our-original-nutella-problem-what-is-p-a-a" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="p-aia-b-n-n-n-nimage-n-n30-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-how-about-p-s-a-w-risia-ua-a-5">
+<h2>&amp;
+P(AIA)-
+B =
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p29_i30.png" />\n\n30
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+How about P(S|A)?
+w
+RISIA)=
+UA =A
+5<a class="headerlink" href="#p-aia-b-n-n-n-nimage-n-n30-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-how-about-p-s-a-w-risia-ua-a-5" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="all-sample-space-a-sub-space-of-s-probability-of-s-given-a-corred-is-guaranteed-n-n-n-nimage-n-n31-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-and-p-a-s-p-ais-pas">
+<h1>ALL
+SAMPLE
+SPACE
+A
+Sub Space
+of
+S
+=&gt; Probability
+of
+S given A
+corred is
+guaranteed
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p30_i31.png" />\n\n31
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+And P(A|S)?
+P(AIS)
+= PAS)<a class="headerlink" href="#all-sample-space-a-sub-space-of-s-probability-of-s-given-a-corred-is-guaranteed-n-n-n-nimage-n-n31-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-and-p-a-s-p-ais-pas" title="Permalink to this heading">#</a></h1>
+<section id="overlap-of-a-ands-at-p-s">
+<h2>Overlap
+of
+A
+AndS ?
+“At
+P(s)<a class="headerlink" href="#overlap-of-a-ands-at-p-s" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="normalization-1">
+<h1>normalization
+= 1<a class="headerlink" href="#normalization-1" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="a">
+<h1>A<a class="headerlink" href="#a" title="Permalink to this heading">#</a></h1>
+<p>P(A)
+\n\n\n\n<img alt="Image" src="../_images/10_Conditional_Probability_p31_i32.png" />\n\nReading
+32
+Chapter 1.1-1.4 of Carlton and Devore, Probability with
+Applications in Engineering, Science, and Technology, 2nd
+ed., 2017
+\n\n</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="09_Introduction_to_Probability.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">09 Introduction to Probability</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="11_Unconditional_Probability.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">11 Unconditional Probability</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">10 Conditional Probability</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability-aae35103-n-n-n-nimage-n-n-n-nimage-n-nthe-probabilistic-mindset-is-different-from-traditional-say-physics-or-engineering-deterministic-mindsets-2-probabilistic-mindset-deterministic-mindset-x-y-x-y1-y2-y3-input-output-system-same-in-put">Conditional Probability
+AAE35103
+\n\n\n\n\n\n\n\n\n\nThe probabilistic mindset is different from traditional,
+say physics or engineering, deterministic mindsets
+2
+Probabilistic mindset
+Deterministic mindset
+X
+Y
+X
+Y1
+Y2
+Y3
+INPUT
+OUTPUT
+SYSTEM
+Same
+In Put</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#same-output-but-repeat-mony-many-times">SAME
+OUTPUT
+but, repeat mony
+, many times</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#we-see-patterns-in-the-input-way-the-output-is-distributed-system-sameinputs-diferent-output-n-n-n-nimage-n-nsome-vocabulary-3-sample-space-event-outcome-outcome-sample-space-space-that-contains-all-of-the-possible-outcomes-for-a-given-problem-event-a-e-g-six-sided-dice-11-2-3-4-5-54">=&gt; WE
+SEE
+patterns
+in the
+INPUT
+way
+the
+output
+is
+distributed
+SYSTEM
+SAMEInputs Diferent output
+\n\n\n\n\n\nSome vocabulary
+3
+Sample space
+Event
+Outcome
+OUTCOME
+sample
+·
+SPACE
+-&gt; Space that
+contains
+all
+of
+the
+&amp;
+possible
+outcomes
+for
+a given
+problem
+,
+EVENT A
+e. g .,
+six-sided dice
+:
+11 , 2
+, 3
+, 4
+, 5
+, 54</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-smaller-portion-of-the-sample-spare-e-g-1-3-53od">A
+smaller
+portion
+of
+the
+sample
+spare ,
+e . g., [1, 3 ,53OD</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization-the-probability-of-the-entire-sample-space-is-one-additivity-the-probabilities-of-two-disjoint-events-a-and-b-are-additive-s-p-a-o-b-a-disjont-events-s-1-a-or-b">Normalization: the probability of the entire sample space is one
+Additivity: the probabilities of two disjoint events, A and B, are additive
+S
+P(A) = O
+B
+A
+DISJONT
+Events
+↑(S)
+= 1
+A
+or
+B</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#aub-plaub">AUB
+PLAUB)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-nnotation-14-more-precise-notation-simpler-abbreviated-notation-p-is-the-probability-of-an-event-not-an-outcome-bi-is-the-event-that-consists-of-the-single-outcome-bi-u">\n\nNotation
+14
+More precise notation
+Simpler, abbreviated notation
+P(.) is the probability of an event, not an outcome
+{bi} is the event that consists of the single outcome bi
+U</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#union-a-u-b-m-a-or-b-intersection-amb-in-a-and-b-p-bib-p-bi-p-anb-p-ab-y">union
+A
+U
+B
+:
+m A
+or
+B
+&amp;
+= Intersection
+AMB :
+in A
+and
+B
+P([bib)
+P(bi)
+P(ANB)
+P(AB)
+&amp;
+Y</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#set-a-3-7-9-14-1">SET
+A = [3 , 7
+, 9
+, 14]
+1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#such-that-given-that-a-x-xer-x-ob">such that
+(GIVEN THAT)
+A
+= (x(XER
+, x&gt; ob</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-asb-a-is-m-b-n-n-n-nimage-n-nlets-use-the-axioms-to-make-some-useful-observations-15-1-s-a-b-ab-ab-event-b-sample-space-event-a-p">=
+subset
+ASB
+:
+A
+is
+m B
+\n\n\n\n\n\nLet’s use the axioms to make some useful
+observations
+15
+(1)
+S
+A
+B
+A∩B
+A∩B
+EVENT
+B
+SAMPLE SPACE
+EVENT A
+P()</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a">P(A)
+&amp;
+↑</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-probability-of-not-getting-of-event-event-a-a-a-not-a-also-written-on-a-not-a-4derivation-s-a-and-i-are-disjunt-events-a-p-a-p-p-s-1-p-a-1-p-a">Probability
+Probability
+of not getting
+of
+event
+event A
+A
+[A
+= not A]
+also
+written
+on [A
+= not A]
+4DERIVATION”
+S
+A
+and I
+are disjunt events
+*
+A
+P(A) + P(π) = P(s)
+= 1
+=&gt;
+P(A)
+= 1 - P(A)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-i-j-even-1-25-2-n-n-n-nimage-n-nsome-roll-a-pair-of-4-sided-dice-assume-the-dice-are-fair-get-to-be-called-laws-21-what-is-the-probability-that-the-first-roll-is-equal-to-the-second-show-this-event-on-the-2-d-grid-sample-space-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-first-d4-second-d4-p-i-j-t">P([i + j
+= even])
+= = 1
+25
+2
+\n\n\n\n\n\nSome Roll a pair of 4-sided dice.
+Assume the dice are “fair” get to be called laws
+21
+What is the probability that the first roll is equal to the second?
+Show this event on the 2-D grid sample space
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+First D4
+Second D4
+P([i =j)) =t</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n-n-nimage-n-nsome-roll-a-pair-of-4-sided-dice-assume-the-dice-are-fair-get-to-be-called-laws-22-what-is-the-probability-that-at-least-one-roll-is-equal-to-4-show-this-event-on-the-2-d-grid-sample-space-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-first-d4-second-d4-p-i-4vj-4y">\n\n\n\n\n\nSome Roll a pair of 4-sided dice.
+Assume the dice are “fair” get to be called laws
+22
+What is the probability that at least one roll is equal to 4?
+Show this event on the 2-D grid sample space
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+First D4
+Second D4
+P(i = 4Vj = 4y)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-generally-we-write-and-read-it-as-p-a-given-b-or-the-conditional-probability-that-a-occurs-given-that-b-has-occurred-p-a-given-bl-ada-p-b-a">More generally, we write:
+And read it as “P(A) given B, or the conditional probability that A occurs given that B has occurred”
+P(A , GIVEN Bl = ADA)
+P(B)
+a</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#so-we-can-write-a1b-a1b">So, we can write:
+A1B
+A1B</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-and-b-paib-ab-probabilitya-b-very-important-n-n28-conditional-probability-allows-us-to-reason-about-the-outcome-of-an-experiment-given-partial-information-what-is-the-probability-that-i-get-a-2-rolling-a-fair-six-sided-die-conditional-probability-what-is-the-probability-that-i-get-a-2-rolling-a-fair-six-sided-die-given-that-i-got-an-even-roll-what-is-the-probability-that-the-second-letter-in-a-word-in-the-english-language-is-an-h-conditional-probability-what-is-the-probability-that-the-second-letter-is-an-h-given-that-the-first-letter-is-a-t-what-is-the-probability-that-a-purdue-student-can-derive-bernoullis-equation-conditional-probability-what-is-the-probability-that-a-purdue-student-can-derive-bernoullis-equation-given-that-the-student-is-in-aae-n-n-n-nimage-n-n29-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-lets-check-does-this-definition-work-with-our-original-nutella-problem-what-is-p-a-a">A
+AND B
+PAIB)=
+AB)Probabilitya
+B
+VERY
+IMPORTANT !
+\n\n28
+Conditional probability allows us to reason about the outcome of an experiment given partial
+information
+What is the probability that I get a “2” rolling a fair six-sided die?
+Conditional probability: What is the probability that I get a 2 rolling a fair six-sided die, given that I
+got an even roll?
+What is the probability that the second letter in a word in the English language is an “h”?
+Conditional probability: what is the probability that the second letter is an “h” given that the first
+letter is a “t”?
+What is the probability that a Purdue student can derive Bernoulli’s equation?
+Conditional probability: What is the probability that a Purdue student can derive Bernoulli’s
+equation given that the student is in AAE?
+!
+\n\n\n\n\n\n29
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+Let’s check. Does this definition work with our original Nutella problem?
+What is P(A|A)?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-aia-b-n-n-n-nimage-n-n30-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-how-about-p-s-a-w-risia-ua-a-5">&amp;
+P(AIA)-
+B =
+\n\n\n\n\n\n30
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+How about P(S|A)?
+w
+RISIA)=
+UA =A
+5</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#all-sample-space-a-sub-space-of-s-probability-of-s-given-a-corred-is-guaranteed-n-n-n-nimage-n-n31-s-a-b-in-words-out-of-the-total-probability-of-the-elements-of-b-p-a-b-is-the-fraction-that-is-assigned-to-possible-outcomes-that-also-belong-to-a-p-a-b-p-ab-p-b-and-p-a-s-p-ais-pas">ALL
+SAMPLE
+SPACE
+A
+Sub Space
+of
+S
+=&gt; Probability
+of
+S given A
+corred is
+guaranteed
+\n\n\n\n\n\n31
+S
+A
+B
+In words, out of the total probability of the elements of B,
+P(A|B) is the fraction that is assigned to possible outcomes
+that also belong to A
+P A | B
+(
+) = P A∩B
+(
+)
+P(B)
+And P(A|S)?
+P(AIS)
+= PAS)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overlap-of-a-ands-at-p-s">Overlap
+of
+A
+AndS ?
+“At
+P(s)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization-1">normalization
+= 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a">A</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lead Systems Engineering Instructor
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1388 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>15 Introduction to Reliability &#8212; AAE351: Aerospace Systems Design - Summer 2026</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/15_Introduction_to_Reliability';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="16 Hazard Functions" href="16_Hazard_Functions.html" />
+    <link rel="prev" title="14 Continuous Random Variables and Distributions" href="14_Continuous_Random_Variables_and_Distributions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AAE351: Aerospace Systems Design - Summer 2026</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AAE351
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_Introduction_to_aerospace_system_design%202.html">01 Introduction to aerospace system design 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_The_system_developement_process.html">02 The system developement process</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="03_Needs_Analysis.html">03 Needs Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis%20%281%29.html">04 Requirements Analysis (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis.html">04 Requirements Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="05_Concept_Generation_and_Selection.html">05 Concept Generation and Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_Functional_Analysis.html">06 Functional Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="07_Evaluation_and_Selection.html">07 Evaluation and Selection</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="08_Risk_Management.html">08 Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_Introduction_to_Probability.html">09 Introduction to Probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_Conditional_Probability.html">10 Conditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="11_Unconditional_Probability.html">11 Unconditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="12_Independence.html">12 Independence</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="13_Discrete_Random_Variables_and_Distributions.html">13 Discrete Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="14_Continuous_Random_Variables_and_Distributions.html">14 Continuous Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">15 Introduction to Reliability</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="16_Hazard_Functions.html">16 Hazard Functions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="17_System_Reliability.html">17 System Reliability</a></li>
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/15_Introduction_to_Reliability.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>15 Introduction to Reliability</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">15 Introduction to Reliability</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-well-a-system-performs-with-respect-to-specified-criteria-n-n-n-nimage-n-nwhat-is-reliability-5-reliability-is-the-probability-that-an-item-component-subsystem-or-system-or-process-operates-properly-for-a-specified-amount-of-time-design-life-under-stated-use-conditions-both-environmental-and-operational-conditions-without-failure-book-definition-a-lot-of-extra-words-important-but-obscure-the-definition-n-n-n-nimage-n-nwhat-is-reliability-6-a-stripped-down-version-reliability-is-the-probability-that-the-item-or-process-operates-properly-for-a-specified-amount-of-time-n-n-n-nimage-n-nwhat-is-reliability-7-so-for-any-given-system-the-primary-parameter-of-interest-is-t">how
+well
+a system performs
+with respect to
+specified
+criteria
+.
+\n\n\n\n\n\nWhat is reliability?
+5
+Reliability is the probability that an item (component, subsystem, or
+system) or process operates properly for a speciﬁed amount of time
+(design life) under stated use conditions (both environmental and
+operational conditions) without failure
+Book Definition
+a
+lot
+of
+EXTRA
+words ,
+important but obscure the
+definition
+\n\n\n\n\n\nWhat is reliability?
+6
+A stripped-down version
+RELIABILITY
+is
+the
+probability that
+the item
+or
+process
+operates
+properly
+for
+a
+specified
+amount
+of
+time.
+\n\n\n\n\n\nWhat is reliability?
+7
+So, for any given system, the primary parameter of interest is
+T</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-system-lifetime">the
+system
+lifetime</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#duration-of-time-until-the-system-fails-leither-permanently-or-until-repairs-upgrades-are-mades-3-o-t-is-a-continuous-random-variable-on-0-0-n-n-n-nimage-n-nwhat-is-reliability-8-n-n-n-nimage-n-n-n-nimage-n-nwhat-is-reliability-9-definition-let-t-denote-the-lifetime-of-some-system-the-reliability-function-of-t-or-of-the-system-is-defined-for-t-0-by-r-t-p-t-t">duration
+of
+time
+until the system
+fails
+Leither permanently
+or
+until
+repairs/upgrades
+are
+mades
+3
+O
+T
+is
+a
+continuous random
+variable
+on [0 , 0]
+\n\n\n\n\n\nWhat is reliability?
+8
+\n\n\n\n\n\n\n\n\n\nWhat is reliability?
+9
+Definition
+Let T denote the lifetime of some system. The reliability function of T (or of the
+system) is defined for t ≥0 by
+R(t)
+= P(T &gt; t)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-r-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nthe-mean-time-to-failure-or-mttf-is-simply-the-expectation-on-t-17-i-is-a-continuous-rv-in-the-interval-0-0-mttf-mr-t-t-f-dt-recall-e-x-xx-x-n-nwed-like-to-be-able-to-calculate-mttf-directly-from-r-t-18-metf-tridt-d-recall-integrate-by-parts-r-o-17-rai-it-jh-x-g-x-dx-10-11-0-hexg-xs-fixx-g-x-dx-limrt-limrt-t-dt-l-o">APPLICATIONS
+OF R()
+\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe mean time to failure or mttf is simply the expectation on T:
+17
+I
+is
+a
+continuous
+RV
+in
+the
+interval
+[0
+, 0]
+mttF
+= Mr=(T)
+= (t
+. f()dt
+recall :
+E(x) = (*xx(x
+\n\nWe’d like to be able to calculate mttf directly from R(t):
+18
+metF
+= (tridt
+=-]d
+recall :
+INTEGRATE
+By Parts :
+= [R() +]o-17 RAI It
+Jh(x)g(x,dx
+10
+11
+.0
+= hexg(xs
+-fixx)g(x)dx
+= [limRt-limRt]) (t)dt
+L
+O</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#f-h">F(H)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#e-int-00021500">e
+&amp;Int- 00021500</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-reliability">
+<h1>15 Introduction to Reliability<a class="headerlink" href="#introduction-to-reliability" title="Permalink to this heading">#</a></h1>
+<p>Introduction to
+Reliability
+AAE35103
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p1_i1.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p1_i2.png" />\n\nObjectives and Outline
+2
+• Provide a solid conceptual
+understanding of reliability,
+and related issues
+• Present fundamental
+analytical methods in
+reliability engineering
+Reliability is not an exercise in mathematical analysis, but should always be grounded in a thorough
+understanding of the underlying engineering choices and implications
+•
+Context and background
+•
+Reliability
+•
+Different approaches to reliability
+•
+Characterizing the failure process: four
+related probability functions
+•
+Failure rate models
+!
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p2_i3.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p2_i4.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p2_i5.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p2_i6.png" />\n\nR(t) = Pr TF &gt; t
+(
+) =1−F(t)
+F(t) = P TF ≤t
+(
+)
+f t( ) = dF t( )
+dt
+= −dR t( )
+dt
+f (t) = dF(t)
+dt
+= lim
+Δt→0
+Pr t &lt; TF ≤t + Δt
+(
+)
+Δt
+E TF
+[
+] = MTTF =
+t ⋅f t( )
+0
+∞
+∫
+⋅dt =
+R(t)⋅dt
+0
+∞
+∫
+The three
+pictures to
+keep in mind
+We’re finally ready to fill out this picture!</p>
+<ol class="arabic simple">
+<li><p>Cumulative
+distribution function
+of time to failure</p></li>
+<li><p>Reliability (or
+survivor) function
+(complement of F)</p></li>
+<li><p>Probability density
+function of TF (or
+simply failure pdf)</p></li>
+<li><p>Hazard function (or
+failure rate)
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p3_i7.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p3_i8.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p3_i9.png" />\n\nWhat is reliability?
+4
+Your definition
+repeatability
+how
+often
+the
+system
+will
+fail</p></li>
+</ol>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="how-well-a-system-performs-with-respect-to-specified-criteria-n-n-n-nimage-n-nwhat-is-reliability-5-reliability-is-the-probability-that-an-item-component-subsystem-or-system-or-process-operates-properly-for-a-specified-amount-of-time-design-life-under-stated-use-conditions-both-environmental-and-operational-conditions-without-failure-book-definition-a-lot-of-extra-words-important-but-obscure-the-definition-n-n-n-nimage-n-nwhat-is-reliability-6-a-stripped-down-version-reliability-is-the-probability-that-the-item-or-process-operates-properly-for-a-specified-amount-of-time-n-n-n-nimage-n-nwhat-is-reliability-7-so-for-any-given-system-the-primary-parameter-of-interest-is-t">
+<h1>how
+well
+a system performs
+with respect to
+specified
+criteria
+.
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p4_i10.png" />\n\nWhat is reliability?
+5
+Reliability is the probability that an item (component, subsystem, or
+system) or process operates properly for a speciﬁed amount of time
+(design life) under stated use conditions (both environmental and
+operational conditions) without failure
+Book Definition
+a
+lot
+of
+EXTRA
+words ,
+important but obscure the
+definition
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p5_i11.png" />\n\nWhat is reliability?
+6
+A stripped-down version
+RELIABILITY
+is
+the
+probability that
+the item
+or
+process
+operates
+properly
+for
+a
+specified
+amount
+of
+time.
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p6_i12.png" />\n\nWhat is reliability?
+7
+So, for any given system, the primary parameter of interest is
+T<a class="headerlink" href="#how-well-a-system-performs-with-respect-to-specified-criteria-n-n-n-nimage-n-nwhat-is-reliability-5-reliability-is-the-probability-that-an-item-component-subsystem-or-system-or-process-operates-properly-for-a-specified-amount-of-time-design-life-under-stated-use-conditions-both-environmental-and-operational-conditions-without-failure-book-definition-a-lot-of-extra-words-important-but-obscure-the-definition-n-n-n-nimage-n-nwhat-is-reliability-6-a-stripped-down-version-reliability-is-the-probability-that-the-item-or-process-operates-properly-for-a-specified-amount-of-time-n-n-n-nimage-n-nwhat-is-reliability-7-so-for-any-given-system-the-primary-parameter-of-interest-is-t" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="the-system-lifetime">
+<h1>the
+system
+lifetime<a class="headerlink" href="#the-system-lifetime" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="duration-of-time-until-the-system-fails-leither-permanently-or-until-repairs-upgrades-are-mades-3-o-t-is-a-continuous-random-variable-on-0-0-n-n-n-nimage-n-nwhat-is-reliability-8-n-n-n-nimage-n-n-n-nimage-n-nwhat-is-reliability-9-definition-let-t-denote-the-lifetime-of-some-system-the-reliability-function-of-t-or-of-the-system-is-defined-for-t-0-by-r-t-p-t-t">
+<h1>duration
+of
+time
+until the system
+fails
+Leither permanently
+or
+until
+repairs/upgrades
+are
+mades
+3
+O
+T
+is
+a
+continuous random
+variable
+on [0 , 0]
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p7_i13.png" />\n\nWhat is reliability?
+8
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p8_i14.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p8_i15.png" />\n\nWhat is reliability?
+9
+Definition
+Let T denote the lifetime of some system. The reliability function of T (or of the
+system) is defined for t ≥0 by
+R(t)
+= P(T &gt; t)<a class="headerlink" href="#duration-of-time-until-the-system-fails-leither-permanently-or-until-repairs-upgrades-are-mades-3-o-t-is-a-continuous-random-variable-on-0-0-n-n-n-nimage-n-nwhat-is-reliability-8-n-n-n-nimage-n-n-n-nimage-n-nwhat-is-reliability-9-definition-let-t-denote-the-lifetime-of-some-system-the-reliability-function-of-t-or-of-the-system-is-defined-for-t-0-by-r-t-p-t-t" title="Permalink to this heading">#</a></h1>
+<p>1</p>
+<ul class="simple">
+<li><p>F(t)
+where
+F(t)
+is the
+CdF of T.
+that is
+, R()
+is the probability that the system lasts
+more
+thant
+time
+units .
+RH)
+is
+sometimes
+called
+the survival function of T.
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p9_i16.png" />\n\nIntuitively, what should a reliability curve look like?
+10
+R(t)
+Time
+What characteristics must our curve have?
+RELIABILITY
+DECREASES
+high
+With TimE
+reliability-
+It
+Goes to
+In the
+/Erowith
+beginning
+t=0
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p10_i17.png" />\n\nHow does the cdf F(t) look like?
+11
+the
+pdf
+f()
+:
+&lt; FH)
+failed-
+,thetime
+O
+t
+the
+edf
+is
+found by integrating from
+O tot :
+I F(t)</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>F(t)↳
+O
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p11_i18.png" />\n\nAnd, since we have R(t) = 1 – F(t):
+12
+R(t)
+Time
+Use our equation for R(t) and plot examples of points for R(0), R(t&gt;&gt;1), and R(t ~ medium)
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p12_i19.png" />\n\nHow can we calculate reliability?
+13
+F(t) = P(T(t)
+R(t)
+= 1 - F(t)
+= fuldu
+= 1- Fulda
+=Tofuldu
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p13_i20.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p13_i21.png" />\n\nHow about going from reliability to the pdf?
+14
+From the cdf of the time to failure to its pdf:
+(t) ==
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p14_i22.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p14_i23.png" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p14_i24.png" />\n\nHow might we characterize reliability for a real component?
+15
+USING
+NUMBERS</p></li>
+</ol>
+<ul class="simple">
+<li></li>
+</ul>
+<p>#Of
+Components
+functioning at time t</p>
+<ul class="simple">
+<li><p>R(t
+= + 12)
+=
+0 . 5 I time
+to half
+have failed,medium
+life’
+(</p></li>
+<li><p>Failure
+rate</p></li>
+<li></li>
+</ul>
+<p>Mean time
+toFailure
+(mttf)
+=&gt; expected
+value of time
+to
+failure
+also,
+calculate
+the variance</p>
+<ul class="simple">
+<li><p>measure
+of
+the
+UNCERTAINTY of
+the
+mean time to
+failure
+\n\nMean time to failure (mttf) is popular…
+16
+• Relatively easy to determine on a component basis based on test for components that are run continuously or
+for fixed periods of time
+• Perform multiple tests and get a significant number of failures to get a distribution
+• Compute mean and standard deviation
+Tire/road simulator  tester
+Shock absorber tester
+Multi-axis load tester
+<a class="reference external" href="http://www.actminc.com/products/Machines.html">http://www.actminc.com/products/Machines.html</a>
+A
+LOT -
+EXPENSIVE
+For
+AtroSPACE
+Set the
+WHOLE
+CURVE</p></li>
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="applications-of-r-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nthe-mean-time-to-failure-or-mttf-is-simply-the-expectation-on-t-17-i-is-a-continuous-rv-in-the-interval-0-0-mttf-mr-t-t-f-dt-recall-e-x-xx-x-n-nwed-like-to-be-able-to-calculate-mttf-directly-from-r-t-18-metf-tridt-d-recall-integrate-by-parts-r-o-17-rai-it-jh-x-g-x-dx-10-11-0-hexg-xs-fixx-g-x-dx-limrt-limrt-t-dt-l-o">
+<h1>APPLICATIONS
+OF R()
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p16_i25.jpeg" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p16_i26.jpeg" />\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p16_i27.jpeg" />\n\nThe mean time to failure or mttf is simply the expectation on T:
+17
+I
+is
+a
+continuous
+RV
+in
+the
+interval
+[0
+, 0]
+mttF
+= Mr=(T)
+= (t
+. f()dt
+recall :
+E(x) = (*xx(x
+\n\nWe’d like to be able to calculate mttf directly from R(t):
+18
+metF
+= (tridt
+=-]d
+recall :
+INTEGRATE
+By Parts :
+= [R() +]o-17 RAI It
+Jh(x)g(x,dx
+10
+11
+.0
+= hexg(xs
+-fixx)g(x)dx
+= [limRt-limRt]) (t)dt
+L
+O<a class="headerlink" href="#applications-of-r-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nthe-mean-time-to-failure-or-mttf-is-simply-the-expectation-on-t-17-i-is-a-continuous-rv-in-the-interval-0-0-mttf-mr-t-t-f-dt-recall-e-x-xx-x-n-nwed-like-to-be-able-to-calculate-mttf-directly-from-r-t-18-metf-tridt-d-recall-integrate-by-parts-r-o-17-rai-it-jh-x-g-x-dx-10-11-0-hexg-xs-fixx-g-x-dx-limrt-limrt-t-dt-l-o" title="Permalink to this heading">#</a></h1>
+<p>0
++
+0</p>
+<ul class="simple">
+<li><p>)R()dt
+= foRIH de
+\n\nRelation to failure rates
+19
+A lot of reliability calculations assume that the failure rate is constant
+It makes calculations simple (mttf fully characterizes the distribution)
+It is applicable to many cases (which part of the bathtub is it?)
+A constant failure rate corresponds to an exponential distribution  (Next time you will be able to show that
+yourselves!)
+bathtub
+OVE</p></li>
+</ul>
+<ul class="simple">
+<li><p>~
+We rate
+the
+DISTRIBUTION
+ExportSee
+Fatigue is
+Constant
+described by
+defects
+7
+Weiball distribution
+Flaws
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p19_i28.png" />\n\n20
+Reminder : Exponential random variables
+x
+fX
+How does this graph change as lambda decreases?
+An exponential random variable X has the following pdf:
+fX (x) =
+λe-λx      for x ≥0
+0            elsewhere
+
+
+
+Verify that fX is a “legitimate” pdf
+Calculate the mean and standard deviation of X
+&amp;
+=
+rate
+at
+which
+events
+occur
+#(X) = 1/ ) , WAR = 1/12
+= (x)
+= 1/ =(X)
+X = 2,0
+highera</p></li>
+<li></li>
+</ul>
+<blockquote>
+<div><p>EVENTS
+CLUSTERED
+L
+AROUND
+①
+lower X</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+<p>EVENTS
+2x =0 . 5
+SPREAD our
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p20_i29.png" />\n\nNow consider an exponential random variable where x is the time to failure
+21
+T
+them,
+-xt
+Xe</p>
+<ul class="simple">
+<li><p>20
+fr (+ )
+=
+S
+O
+S
+OTHERWISE
+where
+,
+X
+=
+failure
+rate
+\n\nMean time to failure : example
+22
+The time to failure of a light bulb is modeled with the following pdf:
+f (t) = 0.002e−0.002t        t ≥0
+0                        otherwise
+
+
+
+(t in operating hours)</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>What is the mean time to failure of such a light bulb? Interpret this result (what does this number mean)
+1 =
+0
+. 002 hd
+mEF : E(tr)
+= 1
+. FHdt=
+c*+
+= Y=)
+On
+average ; these light bulbs will last
+soon
+which
+is
+rather
+short
+compared to
+light bulbs
+NOWADAYS.
+\n\n\n\n<img alt="Image" src="../_images/15_Introduction_to_Reliability_p22_i30.png" />\n\n2. What is the reliability for the light bulb at mttf?
+23
+R(t)
+=
+1</p></li>
+</ol>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="f-h">
+<h1>F(H)<a class="headerlink" href="#f-h" title="Permalink to this heading">#</a></h1>
+<p>1</p>
+<ul class="simple">
+<li><p>( f(u)du
+=
+1-)de-
+u
+-xt
+-Xt
+=
+1 -)</p></li>
+<li><p>y+))”
+=
+e</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+<section id="id1">
+<h2>1<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>1<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="e-int-00021500">
+<h1>e
+&amp;Int- 00021500<a class="headerlink" href="#e-int-00021500" title="Permalink to this heading">#</a></h1>
+<ol class="arabic simple" start="0">
+<li><p>367
+=
+36,7 %
+that’s
+word ?! What is happening?</p></li>
+</ol>
+<ul class="simple">
+<li><p>Even though
+metF = sooh
+, only
+36.7 % make it to
+sooh , which is
+much
+less than
+50%
+= It makes
+sense
+since
+we
+have
+a
+exponential distribution
+and I
+is
+low
+=&gt; zenis
+are
+spread
+out
+\n\n3. What is the median life of the light bulb?
+24
+medium
+life
+is
+where
+?
+R()
+=
+0 . 5
+-000t
+e
+=
+0 . 5</p></li>
+<li><p>port
+= In (0 . 5)
+=
+346 . h -
+\n\nReading
+25
+Chapter 4.8 of Carlton and Devore, Probability with
+Applications in Engineering, Science, and Technology, 2nd
+ed., 2017
+\n\n</p></li>
+</ul>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="14_Continuous_Random_Variables_and_Distributions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">14 Continuous Random Variables and Distributions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="16_Hazard_Functions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">16 Hazard Functions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">15 Introduction to Reliability</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-well-a-system-performs-with-respect-to-specified-criteria-n-n-n-nimage-n-nwhat-is-reliability-5-reliability-is-the-probability-that-an-item-component-subsystem-or-system-or-process-operates-properly-for-a-specified-amount-of-time-design-life-under-stated-use-conditions-both-environmental-and-operational-conditions-without-failure-book-definition-a-lot-of-extra-words-important-but-obscure-the-definition-n-n-n-nimage-n-nwhat-is-reliability-6-a-stripped-down-version-reliability-is-the-probability-that-the-item-or-process-operates-properly-for-a-specified-amount-of-time-n-n-n-nimage-n-nwhat-is-reliability-7-so-for-any-given-system-the-primary-parameter-of-interest-is-t">how
+well
+a system performs
+with respect to
+specified
+criteria
+.
+\n\n\n\n\n\nWhat is reliability?
+5
+Reliability is the probability that an item (component, subsystem, or
+system) or process operates properly for a speciﬁed amount of time
+(design life) under stated use conditions (both environmental and
+operational conditions) without failure
+Book Definition
+a
+lot
+of
+EXTRA
+words ,
+important but obscure the
+definition
+\n\n\n\n\n\nWhat is reliability?
+6
+A stripped-down version
+RELIABILITY
+is
+the
+probability that
+the item
+or
+process
+operates
+properly
+for
+a
+specified
+amount
+of
+time.
+\n\n\n\n\n\nWhat is reliability?
+7
+So, for any given system, the primary parameter of interest is
+T</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-system-lifetime">the
+system
+lifetime</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#duration-of-time-until-the-system-fails-leither-permanently-or-until-repairs-upgrades-are-mades-3-o-t-is-a-continuous-random-variable-on-0-0-n-n-n-nimage-n-nwhat-is-reliability-8-n-n-n-nimage-n-n-n-nimage-n-nwhat-is-reliability-9-definition-let-t-denote-the-lifetime-of-some-system-the-reliability-function-of-t-or-of-the-system-is-defined-for-t-0-by-r-t-p-t-t">duration
+of
+time
+until the system
+fails
+Leither permanently
+or
+until
+repairs/upgrades
+are
+mades
+3
+O
+T
+is
+a
+continuous random
+variable
+on [0 , 0]
+\n\n\n\n\n\nWhat is reliability?
+8
+\n\n\n\n\n\n\n\n\n\nWhat is reliability?
+9
+Definition
+Let T denote the lifetime of some system. The reliability function of T (or of the
+system) is defined for t ≥0 by
+R(t)
+= P(T &gt; t)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-r-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nthe-mean-time-to-failure-or-mttf-is-simply-the-expectation-on-t-17-i-is-a-continuous-rv-in-the-interval-0-0-mttf-mr-t-t-f-dt-recall-e-x-xx-x-n-nwed-like-to-be-able-to-calculate-mttf-directly-from-r-t-18-metf-tridt-d-recall-integrate-by-parts-r-o-17-rai-it-jh-x-g-x-dx-10-11-0-hexg-xs-fixx-g-x-dx-limrt-limrt-t-dt-l-o">APPLICATIONS
+OF R()
+\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe mean time to failure or mttf is simply the expectation on T:
+17
+I
+is
+a
+continuous
+RV
+in
+the
+interval
+[0
+, 0]
+mttF
+= Mr=(T)
+= (t
+. f()dt
+recall :
+E(x) = (*xx(x
+\n\nWe’d like to be able to calculate mttf directly from R(t):
+18
+metF
+= (tridt
+=-]d
+recall :
+INTEGRATE
+By Parts :
+= [R() +]o-17 RAI It
+Jh(x)g(x,dx
+10
+11
+.0
+= hexg(xs
+-fixx)g(x)dx
+= [limRt-limRt]) (t)dt
+L
+O</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#f-h">F(H)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#e-int-00021500">e
+&amp;Int- 00021500</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lead Systems Engineering Instructor
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

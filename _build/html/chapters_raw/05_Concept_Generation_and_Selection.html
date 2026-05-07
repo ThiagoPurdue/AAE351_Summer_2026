@@ -1,0 +1,1490 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>05 Concept Generation and Selection &#8212; AAE351: Aerospace Systems Design - Summer 2026</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters_raw/05_Concept_Generation_and_Selection';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AAE351: Aerospace Systems Design - Summer 2026</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AAE351
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/02_The_system_developement_process.html">02. The System Development Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/03_Needs_Analysis.html">03. Needs Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/04_Requirements_Analysis.html">04. Requirements Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/05_Concept_Generation_and_Selection.html">05. Concept Generation and Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/06_Functional_Analysis.html">06. Functional Analysis</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters_raw/05_Concept_Generation_and_Selection.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>05 Concept Generation and Selection</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concept-generation-and-selection-aae35103-n-n-n-nimage-n-n-n-nimage-n-npurpose-2-generating-system-concepts-owhat-does-the-system-look-like-what-is-the-overall-arrangement-where-are-major-components-and-subsystems-oaircraft-spacecraft-configuration-affects-all-aspects-of-performance-size-and-weight-want-a-large-number-of-concepts-odo-not-want-to-miss-very-promising-concepts-ocannot-address-a-large-number-of-concepts-in-detail-owith-little-to-no-analysis-want-to-select-most-promising-concepts-for-further-development-and-comparison-n-n-n-nimage-n-npurpose-3-will-discuss-two-approaches-in-some-detail-obrainstorming-opughs-method-other-popular-methods-omorphological-chart-for-concept-generation-oweighted-objectives-for-concept-selection">Concept Generation and
+Selection
+AAE35103
+\n\n\n\n\n\n\n\n\n\nPurpose
+2
+• Generating system concepts
+oWhat does the system look like? What is the overall arrangement? Where
+are major components and subsystems?
+oAircraft / spacecraft configuration affects all aspects of performance, size
+and weight
+• Want a large number of concepts
+oDo not want to miss very promising concepts
+oCannot address a large number of concepts in detail
+oWith little to no analysis, want to select most promising concepts for further
+development and comparison
+\n\n\n\n\n\nPurpose
+3
+• Will discuss two approaches in some detail
+oBrainstorming
+oPugh’s method
+• Other popular methods
+oMorphological chart for concept generation
+oWeighted objectives for concept selection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fill-each-now-the-aircraftsystem-must-perform-to-fulfill-each-function-i-pick-one-option-for-each-now-to-suggest-a-concept-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-10-aae451-em-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-11-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-12-n-n-n-nimage-n-n-n-nimage-n-ncommon-dysfunctions-during-concept-generation-13-consideration-of-only-one-or-two-alternatives-often-proposed-by-most-assertive-members-of-the-team-failure-to-consider-carefully-the-usefulness-of-concepts-employed-by-other-firms-in-related-and-unrelated-products-involvement-of-only-one-or-two-people-in-the-process-resulting-in-lack-of-confidence-and-commitment-by-the-rest-of-the-team-ineffective-integration-of-promising-partial-solutions-failure-to-consider-entire-categories-of-solutions-n-n-n-nimage-n-nstructured-approaches-reduce-the-likelihood-of-costly-problems-14-encourages-gathering-of-information-from-disparate-information-sources-guides-team-through-exploration-of-alternatives-provides-a-mechanism-for-integrating-partial-solutions-step-by-step-method-also-useful-for-novices-keep-in-mind-the-cost-of-centification-n-n-n-nimage-n-npughs-method-15-combines-features-of-concept-generation-and-selection-o-named-after-stuart-pugh-o-sometimes-called-controlled-convergence-selecting-a-winning-concept-from-clausing-text-o-it-is-natural-to-think-of-design-concepts-while-requirements-are-developed-and-considered-o-pughs-method-encourages-the-team-to-develop-better-concepts-than-individuals-alone-o-before-starting-team-members-consider-their-own-concepts-like-brainstorming-e-team-ownership-of-final-concept-n-n-n-nimage-n-npughs-method-16-ten-steps-oit-may-take-several-hours-in-multiple-sessions-with-breaks-between-sessions-othink-about-having-two-or-three-long-meetings-for-this-oa-break-between-sessions-allows-subconscious-processing-1-choose-criteria-obased-on-requirements-generated-for-the-system-okeep-to-a-manageable-size-odo-not-assign-weights-part-of-pughs-directions-usually-for-complex-systems">Fill
+each now ↳
+THE AIRCRAFTSYSTEM
+MUST PERFORM
+to fulfill each function
+I
+Pick one option for
+Each
+now to suggest a
+concept.
+\n\n\n\n\n\n\n\n\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+10
+AAE451
+Em
+\n\n\n\n\n\n\n\n\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+11
+\n\n\n\n\n\n\n\n\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+12
+\n\n\n\n\n\n\n\n\n\nCommon dysfunctions  during concept
+generation
+13
+• Consideration of only one or two alternatives, often proposed by most assertive members of
+the team
+• Failure to consider carefully the usefulness of concepts employed by other firms in related and
+unrelated products
+• Involvement of only one or two people in the process, resulting in lack of confidence and
+commitment by the rest of the team
+• Ineffective integration of promising partial solutions
+• Failure to consider entire categories of solutions
+\n\n\n\n\n\nStructured approaches reduce the
+likelihood of costly problems
+14
+• Encourages gathering of information from disparate information sources
+• Guides team through exploration of alternatives
+• Provides a mechanism for integrating partial solutions
+• Step-by-step method also useful for novices
+KEEP In mind THE
+cost
+Of
+Centification
+\n\n\n\n\n\nPugh’s Method
+15
+• Combines features of concept generation and selection
+o Named after Stuart Pugh
+o Sometimes called “controlled convergence.”
+• “Selecting a Winning Concept” from Clausing text
+o It is natural to think of design concepts while requirements are developed
+and considered.
+o Pugh’s method encourages the team to develop better concepts than
+individuals alone.
+o Before starting, team members consider their own concepts (like
+brainstorming)
+E TEAM
+OWNERSHIP
+Of
+FINAL CONCEPT.
+\n\n\n\n\n\nPugh’s Method
+16
+• Ten steps
+oIt may take several hours in multiple sessions with breaks between sessions
+oThink about having two or three “long” meetings for this
+oA break between sessions allows subconscious processing
+1.
+Choose criteria
+oBased on requirements generated for the system
+oKeep to a manageable size
+oDo not assign weights (part of Pugh’s directions)
+USUALLY
+FOR COMPLEX SYSTEMS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subsystems-tend-to-be-fast-n-n-n-nimage-n-npughs-method-17-2-form-the-matrix-concepts-concept-a-concept-b-concept-c-concept-d-concept-e-criterion-i-criterion-ii-criterion-iii-criterion-iv-criterion-v-criterion-vi-criterion-vii-criterion-viii-s-0-0-0-0-0-s-s-0-0-0-0-0-s-0-0-0-0-0-d-a-t-u-m-add-colums-with-hybrid-concepts">SUBSYSTEMS TEND To BE
+FAST
+\n\n\n\n\n\nPugh’s method
+17
+2. Form the matrix
+CONCEPTS
+Concept A
+Concept B
+Concept C
+Concept D
+Concept E
+Criterion I
+Criterion II
+Criterion III
+Criterion IV
+Criterion V
+Criterion VI
+Criterion VII
+Criterion VIII
+S +
+0
+0
+0
+0
+0
+S S
+0
+0
+0
+0
+0
+S -
+0
+0
+0
+0
+0
+D
+A
+T
+U
+M
+ADD
+COLUMS
+WITH
+HYBRID
+CONCEPTS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-t">I
+t</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-s-i-j-baseline-concept-to-benchmarch-compare-against-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-npughs-method-18-3-clarify-concepts-oshare-individual-concepts-with-rest-of-team-ohelp-develop-team-ownership-of-concepts-4-choose-the-datum-concept-oa-baseline-concept-otry-to-choose-what-appears-to-be-one-of-the-better-concepts-ocould-be-an-existing-aircraft-or-similar-to-existing-aircraft-ocan-vote-if-there-is-disagreement-describe-configuration-and-technologies-or-spacecraft-subsystem-n-n-n-nimage-n-npughs-method-19-5-run-the-matrix-ouse-and-s-scale-to-compare-each-concept-to-the-datum-concept-okeep-moving-may-need-time-limit-on-each-cell-orecord-new-concepts-to-add-in-additional-columns-othe-major-advance-is-the-new-insight-gained-by-team-members-worse-better-same-not-clearly-better-b-or-wonse-than-datum-use-engineering-judgment-don-t-overthink-and-spend-too-long-n-n-n-nimage-n-npughs-method-20-6-evaluate-ratings-oadd-totals-for-each-concepts-and-s-separately-odo-not-try-for-a-single-total-score-7-attack-the-negatives-and-enhance-the-positives-ochange-modify-promising-concepts-to-eliminate-ratings-oapply-features-scoring-to-other-concepts-so-they-are-not-lost-oadd-hybrid-concepts-to-additional-columns-in-the-matrix-important-this-forces-the-team-to-improve-on-concepts-with-ideas-n-n-n-nimage-n-npughs-method-21-8-choose-new-datum-and-run-matrix-again-o-new-datum-should-be-promising-concept-o-a-different-datum-should-help-enhance-good-concepts-o-will-verify-elimination-of-poor-concepts-9-plan-further-work-o-some-decisions-about-or-s-will-be-uncomfortable-uncertain-o-what-additional-analysis-research-is-needed-to-make-these-decisions-clearer-o-can-you-use-your-analysis-tools-to-support-decisions-10-iterate-to-get-winning-concept-o-after-further-work-is-completed-o-drop-out-weak-concepts-o-add-any-new-concepts-generated-during-step-9-o-run-matrix-again-until-a-few-best-concepts-emerge-develop-insights-to-produce-enhance-the-best-concert-gather-information-to-support-decision-making-get-team-concesus-on-rominant-concepts-n-n-n-nimage-n-ncomments-about-pughs-method-22-pughs-method-is-used-in-many-engineering-design-settings-but-is-comparatively-uncommon-in-aircraft-spacecraft-design-pughs-method-helps-organize-mostly-qualitative-subjective-decision-making-to-generate-and-select-promising-concepts-it-is-not-a-quantitative-trade-study-top-concepts-should-be-compared-using-engineering-analyses-e-ventually-use-physics-based-analysis-and-trade-studies-to-select-best-concept-n-n-n-nimage-n-nother-concept-selection-methods-23-2-weighted-objectives-odetermine-objectives-concept-needs-to-satisfy-orank-and-weight-objectives-to-reflect-relative-importance-oscore-each-concept-against-each-objective-generally-this-is-qualitative-to-allow-for-fast-evaluation-this-can-introduce-dubious-arithmetic-otop-rated-concepts-are-likely-the-most-promising-weighted-objectives-are-not-a-rigorous-trade-study-e-not-quantitative-n-n-n-nimage-n-nweighted-objectives-evaluation-matrix-example-24-define-weights-setby-score-each-objective-x-configuration-10-best-wortetives-o-the-deal-1-worst-z1-8-rank-on-baselt-score-zweights-score-n-n-n-nimage-n-n-n-nimage-n-nconcept-selection-outcomes-example-student-firefighting-vehicles-spring-2022-25-most-promissing-datum-n-n-n-nimage-n-n-n-nimage-n-nconcept-selection-outcomes-example-student-firefighting-vehicles-spring-2022-26-consider-adding">S
+S
+i
+J
+baseline
+concept to benchmarch/compare against
+\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPugh’s Method
+18
+3. Clarify concepts
+oShare individual concepts with rest of team
+oHelp develop “team” ownership of concepts
+4. Choose the “Datum” concept
+oA baseline concept
+oTry to choose what appears to be one of the better concepts
+oCould be an existing aircraft (or similar to existing aircraft)
+oCan vote if there is disagreement
+Describe configuration
+and technologies
+~
+or
+spacecraft /subsystem
+\n\n\n\n\n\nPugh’s Method
+19
+5. Run the matrix
+oUse “+”, “-” and “S” scale to compare each concept to the Datum concept
+oKeep moving; may need time limit on each cell
+oRecord new concepts to add in additional columns
+o“The major advance is the new insight gained by team members”
+WORSE
+better
+SAME-NOT
+CLEARLY
+BETTER
+b - -
+OR
+WONSE
+THAN DATUM
+USE ENGINEERING JUDGMENT
+DON’T
+OVERTHINK
+AND
+SPEND Too LONG
+\n\n\n\n\n\nPugh’s Method
+20
+6. Evaluate ratings
+oAdd totals for each concept’s “+”, “-” and “S” separately
+oDo not try for a single, total score
+7. Attack the negatives and enhance the positives.
+oChange/modify promising concepts to eliminate “-” ratings
+oApply features scoring “+” to other concepts so they are not lost
+oAdd hybrid concepts to additional columns in the matrix
+IMPORTANT !
+This
+Forces the team to improve
+on
+concepts
+with ideas.
+\n\n\n\n\n\nPugh’s Method
+21
+8.
+Choose new Datum and run matrix again
+o New Datum should be promising concept
+o A different datum should help enhance good concepts
+o Will verify elimination of poor concepts
+9.
+Plan further work
+o Some decisions about “+”, “-” or S will be uncomfortable, uncertain
+o What additional analysis / research is needed to make these decisions clearer?
+o Can you use your analysis tools to support decisions?
+10. Iterate to get winning concept
+o After further work is completed
+o Drop out weak concepts
+o Add any new concepts generated during step 9
+o Run matrix again until a few best concepts emerge
+DEVELOP
+INSIGHTS
+To
+Produce /
+ENHANCE THE
+BEST CONCERT
+GATHER
+INFORMATION
+TO
+SUPPORT
+DECISION-MAKING
+GET TEAM
+CONCESUS
+ON
+ROMINANT
+CONCEPTS
+.
+\n\n\n\n\n\nComments about Pugh’s Method
+22
+• Pugh’s method is used in many engineering design settings but is
+comparatively uncommon in aircraft/spacecraft design.
+• Pugh’s method helps organize mostly qualitative/subjective decision-
+making to generate and select promising concepts.
+• It is not a quantitative trade study
+• Top concepts should be compared using engineering analyses
+E VENTUALLY ,
+USE
+PHYSICS-BASED
+ANALYSIS
+AND
+TRADE
+STUDIES
+to
+SELECT
+BEST
+CONCEPT .
+\n\n\n\n\n\nOther concept selection methods
+23
+2) Weighted objectives
+oDetermine objectives concept needs to satisfy
+oRank and weight objectives to reflect relative importance
+oScore each concept against each objective
+§ Generally, this is qualitative to allow for fast evaluation
+§ This can introduce “dubious arithmetic.”
+oTop-rated concepts are likely the most promising
+§ Weighted objectives are not a rigorous trade study E
+NOT QUANTITATIVE !
+\n\n\n\n\n\nWeighted objectives evaluation matrix
+example
+24
+DEFINE
+WEIGHTS
+SETBY
+SCORE EACH
+OBJECTIVE X Configuration
+10 = BEST
+Wortetives
+o
+The
+deal
+1
+= worst
+Z1.8
+RANK On
+BaselT&amp;
+Score
+= Zweights score
+\n\n\n\n\n\n\n\n\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+25
+↑
+most promissing
+DATUM
+\n\n\n\n\n\n\n\n\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+26
+Consider
+ADDING</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#images">IMAGES</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="concept-generation-and-selection">
+<h1>05 Concept Generation and Selection<a class="headerlink" href="#concept-generation-and-selection" title="Permalink to this heading">#</a></h1>
+<section id="concept-generation-and-selection-aae35103-n-n-n-nimage-n-n-n-nimage-n-npurpose-2-generating-system-concepts-owhat-does-the-system-look-like-what-is-the-overall-arrangement-where-are-major-components-and-subsystems-oaircraft-spacecraft-configuration-affects-all-aspects-of-performance-size-and-weight-want-a-large-number-of-concepts-odo-not-want-to-miss-very-promising-concepts-ocannot-address-a-large-number-of-concepts-in-detail-owith-little-to-no-analysis-want-to-select-most-promising-concepts-for-further-development-and-comparison-n-n-n-nimage-n-npurpose-3-will-discuss-two-approaches-in-some-detail-obrainstorming-opughs-method-other-popular-methods-omorphological-chart-for-concept-generation-oweighted-objectives-for-concept-selection">
+<h2>Concept Generation and
+Selection
+AAE35103
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p1_i1.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p1_i2.png" />\n\nPurpose
+2
+• Generating system concepts
+oWhat does the system look like? What is the overall arrangement? Where
+are major components and subsystems?
+oAircraft / spacecraft configuration affects all aspects of performance, size
+and weight
+• Want a large number of concepts
+oDo not want to miss very promising concepts
+oCannot address a large number of concepts in detail
+oWith little to no analysis, want to select most promising concepts for further
+development and comparison
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p2_i3.png" />\n\nPurpose
+3
+• Will discuss two approaches in some detail
+oBrainstorming
+oPugh’s method
+• Other popular methods
+oMorphological chart for concept generation
+oWeighted objectives for concept selection<a class="headerlink" href="#concept-generation-and-selection-aae35103-n-n-n-nimage-n-n-n-nimage-n-npurpose-2-generating-system-concepts-owhat-does-the-system-look-like-what-is-the-overall-arrangement-where-are-major-components-and-subsystems-oaircraft-spacecraft-configuration-affects-all-aspects-of-performance-size-and-weight-want-a-large-number-of-concepts-odo-not-want-to-miss-very-promising-concepts-ocannot-address-a-large-number-of-concepts-in-detail-owith-little-to-no-analysis-want-to-select-most-promising-concepts-for-further-development-and-comparison-n-n-n-nimage-n-npurpose-3-will-discuss-two-approaches-in-some-detail-obrainstorming-opughs-method-other-popular-methods-omorphological-chart-for-concept-generation-oweighted-objectives-for-concept-selection" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>GENERATION</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+<blockquote>
+<div><p>GENERATION+ SELECTION
+IREAD
+CLAUSING
+TEXT &amp; BrightSPACE)
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p3_i4.png" />\n\nBrainstorming
+4
+• Most widely known creative design method
+• Generate large number of ideas
+• Participants should be diverse
+oTechnical aerospace disciplines: e.g., aerodynamics, structures,
+propulsion, stability and control
+oNon aerospace disciplines: e.g., manufacturing, marketing,
+customers
+• A non-participating moderator is recommended to ensure
+process is followed
+CONSIDER
+ASKING
+A
+Friend who
+isNoT Part ofThe
+Course
+.
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p4_i5.png" />\n\nBrainstorming
+5
+• Start with a problem statement or question.
+• Take, for example, the firefighting vehicle student project from Spring
+2022:
+“What should urban air mobility (UAM) / regional air<br />
+mobility (RAM) vehicles for 2030 EIS look like for a
+firefighting scenario?”
+MakeSure
+your questions fit your
+MISSION STATEMENT ,
+CONOPS and
+REQUIREMENTS
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p5_i6.png" />\n\nBrainstorming
+6
+• Allow each member to write down / sketch ideas
+oConsider doing this individually before the group meeting
+oUse note cards or paper; one idea per card
+• Each member presents one idea at a time
+oNo criticism, “wild” ideas welcomed
+oTeam members try to build on ideas of others, or combine features of
+several ideas
+• Session should be “fun”
+oRelaxed atmosphere
+oAbout 30 minutes maximum time
+Make
+sketches
+, only few words
+, as
+needed
+·
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p6_i7.png" />\n\nBrainstorming rules
+7</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>No criticism during the session</p></li>
+<li><p>A large quantity of ideas is wanted</p></li>
+<li><p>Seemingly crazy ideas are welcome</p></li>
+<li><p>Present ideas briefly and concisely</p></li>
+<li><p>Try to combine and improve on the ideas of others
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p7_i8.png" />\n\nOther concept generation methods
+8</p></li>
+</ol>
+<ol class="arabic simple">
+<li><p>Morphological charts
+oUseful for concept generation
+oUse some form of decomposition to describe the major functions of
+aircraft
+oIdentify features that can provide each function and list them in a chart
+format
+oCombining one option for each function represents a possible concept
+§ A very large number of concepts are possible
+§ Many combinations may be incompatible/impossible
+or subsystem
+MORE
+STRUCTURED
+THAN
+BRAINSTORMING
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p8_i9.png" />\n\nMorphological chart Example
+9
+CAIRCRAFT)
+iSTTTO
+with different ways</p></li>
+</ol>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section id="fill-each-now-the-aircraftsystem-must-perform-to-fulfill-each-function-i-pick-one-option-for-each-now-to-suggest-a-concept-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-10-aae451-em-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-11-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-12-n-n-n-nimage-n-n-n-nimage-n-ncommon-dysfunctions-during-concept-generation-13-consideration-of-only-one-or-two-alternatives-often-proposed-by-most-assertive-members-of-the-team-failure-to-consider-carefully-the-usefulness-of-concepts-employed-by-other-firms-in-related-and-unrelated-products-involvement-of-only-one-or-two-people-in-the-process-resulting-in-lack-of-confidence-and-commitment-by-the-rest-of-the-team-ineffective-integration-of-promising-partial-solutions-failure-to-consider-entire-categories-of-solutions-n-n-n-nimage-n-nstructured-approaches-reduce-the-likelihood-of-costly-problems-14-encourages-gathering-of-information-from-disparate-information-sources-guides-team-through-exploration-of-alternatives-provides-a-mechanism-for-integrating-partial-solutions-step-by-step-method-also-useful-for-novices-keep-in-mind-the-cost-of-centification-n-n-n-nimage-n-npughs-method-15-combines-features-of-concept-generation-and-selection-o-named-after-stuart-pugh-o-sometimes-called-controlled-convergence-selecting-a-winning-concept-from-clausing-text-o-it-is-natural-to-think-of-design-concepts-while-requirements-are-developed-and-considered-o-pughs-method-encourages-the-team-to-develop-better-concepts-than-individuals-alone-o-before-starting-team-members-consider-their-own-concepts-like-brainstorming-e-team-ownership-of-final-concept-n-n-n-nimage-n-npughs-method-16-ten-steps-oit-may-take-several-hours-in-multiple-sessions-with-breaks-between-sessions-othink-about-having-two-or-three-long-meetings-for-this-oa-break-between-sessions-allows-subconscious-processing-1-choose-criteria-obased-on-requirements-generated-for-the-system-okeep-to-a-manageable-size-odo-not-assign-weights-part-of-pughs-directions-usually-for-complex-systems">
+<h2>Fill
+each now ↳
+THE AIRCRAFTSYSTEM
+MUST PERFORM
+to fulfill each function
+I
+Pick one option for
+Each
+now to suggest a
+concept.
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p9_i10.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p9_i11.jpeg" />\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+10
+AAE451
+Em
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p10_i12.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p10_i13.jpeg" />\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+11
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p11_i14.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p11_i15.jpeg" />\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+12
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p12_i16.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p12_i17.jpeg" />\n\nCommon dysfunctions  during concept
+generation
+13
+• Consideration of only one or two alternatives, often proposed by most assertive members of
+the team
+• Failure to consider carefully the usefulness of concepts employed by other firms in related and
+unrelated products
+• Involvement of only one or two people in the process, resulting in lack of confidence and
+commitment by the rest of the team
+• Ineffective integration of promising partial solutions
+• Failure to consider entire categories of solutions
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p13_i18.png" />\n\nStructured approaches reduce the
+likelihood of costly problems
+14
+• Encourages gathering of information from disparate information sources
+• Guides team through exploration of alternatives
+• Provides a mechanism for integrating partial solutions
+• Step-by-step method also useful for novices
+KEEP In mind THE
+cost
+Of
+Centification
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p14_i19.png" />\n\nPugh’s Method
+15
+• Combines features of concept generation and selection
+o Named after Stuart Pugh
+o Sometimes called “controlled convergence.”
+• “Selecting a Winning Concept” from Clausing text
+o It is natural to think of design concepts while requirements are developed
+and considered.
+o Pugh’s method encourages the team to develop better concepts than
+individuals alone.
+o Before starting, team members consider their own concepts (like
+brainstorming)
+E TEAM
+OWNERSHIP
+Of
+FINAL CONCEPT.
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p15_i20.png" />\n\nPugh’s Method
+16
+• Ten steps
+oIt may take several hours in multiple sessions with breaks between sessions
+oThink about having two or three “long” meetings for this
+oA break between sessions allows subconscious processing
+1.
+Choose criteria
+oBased on requirements generated for the system
+oKeep to a manageable size
+oDo not assign weights (part of Pugh’s directions)
+USUALLY
+FOR COMPLEX SYSTEMS<a class="headerlink" href="#fill-each-now-the-aircraftsystem-must-perform-to-fulfill-each-function-i-pick-one-option-for-each-now-to-suggest-a-concept-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-10-aae451-em-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-11-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-12-n-n-n-nimage-n-n-n-nimage-n-ncommon-dysfunctions-during-concept-generation-13-consideration-of-only-one-or-two-alternatives-often-proposed-by-most-assertive-members-of-the-team-failure-to-consider-carefully-the-usefulness-of-concepts-employed-by-other-firms-in-related-and-unrelated-products-involvement-of-only-one-or-two-people-in-the-process-resulting-in-lack-of-confidence-and-commitment-by-the-rest-of-the-team-ineffective-integration-of-promising-partial-solutions-failure-to-consider-entire-categories-of-solutions-n-n-n-nimage-n-nstructured-approaches-reduce-the-likelihood-of-costly-problems-14-encourages-gathering-of-information-from-disparate-information-sources-guides-team-through-exploration-of-alternatives-provides-a-mechanism-for-integrating-partial-solutions-step-by-step-method-also-useful-for-novices-keep-in-mind-the-cost-of-centification-n-n-n-nimage-n-npughs-method-15-combines-features-of-concept-generation-and-selection-o-named-after-stuart-pugh-o-sometimes-called-controlled-convergence-selecting-a-winning-concept-from-clausing-text-o-it-is-natural-to-think-of-design-concepts-while-requirements-are-developed-and-considered-o-pughs-method-encourages-the-team-to-develop-better-concepts-than-individuals-alone-o-before-starting-team-members-consider-their-own-concepts-like-brainstorming-e-team-ownership-of-final-concept-n-n-n-nimage-n-npughs-method-16-ten-steps-oit-may-take-several-hours-in-multiple-sessions-with-breaks-between-sessions-othink-about-having-two-or-three-long-meetings-for-this-oa-break-between-sessions-allows-subconscious-processing-1-choose-criteria-obased-on-requirements-generated-for-the-system-okeep-to-a-manageable-size-odo-not-assign-weights-part-of-pughs-directions-usually-for-complex-systems" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section id="subsystems-tend-to-be-fast-n-n-n-nimage-n-npughs-method-17-2-form-the-matrix-concepts-concept-a-concept-b-concept-c-concept-d-concept-e-criterion-i-criterion-ii-criterion-iii-criterion-iv-criterion-v-criterion-vi-criterion-vii-criterion-viii-s-0-0-0-0-0-s-s-0-0-0-0-0-s-0-0-0-0-0-d-a-t-u-m-add-colums-with-hybrid-concepts">
+<h2>SUBSYSTEMS TEND To BE
+FAST
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p16_i21.png" />\n\nPugh’s method
+17
+2. Form the matrix
+CONCEPTS
+Concept A
+Concept B
+Concept C
+Concept D
+Concept E
+Criterion I
+Criterion II
+Criterion III
+Criterion IV
+Criterion V
+Criterion VI
+Criterion VII
+Criterion VIII
+S +
+0
+0
+0
+0
+0
+S S
+0
+0
+0
+0
+0
+S -
+0
+0
+0
+0
+0
+D
+A
+T
+U
+M
+ADD
+COLUMS
+WITH
+HYBRID
+CONCEPTS<a class="headerlink" href="#subsystems-tend-to-be-fast-n-n-n-nimage-n-npughs-method-17-2-form-the-matrix-concepts-concept-a-concept-b-concept-c-concept-d-concept-e-criterion-i-criterion-ii-criterion-iii-criterion-iv-criterion-v-criterion-vi-criterion-vii-criterion-viii-s-0-0-0-0-0-s-s-0-0-0-0-0-s-0-0-0-0-0-d-a-t-u-m-add-colums-with-hybrid-concepts" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="i-t">
+<h2>I
+t<a class="headerlink" href="#i-t" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="s-s-i-j-baseline-concept-to-benchmarch-compare-against-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-npughs-method-18-3-clarify-concepts-oshare-individual-concepts-with-rest-of-team-ohelp-develop-team-ownership-of-concepts-4-choose-the-datum-concept-oa-baseline-concept-otry-to-choose-what-appears-to-be-one-of-the-better-concepts-ocould-be-an-existing-aircraft-or-similar-to-existing-aircraft-ocan-vote-if-there-is-disagreement-describe-configuration-and-technologies-or-spacecraft-subsystem-n-n-n-nimage-n-npughs-method-19-5-run-the-matrix-ouse-and-s-scale-to-compare-each-concept-to-the-datum-concept-okeep-moving-may-need-time-limit-on-each-cell-orecord-new-concepts-to-add-in-additional-columns-othe-major-advance-is-the-new-insight-gained-by-team-members-worse-better-same-not-clearly-better-b-or-wonse-than-datum-use-engineering-judgment-don-t-overthink-and-spend-too-long-n-n-n-nimage-n-npughs-method-20-6-evaluate-ratings-oadd-totals-for-each-concepts-and-s-separately-odo-not-try-for-a-single-total-score-7-attack-the-negatives-and-enhance-the-positives-ochange-modify-promising-concepts-to-eliminate-ratings-oapply-features-scoring-to-other-concepts-so-they-are-not-lost-oadd-hybrid-concepts-to-additional-columns-in-the-matrix-important-this-forces-the-team-to-improve-on-concepts-with-ideas-n-n-n-nimage-n-npughs-method-21-8-choose-new-datum-and-run-matrix-again-o-new-datum-should-be-promising-concept-o-a-different-datum-should-help-enhance-good-concepts-o-will-verify-elimination-of-poor-concepts-9-plan-further-work-o-some-decisions-about-or-s-will-be-uncomfortable-uncertain-o-what-additional-analysis-research-is-needed-to-make-these-decisions-clearer-o-can-you-use-your-analysis-tools-to-support-decisions-10-iterate-to-get-winning-concept-o-after-further-work-is-completed-o-drop-out-weak-concepts-o-add-any-new-concepts-generated-during-step-9-o-run-matrix-again-until-a-few-best-concepts-emerge-develop-insights-to-produce-enhance-the-best-concert-gather-information-to-support-decision-making-get-team-concesus-on-rominant-concepts-n-n-n-nimage-n-ncomments-about-pughs-method-22-pughs-method-is-used-in-many-engineering-design-settings-but-is-comparatively-uncommon-in-aircraft-spacecraft-design-pughs-method-helps-organize-mostly-qualitative-subjective-decision-making-to-generate-and-select-promising-concepts-it-is-not-a-quantitative-trade-study-top-concepts-should-be-compared-using-engineering-analyses-e-ventually-use-physics-based-analysis-and-trade-studies-to-select-best-concept-n-n-n-nimage-n-nother-concept-selection-methods-23-2-weighted-objectives-odetermine-objectives-concept-needs-to-satisfy-orank-and-weight-objectives-to-reflect-relative-importance-oscore-each-concept-against-each-objective-generally-this-is-qualitative-to-allow-for-fast-evaluation-this-can-introduce-dubious-arithmetic-otop-rated-concepts-are-likely-the-most-promising-weighted-objectives-are-not-a-rigorous-trade-study-e-not-quantitative-n-n-n-nimage-n-nweighted-objectives-evaluation-matrix-example-24-define-weights-setby-score-each-objective-x-configuration-10-best-wortetives-o-the-deal-1-worst-z1-8-rank-on-baselt-score-zweights-score-n-n-n-nimage-n-n-n-nimage-n-nconcept-selection-outcomes-example-student-firefighting-vehicles-spring-2022-25-most-promissing-datum-n-n-n-nimage-n-n-n-nimage-n-nconcept-selection-outcomes-example-student-firefighting-vehicles-spring-2022-26-consider-adding">
+<h2>S
+S
+i
+J
+baseline
+concept to benchmarch/compare against
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p17_i22.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p17_i23.jpeg" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p17_i24.jpeg" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p17_i25.jpeg" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p17_i26.jpeg" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p17_i27.jpeg" />\n\nPugh’s Method
+18
+3. Clarify concepts
+oShare individual concepts with rest of team
+oHelp develop “team” ownership of concepts
+4. Choose the “Datum” concept
+oA baseline concept
+oTry to choose what appears to be one of the better concepts
+oCould be an existing aircraft (or similar to existing aircraft)
+oCan vote if there is disagreement
+Describe configuration
+and technologies
+~
+or
+spacecraft /subsystem
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p18_i28.png" />\n\nPugh’s Method
+19
+5. Run the matrix
+oUse “+”, “-” and “S” scale to compare each concept to the Datum concept
+oKeep moving; may need time limit on each cell
+oRecord new concepts to add in additional columns
+o“The major advance is the new insight gained by team members”
+WORSE
+better
+SAME-NOT
+CLEARLY
+BETTER
+b - -
+OR
+WONSE
+THAN DATUM
+USE ENGINEERING JUDGMENT
+DON’T
+OVERTHINK
+AND
+SPEND Too LONG
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p19_i29.png" />\n\nPugh’s Method
+20
+6. Evaluate ratings
+oAdd totals for each concept’s “+”, “-” and “S” separately
+oDo not try for a single, total score
+7. Attack the negatives and enhance the positives.
+oChange/modify promising concepts to eliminate “-” ratings
+oApply features scoring “+” to other concepts so they are not lost
+oAdd hybrid concepts to additional columns in the matrix
+IMPORTANT !
+This
+Forces the team to improve
+on
+concepts
+with ideas.
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p20_i30.png" />\n\nPugh’s Method
+21
+8.
+Choose new Datum and run matrix again
+o New Datum should be promising concept
+o A different datum should help enhance good concepts
+o Will verify elimination of poor concepts
+9.
+Plan further work
+o Some decisions about “+”, “-” or S will be uncomfortable, uncertain
+o What additional analysis / research is needed to make these decisions clearer?
+o Can you use your analysis tools to support decisions?
+10. Iterate to get winning concept
+o After further work is completed
+o Drop out weak concepts
+o Add any new concepts generated during step 9
+o Run matrix again until a few best concepts emerge
+DEVELOP
+INSIGHTS
+To
+Produce /
+ENHANCE THE
+BEST CONCERT
+GATHER
+INFORMATION
+TO
+SUPPORT
+DECISION-MAKING
+GET TEAM
+CONCESUS
+ON
+ROMINANT
+CONCEPTS
+.
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p21_i31.png" />\n\nComments about Pugh’s Method
+22
+• Pugh’s method is used in many engineering design settings but is
+comparatively uncommon in aircraft/spacecraft design.
+• Pugh’s method helps organize mostly qualitative/subjective decision-
+making to generate and select promising concepts.
+• It is not a quantitative trade study
+• Top concepts should be compared using engineering analyses
+E VENTUALLY ,
+USE
+PHYSICS-BASED
+ANALYSIS
+AND
+TRADE
+STUDIES
+to
+SELECT
+BEST
+CONCEPT .
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p22_i32.png" />\n\nOther concept selection methods
+23
+2) Weighted objectives
+oDetermine objectives concept needs to satisfy
+oRank and weight objectives to reflect relative importance
+oScore each concept against each objective
+§ Generally, this is qualitative to allow for fast evaluation
+§ This can introduce “dubious arithmetic.”
+oTop-rated concepts are likely the most promising
+§ Weighted objectives are not a rigorous trade study E
+NOT QUANTITATIVE !
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p23_i33.png" />\n\nWeighted objectives evaluation matrix
+example
+24
+DEFINE
+WEIGHTS
+SETBY
+SCORE EACH
+OBJECTIVE X Configuration
+10 = BEST
+Wortetives
+o
+The
+deal
+1
+= worst
+Z1.8
+RANK On
+BaselT&amp;
+Score
+= Zweights score
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p24_i34.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p24_i35.png" />\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+25
+↑
+most promissing
+DATUM
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p25_i36.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p25_i37.jpeg" />\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+26
+Consider
+ADDING<a class="headerlink" href="#s-s-i-j-baseline-concept-to-benchmarch-compare-against-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-npughs-method-18-3-clarify-concepts-oshare-individual-concepts-with-rest-of-team-ohelp-develop-team-ownership-of-concepts-4-choose-the-datum-concept-oa-baseline-concept-otry-to-choose-what-appears-to-be-one-of-the-better-concepts-ocould-be-an-existing-aircraft-or-similar-to-existing-aircraft-ocan-vote-if-there-is-disagreement-describe-configuration-and-technologies-or-spacecraft-subsystem-n-n-n-nimage-n-npughs-method-19-5-run-the-matrix-ouse-and-s-scale-to-compare-each-concept-to-the-datum-concept-okeep-moving-may-need-time-limit-on-each-cell-orecord-new-concepts-to-add-in-additional-columns-othe-major-advance-is-the-new-insight-gained-by-team-members-worse-better-same-not-clearly-better-b-or-wonse-than-datum-use-engineering-judgment-don-t-overthink-and-spend-too-long-n-n-n-nimage-n-npughs-method-20-6-evaluate-ratings-oadd-totals-for-each-concepts-and-s-separately-odo-not-try-for-a-single-total-score-7-attack-the-negatives-and-enhance-the-positives-ochange-modify-promising-concepts-to-eliminate-ratings-oapply-features-scoring-to-other-concepts-so-they-are-not-lost-oadd-hybrid-concepts-to-additional-columns-in-the-matrix-important-this-forces-the-team-to-improve-on-concepts-with-ideas-n-n-n-nimage-n-npughs-method-21-8-choose-new-datum-and-run-matrix-again-o-new-datum-should-be-promising-concept-o-a-different-datum-should-help-enhance-good-concepts-o-will-verify-elimination-of-poor-concepts-9-plan-further-work-o-some-decisions-about-or-s-will-be-uncomfortable-uncertain-o-what-additional-analysis-research-is-needed-to-make-these-decisions-clearer-o-can-you-use-your-analysis-tools-to-support-decisions-10-iterate-to-get-winning-concept-o-after-further-work-is-completed-o-drop-out-weak-concepts-o-add-any-new-concepts-generated-during-step-9-o-run-matrix-again-until-a-few-best-concepts-emerge-develop-insights-to-produce-enhance-the-best-concert-gather-information-to-support-decision-making-get-team-concesus-on-rominant-concepts-n-n-n-nimage-n-ncomments-about-pughs-method-22-pughs-method-is-used-in-many-engineering-design-settings-but-is-comparatively-uncommon-in-aircraft-spacecraft-design-pughs-method-helps-organize-mostly-qualitative-subjective-decision-making-to-generate-and-select-promising-concepts-it-is-not-a-quantitative-trade-study-top-concepts-should-be-compared-using-engineering-analyses-e-ventually-use-physics-based-analysis-and-trade-studies-to-select-best-concept-n-n-n-nimage-n-nother-concept-selection-methods-23-2-weighted-objectives-odetermine-objectives-concept-needs-to-satisfy-orank-and-weight-objectives-to-reflect-relative-importance-oscore-each-concept-against-each-objective-generally-this-is-qualitative-to-allow-for-fast-evaluation-this-can-introduce-dubious-arithmetic-otop-rated-concepts-are-likely-the-most-promising-weighted-objectives-are-not-a-rigorous-trade-study-e-not-quantitative-n-n-n-nimage-n-nweighted-objectives-evaluation-matrix-example-24-define-weights-setby-score-each-objective-x-configuration-10-best-wortetives-o-the-deal-1-worst-z1-8-rank-on-baselt-score-zweights-score-n-n-n-nimage-n-n-n-nimage-n-nconcept-selection-outcomes-example-student-firefighting-vehicles-spring-2022-25-most-promissing-datum-n-n-n-nimage-n-n-n-nimage-n-nconcept-selection-outcomes-example-student-firefighting-vehicles-spring-2022-26-consider-adding" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="images">
+<h2>IMAGES<a class="headerlink" href="#images" title="Permalink to this heading">#</a></h2>
+<p>↳TAKE
+FORWARD For
+ANALYSIS
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p26_i38.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p26_i39.jpeg" />\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+27
+S
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p27_i40.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p27_i41.jpeg" />\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+28
+!
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p28_i42.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p28_i43.jpeg" />\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+29
+Y
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p29_i44.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p29_i45.jpeg" />\n\nIn summary
+30
+• A large number of concepts are needed
+• We need a process that
+o Encourages creativity but constrains creativity to our design
+objective
+o Encourages focused discussion and fair, unbiased, technical
+critique
+o “Racks and stacks” concepts
+o Produces better designs in addition to those racked and stacked
+o Enhances creativity, communication, and builds consensus
+• Pugh controlled convergence helps with the convergent and
+divergent process
+• Don’t overemphasize numbers!
+• Do be aware of how product / system attributes combine
+Source: ESD33 lecture notes 2007
+F
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p30_i46.png" />\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p30_i47.png" />\n\nReading
+31
+“Selecting a Winning Concept” by Clausen
+(available on the class Brightspace webpage)
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p31_i48.png" />\n\nReading
+31
+“Selecting a Winning Concept” by Clausen
+(available on the class Brightspace webpage)
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p32_i49.png" />\n\nReading
+31
+“Selecting a Winning Concept” by Clausen
+(available on the class Brightspace webpage)
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p33_i50.png" />\n\nReading
+31
+“Selecting a Winning Concept” by Clausen
+(available on the class Brightspace webpage)
+\n\n\n\n<img alt="Image" src="../_images/05_Concept_Generation_and_Selection_p34_i51.png" />\n\n</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters_raw"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concept-generation-and-selection-aae35103-n-n-n-nimage-n-n-n-nimage-n-npurpose-2-generating-system-concepts-owhat-does-the-system-look-like-what-is-the-overall-arrangement-where-are-major-components-and-subsystems-oaircraft-spacecraft-configuration-affects-all-aspects-of-performance-size-and-weight-want-a-large-number-of-concepts-odo-not-want-to-miss-very-promising-concepts-ocannot-address-a-large-number-of-concepts-in-detail-owith-little-to-no-analysis-want-to-select-most-promising-concepts-for-further-development-and-comparison-n-n-n-nimage-n-npurpose-3-will-discuss-two-approaches-in-some-detail-obrainstorming-opughs-method-other-popular-methods-omorphological-chart-for-concept-generation-oweighted-objectives-for-concept-selection">Concept Generation and
+Selection
+AAE35103
+\n\n\n\n\n\n\n\n\n\nPurpose
+2
+• Generating system concepts
+oWhat does the system look like? What is the overall arrangement? Where
+are major components and subsystems?
+oAircraft / spacecraft configuration affects all aspects of performance, size
+and weight
+• Want a large number of concepts
+oDo not want to miss very promising concepts
+oCannot address a large number of concepts in detail
+oWith little to no analysis, want to select most promising concepts for further
+development and comparison
+\n\n\n\n\n\nPurpose
+3
+• Will discuss two approaches in some detail
+oBrainstorming
+oPugh’s method
+• Other popular methods
+oMorphological chart for concept generation
+oWeighted objectives for concept selection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fill-each-now-the-aircraftsystem-must-perform-to-fulfill-each-function-i-pick-one-option-for-each-now-to-suggest-a-concept-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-10-aae451-em-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-11-n-n-n-nimage-n-n-n-nimage-n-nconcept-generation-outcomes-example-firefighting-vehicles-spring-2022-12-n-n-n-nimage-n-n-n-nimage-n-ncommon-dysfunctions-during-concept-generation-13-consideration-of-only-one-or-two-alternatives-often-proposed-by-most-assertive-members-of-the-team-failure-to-consider-carefully-the-usefulness-of-concepts-employed-by-other-firms-in-related-and-unrelated-products-involvement-of-only-one-or-two-people-in-the-process-resulting-in-lack-of-confidence-and-commitment-by-the-rest-of-the-team-ineffective-integration-of-promising-partial-solutions-failure-to-consider-entire-categories-of-solutions-n-n-n-nimage-n-nstructured-approaches-reduce-the-likelihood-of-costly-problems-14-encourages-gathering-of-information-from-disparate-information-sources-guides-team-through-exploration-of-alternatives-provides-a-mechanism-for-integrating-partial-solutions-step-by-step-method-also-useful-for-novices-keep-in-mind-the-cost-of-centification-n-n-n-nimage-n-npughs-method-15-combines-features-of-concept-generation-and-selection-o-named-after-stuart-pugh-o-sometimes-called-controlled-convergence-selecting-a-winning-concept-from-clausing-text-o-it-is-natural-to-think-of-design-concepts-while-requirements-are-developed-and-considered-o-pughs-method-encourages-the-team-to-develop-better-concepts-than-individuals-alone-o-before-starting-team-members-consider-their-own-concepts-like-brainstorming-e-team-ownership-of-final-concept-n-n-n-nimage-n-npughs-method-16-ten-steps-oit-may-take-several-hours-in-multiple-sessions-with-breaks-between-sessions-othink-about-having-two-or-three-long-meetings-for-this-oa-break-between-sessions-allows-subconscious-processing-1-choose-criteria-obased-on-requirements-generated-for-the-system-okeep-to-a-manageable-size-odo-not-assign-weights-part-of-pughs-directions-usually-for-complex-systems">Fill
+each now ↳
+THE AIRCRAFTSYSTEM
+MUST PERFORM
+to fulfill each function
+I
+Pick one option for
+Each
+now to suggest a
+concept.
+\n\n\n\n\n\n\n\n\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+10
+AAE451
+Em
+\n\n\n\n\n\n\n\n\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+11
+\n\n\n\n\n\n\n\n\n\nConcept generation outcomes example
+(Firefighting Vehicles, Spring 2022)
+12
+\n\n\n\n\n\n\n\n\n\nCommon dysfunctions  during concept
+generation
+13
+• Consideration of only one or two alternatives, often proposed by most assertive members of
+the team
+• Failure to consider carefully the usefulness of concepts employed by other firms in related and
+unrelated products
+• Involvement of only one or two people in the process, resulting in lack of confidence and
+commitment by the rest of the team
+• Ineffective integration of promising partial solutions
+• Failure to consider entire categories of solutions
+\n\n\n\n\n\nStructured approaches reduce the
+likelihood of costly problems
+14
+• Encourages gathering of information from disparate information sources
+• Guides team through exploration of alternatives
+• Provides a mechanism for integrating partial solutions
+• Step-by-step method also useful for novices
+KEEP In mind THE
+cost
+Of
+Centification
+\n\n\n\n\n\nPugh’s Method
+15
+• Combines features of concept generation and selection
+o Named after Stuart Pugh
+o Sometimes called “controlled convergence.”
+• “Selecting a Winning Concept” from Clausing text
+o It is natural to think of design concepts while requirements are developed
+and considered.
+o Pugh’s method encourages the team to develop better concepts than
+individuals alone.
+o Before starting, team members consider their own concepts (like
+brainstorming)
+E TEAM
+OWNERSHIP
+Of
+FINAL CONCEPT.
+\n\n\n\n\n\nPugh’s Method
+16
+• Ten steps
+oIt may take several hours in multiple sessions with breaks between sessions
+oThink about having two or three “long” meetings for this
+oA break between sessions allows subconscious processing
+1.
+Choose criteria
+oBased on requirements generated for the system
+oKeep to a manageable size
+oDo not assign weights (part of Pugh’s directions)
+USUALLY
+FOR COMPLEX SYSTEMS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subsystems-tend-to-be-fast-n-n-n-nimage-n-npughs-method-17-2-form-the-matrix-concepts-concept-a-concept-b-concept-c-concept-d-concept-e-criterion-i-criterion-ii-criterion-iii-criterion-iv-criterion-v-criterion-vi-criterion-vii-criterion-viii-s-0-0-0-0-0-s-s-0-0-0-0-0-s-0-0-0-0-0-d-a-t-u-m-add-colums-with-hybrid-concepts">SUBSYSTEMS TEND To BE
+FAST
+\n\n\n\n\n\nPugh’s method
+17
+2. Form the matrix
+CONCEPTS
+Concept A
+Concept B
+Concept C
+Concept D
+Concept E
+Criterion I
+Criterion II
+Criterion III
+Criterion IV
+Criterion V
+Criterion VI
+Criterion VII
+Criterion VIII
+S +
+0
+0
+0
+0
+0
+S S
+0
+0
+0
+0
+0
+S -
+0
+0
+0
+0
+0
+D
+A
+T
+U
+M
+ADD
+COLUMS
+WITH
+HYBRID
+CONCEPTS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-t">I
+t</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-s-i-j-baseline-concept-to-benchmarch-compare-against-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-npughs-method-18-3-clarify-concepts-oshare-individual-concepts-with-rest-of-team-ohelp-develop-team-ownership-of-concepts-4-choose-the-datum-concept-oa-baseline-concept-otry-to-choose-what-appears-to-be-one-of-the-better-concepts-ocould-be-an-existing-aircraft-or-similar-to-existing-aircraft-ocan-vote-if-there-is-disagreement-describe-configuration-and-technologies-or-spacecraft-subsystem-n-n-n-nimage-n-npughs-method-19-5-run-the-matrix-ouse-and-s-scale-to-compare-each-concept-to-the-datum-concept-okeep-moving-may-need-time-limit-on-each-cell-orecord-new-concepts-to-add-in-additional-columns-othe-major-advance-is-the-new-insight-gained-by-team-members-worse-better-same-not-clearly-better-b-or-wonse-than-datum-use-engineering-judgment-don-t-overthink-and-spend-too-long-n-n-n-nimage-n-npughs-method-20-6-evaluate-ratings-oadd-totals-for-each-concepts-and-s-separately-odo-not-try-for-a-single-total-score-7-attack-the-negatives-and-enhance-the-positives-ochange-modify-promising-concepts-to-eliminate-ratings-oapply-features-scoring-to-other-concepts-so-they-are-not-lost-oadd-hybrid-concepts-to-additional-columns-in-the-matrix-important-this-forces-the-team-to-improve-on-concepts-with-ideas-n-n-n-nimage-n-npughs-method-21-8-choose-new-datum-and-run-matrix-again-o-new-datum-should-be-promising-concept-o-a-different-datum-should-help-enhance-good-concepts-o-will-verify-elimination-of-poor-concepts-9-plan-further-work-o-some-decisions-about-or-s-will-be-uncomfortable-uncertain-o-what-additional-analysis-research-is-needed-to-make-these-decisions-clearer-o-can-you-use-your-analysis-tools-to-support-decisions-10-iterate-to-get-winning-concept-o-after-further-work-is-completed-o-drop-out-weak-concepts-o-add-any-new-concepts-generated-during-step-9-o-run-matrix-again-until-a-few-best-concepts-emerge-develop-insights-to-produce-enhance-the-best-concert-gather-information-to-support-decision-making-get-team-concesus-on-rominant-concepts-n-n-n-nimage-n-ncomments-about-pughs-method-22-pughs-method-is-used-in-many-engineering-design-settings-but-is-comparatively-uncommon-in-aircraft-spacecraft-design-pughs-method-helps-organize-mostly-qualitative-subjective-decision-making-to-generate-and-select-promising-concepts-it-is-not-a-quantitative-trade-study-top-concepts-should-be-compared-using-engineering-analyses-e-ventually-use-physics-based-analysis-and-trade-studies-to-select-best-concept-n-n-n-nimage-n-nother-concept-selection-methods-23-2-weighted-objectives-odetermine-objectives-concept-needs-to-satisfy-orank-and-weight-objectives-to-reflect-relative-importance-oscore-each-concept-against-each-objective-generally-this-is-qualitative-to-allow-for-fast-evaluation-this-can-introduce-dubious-arithmetic-otop-rated-concepts-are-likely-the-most-promising-weighted-objectives-are-not-a-rigorous-trade-study-e-not-quantitative-n-n-n-nimage-n-nweighted-objectives-evaluation-matrix-example-24-define-weights-setby-score-each-objective-x-configuration-10-best-wortetives-o-the-deal-1-worst-z1-8-rank-on-baselt-score-zweights-score-n-n-n-nimage-n-n-n-nimage-n-nconcept-selection-outcomes-example-student-firefighting-vehicles-spring-2022-25-most-promissing-datum-n-n-n-nimage-n-n-n-nimage-n-nconcept-selection-outcomes-example-student-firefighting-vehicles-spring-2022-26-consider-adding">S
+S
+i
+J
+baseline
+concept to benchmarch/compare against
+\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPugh’s Method
+18
+3. Clarify concepts
+oShare individual concepts with rest of team
+oHelp develop “team” ownership of concepts
+4. Choose the “Datum” concept
+oA baseline concept
+oTry to choose what appears to be one of the better concepts
+oCould be an existing aircraft (or similar to existing aircraft)
+oCan vote if there is disagreement
+Describe configuration
+and technologies
+~
+or
+spacecraft /subsystem
+\n\n\n\n\n\nPugh’s Method
+19
+5. Run the matrix
+oUse “+”, “-” and “S” scale to compare each concept to the Datum concept
+oKeep moving; may need time limit on each cell
+oRecord new concepts to add in additional columns
+o“The major advance is the new insight gained by team members”
+WORSE
+better
+SAME-NOT
+CLEARLY
+BETTER
+b - -
+OR
+WONSE
+THAN DATUM
+USE ENGINEERING JUDGMENT
+DON’T
+OVERTHINK
+AND
+SPEND Too LONG
+\n\n\n\n\n\nPugh’s Method
+20
+6. Evaluate ratings
+oAdd totals for each concept’s “+”, “-” and “S” separately
+oDo not try for a single, total score
+7. Attack the negatives and enhance the positives.
+oChange/modify promising concepts to eliminate “-” ratings
+oApply features scoring “+” to other concepts so they are not lost
+oAdd hybrid concepts to additional columns in the matrix
+IMPORTANT !
+This
+Forces the team to improve
+on
+concepts
+with ideas.
+\n\n\n\n\n\nPugh’s Method
+21
+8.
+Choose new Datum and run matrix again
+o New Datum should be promising concept
+o A different datum should help enhance good concepts
+o Will verify elimination of poor concepts
+9.
+Plan further work
+o Some decisions about “+”, “-” or S will be uncomfortable, uncertain
+o What additional analysis / research is needed to make these decisions clearer?
+o Can you use your analysis tools to support decisions?
+10. Iterate to get winning concept
+o After further work is completed
+o Drop out weak concepts
+o Add any new concepts generated during step 9
+o Run matrix again until a few best concepts emerge
+DEVELOP
+INSIGHTS
+To
+Produce /
+ENHANCE THE
+BEST CONCERT
+GATHER
+INFORMATION
+TO
+SUPPORT
+DECISION-MAKING
+GET TEAM
+CONCESUS
+ON
+ROMINANT
+CONCEPTS
+.
+\n\n\n\n\n\nComments about Pugh’s Method
+22
+• Pugh’s method is used in many engineering design settings but is
+comparatively uncommon in aircraft/spacecraft design.
+• Pugh’s method helps organize mostly qualitative/subjective decision-
+making to generate and select promising concepts.
+• It is not a quantitative trade study
+• Top concepts should be compared using engineering analyses
+E VENTUALLY ,
+USE
+PHYSICS-BASED
+ANALYSIS
+AND
+TRADE
+STUDIES
+to
+SELECT
+BEST
+CONCEPT .
+\n\n\n\n\n\nOther concept selection methods
+23
+2) Weighted objectives
+oDetermine objectives concept needs to satisfy
+oRank and weight objectives to reflect relative importance
+oScore each concept against each objective
+§ Generally, this is qualitative to allow for fast evaluation
+§ This can introduce “dubious arithmetic.”
+oTop-rated concepts are likely the most promising
+§ Weighted objectives are not a rigorous trade study E
+NOT QUANTITATIVE !
+\n\n\n\n\n\nWeighted objectives evaluation matrix
+example
+24
+DEFINE
+WEIGHTS
+SETBY
+SCORE EACH
+OBJECTIVE X Configuration
+10 = BEST
+Wortetives
+o
+The
+deal
+1
+= worst
+Z1.8
+RANK On
+BaselT&amp;
+Score
+= Zweights score
+\n\n\n\n\n\n\n\n\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+25
+↑
+most promissing
+DATUM
+\n\n\n\n\n\n\n\n\n\nConcept selection outcomes example
+(student firefighting vehicles, spring 2022)
+26
+Consider
+ADDING</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#images">IMAGES</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lead Systems Engineering Instructor
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

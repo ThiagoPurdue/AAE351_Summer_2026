@@ -1,0 +1,1764 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>08 Risk Management &#8212; AAE351: Aerospace Systems Design - Summer 2026</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/08_Risk_Management';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="09 Introduction to Probability" href="09_Introduction_to_Probability.html" />
+    <link rel="prev" title="07 Evaluation and Selection" href="07_Evaluation_and_Selection.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AAE351: Aerospace Systems Design - Summer 2026</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AAE351
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_Introduction_to_aerospace_system_design%202.html">01 Introduction to aerospace system design 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_The_system_developement_process.html">02 The system developement process</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="03_Needs_Analysis.html">03 Needs Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis%20%281%29.html">04 Requirements Analysis (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis.html">04 Requirements Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="05_Concept_Generation_and_Selection.html">05 Concept Generation and Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_Functional_Analysis.html">06 Functional Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="07_Evaluation_and_Selection.html">07 Evaluation and Selection</a></li>
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">08 Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_Introduction_to_Probability.html">09 Introduction to Probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_Conditional_Probability.html">10 Conditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="11_Unconditional_Probability.html">11 Unconditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="12_Independence.html">12 Independence</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="13_Discrete_Random_Variables_and_Distributions.html">13 Discrete Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="14_Continuous_Random_Variables_and_Distributions.html">14 Continuous Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="15_Introduction_to_Reliability.html">15 Introduction to Reliability</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="16_Hazard_Functions.html">16 Hazard Functions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="17_System_Reliability.html">17 System Reliability</a></li>
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/08_Risk_Management.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>08 Risk Management</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-management-aae35103-n-n-n-nimage-n-n-n-nimage-n-nrisk-management-2-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-at-the-outset-of-new-complex-system-development-there-are-uncertainties-and-hence-risks-in-every-aspect-oare-the-perceived-operational-requirements-realistic-owill-they-remain-valid-throughout-the-new-systems-operational-life-owill-the-resources-required-to-develop-and-produce-the-system-be-available-when-needed-owill-the-advanced-technology-necessary-to-achieve-the-required-operational-goals-perform-as-expected-owill-the-anticipated-advances-in-production-automation-materialize-owill-the-development-organization-be-free-from-work-stoppages-probability-of-failure-or">Risk Management
+AAE35103
+\n\n\n\n\n\n\n\n\n\nRisk management
+2
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• At the outset of new complex system development, there are
+uncertainties and, hence, risks in every aspect
+oAre the perceived operational requirements realistic?
+oWill they remain valid throughout the new system’s operational life?
+oWill the resources required to develop and produce the system be available
+when needed?
+oWill the advanced technology necessary to achieve the required operational
+goals perform as expected?
+oWill the anticipated advances in production automation materialize?
+oWill the development organization be free from work stoppages?
+Probability of
+Failure or</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#greatest-8-extremly-low-risk-risk-time-reduction-1-8">GREATEST
+⑧
+extremly low risk
+Risk
+time
+REDUCTION
+①
+⑧</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n-n-nimage-n-n-n-nimage-n-nexample-risk-mitigation-waterfall-chart-5-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-risk-conveys-the-foret-that-as-development-progresses-uncentanties-one-systematically-reduced-byanalysis-test-or-change-un-course-time">\n\n\n\n\n\n\n\n\n\nExample risk mitigation waterfall chart
+5
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Risk
+Conveys the Foret
+that
+as development
+progresses , UNCENTANTIES
+one
+SYSTEMATICALLY
+Reduced
+byanalysis,
+test , or change
+un
+course.
+time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intensified-technical-and-management-reviews-of-the-engineering-process-2-special-oversight-of-designated-component-engineering-3-special-analysis-and-testing-of-critical-design-items-4-rapid-prototyping-and-test-feedback-5-consideration-of-relieving-critical-design-requirements-6-initiation-of-fallback-parallel-developments-most-common-methods-resolve-problems-early-desig-reviews-important-additional-resources-unproven-components-with-limited-analysis-i-testing-explore-in-exceptional-uses-when-using-new-technology">Intensified technical and management reviews of the engineering
+process
+2. Special oversight of designated component engineering
+3. Special analysis and testing of critical design items
+4. Rapid prototyping and test feedback
+5. Consideration of relieving critical design requirements
+6. Initiation of fallback parallel developments
+(MOST
+COMMON
+METHODS)
+=&gt; resolve problems early
+=&gt; desig reviews
+important
+additional
+resources
+unproven components
+with limited
+analysis I testing
+EXPLORE in
+exceptional
+uses
+When using new technology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not-symmetric-make-sure-to-don-t-mitigate-that-haie-to-nisk-worry-too-much-an-eye-on-it-about-it-need-to-keep-n-n-n-nimage-n-nexample-lightsail-2-mission-risks-22-artist-s-concept-of-lightsail-orbiting-the-earth-lightsail-2-with-deployed-solar-sail-23-july-2019-as-a-solar-sail-lightsails-propulsion-relies-on-solar-radiation-solar-photons-exert-radiation-pressure-on-the-sail-which-produces-an-acceleration-on-the-spacecraft-relative-to-the-ratio-of-the-sails-area-to-its-mass-lightsail-1-was-a-technology-demonstrator-spacecraft-launched-in-2015-suffered-a-software-malfunction-lightsail-2-launched-in-2019-it-was-to-demonstrate-controlled-solar-sailing-in-low-earth-orbit-it-was-stated-that-its-orbit-had-been-raised-by-a-measurable-amount-although-it-has-spent-a-significant-time-randomly-tumbling-expected-to-remain-in-orbit-until-late-2021-source-https-en-wikipedia-org-wiki-lightsail-staed-until-i-2022-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nexample-lightsail-2-mission-risks-23-5-br-4-br-3-br-2-br-1-br-likelihood-br-consequences-br-2-br-3-br-4-br-5-br-1-br-not-catastrophic-but-other-parts-will-rail-mission-warn-may-risk-risk-rank-title-failure-to-properly-control-sail-orientation-l-3-4-1-14-2-incomplete-sail-deployment-l-3-3-power-anomaly-after-somel-deployment-4-corrupted-images-from-but-consequences-onbord-comers-l-z-c-3-are-you-won-t-fancy-be-anything-levable-carsenas-fail-secondary-mission-n-n-n-nimage-n-nexample-nasa-insight-24-artist-s-rendering-of-the-insight-lander-touchdown-on-elysium-planitia-animation-touch-down-day-insight-s-primary-objective-is-to-study-the-earliest-evolutionary-processes-that-shaped-mars-the-mission-s-secondary-objective-is-to-conduct-an-in-depth-study-of-geophysics-tectonic-activity-and-the-effect-of-meteorite-impacts-on-mars-hence-there-are-many-different-sensors-onboard-three-major-aspects-to-the-insight-spacecraft-are-the-cruise-stage-the-entry-descent-and-landing-system-and-the-lander-the-spacecraft-was-launched-on-5-may-2018-and-touched-down-on-26-november-2018-source-https-en-wikipedia-org-wiki-insight-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nexample-nasa-insight-25-taken-from-the-actual-risk-study-include-the-trends-as-mission-goes-on">NOT
+SYMMETRIC
+MAKE
+SURE to
+Don’t
+~
+MITIGATE THAT
+HAIE
+To
+niSk
+Worry
+ToO much·
+AN EYE ON IT
+ABOUT IT
+↳NEED TO KEEP
+\n\n\n\n\n\nExample : LightSail 2 mission risks
+22
+Artist’s concept of LightSail orbiting the Earth
+LightSail 2 with deployed solar sail, 23 July 2019
+• As a solar sail, LightSail’s propulsion relies on solar radiation. Solar photons exert radiation
+pressure on the sail, which produces an acceleration on the spacecraft relative to the ratio of
+the sail’s area to its mass
+• LightSail 1 was a technology demonstrator spacecraft. Launched in 2015. Suffered a software
+malfunction
+• LightSail 2 launched in 2019. It was to demonstrate controlled solar sailing in low Earth orbit.
+It was stated that its orbit had been raised by a measurable amount, although it has spent a
+significant time randomly tumbling. Expected to remain in orbit until late 2021
+Source: https://en.wikipedia.org/wiki/LightSail
+staed until
+I
+2022
+\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample : LightSail 2 mission risks
+23
+5<br/>
+4<br/>
+3<br/>
+2<br/>
+1<br/>
+Likelihood<br/>
+CONSEQUENCES<br/>
+2<br/>
+3<br/>
+4<br/>
+5<br/>
+1<br/>
+not catastrophic , but
+other parts
+will Rail mission
+,
+warn
+may
+Risk
+Risk
+↑
+RANK
+TITLE
+↓
+FAILURE
+TO PROPERLY
+Control
+SAIL
+ORIENTATION
+L= 3 · =4
+①
+⑭
+2
+INCOMPLETE
+SAIL
+DePLOYMENT
+L
+3
+3
+Power anomaly after
+somel deployment
+4
+Corrupted
+images
+from
+but consequences
+onbord
+comers
+L = z,C= 3
+are you
+won’t
+↳
+Fancy
+&amp;be
+anything
+LEVABLE
+CARSENAS
+=&gt; fail secondary mission
+\n\n\n\n\n\nExample: NASA InSight
+24
+Artist’s rendering of the InSight lander
+Touchdown on Elysium Planitia
+(animation)
+Touch down-day
+• InSight’s primary objective is to study the earliest evolutionary
+processes that shaped Mars
+• The mission’s secondary objective is to conduct an in-depth study of
+geophysics, tectonic activity and the effect of meteorite impacts on
+Mars. Hence, there are many different sensors onboard
+• Three major aspects to the InSight spacecraft are the cruise stage, the
+entry, descent, and landing system, and the lander
+• The spacecraft was launched on 5 May 2018 and touched down on 26
+November 2018
+Source: https://en.wikipedia.org/wiki/InSight
+\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample: NASA InSight
+25
+TAKEN
+FROM
+THE ACTUAL
+RISK
+STUDY
+Include
+the trends
+as
+mission
+goes
+on</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration-during-design-phase-mission-phase-n-n-n-nimage-n-n-n-nimage-n-nhow-do-we-apply-this-to-aircraft-26-lets-do-an-example-for-an-airplane-like-this-n-n-n-nimage-n-n-n-nimage-n-nhow-do-we-apply-this-to-aircraft-27-5-br-4-br-3-br-2-br-1-br-likelihood-br-consequences-br-2-br-3-br-4-br-5-br-1-br-work-owe-1landing-year-doesn-t-deploy-l-2-c-4-2wing-breaks-off-4-l-1-c-3-4-1-3engine-failure-l-2-2-2-12-4stall-l-20r-3-c-4-pilot-exp-lose-control-n-n-n-nimage-n-nspacecraft-critical-events-and-first-time-activities-28-a-systematic-approach-is-taken-toward-risk-identification-mitigation-of-a-first-time-activities-and-critical-events-through-table-top-reviews-address-the-following-areas-o-objectives-purpose-of-the-activity-with-a-brief-rationale-o-requirements-constraints-list-all-pertinent-requirements-including-windows-of-opportunity-and-needed-dsn-coverage-o-functional-description-include-timeline-activity-flow-diagram-decision-tree-if-applicable-and-predicted-performance-o-risk-areas-address-risk-areas-and-risk-mitigations-describe-related-spacecraft-fault-protection-response-detail-ground-contingency-plans-and-execution-criteria-o-readiness-assessment-describe-margins-spacecraft-and-vehicle-readiness-flight-team-readiness-command-product-status-and-documentation-status-for-all-critical-events-launch-tcms-orbit-insertion-edl-aerobraking-major-deployments-an-independent-review-board-holds-a-project-level-review-to-assess-readiness-red-team-and-external-review-teams-are-used-throughout-the-process-to-assess-the-projects-readiness-to-perform-critical-activities-and-suggest-potential-improvements">Integration
+during
+:
+DESIGN PHASE &amp;
+Mission Phase
+\n\n\n\n\n\n\n\n\n\nHow do we apply this to aircraft?
+26
+Let’s do an example for an airplane like this
+\n\n\n\n\n\n\n\n\n\nHow do we apply this to aircraft?
+27
+5<br/>
+4<br/>
+3<br/>
+2<br/>
+1<br/>
+Likelihood<br/>
+CONSEQUENCES<br/>
+2<br/>
+3<br/>
+4<br/>
+5<br/>
+1<br/>
+work
+owe
+①landing year doesn’t deploy
+L= 2
+, C = 4
+②Wing breaks
+off
+④
+L = 1
+, C = =
+③
+4
+.1
+③Engine
+Failure
+L = 2
+,
+2 = 2
+⑫
+④Stall
+L = 20r 3
+C = 4
+PILOT
+EXP .
+lose control
+\n\n\n\n\n\nSpacecraft critical events and first-time
+activities
+28
+• A systematic approach is taken toward risk identification/mitigation of a
+first-time activities and critical events. Through table-top reviews, address
+the following areas:
+o Objectives. Purpose of the activity with a brief rationale
+o Requirements/constraints. List all pertinent requirements, including windows of
+opportunity and needed DSN coverage
+o Functional description. Include timeline, activity flow diagram, decision tree (if
+applicable), and predicted performance.
+o Risk areas. Address risk areas and risk mitigations. Describe related spacecraft
+fault-protection response. Detail ground contingency plans and execution criteria
+o Readiness assessment. Describe margins, spacecraft and vehicle readiness, flight
+team readiness, command product status, and documentation status.
+• For all critical events (launch, TCMs, orbit insertion, EDL, aerobraking,
+major deployments), an independent review board holds a project-level
+review to assess readiness.
+• Red team and external review teams are used throughout the process to
+assess the project’s readiness to perform critical activities and suggest
+potential improvements.</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="risk-management">
+<h1>08 Risk Management<a class="headerlink" href="#risk-management" title="Permalink to this heading">#</a></h1>
+<section id="risk-management-aae35103-n-n-n-nimage-n-n-n-nimage-n-nrisk-management-2-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-at-the-outset-of-new-complex-system-development-there-are-uncertainties-and-hence-risks-in-every-aspect-oare-the-perceived-operational-requirements-realistic-owill-they-remain-valid-throughout-the-new-systems-operational-life-owill-the-resources-required-to-develop-and-produce-the-system-be-available-when-needed-owill-the-advanced-technology-necessary-to-achieve-the-required-operational-goals-perform-as-expected-owill-the-anticipated-advances-in-production-automation-materialize-owill-the-development-organization-be-free-from-work-stoppages-probability-of-failure-or">
+<h2>Risk Management
+AAE35103
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p1_i1.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p1_i2.png" />\n\nRisk management
+2
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• At the outset of new complex system development, there are
+uncertainties and, hence, risks in every aspect
+oAre the perceived operational requirements realistic?
+oWill they remain valid throughout the new system’s operational life?
+oWill the resources required to develop and produce the system be available
+when needed?
+oWill the advanced technology necessary to achieve the required operational
+goals perform as expected?
+oWill the anticipated advances in production automation materialize?
+oWill the development organization be free from work stoppages?
+Probability of
+Failure or<a class="headerlink" href="#risk-management-aae35103-n-n-n-nimage-n-n-n-nimage-n-nrisk-management-2-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-at-the-outset-of-new-complex-system-development-there-are-uncertainties-and-hence-risks-in-every-aspect-oare-the-perceived-operational-requirements-realistic-owill-they-remain-valid-throughout-the-new-systems-operational-life-owill-the-resources-required-to-develop-and-produce-the-system-be-available-when-needed-owill-the-advanced-technology-necessary-to-achieve-the-required-operational-goals-perform-as-expected-owill-the-anticipated-advances-in-production-automation-materialize-owill-the-development-organization-be-free-from-work-stoppages-probability-of-failure-or" title="Permalink to this heading">#</a></h2>
+<p>Unforeseem
+adverse events
+LUNKNOWS)
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p2_i3.png" />\n\nRisk management
+3
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• Systems engineering needs to be aware of such possibilities and
+guide the development to minimize (mitigate) their impact if and
+when they may occur
+• The methodology that is employed to identify and minimize risk in
+system development is called:
+• It must begin at the outset of the system development and progress
+throughout its duration
+RISK
+MANAGEMENT
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p3_i4.png" />\n\nVariation of program risk and effort
+throughout system development
+4
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+IN ARBITRARY
+N</p>
+<ul class="simple">
+<li><p>units
+HIGHEST
+O
+= REDUCES
+WITHtimE
+↓
+RiSk
+↳
+⑳
+reduce risk of
+REDUCE
+RISK
+OFADRESSING
+deriving irrelevant
+or unrealistic
+A SYSTEM ↑
+⑧
+NOT NEEDED
+·systems
+↓</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section id="greatest-8-extremly-low-risk-risk-time-reduction-1-8">
+<h2>GREATEST
+⑧
+extremly low risk
+Risk
+time
+REDUCTION
+①
+⑧<a class="headerlink" href="#greatest-8-extremly-low-risk-risk-time-reduction-1-8" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="n-n-n-nimage-n-n-n-nimage-n-nexample-risk-mitigation-waterfall-chart-5-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-risk-conveys-the-foret-that-as-development-progresses-uncentanties-one-systematically-reduced-byanalysis-test-or-change-un-course-time">
+<h2>\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p4_i5.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p4_i6.jpeg" />\n\nExample risk mitigation waterfall chart
+5
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Risk
+Conveys the Foret
+that
+as development
+progresses , UNCENTANTIES
+one
+SYSTEMATICALLY
+Reduced
+byanalysis,
+test , or change
+un
+course.
+time<a class="headerlink" href="#n-n-n-nimage-n-n-n-nimage-n-nexample-risk-mitigation-waterfall-chart-5-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-risk-conveys-the-foret-that-as-development-progresses-uncentanties-one-systematically-reduced-byanalysis-test-or-change-un-course-time" title="Permalink to this heading">#</a></h2>
+<p>\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p5_i7.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p5_i8.jpeg" />\n\nComponents of risk management
+6
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Risk
+Assessment
+Risk
+Mitigation
+Includes :
+-&gt; risk handling</p>
+<ul class="simple">
+<li><p>risk planning</p></li>
+<li></li>
+</ul>
+<blockquote>
+<div><p>risk monitoring
+-&gt; risk priorization
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p6_i9.png" />\n\nRisk assessment
+7
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Used to eliminate
+alternative
+concepts
+that
+are overly
+dependent
+on
+immature technologies
+,
+unproven technical
+approaches
+or
+other high risk
+advances.
+Identify the
+weakest
+and
+most uncertum
+feature of the design
+Focus
+attention
+on
+means
+for eliminating those
+features
+before
+, they
+present
+complications
+Compare Potential Importance by considering
+:</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>LIKELiMoD the
+given
+component
+will fail to meet the goals
+*Impact of the
+FAILURE
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p7_i10.png" />\n\nExample risk cube display
+8
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+QUALITATIVE
+IN
+NATURE</p></li>
+</ul>
+<ul class="simple">
+<li><p>EXPERIENCED
+Judreg
+NEEDED TO
+ASSION Risk
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p8_i11.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p8_i12.jpeg" />\n\nRisk likelihood (Probability of failure)
+9
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Too
+many uncertainties
+to
+compute
+a
+numerical value.
+=&gt; Use
+a relatively
+rough
+measure
+of
+likelihood :
+HISH
+,
+MEDIUM , Go
+Ibased
+on
+judgement)
+also
+,
+can rank from
+parts of
+a system
+that
+appear
+risk
+=&gt; concentrate
+on
+the
+most
+immature
+and
+complex
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p9_i13.png" />\n\nRisk likelihood (Probability of failure)
+10
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p10_i14.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p10_i15.jpeg" />\n\nRisk likelihood (Impact of failure)
+11
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+No
+accepted
+numerical
+scale
+=&gt; use the
+some
+relative values
+HIGH , medium , Low
+SERIOUSNESS
+Of
+Risk
+com be thought
+of
+a combination
+of the
+likelihood
+and criticality
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p11_i16.png" />\n\nRisk likelihood (Impact of failure)
+12
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p12_i17.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p12_i18.jpeg" />\n\nRole of system engineering
+13
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• The task of risk assessment and management is clearly the
+responsibility of systems engineering
+• The judgments that are involved require a breadth of knowledge of
+system characteristics and the constituent technologies beyond that
+possessed by design specialists
+• Also, judgments of risk criticality are at the system and program level
+• The process of risk assessment thus helps the systems engineer to
+identify the system features that need to be most thoroughly
+understood and raised to a level of design maturity suitable for
+full‐scale engineering
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p13_i19.png" />\n\nRisk mitigation
+14
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020</p></li>
+</ul>
+<ol class="arabic simple">
+<li></li>
+</ol>
+</section>
+<section id="intensified-technical-and-management-reviews-of-the-engineering-process-2-special-oversight-of-designated-component-engineering-3-special-analysis-and-testing-of-critical-design-items-4-rapid-prototyping-and-test-feedback-5-consideration-of-relieving-critical-design-requirements-6-initiation-of-fallback-parallel-developments-most-common-methods-resolve-problems-early-desig-reviews-important-additional-resources-unproven-components-with-limited-analysis-i-testing-explore-in-exceptional-uses-when-using-new-technology">
+<h2>Intensified technical and management reviews of the engineering
+process
+2. Special oversight of designated component engineering
+3. Special analysis and testing of critical design items
+4. Rapid prototyping and test feedback
+5. Consideration of relieving critical design requirements
+6. Initiation of fallback parallel developments
+(MOST
+COMMON
+METHODS)
+=&gt; resolve problems early
+=&gt; desig reviews
+important
+additional
+resources
+unproven components
+with limited
+analysis I testing
+EXPLORE in
+exceptional
+uses
+When using new technology<a class="headerlink" href="#intensified-technical-and-management-reviews-of-the-engineering-process-2-special-oversight-of-designated-component-engineering-3-special-analysis-and-testing-of-critical-design-items-4-rapid-prototyping-and-test-feedback-5-consideration-of-relieving-critical-design-requirements-6-initiation-of-fallback-parallel-developments-most-common-methods-resolve-problems-early-desig-reviews-important-additional-resources-unproven-components-with-limited-analysis-i-testing-explore-in-exceptional-uses-when-using-new-technology" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>define
+conditions for activation
+of backup.
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p14_i20.png" />\n\nRisk management plan
+15
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• The importance of the actions described above to the overall success
+of a system development requires that it be part of the overall
+program management process
+• To this end, a formal risk management plan should be developed and
+progressively updated, in which mitigation is a major part
+• For every significant risk, there should be a plan that minimizes its
+potential impact through specific actions to be taken
+• The formulation of such a plan must be predicated on the objective of
+minimizing the total expected program cost
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p15_i21.png" />\n\nRisk management plan
+16
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p16_i22.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p16_i23.jpeg" />\n\nRisk management for aerospace projects
+17
+• Risk management for aerospace projects is the process of balancing
+technical, cost and schedule risk within the available resources to maximize
+the probability of mission success
+• Development risk: risk elements associated with system development
+(hardware, software, I&amp;T) that can impact project cost and schedule
+performance
+o Often associated with new technologies, instrument developments, first-time
+applications, areas that are difficult to test in a laboratory environment
+• Mission risk: risk elements inherent in the design of the mission that will be
+encountered during operations
+o Often associated with critical events
+o Examples?</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+<blockquote>
+<div><p>solar panels
+not deploying</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>others ?</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+<blockquote>
+<div><p>landing year not deploying
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p17_i24.png" />\n\nRisk ratings
+18
+• A risk rating is a measure of the potential inability to achieve overall program objectives
+within defined constraints, and has two components:
+o The probability / likelihood of a risk being realized
+o The consequence / impact if the risk is realized
+• Likelihood rating scale (1 - 5) as defined by the NASA Engineering and Safety Center
+(NESC)
+o 1 Very low (&lt; 1E-06)
+§
+Example: fatal crashes per passenger airplane opportunity
+o 2 Low (between 1E-06 and 1E-03)
+§
+Example: mechanical failure of proven design
+o 3 Moderate (between 1E-03 and 1E-02)
+§
+Example: failure of first-time propulsive event
+o 4 High (between 1E-02 and 1E-01)
+§
+Example: launch failure of development vehicle
+o 5 Very likely (greater than 1E-01)
+§
+Example: rock impact when landing in densely populated boulder field
+I
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p18_i25.png" />\n\nRisk ratings
+19
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• In practice, the likelihood scale often needs to be redefined to
+better suit the risk posture of the mission. Risk definitions must be
+communicated across the project, and to the sponsor!
+• Likelihood scale for deep space robotic mission:
+o1 Very low (&lt; 1%)
+o2 Low (between 1%-10%)
+o3 Moderate (between 10%-50%)
+o4 High (between 50%-80%)
+o5 Very likely (&gt;80%)
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p19_i26.png" />\n\nRisk ratings
+20
+• There is no standard definition given by NESC for the consequence scale;
+the following is a common interpretation for robotic planetary missions
+• Consequence scale (1 – 5)
+o 1 Minimal impact
+§
+Example: minor delay in obtaining non-critical data
+o 2 Minor impact
+§
+Loss of non-critical data, delay in critical events
+o 3 Moderate impact
+§
+Loss of science objective, failure to meet full mission success criteria
+o 4 Major impact
+§
+Loss of instrument, loss of critical mission data set, failure to meet minimum mission
+success criteria
+o 5 Mission catastrophic
+§
+Loss of mission, mission cancellation, failure to achieve any mission objectives
+I
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p20_i27.png" />\n\nNASA 5x5 risk matrix
+21
+• The NASA standard 5x5 risk matrix is a tool that enables quick
+assessment of mission and development risks
+• Note that 5x1 is yellow, and 1x5 is green
+• Typically, attention is focused on yellow and red risks
+5<br />
+4<br />
+3<br />
+2<br />
+1<br />
+Likelihood<br />
+CONSEQUENCES<br />
+2<br />
+3<br />
+4<br />
+5<br />
+1</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section id="not-symmetric-make-sure-to-don-t-mitigate-that-haie-to-nisk-worry-too-much-an-eye-on-it-about-it-need-to-keep-n-n-n-nimage-n-nexample-lightsail-2-mission-risks-22-artist-s-concept-of-lightsail-orbiting-the-earth-lightsail-2-with-deployed-solar-sail-23-july-2019-as-a-solar-sail-lightsails-propulsion-relies-on-solar-radiation-solar-photons-exert-radiation-pressure-on-the-sail-which-produces-an-acceleration-on-the-spacecraft-relative-to-the-ratio-of-the-sails-area-to-its-mass-lightsail-1-was-a-technology-demonstrator-spacecraft-launched-in-2015-suffered-a-software-malfunction-lightsail-2-launched-in-2019-it-was-to-demonstrate-controlled-solar-sailing-in-low-earth-orbit-it-was-stated-that-its-orbit-had-been-raised-by-a-measurable-amount-although-it-has-spent-a-significant-time-randomly-tumbling-expected-to-remain-in-orbit-until-late-2021-source-https-en-wikipedia-org-wiki-lightsail-staed-until-i-2022-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nexample-lightsail-2-mission-risks-23-5-br-4-br-3-br-2-br-1-br-likelihood-br-consequences-br-2-br-3-br-4-br-5-br-1-br-not-catastrophic-but-other-parts-will-rail-mission-warn-may-risk-risk-rank-title-failure-to-properly-control-sail-orientation-l-3-4-1-14-2-incomplete-sail-deployment-l-3-3-power-anomaly-after-somel-deployment-4-corrupted-images-from-but-consequences-onbord-comers-l-z-c-3-are-you-won-t-fancy-be-anything-levable-carsenas-fail-secondary-mission-n-n-n-nimage-n-nexample-nasa-insight-24-artist-s-rendering-of-the-insight-lander-touchdown-on-elysium-planitia-animation-touch-down-day-insight-s-primary-objective-is-to-study-the-earliest-evolutionary-processes-that-shaped-mars-the-mission-s-secondary-objective-is-to-conduct-an-in-depth-study-of-geophysics-tectonic-activity-and-the-effect-of-meteorite-impacts-on-mars-hence-there-are-many-different-sensors-onboard-three-major-aspects-to-the-insight-spacecraft-are-the-cruise-stage-the-entry-descent-and-landing-system-and-the-lander-the-spacecraft-was-launched-on-5-may-2018-and-touched-down-on-26-november-2018-source-https-en-wikipedia-org-wiki-insight-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nexample-nasa-insight-25-taken-from-the-actual-risk-study-include-the-trends-as-mission-goes-on">
+<h2>NOT
+SYMMETRIC
+MAKE
+SURE to
+Don’t
+~
+MITIGATE THAT
+HAIE
+To
+niSk
+Worry
+ToO much·
+AN EYE ON IT
+ABOUT IT
+↳NEED TO KEEP
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p21_i28.png" />\n\nExample : LightSail 2 mission risks
+22
+Artist’s concept of LightSail orbiting the Earth
+LightSail 2 with deployed solar sail, 23 July 2019
+• As a solar sail, LightSail’s propulsion relies on solar radiation. Solar photons exert radiation
+pressure on the sail, which produces an acceleration on the spacecraft relative to the ratio of
+the sail’s area to its mass
+• LightSail 1 was a technology demonstrator spacecraft. Launched in 2015. Suffered a software
+malfunction
+• LightSail 2 launched in 2019. It was to demonstrate controlled solar sailing in low Earth orbit.
+It was stated that its orbit had been raised by a measurable amount, although it has spent a
+significant time randomly tumbling. Expected to remain in orbit until late 2021
+Source: <a class="reference external" href="https://en.wikipedia.org/wiki/LightSail">https://en.wikipedia.org/wiki/LightSail</a>
+staed until
+I
+2022
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p22_i29.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p22_i30.jpeg" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p22_i31.jpeg" />\n\nExample : LightSail 2 mission risks
+23
+5<br />
+4<br />
+3<br />
+2<br />
+1<br />
+Likelihood<br />
+CONSEQUENCES<br />
+2<br />
+3<br />
+4<br />
+5<br />
+1<br />
+not catastrophic , but
+other parts
+will Rail mission
+,
+warn
+may
+Risk
+Risk
+↑
+RANK
+TITLE
+↓
+FAILURE
+TO PROPERLY
+Control
+SAIL
+ORIENTATION
+L= 3 · =4
+①
+⑭
+2
+INCOMPLETE
+SAIL
+DePLOYMENT
+L
+3
+3
+Power anomaly after
+somel deployment
+4
+Corrupted
+images
+from
+but consequences
+onbord
+comers
+L = z,C= 3
+are you
+won’t
+↳
+Fancy
+&amp;be
+anything
+LEVABLE
+CARSENAS
+=&gt; fail secondary mission
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p23_i32.png" />\n\nExample: NASA InSight
+24
+Artist’s rendering of the InSight lander
+Touchdown on Elysium Planitia
+(animation)
+Touch down-day
+• InSight’s primary objective is to study the earliest evolutionary
+processes that shaped Mars
+• The mission’s secondary objective is to conduct an in-depth study of
+geophysics, tectonic activity and the effect of meteorite impacts on
+Mars. Hence, there are many different sensors onboard
+• Three major aspects to the InSight spacecraft are the cruise stage, the
+entry, descent, and landing system, and the lander
+• The spacecraft was launched on 5 May 2018 and touched down on 26
+November 2018
+Source: <a class="reference external" href="https://en.wikipedia.org/wiki/InSight">https://en.wikipedia.org/wiki/InSight</a>
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p24_i33.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p24_i34.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p24_i35.jpeg" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p24_i36.jpeg" />\n\nExample: NASA InSight
+25
+TAKEN
+FROM
+THE ACTUAL
+RISK
+STUDY
+Include
+the trends
+as
+mission
+goes
+on<a class="headerlink" href="#not-symmetric-make-sure-to-don-t-mitigate-that-haie-to-nisk-worry-too-much-an-eye-on-it-about-it-need-to-keep-n-n-n-nimage-n-nexample-lightsail-2-mission-risks-22-artist-s-concept-of-lightsail-orbiting-the-earth-lightsail-2-with-deployed-solar-sail-23-july-2019-as-a-solar-sail-lightsails-propulsion-relies-on-solar-radiation-solar-photons-exert-radiation-pressure-on-the-sail-which-produces-an-acceleration-on-the-spacecraft-relative-to-the-ratio-of-the-sails-area-to-its-mass-lightsail-1-was-a-technology-demonstrator-spacecraft-launched-in-2015-suffered-a-software-malfunction-lightsail-2-launched-in-2019-it-was-to-demonstrate-controlled-solar-sailing-in-low-earth-orbit-it-was-stated-that-its-orbit-had-been-raised-by-a-measurable-amount-although-it-has-spent-a-significant-time-randomly-tumbling-expected-to-remain-in-orbit-until-late-2021-source-https-en-wikipedia-org-wiki-lightsail-staed-until-i-2022-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nexample-lightsail-2-mission-risks-23-5-br-4-br-3-br-2-br-1-br-likelihood-br-consequences-br-2-br-3-br-4-br-5-br-1-br-not-catastrophic-but-other-parts-will-rail-mission-warn-may-risk-risk-rank-title-failure-to-properly-control-sail-orientation-l-3-4-1-14-2-incomplete-sail-deployment-l-3-3-power-anomaly-after-somel-deployment-4-corrupted-images-from-but-consequences-onbord-comers-l-z-c-3-are-you-won-t-fancy-be-anything-levable-carsenas-fail-secondary-mission-n-n-n-nimage-n-nexample-nasa-insight-24-artist-s-rendering-of-the-insight-lander-touchdown-on-elysium-planitia-animation-touch-down-day-insight-s-primary-objective-is-to-study-the-earliest-evolutionary-processes-that-shaped-mars-the-mission-s-secondary-objective-is-to-conduct-an-in-depth-study-of-geophysics-tectonic-activity-and-the-effect-of-meteorite-impacts-on-mars-hence-there-are-many-different-sensors-onboard-three-major-aspects-to-the-insight-spacecraft-are-the-cruise-stage-the-entry-descent-and-landing-system-and-the-lander-the-spacecraft-was-launched-on-5-may-2018-and-touched-down-on-26-november-2018-source-https-en-wikipedia-org-wiki-insight-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nexample-nasa-insight-25-taken-from-the-actual-risk-study-include-the-trends-as-mission-goes-on" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="integration-during-design-phase-mission-phase-n-n-n-nimage-n-n-n-nimage-n-nhow-do-we-apply-this-to-aircraft-26-lets-do-an-example-for-an-airplane-like-this-n-n-n-nimage-n-n-n-nimage-n-nhow-do-we-apply-this-to-aircraft-27-5-br-4-br-3-br-2-br-1-br-likelihood-br-consequences-br-2-br-3-br-4-br-5-br-1-br-work-owe-1landing-year-doesn-t-deploy-l-2-c-4-2wing-breaks-off-4-l-1-c-3-4-1-3engine-failure-l-2-2-2-12-4stall-l-20r-3-c-4-pilot-exp-lose-control-n-n-n-nimage-n-nspacecraft-critical-events-and-first-time-activities-28-a-systematic-approach-is-taken-toward-risk-identification-mitigation-of-a-first-time-activities-and-critical-events-through-table-top-reviews-address-the-following-areas-o-objectives-purpose-of-the-activity-with-a-brief-rationale-o-requirements-constraints-list-all-pertinent-requirements-including-windows-of-opportunity-and-needed-dsn-coverage-o-functional-description-include-timeline-activity-flow-diagram-decision-tree-if-applicable-and-predicted-performance-o-risk-areas-address-risk-areas-and-risk-mitigations-describe-related-spacecraft-fault-protection-response-detail-ground-contingency-plans-and-execution-criteria-o-readiness-assessment-describe-margins-spacecraft-and-vehicle-readiness-flight-team-readiness-command-product-status-and-documentation-status-for-all-critical-events-launch-tcms-orbit-insertion-edl-aerobraking-major-deployments-an-independent-review-board-holds-a-project-level-review-to-assess-readiness-red-team-and-external-review-teams-are-used-throughout-the-process-to-assess-the-projects-readiness-to-perform-critical-activities-and-suggest-potential-improvements">
+<h2>Integration
+during
+:
+DESIGN PHASE &amp;
+Mission Phase
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p25_i37.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p25_i38.png" />\n\nHow do we apply this to aircraft?
+26
+Let’s do an example for an airplane like this
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p26_i39.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p26_i40.jpeg" />\n\nHow do we apply this to aircraft?
+27
+5<br />
+4<br />
+3<br />
+2<br />
+1<br />
+Likelihood<br />
+CONSEQUENCES<br />
+2<br />
+3<br />
+4<br />
+5<br />
+1<br />
+work
+owe
+①landing year doesn’t deploy
+L= 2
+, C = 4
+②Wing breaks
+off
+④
+L = 1
+, C = =
+③
+4
+.1
+③Engine
+Failure
+L = 2
+,
+2 = 2
+⑫
+④Stall
+L = 20r 3
+C = 4
+PILOT
+EXP .
+lose control
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p27_i41.png" />\n\nSpacecraft critical events and first-time
+activities
+28
+• A systematic approach is taken toward risk identification/mitigation of a
+first-time activities and critical events. Through table-top reviews, address
+the following areas:
+o Objectives. Purpose of the activity with a brief rationale
+o Requirements/constraints. List all pertinent requirements, including windows of
+opportunity and needed DSN coverage
+o Functional description. Include timeline, activity flow diagram, decision tree (if
+applicable), and predicted performance.
+o Risk areas. Address risk areas and risk mitigations. Describe related spacecraft
+fault-protection response. Detail ground contingency plans and execution criteria
+o Readiness assessment. Describe margins, spacecraft and vehicle readiness, flight
+team readiness, command product status, and documentation status.
+• For all critical events (launch, TCMs, orbit insertion, EDL, aerobraking,
+major deployments), an independent review board holds a project-level
+review to assess readiness.
+• Red team and external review teams are used throughout the process to
+assess the project’s readiness to perform critical activities and suggest
+potential improvements.<a class="headerlink" href="#integration-during-design-phase-mission-phase-n-n-n-nimage-n-n-n-nimage-n-nhow-do-we-apply-this-to-aircraft-26-lets-do-an-example-for-an-airplane-like-this-n-n-n-nimage-n-n-n-nimage-n-nhow-do-we-apply-this-to-aircraft-27-5-br-4-br-3-br-2-br-1-br-likelihood-br-consequences-br-2-br-3-br-4-br-5-br-1-br-work-owe-1landing-year-doesn-t-deploy-l-2-c-4-2wing-breaks-off-4-l-1-c-3-4-1-3engine-failure-l-2-2-2-12-4stall-l-20r-3-c-4-pilot-exp-lose-control-n-n-n-nimage-n-nspacecraft-critical-events-and-first-time-activities-28-a-systematic-approach-is-taken-toward-risk-identification-mitigation-of-a-first-time-activities-and-critical-events-through-table-top-reviews-address-the-following-areas-o-objectives-purpose-of-the-activity-with-a-brief-rationale-o-requirements-constraints-list-all-pertinent-requirements-including-windows-of-opportunity-and-needed-dsn-coverage-o-functional-description-include-timeline-activity-flow-diagram-decision-tree-if-applicable-and-predicted-performance-o-risk-areas-address-risk-areas-and-risk-mitigations-describe-related-spacecraft-fault-protection-response-detail-ground-contingency-plans-and-execution-criteria-o-readiness-assessment-describe-margins-spacecraft-and-vehicle-readiness-flight-team-readiness-command-product-status-and-documentation-status-for-all-critical-events-launch-tcms-orbit-insertion-edl-aerobraking-major-deployments-an-independent-review-board-holds-a-project-level-review-to-assess-readiness-red-team-and-external-review-teams-are-used-throughout-the-process-to-assess-the-projects-readiness-to-perform-critical-activities-and-suggest-potential-improvements" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li></li>
+</ul>
+<p>↳Adversarial
+attitude against developers
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p28_i42.png" />\n\nContingency planning
+29
+• Fault trees are used to develop and document list of risk areas for which
+contingency plans may be developed
+• Risk areas are then categorized
+o Category A
+§
+Immediate response required
+§
+Formal contingency plans developed
+§
+Command products built and tested a priori, ready for use
+§
+Desirable to exercise in Operational Readiness Tests
+o Category B
+§
+Immediate response is not required
+§
+Formal contingency plans developed
+§
+A priori command products not required
+o Category C
+§
+Maintained as identified mission risk
+§
+No formal contingency plan, but develop informal notes with thoughts on how to respond
+~
+MORE ON this Topic In A frame
+Lecture
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p29_i43.png" />\n\nExample: Deep impact contingency plans
+30
+• The Deep Impact was designed to study the interior composition of the comet
+Tempel 1, by releasing an impactor into the comet
+• The spacecraft consists of two main sections, the 372-kilogram (820 lb) copper-
+core “Smart Impactor” that impacted the comet, and the 601 kg (1,325 lb) “Flyby”
+section
+• It was launched from Cape Canaveral on January 12, 2005. Impact occurred at
+05:45 UTC on the morning of July 4, 2005, within one second of the expected
+time for impact
+Cameras of the Flyby spacecraft, HRI at
+right, MRI at left
+High Resolution Instrument,
+Visual CCD (HRIV) during
+encounter
+Source: <a class="reference external" href="https://en.wikipedia.org/wiki/Deep_Impact_(spacecraft)">https://en.wikipedia.org/wiki/Deep_Impact_(spacecraft)</a>
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p30_i44.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p30_i45.jpeg" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p30_i46.jpeg" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p30_i47.png" />\n\nExample: Deep Impact contingency plans
+31
+O
+O
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p31_i48.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p31_i49.png" />\n\nRoot cause analysis – Fishbone diagram
+32
+• Root cause analysis
+is the fundamental
+breakdown or failure
+of a process which,
+when resolved,
+prevents a
+recurrence of the
+problem
+• Fishbone diagram
+helps to document
+logic flow when
+brainstorming
+potential causes</p>
+<p>If something has gone wrong systematically get tothe
+roof
+cause
+N
+T
+WORK
+BACKWARDS
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p32_i50.png" />\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p32_i51.jpeg" />\n\nReading
+33
+Chapter 12 of Kossiakoff et al., Systems Engineering
+Principles and Practice, Third ed., Wiley, 2020
+\n\n\n\n<img alt="Image" src="../_images/08_Risk_Management_p33_i52.png" />\n\n</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="07_Evaluation_and_Selection.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">07 Evaluation and Selection</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="09_Introduction_to_Probability.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">09 Introduction to Probability</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-management-aae35103-n-n-n-nimage-n-n-n-nimage-n-nrisk-management-2-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-at-the-outset-of-new-complex-system-development-there-are-uncertainties-and-hence-risks-in-every-aspect-oare-the-perceived-operational-requirements-realistic-owill-they-remain-valid-throughout-the-new-systems-operational-life-owill-the-resources-required-to-develop-and-produce-the-system-be-available-when-needed-owill-the-advanced-technology-necessary-to-achieve-the-required-operational-goals-perform-as-expected-owill-the-anticipated-advances-in-production-automation-materialize-owill-the-development-organization-be-free-from-work-stoppages-probability-of-failure-or">Risk Management
+AAE35103
+\n\n\n\n\n\n\n\n\n\nRisk management
+2
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• At the outset of new complex system development, there are
+uncertainties and, hence, risks in every aspect
+oAre the perceived operational requirements realistic?
+oWill they remain valid throughout the new system’s operational life?
+oWill the resources required to develop and produce the system be available
+when needed?
+oWill the advanced technology necessary to achieve the required operational
+goals perform as expected?
+oWill the anticipated advances in production automation materialize?
+oWill the development organization be free from work stoppages?
+Probability of
+Failure or</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#greatest-8-extremly-low-risk-risk-time-reduction-1-8">GREATEST
+⑧
+extremly low risk
+Risk
+time
+REDUCTION
+①
+⑧</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n-n-nimage-n-n-n-nimage-n-nexample-risk-mitigation-waterfall-chart-5-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-risk-conveys-the-foret-that-as-development-progresses-uncentanties-one-systematically-reduced-byanalysis-test-or-change-un-course-time">\n\n\n\n\n\n\n\n\n\nExample risk mitigation waterfall chart
+5
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Risk
+Conveys the Foret
+that
+as development
+progresses , UNCENTANTIES
+one
+SYSTEMATICALLY
+Reduced
+byanalysis,
+test , or change
+un
+course.
+time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intensified-technical-and-management-reviews-of-the-engineering-process-2-special-oversight-of-designated-component-engineering-3-special-analysis-and-testing-of-critical-design-items-4-rapid-prototyping-and-test-feedback-5-consideration-of-relieving-critical-design-requirements-6-initiation-of-fallback-parallel-developments-most-common-methods-resolve-problems-early-desig-reviews-important-additional-resources-unproven-components-with-limited-analysis-i-testing-explore-in-exceptional-uses-when-using-new-technology">Intensified technical and management reviews of the engineering
+process
+2. Special oversight of designated component engineering
+3. Special analysis and testing of critical design items
+4. Rapid prototyping and test feedback
+5. Consideration of relieving critical design requirements
+6. Initiation of fallback parallel developments
+(MOST
+COMMON
+METHODS)
+=&gt; resolve problems early
+=&gt; desig reviews
+important
+additional
+resources
+unproven components
+with limited
+analysis I testing
+EXPLORE in
+exceptional
+uses
+When using new technology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not-symmetric-make-sure-to-don-t-mitigate-that-haie-to-nisk-worry-too-much-an-eye-on-it-about-it-need-to-keep-n-n-n-nimage-n-nexample-lightsail-2-mission-risks-22-artist-s-concept-of-lightsail-orbiting-the-earth-lightsail-2-with-deployed-solar-sail-23-july-2019-as-a-solar-sail-lightsails-propulsion-relies-on-solar-radiation-solar-photons-exert-radiation-pressure-on-the-sail-which-produces-an-acceleration-on-the-spacecraft-relative-to-the-ratio-of-the-sails-area-to-its-mass-lightsail-1-was-a-technology-demonstrator-spacecraft-launched-in-2015-suffered-a-software-malfunction-lightsail-2-launched-in-2019-it-was-to-demonstrate-controlled-solar-sailing-in-low-earth-orbit-it-was-stated-that-its-orbit-had-been-raised-by-a-measurable-amount-although-it-has-spent-a-significant-time-randomly-tumbling-expected-to-remain-in-orbit-until-late-2021-source-https-en-wikipedia-org-wiki-lightsail-staed-until-i-2022-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nexample-lightsail-2-mission-risks-23-5-br-4-br-3-br-2-br-1-br-likelihood-br-consequences-br-2-br-3-br-4-br-5-br-1-br-not-catastrophic-but-other-parts-will-rail-mission-warn-may-risk-risk-rank-title-failure-to-properly-control-sail-orientation-l-3-4-1-14-2-incomplete-sail-deployment-l-3-3-power-anomaly-after-somel-deployment-4-corrupted-images-from-but-consequences-onbord-comers-l-z-c-3-are-you-won-t-fancy-be-anything-levable-carsenas-fail-secondary-mission-n-n-n-nimage-n-nexample-nasa-insight-24-artist-s-rendering-of-the-insight-lander-touchdown-on-elysium-planitia-animation-touch-down-day-insight-s-primary-objective-is-to-study-the-earliest-evolutionary-processes-that-shaped-mars-the-mission-s-secondary-objective-is-to-conduct-an-in-depth-study-of-geophysics-tectonic-activity-and-the-effect-of-meteorite-impacts-on-mars-hence-there-are-many-different-sensors-onboard-three-major-aspects-to-the-insight-spacecraft-are-the-cruise-stage-the-entry-descent-and-landing-system-and-the-lander-the-spacecraft-was-launched-on-5-may-2018-and-touched-down-on-26-november-2018-source-https-en-wikipedia-org-wiki-insight-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-nexample-nasa-insight-25-taken-from-the-actual-risk-study-include-the-trends-as-mission-goes-on">NOT
+SYMMETRIC
+MAKE
+SURE to
+Don’t
+~
+MITIGATE THAT
+HAIE
+To
+niSk
+Worry
+ToO much·
+AN EYE ON IT
+ABOUT IT
+↳NEED TO KEEP
+\n\n\n\n\n\nExample : LightSail 2 mission risks
+22
+Artist’s concept of LightSail orbiting the Earth
+LightSail 2 with deployed solar sail, 23 July 2019
+• As a solar sail, LightSail’s propulsion relies on solar radiation. Solar photons exert radiation
+pressure on the sail, which produces an acceleration on the spacecraft relative to the ratio of
+the sail’s area to its mass
+• LightSail 1 was a technology demonstrator spacecraft. Launched in 2015. Suffered a software
+malfunction
+• LightSail 2 launched in 2019. It was to demonstrate controlled solar sailing in low Earth orbit.
+It was stated that its orbit had been raised by a measurable amount, although it has spent a
+significant time randomly tumbling. Expected to remain in orbit until late 2021
+Source: https://en.wikipedia.org/wiki/LightSail
+staed until
+I
+2022
+\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample : LightSail 2 mission risks
+23
+5<br/>
+4<br/>
+3<br/>
+2<br/>
+1<br/>
+Likelihood<br/>
+CONSEQUENCES<br/>
+2<br/>
+3<br/>
+4<br/>
+5<br/>
+1<br/>
+not catastrophic , but
+other parts
+will Rail mission
+,
+warn
+may
+Risk
+Risk
+↑
+RANK
+TITLE
+↓
+FAILURE
+TO PROPERLY
+Control
+SAIL
+ORIENTATION
+L= 3 · =4
+①
+⑭
+2
+INCOMPLETE
+SAIL
+DePLOYMENT
+L
+3
+3
+Power anomaly after
+somel deployment
+4
+Corrupted
+images
+from
+but consequences
+onbord
+comers
+L = z,C= 3
+are you
+won’t
+↳
+Fancy
+&amp;be
+anything
+LEVABLE
+CARSENAS
+=&gt; fail secondary mission
+\n\n\n\n\n\nExample: NASA InSight
+24
+Artist’s rendering of the InSight lander
+Touchdown on Elysium Planitia
+(animation)
+Touch down-day
+• InSight’s primary objective is to study the earliest evolutionary
+processes that shaped Mars
+• The mission’s secondary objective is to conduct an in-depth study of
+geophysics, tectonic activity and the effect of meteorite impacts on
+Mars. Hence, there are many different sensors onboard
+• Three major aspects to the InSight spacecraft are the cruise stage, the
+entry, descent, and landing system, and the lander
+• The spacecraft was launched on 5 May 2018 and touched down on 26
+November 2018
+Source: https://en.wikipedia.org/wiki/InSight
+\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample: NASA InSight
+25
+TAKEN
+FROM
+THE ACTUAL
+RISK
+STUDY
+Include
+the trends
+as
+mission
+goes
+on</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration-during-design-phase-mission-phase-n-n-n-nimage-n-n-n-nimage-n-nhow-do-we-apply-this-to-aircraft-26-lets-do-an-example-for-an-airplane-like-this-n-n-n-nimage-n-n-n-nimage-n-nhow-do-we-apply-this-to-aircraft-27-5-br-4-br-3-br-2-br-1-br-likelihood-br-consequences-br-2-br-3-br-4-br-5-br-1-br-work-owe-1landing-year-doesn-t-deploy-l-2-c-4-2wing-breaks-off-4-l-1-c-3-4-1-3engine-failure-l-2-2-2-12-4stall-l-20r-3-c-4-pilot-exp-lose-control-n-n-n-nimage-n-nspacecraft-critical-events-and-first-time-activities-28-a-systematic-approach-is-taken-toward-risk-identification-mitigation-of-a-first-time-activities-and-critical-events-through-table-top-reviews-address-the-following-areas-o-objectives-purpose-of-the-activity-with-a-brief-rationale-o-requirements-constraints-list-all-pertinent-requirements-including-windows-of-opportunity-and-needed-dsn-coverage-o-functional-description-include-timeline-activity-flow-diagram-decision-tree-if-applicable-and-predicted-performance-o-risk-areas-address-risk-areas-and-risk-mitigations-describe-related-spacecraft-fault-protection-response-detail-ground-contingency-plans-and-execution-criteria-o-readiness-assessment-describe-margins-spacecraft-and-vehicle-readiness-flight-team-readiness-command-product-status-and-documentation-status-for-all-critical-events-launch-tcms-orbit-insertion-edl-aerobraking-major-deployments-an-independent-review-board-holds-a-project-level-review-to-assess-readiness-red-team-and-external-review-teams-are-used-throughout-the-process-to-assess-the-projects-readiness-to-perform-critical-activities-and-suggest-potential-improvements">Integration
+during
+:
+DESIGN PHASE &amp;
+Mission Phase
+\n\n\n\n\n\n\n\n\n\nHow do we apply this to aircraft?
+26
+Let’s do an example for an airplane like this
+\n\n\n\n\n\n\n\n\n\nHow do we apply this to aircraft?
+27
+5<br/>
+4<br/>
+3<br/>
+2<br/>
+1<br/>
+Likelihood<br/>
+CONSEQUENCES<br/>
+2<br/>
+3<br/>
+4<br/>
+5<br/>
+1<br/>
+work
+owe
+①landing year doesn’t deploy
+L= 2
+, C = 4
+②Wing breaks
+off
+④
+L = 1
+, C = =
+③
+4
+.1
+③Engine
+Failure
+L = 2
+,
+2 = 2
+⑫
+④Stall
+L = 20r 3
+C = 4
+PILOT
+EXP .
+lose control
+\n\n\n\n\n\nSpacecraft critical events and first-time
+activities
+28
+• A systematic approach is taken toward risk identification/mitigation of a
+first-time activities and critical events. Through table-top reviews, address
+the following areas:
+o Objectives. Purpose of the activity with a brief rationale
+o Requirements/constraints. List all pertinent requirements, including windows of
+opportunity and needed DSN coverage
+o Functional description. Include timeline, activity flow diagram, decision tree (if
+applicable), and predicted performance.
+o Risk areas. Address risk areas and risk mitigations. Describe related spacecraft
+fault-protection response. Detail ground contingency plans and execution criteria
+o Readiness assessment. Describe margins, spacecraft and vehicle readiness, flight
+team readiness, command product status, and documentation status.
+• For all critical events (launch, TCMs, orbit insertion, EDL, aerobraking,
+major deployments), an independent review board holds a project-level
+review to assess readiness.
+• Red team and external review teams are used throughout the process to
+assess the project’s readiness to perform critical activities and suggest
+potential improvements.</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lead Systems Engineering Instructor
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

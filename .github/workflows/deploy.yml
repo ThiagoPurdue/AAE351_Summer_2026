@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -U "jupyter-book<1.0.0" ghp-import
+        pip install -U jupyter-book ghp-import
 
     - name: Build the book
       run: |

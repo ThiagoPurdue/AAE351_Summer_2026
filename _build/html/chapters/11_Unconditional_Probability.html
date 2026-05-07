@@ -1,0 +1,1625 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>11 Unconditional Probability &#8212; AAE351: Aerospace Systems Design - Summer 2026</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/11_Unconditional_Probability';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="12 Independence" href="12_Independence.html" />
+    <link rel="prev" title="10 Conditional Probability" href="10_Conditional_Probability.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AAE351: Aerospace Systems Design - Summer 2026</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AAE351
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_Introduction_to_aerospace_system_design%202.html">01 Introduction to aerospace system design 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_The_system_developement_process.html">02 The system developement process</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="03_Needs_Analysis.html">03 Needs Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis%20%281%29.html">04 Requirements Analysis (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis.html">04 Requirements Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="05_Concept_Generation_and_Selection.html">05 Concept Generation and Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_Functional_Analysis.html">06 Functional Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="07_Evaluation_and_Selection.html">07 Evaluation and Selection</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="08_Risk_Management.html">08 Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_Introduction_to_Probability.html">09 Introduction to Probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_Conditional_Probability.html">10 Conditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11 Unconditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="12_Independence.html">12 Independence</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="13_Discrete_Random_Variables_and_Distributions.html">13 Discrete Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="14_Continuous_Random_Variables_and_Distributions.html">14 Continuous Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="15_Introduction_to_Reliability.html">15 Introduction to Reliability</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="16_Hazard_Functions.html">16 Hazard Functions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="17_System_Reliability.html">17 System Reliability</a></li>
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/11_Unconditional_Probability.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>11 Unconditional Probability</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">11 Unconditional Probability</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unconditional-probability-aae35103-n-n-n-nimage-n-n-n-nimage-n-n2-roll-two-fair-four-sided-dice-let-x1-outcome-of-first-roll-x2-outcome-of-second-roll-a-is-the-event-x1-2-what-is-the-probability-of-a-draw-the-2-d-grid-sample-space-show-event-a-on-the-grid-b-is-the-event-x2-x1-what-is-the-probability-of-b-what-are-the-elements-in-b-show-event-b-on-the-grid-what-is-p-a-b-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2-p-aib-p-anb">Unconditional
+Probability
+AAE35103
+\n\n\n\n\n\n\n\n\n\n2
+Roll two fair four-sided dice. Let x1 outcome of first roll, x2 outcome of second roll
+A is the event x1 ≥ 2. What is the probability of A? Draw the 2-D grid sample space. Show event A on
+the grid
+B is the event x2 &gt; x1. What is the probability of B? What are the elements in B? Show event B on the
+grid
+What is P(A|B)?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2· P(AIB) = P(ANB)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#o-b-p-m-p-b">o
+B = P(m) =-
+P(B)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#andpla-a">16
+AndPla
+= A</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a-1-n-n3-in-many-cases-we-start-with-information-about-conditional-probabilities-and-we-seek-to-calculate-unconditional-probability-how-can-we-do-that-in-math-we-know-all-the-p-b-ai-how-do-we-calculate-p-b-and-what-do-we-mean-by-all-in-this-experiment-the-ai-are-disjoint-and-form-a-partition-of-s-a1-a2-a3-a4-s-b-p-a-b">P(A)
+= 1
+\n\n3
+In many cases, we start with information about conditional probabilities, and we seek to calculate
+unconditional probability. How can we do that?
+In math: we know all the P(B|Ai), how do we calculate P(B)? (and what do we mean by “all”?)
+In this experiment, the Ai are disjoint and form a partition of S
+A1
+A2
+A3
+A4
+S
+B
+P(A(B)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-anb-p-b-1-an-tto-know-we-wom-b">P)AnB)
+P(B)
+1
+an
+tto
+know
+we wom (B).</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aymb">AYMB</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#his-labris-sti">his Labris
+Sti</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-g-b3-p-b3">P(G/B3)P(B3)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-g-n-n7-tree-diagrams-will-help-you-visualize-and-solve-some-types-of-problems-lets-look-at-another-example-if-you-toss-a-fair-coin-there-are-two-potential-outcomes-h-or-t-we-can-depict-this-on-a-tree-diagram-8-action-flip-a-coin-8-h-t-these-are-potential-two-outcomes-n-n8-since-the-coin-is-fair-each-outcome-has-an-equal-probability-of-occurring-p-h-p-t-12">P(G)
+\n\n7
+Tree diagrams will help you visualize and solve some types of
+problems. Let’s look at another example:
+If you toss a fair coin, there are two potential outcomes, H, or T. We can
+depict this on a tree diagram
+⑧
+ACTION (FLIP
+A COIN)
+·
+⑧
+H
+T
+THESE
+ARE
+POTENTIAL
+Two
+OUTCOMES
+\n\n8
+Since the coin is fair, each outcome has an equal probability of occurring.
+P(H) = P(T) = ½</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#h-112-8-1-2-8-n-nafter-tossing-the-coin-we-can-choose-a-ball-from-a-bag-the-bag-has-three-balls-a-green-ball-a-blue-ball-and-a-red-ball-we-can-now-add-information-to-our-tree-diagram-9">· H
+=&gt; 112
+⑧
+= 1/2
+⑧
+\n\nAfter tossing the coin, we can choose a ball from a bag. The bag
+has three balls: a green ball, a blue ball, and a red ball
+We can now add information to our tree diagram
+9</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#emi-1-3-9-g-h">Emi
+1/3
+⑨
+G
+H</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-tar-uh1b">⑧
+P (TAR UH1B)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#r">R</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-b-a-now-try-to-find-an-expression-for-p-b-a-in-terms-of-the-probabilities-we-do-have-thomas-bayes-1701-1761-a-b-independent-prior-probabilities-posterior-probability-we-can-write-p-anb-p-b1a-3">P(B|A)
+Now try to find an expression for P(B|A) in terms of the probabilities we do have:
+Thomas Bayes
+1701 - 1761
+A &amp; B
+INDEPENDENT
+PRIOR Probabilities
+[
+POSTERIOR
+PROBABILITY
+WE
+CAN
+WRITE=
+=&gt;
+P(ANB) = P(B1A)(3)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n-n-nimage-n-n20-thomas-bayes-1701-1761-bayes-theorem-will-help-and-we-can-easily-derive-it-ourselves-very-useful-for-making-inferences-about-phenomena-that-we-cannot-observe-directly-sometimes-described-as-reasoning-about-causes-when-we-only-observe-effects-so-p-bma-p-aib-p-b-from-3-and-we-have-3-in-1-p-bia-aib-p-b-baves-theorem-n-n-n-nimage-n-n21-now-try-to-solve-our-previous-problem-a-fair-coin-is-tossed-if-the-coin-lands-on-heads-a-bag-is-filled-with-one-black-ball-and-three-white-balls-if-the-coin-landed-on-tails-the-bag-is-filled-with-one-black-ball-and-nine-white-balls-a-ball-is-then-selected-from-the-bag-what-is-the-probability-that-given-the-ball-selected-is-black-the-coin-landed-on-a-head">\n\n\n\n\n\n20
+Thomas Bayes
+1701 - 1761
+Bayes’ Theorem will help, and we can easily derive it ourselves:
+Very useful for making inferences about phenomena that we cannot observe directly. Sometimes
+described as “reasoning about causes when we only observe effects”
+So
+,
+P(BMA) =
+P(AIB(P(B)
+From (3)
+AND
+WE
+HAVE
+(3)
+In
+(1)
+P(BIA) =
+AIB) P(B)
+BAVES
+THEOREM
+\n\n\n\n\n\n21
+Now try to solve our previous problem
+A fair coin is tossed. If the coin lands on heads a bag is filled with one black ball and three white balls.
+If the coin landed on tails the bag is filled with one black ball and nine white balls. A ball is then
+selected from the bag. What is the probability that given the ball selected is black, the coin landed on
+a head?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#them-p-h-b">0 . 1
+. 10. 5)
+= 0 . 175
+them
+P(H(B)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">0%
+05</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n22-the-bayesian-trap-an-engine-driven-alternator-keeps-a-purdue-airplanes-battery-charged-and-runs-many-of-the-aircrafts-electronics-if-it-fails-the-best-course-of-action-is-normally-to-declare-an-emergency-and-divert-to-the-nearest-airport-fortunately-this-only-happens-on-maybe-0-1-of-flights-if-the-alternator-does-fail-a-warning-light-is-in-place-to-alert-the-pilot-the-warning-light-will-correctly-identify-a-failed-alternator-99-of-the-time-and-only-give-a-false-positive-1-of-the-time-the-alternator-warning-light-goes-off-during-a-flight-what-is-the-probability-that-the-alternator-has-actually-failed-n-n23-the-bayesian-trap-alternator-8-f-fails-0-001">0 .714
+(71 . 4 %
+\n\n22
+The Bayesian trap
+An engine-driven alternator keeps a Purdue airplane’s battery charged and runs many of the aircraft’s
+electronics
+If it fails, the best course of action is normally to declare an emergency and divert to the nearest
+airport
+Fortunately, this only happens on maybe 0.1% of flights. If the alternator does fail, a warning light is in
+place to alert the pilot
+The warning light will correctly identify a failed alternator 99% of the time, and only give a false
+positive 1% of the time
+The alternator warning light goes off during a flight
+What is the probability that the alternator has actually failed?
+\n\n23
+The Bayesian trap
+ALTERNATOR
+⑧
+F-
+FAILS
+0. 001</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#most-detections">MOST DETECTIONS</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="unconditional-probability">
+<h1>11 Unconditional Probability<a class="headerlink" href="#unconditional-probability" title="Permalink to this heading">#</a></h1>
+<section id="unconditional-probability-aae35103-n-n-n-nimage-n-n-n-nimage-n-n2-roll-two-fair-four-sided-dice-let-x1-outcome-of-first-roll-x2-outcome-of-second-roll-a-is-the-event-x1-2-what-is-the-probability-of-a-draw-the-2-d-grid-sample-space-show-event-a-on-the-grid-b-is-the-event-x2-x1-what-is-the-probability-of-b-what-are-the-elements-in-b-show-event-b-on-the-grid-what-is-p-a-b-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2-p-aib-p-anb">
+<h2>Unconditional
+Probability
+AAE35103
+\n\n\n\n<img alt="Image" src="../_images/11_Unconditional_Probability_p1_i1.png" />\n\n\n\n<img alt="Image" src="../_images/11_Unconditional_Probability_p1_i2.png" />\n\n2
+Roll two fair four-sided dice. Let x1 outcome of first roll, x2 outcome of second roll
+A is the event x1 ≥ 2. What is the probability of A? Draw the 2-D grid sample space. Show event A on
+the grid
+B is the event x2 &gt; x1. What is the probability of B? What are the elements in B? Show event B on the
+grid
+What is P(A|B)?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2· P(AIB) = P(ANB)<a class="headerlink" href="#unconditional-probability-aae35103-n-n-n-nimage-n-n-n-nimage-n-n2-roll-two-fair-four-sided-dice-let-x1-outcome-of-first-roll-x2-outcome-of-second-roll-a-is-the-event-x1-2-what-is-the-probability-of-a-draw-the-2-d-grid-sample-space-show-event-a-on-the-grid-b-is-the-event-x2-x1-what-is-the-probability-of-b-what-are-the-elements-in-b-show-event-b-on-the-grid-what-is-p-a-b-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2-p-aib-p-anb" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="o-b-p-m-p-b">
+<h1>o
+B = P(m) =-
+P(B)<a class="headerlink" href="#o-b-p-m-p-b" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="andpla-a">
+<h1>16
+AndPla
+= A<a class="headerlink" href="#andpla-a" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-a-1-n-n3-in-many-cases-we-start-with-information-about-conditional-probabilities-and-we-seek-to-calculate-unconditional-probability-how-can-we-do-that-in-math-we-know-all-the-p-b-ai-how-do-we-calculate-p-b-and-what-do-we-mean-by-all-in-this-experiment-the-ai-are-disjoint-and-form-a-partition-of-s-a1-a2-a3-a4-s-b-p-a-b">
+<h1>P(A)
+= 1
+\n\n3
+In many cases, we start with information about conditional probabilities, and we seek to calculate
+unconditional probability. How can we do that?
+In math: we know all the P(B|Ai), how do we calculate P(B)? (and what do we mean by “all”?)
+In this experiment, the Ai are disjoint and form a partition of S
+A1
+A2
+A3
+A4
+S
+B
+P(A(B)<a class="headerlink" href="#p-a-1-n-n3-in-many-cases-we-start-with-information-about-conditional-probabilities-and-we-seek-to-calculate-unconditional-probability-how-can-we-do-that-in-math-we-know-all-the-p-b-ai-how-do-we-calculate-p-b-and-what-do-we-mean-by-all-in-this-experiment-the-ai-are-disjoint-and-form-a-partition-of-s-a1-a2-a3-a4-s-b-p-a-b" title="Permalink to this heading">#</a></h1>
+<section id="p-anb-p-b-1-an-tto-know-we-wom-b">
+<h2>P)AnB)
+P(B)
+1
+an
+tto
+know
+we wom (B).<a class="headerlink" href="#p-anb-p-b-1-an-tto-know-we-wom-b" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="aymb">
+<h2>AYMB<a class="headerlink" href="#aymb" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="his-labris-sti">
+<h2>his Labris
+Sti<a class="headerlink" href="#his-labris-sti" title="Permalink to this heading">#</a></h2>
+<p>\n\nAnd so we can write:
+4
+A1
+A2
+A3
+A4
+S
+B
+PB
+= ZP(Ai)
+=&gt;
+PB= P(BIA)
+. PA
+P(BIAi)
+= PB
+↑
+P(Ain B)
+= P(BIAi(
+. P(Ai)
+TOTAL
+PROBABILITY
+P(B)
+\n\n\n\n<img alt="Image" src="../_images/11_Unconditional_Probability_p4_i3.png" />\n\n5
+Three boxes contain red and green balls. Box 1 has 5 red balls and 5 green balls, Box 2 has 7 red
+balls and 3 green balls and Box 3 contains 6 red balls and 4 green balls. The respective
+probabilities of choosing a box are 1/3, 1/3, 1/3
+What is the probability that the ball chosen is green?
+G:= the ball chosen is green
+B1:= Box 1 is selected
+B2:= Box 2 is selected
+B3:= Box 3 is selected
+Then,
+P(G|B1) = 5/10
+P(G|B2) = 3/10
+P(G|B3) = 4/10
+Therefore, using the law of total probability we have
+3
+5 RED
+1
+5 GREEN
+P(B1) =-
+7 RED
+P(B2)
+=-
+2
+3 GREEN
+S
+S RED
+P(B3)
+= 4
+4
+GREEN
+P (c)= P(G/Bi) P(Bi)
+=PICTP(B1)</p>
+<ul class="simple">
+<li><p>P(G/Bc)P(b))</p></li>
+<li><p>P(s(B3)P(B3)=+
+\n\n6
+Let’s visualize this problem with a probability tree diagram
+DECISION 1
+SELECT
+THE
+BOX
+DECISION
+2 ·
+SELECT THE
+BALL Fan Fo
+Fo
+G
+R
+G
+R
+G
+R
+↑(G(B1) P(B1)</p></li>
+<li><p>P(G(B2)P(B2)</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-g-b3-p-b3">
+<h1>P(G/B3)P(B3)<a class="headerlink" href="#p-g-b3-p-b3" title="Permalink to this heading">#</a></h1>
+<section id="p-g-n-n7-tree-diagrams-will-help-you-visualize-and-solve-some-types-of-problems-lets-look-at-another-example-if-you-toss-a-fair-coin-there-are-two-potential-outcomes-h-or-t-we-can-depict-this-on-a-tree-diagram-8-action-flip-a-coin-8-h-t-these-are-potential-two-outcomes-n-n8-since-the-coin-is-fair-each-outcome-has-an-equal-probability-of-occurring-p-h-p-t-12">
+<h2>P(G)
+\n\n7
+Tree diagrams will help you visualize and solve some types of
+problems. Let’s look at another example:
+If you toss a fair coin, there are two potential outcomes, H, or T. We can
+depict this on a tree diagram
+⑧
+ACTION (FLIP
+A COIN)
+·
+⑧
+H
+T
+THESE
+ARE
+POTENTIAL
+Two
+OUTCOMES
+\n\n8
+Since the coin is fair, each outcome has an equal probability of occurring.
+P(H) = P(T) = ½<a class="headerlink" href="#p-g-n-n7-tree-diagrams-will-help-you-visualize-and-solve-some-types-of-problems-lets-look-at-another-example-if-you-toss-a-fair-coin-there-are-two-potential-outcomes-h-or-t-we-can-depict-this-on-a-tree-diagram-8-action-flip-a-coin-8-h-t-these-are-potential-two-outcomes-n-n8-since-the-coin-is-fair-each-outcome-has-an-equal-probability-of-occurring-p-h-p-t-12" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="h-112-8-1-2-8-n-nafter-tossing-the-coin-we-can-choose-a-ball-from-a-bag-the-bag-has-three-balls-a-green-ball-a-blue-ball-and-a-red-ball-we-can-now-add-information-to-our-tree-diagram-9">
+<h2>· H
+=&gt; 112
+⑧
+= 1/2
+⑧
+\n\nAfter tossing the coin, we can choose a ball from a bag. The bag
+has three balls: a green ball, a blue ball, and a red ball
+We can now add information to our tree diagram
+9<a class="headerlink" href="#h-112-8-1-2-8-n-nafter-tossing-the-coin-we-can-choose-a-ball-from-a-bag-the-bag-has-three-balls-a-green-ball-a-blue-ball-and-a-red-ball-we-can-now-add-information-to-our-tree-diagram-9" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="emi-1-3-9-g-h">
+<h1>Emi
+1/3
+⑨
+G
+H<a class="headerlink" href="#emi-1-3-9-g-h" title="Permalink to this heading">#</a></h1>
+<p>↳
+⑧</p>
+<ul class="simple">
+<li><p>B
+Il</p></li>
+<li><p>13
+· R
+⑧
+1/
+113E
+I
+⑧”
+B
+I
+T
+1, 113
+↑
+· R
+ACTION 2
+\n\nIn general, if you see “OR” in the problem, you add. If you see
+“AND” in the problem, you multiply
+For example, what is the probability of getting H or T?
+We can now add information to our tree diagram
+10
+P( + UT)
+H
+112
+EVENTS
+T
+AND H
+Are
+DISJOINT
+=&gt; P(HNT)
+= 0
+11
+T
+P(MUT)
+=
+P(M) +
+p(t)
+= y
++-
+= 1
+\n\nIn general, if you see “OR” in the problem, you add. If you see
+“AND” in the problem, you multiply
+For example, what is the probability of getting H and R?
+11
+P(H1R)
+113G
+112
+Su
+1
+HAND R
+ARE
+INDEPENDENT
+11/3
+I
+· R
+P(HR) =
+P(H)
+. PTR)
+= – =
+\n\nWe add down the tree, we multiply across
+H
+T
+½
+½
+B
+G
+R
+!
+1 3
+!
+1 3
+!
+1 3
+B
+G
+R
+!
+1 3
+!
+1 3
+!
+1 3
+H
+T
+½
+½
+B
+G
+R
+!
+1 3
+!
+1 3
+!
+1 3
+B
+G
+R
+!
+1 3
+!
+1 3
+!
+1 3
+Exclusive: add
+Independent: multiply
+12
+↓
+let
+2na
+\n\nWe can add to the complexity of the problem…
+What is the probability of getting T and R or H and B?
+Let’s calculate T and R first
+Then H and B
+13
+·
+G
+Po B
+⑧
+· G
+112
+1
+·
+↳R
+4/2 ·
+B
+P(H1B) = P(M)
+. P(B)
+13 R
+P(T 1r) = P(T)
+. P(r)
+=I
+. t
+= &amp;
+=
+\n\nWe can add to the complexity of the problem…
+What is the probability of getting T and R or H and B?
+And now let’s put them together
+14
+12 B</p></li>
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-tar-uh1b">
+<h1>⑧
+P (TAR UH1B)<a class="headerlink" href="#p-tar-uh1b" title="Permalink to this heading">#</a></h1>
+<p>PHNB)</p>
+<ul class="simple">
+<li><p>P(H1B)
+Y
+1/2
+g
+I
+= t</p></li>
+<li><p>E
+13
+· R
+= -
+\n\nLet’s change it up a bit
+What is the probability of getting a red ball?
+Well, this is the probability of getting T and R or H and R!
+15</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+<p>⑧
+112
+ot
+⑥
+913
+· R
+⑧
+P(NR UHAR) =
+P(TAR) + P(HnR)
+↳
+of
+⑧
+⑧
+I +</p>
+<ul class="simple">
+<li><p>1
+13 R
+= 4
+\n\nNow, let’s add another layer of complexity
+Our coin is biased and has a probability of 0.6 of landing on tails
+Also, if the coin lands on heads, I choose a ball from Bag 1, if the coin lands on tails, I choose a ball
+from Bag 2
+Bag 1 contains one green ball, one blue ball, and one red ball.
+Bag 2 contains three green balls, two blue balls, and one red ball
+Let’s redraw our tree diagram. The outcomes remain the same, but the associated probabilities
+change
+16</p></li>
+</ul>
+<blockquote>
+<div><p>3 balls
+-6 balls</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+<p>⑮
+,
+3
+215
+H
+B
+↳
+R
+⑨
+3</p>
+<ul class="simple">
+<li><p>36</p></li>
+</ul>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<p>R
+\n\nWith our new tree diagram, what is the probability of getting a red ball?
+This is still the probability of getting T and R or H and R
+17
+⑮
+,
+3
+P (R) = P(H1RUT1 M)
+215
+H
+B
+= P(H1R)</p>
+<ul class="simple">
+<li><p>P(T1R)
+↳
+R
+⑨
+= P(RIH)P(t)</p></li>
+<li><p>P(rI +(P(t)
+3</p></li>
+<li><p>36
+=</p></li>
+</ul>
+<ol class="arabic simple">
+<li></li>
+</ol>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="r">
+<h1>R<a class="headerlink" href="#r" title="Permalink to this heading">#</a></h1>
+<p>\n\n18
+Here’s a different type of problem
+A fair coin is tossed. If the coin lands on heads a bag is filled with one black ball and three white balls.
+If the coin landed on tails the bag is filled with one black ball and nine white balls. A ball is then
+selected from the bag. What is the probability that given the ball selected is black, the coin landed on a
+head?
+Let H = Heads, T = Tails, and B = Black ball selected
+Set up the problem in terms of the probabilities we have:
+And the probability we want:
+How can we find that?
+Emm
+⑧
+P (H) = 0 , 5
+P (BIH)
+= 0,20
+P( +) = 5
+P(T) = 0, 5
+⑧
+⑧
+P(+)
+= 0, 5
+P(B1 +)
+= 0 . 1
+P(BIH) =25
+P(B(T) = 0, 1
+⑤
+⑧
+⑨
+·
+B
+W
+w
+B
+P(H(B)
+= ?
+\n\n19
+Bayes’ Theorem will help, and we can easily derive it ourselves:
+Assume we have:
+P(A|B), P(A), and P(B)
+We want:</p>
+<section id="p-b-a-now-try-to-find-an-expression-for-p-b-a-in-terms-of-the-probabilities-we-do-have-thomas-bayes-1701-1761-a-b-independent-prior-probabilities-posterior-probability-we-can-write-p-anb-p-b1a-3">
+<h2>P(B|A)
+Now try to find an expression for P(B|A) in terms of the probabilities we do have:
+Thomas Bayes
+1701 - 1761
+A &amp; B
+INDEPENDENT
+PRIOR Probabilities
+[
+POSTERIOR
+PROBABILITY
+WE
+CAN
+WRITE=
+=&gt;
+P(ANB) = P(B1A)(3)<a class="headerlink" href="#p-b-a-now-try-to-find-an-expression-for-p-b-a-in-terms-of-the-probabilities-we-do-have-thomas-bayes-1701-1761-a-b-independent-prior-probabilities-posterior-probability-we-can-write-p-anb-p-b1a-3" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="n-n-n-nimage-n-n20-thomas-bayes-1701-1761-bayes-theorem-will-help-and-we-can-easily-derive-it-ourselves-very-useful-for-making-inferences-about-phenomena-that-we-cannot-observe-directly-sometimes-described-as-reasoning-about-causes-when-we-only-observe-effects-so-p-bma-p-aib-p-b-from-3-and-we-have-3-in-1-p-bia-aib-p-b-baves-theorem-n-n-n-nimage-n-n21-now-try-to-solve-our-previous-problem-a-fair-coin-is-tossed-if-the-coin-lands-on-heads-a-bag-is-filled-with-one-black-ball-and-three-white-balls-if-the-coin-landed-on-tails-the-bag-is-filled-with-one-black-ball-and-nine-white-balls-a-ball-is-then-selected-from-the-bag-what-is-the-probability-that-given-the-ball-selected-is-black-the-coin-landed-on-a-head">
+<h2>\n\n\n\n<img alt="Image" src="../_images/11_Unconditional_Probability_p19_i4.jpeg" />\n\n20
+Thomas Bayes
+1701 - 1761
+Bayes’ Theorem will help, and we can easily derive it ourselves:
+Very useful for making inferences about phenomena that we cannot observe directly. Sometimes
+described as “reasoning about causes when we only observe effects”
+So
+,
+P(BMA) =
+P(AIB(P(B)
+From (3)
+AND
+WE
+HAVE
+(3)
+In
+(1)
+P(BIA) =
+AIB) P(B)
+BAVES
+THEOREM
+\n\n\n\n<img alt="Image" src="../_images/11_Unconditional_Probability_p20_i5.jpeg" />\n\n21
+Now try to solve our previous problem
+A fair coin is tossed. If the coin lands on heads a bag is filled with one black ball and three white balls.
+If the coin landed on tails the bag is filled with one black ball and nine white balls. A ball is then
+selected from the bag. What is the probability that given the ball selected is black, the coin landed on
+a head?<a class="headerlink" href="#n-n-n-nimage-n-n20-thomas-bayes-1701-1761-bayes-theorem-will-help-and-we-can-easily-derive-it-ourselves-very-useful-for-making-inferences-about-phenomena-that-we-cannot-observe-directly-sometimes-described-as-reasoning-about-causes-when-we-only-observe-effects-so-p-bma-p-aib-p-b-from-3-and-we-have-3-in-1-p-bia-aib-p-b-baves-theorem-n-n-n-nimage-n-n21-now-try-to-solve-our-previous-problem-a-fair-coin-is-tossed-if-the-coin-lands-on-heads-a-bag-is-filled-with-one-black-ball-and-three-white-balls-if-the-coin-landed-on-tails-the-bag-is-filled-with-one-black-ball-and-nine-white-balls-a-ball-is-then-selected-from-the-bag-what-is-the-probability-that-given-the-ball-selected-is-black-the-coin-landed-on-a-head" title="Permalink to this heading">#</a></h2>
+<p>Using
+BAYES’THEOREM
+:
+P(HIB)=
+B(H)P(H)
+P(B)
+First
+:
+Let’s
+Find
+P(D)
+:
+P(H) ·
+P(T)
+DIBIHPIT
+P(B) = P(B(H)P(H)
+·</p>
+<ul class="simple">
+<li><p>P(BIT) P(t)
+= 25
+. 0 . 5</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="them-p-h-b">
+<h1>0 . 1
+. 10. 5)
+= 0 . 175
+them
+P(H(B)<a class="headerlink" href="#them-p-h-b" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>0%
+05<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="n-n22-the-bayesian-trap-an-engine-driven-alternator-keeps-a-purdue-airplanes-battery-charged-and-runs-many-of-the-aircrafts-electronics-if-it-fails-the-best-course-of-action-is-normally-to-declare-an-emergency-and-divert-to-the-nearest-airport-fortunately-this-only-happens-on-maybe-0-1-of-flights-if-the-alternator-does-fail-a-warning-light-is-in-place-to-alert-the-pilot-the-warning-light-will-correctly-identify-a-failed-alternator-99-of-the-time-and-only-give-a-false-positive-1-of-the-time-the-alternator-warning-light-goes-off-during-a-flight-what-is-the-probability-that-the-alternator-has-actually-failed-n-n23-the-bayesian-trap-alternator-8-f-fails-0-001">
+<h1>0 .714
+(71 . 4 %
+\n\n22
+The Bayesian trap
+An engine-driven alternator keeps a Purdue airplane’s battery charged and runs many of the aircraft’s
+electronics
+If it fails, the best course of action is normally to declare an emergency and divert to the nearest
+airport
+Fortunately, this only happens on maybe 0.1% of flights. If the alternator does fail, a warning light is in
+place to alert the pilot
+The warning light will correctly identify a failed alternator 99% of the time, and only give a false
+positive 1% of the time
+The alternator warning light goes off during a flight
+What is the probability that the alternator has actually failed?
+\n\n23
+The Bayesian trap
+ALTERNATOR
+⑧
+F-
+FAILS
+0. 001<a class="headerlink" href="#n-n22-the-bayesian-trap-an-engine-driven-alternator-keeps-a-purdue-airplanes-battery-charged-and-runs-many-of-the-aircrafts-electronics-if-it-fails-the-best-course-of-action-is-normally-to-declare-an-emergency-and-divert-to-the-nearest-airport-fortunately-this-only-happens-on-maybe-0-1-of-flights-if-the-alternator-does-fail-a-warning-light-is-in-place-to-alert-the-pilot-the-warning-light-will-correctly-identify-a-failed-alternator-99-of-the-time-and-only-give-a-false-positive-1-of-the-time-the-alternator-warning-light-goes-off-during-a-flight-what-is-the-probability-that-the-alternator-has-actually-failed-n-n23-the-bayesian-trap-alternator-8-f-fails-0-001" title="Permalink to this heading">#</a></h1>
+<p>= 0 . 999
+F-DOESN’T
+FAIL
+F
+↑
+D</p>
+<ul class="simple">
+<li><p>DETECT
+⑧
+⑧
+P(DIF) =. 99
+D’D
+Di
+D’ - DOESN’T
+DETECT
+D
+⑤
+⑧</p></li>
+</ul>
+<p>·
+P (DIF’)
+= 0 . 01
+FALSE
+POSITIVE
+P(F(x)
+= ???
+\n\n24
+The Bayesian trap
+BAYES’ THEOREM
+P(FID) = IHDIFIPS
+P(D) = P(DIF)P(F)</p>
+<ul class="simple">
+<li><p>P(x)f(p(f))
+=
+0
+. 001 (
+. 99)</p></li>
+<li></li>
+</ul>
+<ol class="arabic simple" start="0">
+<li><p>01
+. (0 . 999)
+=
+0
+. 01089
+then ,
+P(F(D)=
+(00
+=
+0
+. Og
+19
+HOW
+CANHis
+BE ???
+-&gt; P(F)
+is
+VERY
+Low
+CRARELY
+HAPPENS)</p></li>
+</ol>
+<ul class="simple">
+<li></li>
+</ul>
+<blockquote>
+<div><p>DETECTIONiS
+MODERATE</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>-Y
+RELIABLE</p></li>
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="most-detections">
+<h1>MOST DETECTIONS<a class="headerlink" href="#most-detections" title="Permalink to this heading">#</a></h1>
+<p>DUETo
+FALSE
+POSITIVES
+\n\nReading
+25
+Chapter 1.1-1.4 of Carlton and Devore, Probability with
+Applications in Engineering, Science, and Technology, 2nd
+ed., 2017
+\n\n</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="10_Conditional_Probability.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">10 Conditional Probability</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="12_Independence.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">12 Independence</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">11 Unconditional Probability</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unconditional-probability-aae35103-n-n-n-nimage-n-n-n-nimage-n-n2-roll-two-fair-four-sided-dice-let-x1-outcome-of-first-roll-x2-outcome-of-second-roll-a-is-the-event-x1-2-what-is-the-probability-of-a-draw-the-2-d-grid-sample-space-show-event-a-on-the-grid-b-is-the-event-x2-x1-what-is-the-probability-of-b-what-are-the-elements-in-b-show-event-b-on-the-grid-what-is-p-a-b-1-1-1-2-1-3-1-4-2-1-2-2-2-3-2-4-3-1-3-2-3-3-3-4-4-1-4-2-4-3-4-4-x1-x2-p-aib-p-anb">Unconditional
+Probability
+AAE35103
+\n\n\n\n\n\n\n\n\n\n2
+Roll two fair four-sided dice. Let x1 outcome of first roll, x2 outcome of second roll
+A is the event x1 ≥ 2. What is the probability of A? Draw the 2-D grid sample space. Show event A on
+the grid
+B is the event x2 &gt; x1. What is the probability of B? What are the elements in B? Show event B on the
+grid
+What is P(A|B)?
+1, 1
+1, 2
+1, 3
+1, 4
+2, 1
+2, 2
+2, 3
+2, 4
+3, 1
+3, 2
+3, 3
+3, 4
+4, 1
+4, 2
+4, 3
+4, 4
+x1
+x2· P(AIB) = P(ANB)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#o-b-p-m-p-b">o
+B = P(m) =-
+P(B)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#andpla-a">16
+AndPla
+= A</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-a-1-n-n3-in-many-cases-we-start-with-information-about-conditional-probabilities-and-we-seek-to-calculate-unconditional-probability-how-can-we-do-that-in-math-we-know-all-the-p-b-ai-how-do-we-calculate-p-b-and-what-do-we-mean-by-all-in-this-experiment-the-ai-are-disjoint-and-form-a-partition-of-s-a1-a2-a3-a4-s-b-p-a-b">P(A)
+= 1
+\n\n3
+In many cases, we start with information about conditional probabilities, and we seek to calculate
+unconditional probability. How can we do that?
+In math: we know all the P(B|Ai), how do we calculate P(B)? (and what do we mean by “all”?)
+In this experiment, the Ai are disjoint and form a partition of S
+A1
+A2
+A3
+A4
+S
+B
+P(A(B)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-anb-p-b-1-an-tto-know-we-wom-b">P)AnB)
+P(B)
+1
+an
+tto
+know
+we wom (B).</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aymb">AYMB</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#his-labris-sti">his Labris
+Sti</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-g-b3-p-b3">P(G/B3)P(B3)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-g-n-n7-tree-diagrams-will-help-you-visualize-and-solve-some-types-of-problems-lets-look-at-another-example-if-you-toss-a-fair-coin-there-are-two-potential-outcomes-h-or-t-we-can-depict-this-on-a-tree-diagram-8-action-flip-a-coin-8-h-t-these-are-potential-two-outcomes-n-n8-since-the-coin-is-fair-each-outcome-has-an-equal-probability-of-occurring-p-h-p-t-12">P(G)
+\n\n7
+Tree diagrams will help you visualize and solve some types of
+problems. Let’s look at another example:
+If you toss a fair coin, there are two potential outcomes, H, or T. We can
+depict this on a tree diagram
+⑧
+ACTION (FLIP
+A COIN)
+·
+⑧
+H
+T
+THESE
+ARE
+POTENTIAL
+Two
+OUTCOMES
+\n\n8
+Since the coin is fair, each outcome has an equal probability of occurring.
+P(H) = P(T) = ½</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#h-112-8-1-2-8-n-nafter-tossing-the-coin-we-can-choose-a-ball-from-a-bag-the-bag-has-three-balls-a-green-ball-a-blue-ball-and-a-red-ball-we-can-now-add-information-to-our-tree-diagram-9">· H
+=&gt; 112
+⑧
+= 1/2
+⑧
+\n\nAfter tossing the coin, we can choose a ball from a bag. The bag
+has three balls: a green ball, a blue ball, and a red ball
+We can now add information to our tree diagram
+9</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#emi-1-3-9-g-h">Emi
+1/3
+⑨
+G
+H</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-tar-uh1b">⑧
+P (TAR UH1B)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#r">R</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-b-a-now-try-to-find-an-expression-for-p-b-a-in-terms-of-the-probabilities-we-do-have-thomas-bayes-1701-1761-a-b-independent-prior-probabilities-posterior-probability-we-can-write-p-anb-p-b1a-3">P(B|A)
+Now try to find an expression for P(B|A) in terms of the probabilities we do have:
+Thomas Bayes
+1701 - 1761
+A &amp; B
+INDEPENDENT
+PRIOR Probabilities
+[
+POSTERIOR
+PROBABILITY
+WE
+CAN
+WRITE=
+=&gt;
+P(ANB) = P(B1A)(3)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n-n-nimage-n-n20-thomas-bayes-1701-1761-bayes-theorem-will-help-and-we-can-easily-derive-it-ourselves-very-useful-for-making-inferences-about-phenomena-that-we-cannot-observe-directly-sometimes-described-as-reasoning-about-causes-when-we-only-observe-effects-so-p-bma-p-aib-p-b-from-3-and-we-have-3-in-1-p-bia-aib-p-b-baves-theorem-n-n-n-nimage-n-n21-now-try-to-solve-our-previous-problem-a-fair-coin-is-tossed-if-the-coin-lands-on-heads-a-bag-is-filled-with-one-black-ball-and-three-white-balls-if-the-coin-landed-on-tails-the-bag-is-filled-with-one-black-ball-and-nine-white-balls-a-ball-is-then-selected-from-the-bag-what-is-the-probability-that-given-the-ball-selected-is-black-the-coin-landed-on-a-head">\n\n\n\n\n\n20
+Thomas Bayes
+1701 - 1761
+Bayes’ Theorem will help, and we can easily derive it ourselves:
+Very useful for making inferences about phenomena that we cannot observe directly. Sometimes
+described as “reasoning about causes when we only observe effects”
+So
+,
+P(BMA) =
+P(AIB(P(B)
+From (3)
+AND
+WE
+HAVE
+(3)
+In
+(1)
+P(BIA) =
+AIB) P(B)
+BAVES
+THEOREM
+\n\n\n\n\n\n21
+Now try to solve our previous problem
+A fair coin is tossed. If the coin lands on heads a bag is filled with one black ball and three white balls.
+If the coin landed on tails the bag is filled with one black ball and nine white balls. A ball is then
+selected from the bag. What is the probability that given the ball selected is black, the coin landed on
+a head?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#them-p-h-b">0 . 1
+. 10. 5)
+= 0 . 175
+them
+P(H(B)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">0%
+05</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n22-the-bayesian-trap-an-engine-driven-alternator-keeps-a-purdue-airplanes-battery-charged-and-runs-many-of-the-aircrafts-electronics-if-it-fails-the-best-course-of-action-is-normally-to-declare-an-emergency-and-divert-to-the-nearest-airport-fortunately-this-only-happens-on-maybe-0-1-of-flights-if-the-alternator-does-fail-a-warning-light-is-in-place-to-alert-the-pilot-the-warning-light-will-correctly-identify-a-failed-alternator-99-of-the-time-and-only-give-a-false-positive-1-of-the-time-the-alternator-warning-light-goes-off-during-a-flight-what-is-the-probability-that-the-alternator-has-actually-failed-n-n23-the-bayesian-trap-alternator-8-f-fails-0-001">0 .714
+(71 . 4 %
+\n\n22
+The Bayesian trap
+An engine-driven alternator keeps a Purdue airplane’s battery charged and runs many of the aircraft’s
+electronics
+If it fails, the best course of action is normally to declare an emergency and divert to the nearest
+airport
+Fortunately, this only happens on maybe 0.1% of flights. If the alternator does fail, a warning light is in
+place to alert the pilot
+The warning light will correctly identify a failed alternator 99% of the time, and only give a false
+positive 1% of the time
+The alternator warning light goes off during a flight
+What is the probability that the alternator has actually failed?
+\n\n23
+The Bayesian trap
+ALTERNATOR
+⑧
+F-
+FAILS
+0. 001</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#most-detections">MOST DETECTIONS</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lead Systems Engineering Instructor
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
