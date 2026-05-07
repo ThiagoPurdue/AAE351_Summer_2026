@@ -1,0 +1,2325 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>14 Continuous Random Variables and Distributions &#8212; AAE351: Aerospace Systems Design - Summer 2026</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/14_Continuous_Random_Variables_and_Distributions';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="15 Introduction to Reliability" href="15_Introduction_to_Reliability.html" />
+    <link rel="prev" title="13 Discrete Random Variables and Distributions" href="13_Discrete_Random_Variables_and_Distributions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AAE351: Aerospace Systems Design - Summer 2026</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AAE351
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_Introduction_to_aerospace_system_design%202.html">01 Introduction to aerospace system design 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_The_system_developement_process.html">02 The system developement process</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="03_Needs_Analysis.html">03 Needs Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis%20%281%29.html">04 Requirements Analysis (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis.html">04 Requirements Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="05_Concept_Generation_and_Selection.html">05 Concept Generation and Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_Functional_Analysis.html">06 Functional Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="07_Evaluation_and_Selection.html">07 Evaluation and Selection</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="08_Risk_Management.html">08 Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_Introduction_to_Probability.html">09 Introduction to Probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_Conditional_Probability.html">10 Conditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="11_Unconditional_Probability.html">11 Unconditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="12_Independence.html">12 Independence</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="13_Discrete_Random_Variables_and_Distributions.html">13 Discrete Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">14 Continuous Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="15_Introduction_to_Reliability.html">15 Introduction to Reliability</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="16_Hazard_Functions.html">16 Hazard Functions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="17_System_Reliability.html">17 System Reliability</a></li>
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/14_Continuous_Random_Variables_and_Distributions.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>14 Continuous Random Variables and Distributions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">14 Continuous Random Variables and Distributions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">=</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#randomize-each-digit-you-will-need-a-infinite-number-of-digits-correct-to-getoo-probability-of-that-is-zero-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-4-a-random-variable-is-called-continuous-if-there-is-a-nonnegative-function-fx-called-the-probability-density-function-of-x-or-pdf-such-that-can-be-interpreted-as-the-area-under-the-graph-of-the-pdf-this-is-a-traditional-integral-riemann-and-is-assumed-to-exist-and-is-well-defined-for-a-class-of-well-behaved-functions-for-some-unusual-functions-a-more-subtle-mathematical-treatment-is-required-theory-of-measure-and-lebesgue-integral-these-functions-are-of-no-concern-to-us-p-x-b-yfx-x-dx-for-every-subset-b-of-the-real-one-in-particular-p-a-x-b-bfx-x-dx-area-under-the-fx-x-pa-x-b-curve-between-and-b-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-5-for-any-single-value-a-p-x-a-ax-x-x-a-also-this-means-that-p-n-x-b-p-a-x-b-p-a-x-b-p-a-x-b-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-6-note-that-fx-is-used-to-calculate-probabilities-but-it-is-not-a-probability-itself-only-its-integral-over-an-interval-is-properties-of-fx-or-to-qualify-as-a-pdf-a-function-needs-fx-x-0-for-all-x-non-negative-jex-x-x-1-0-normalization-axiom-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-7-example-is-this-a-valid-pdf-fx-x-1-2-x-for-0-x-1-0-otherwise-yet">3
+. 1415 …., randomize
+each digit &gt; You
+will need
+a infinite
+number
+of digits
+correct
+to getoo
+= Probability
+of
+that
+is zero
+\n\n\n\n\n\n\n\n\n\nContinuous random variables
+4
+A random variable is called continuous if there is a nonnegative function fX, called the probability density
+function of X, or pdf, such that:
+Can be interpreted as the area
+under the graph of the pdf
+*This is a “traditional” integral (Riemann) and is assumed to exist and is well-defined for a class of (well-behaved) functions. For some unusual functions, a more subtle mathematical treatment
+is required (theory of measure and Lebesgue integral). These functions are of no concern to us
+*
+P(x + B)
+= (yfx(x)dx
+For every subset
+B of the real
+one .
+In particular ,
+P(a =X = b) = (bfx(x)dx
+AREA
+under the
+Fx(x)
+Pa=x
+= b)
+curve between
+&amp;
+and b
+\n\n\n\n\n\n\n\n\n\nContinuous random variables
+5
+For any single value, a:
+P(x = a)
+= (ax(x)
+x
+= a
+Also , this
+means
+that
+P(n =
+X (&gt; b)
+= P(a(X(b)
+= P(a
+&lt;x = b)
+= P(a =
+X
+&lt; b)
+\n\n\n\n\n\n\n\n\n\nContinuous random variables
+6
+Note that fX is used to calculate probabilities, but it is not a probability
+itself (only its integral over an interval is)
+!
+Properties of fX (or to qualify as a pdf, a function needs… ):
+fx(x) &gt;0
+for all
+X
+(non negative
+JEx(x)x
+= 1
+. 0
+(Normalization Axiom)
+·
+\n\n\n\n\n\n\n\n\n\n\n\n\n\nContinuous random variables
+7
+Example: Is this a valid pdf?
+fX (x) =
+1
+2 x
+for  0 ≤x ≤1
+0         otherwise
+
+ 
+ 
+yet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-this-a-legitimate-pdf-2-sketch-fx-3-calculate-e-x-4-calculate-e-x2-5-calculate-the-variance-and-standard-deviation-of-fx-1-we-see-that-fx-x-0-v-and-8fx-xdx-dx-x-o-valid-pdf-x-x">Is this a “legitimate” pdf?
+2.
+Sketch fX
+3.
+Calculate E[X]
+4.
+Calculate E[X2]
+5.
+Calculate the variance and standard deviation of fX
+1
+We
+see that
+fx(x = 0
+v
+and (8Fx(xdx=
+dx =x
+=o
+=&gt; VALID
+PDF
+#x(X)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dx-x">dx
+= (-x
+-**))%
+↓</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#x4-01dx">(x4) =01dx=…</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wait-time-for-service">=
+Wait
+time
+for
+service</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exponential-distribution-v-min-x">~ exponential
+distribution
+V min
+#(X)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#min-1-x-1-x-3-min-p-x-5-min-s">3 min
+= 1
+X
+= 1
+X
+3 min
+P (X &gt;5 min)
+= ?
+S</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-x-5">1 - P(X(5)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">11</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#e">e</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-that-given-we-some-as-we-are-we-will-wait-longer-have-already">Probability that
+Given
+We
+Some
+as
+we
+are
+We will
+wait longer
+have already</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n-n-nimage-n-n22-using-cdf-to-calculate-probabilities-let-x-be-a-continuous-rv-with-pdf-f-x-and-cdf-f-x-then-for-any-number-a-and-for-any-two-numbers-a-and-b-with-a-b-p-x-a">\n\n\n\n\n\n22
+Using cdf to calculate probabilities
+Let X be a continuous rv with pdf f(x) and cdf F(x). Then for any number
+a,
+and for any two numbers a and b with a &lt; b,
+P(X &gt; a)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#f-a-p-a-x-b">F(a)
+P(a = X(b)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-z-p-z-z">P(z)
+= P(z
+= z)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#du-2-random-variable-n-n-n-nimage-n-n31-table-a-3-standard-normal-cdf-n-n-n-nimage-n-n-n-nimage-n-n32-pdf-and-cdf-of-the-standard-normal-variable-0-0-2-0-4-0-6-0-8-1-1-2-5-4-3-2-1-0-1-2-3-4-5-pdf-cdf-fz-z-1-2-ez-2-z-p-z-z-1-2-eu2-z-du-10-f-z">↳
+du
+↑
+2π
+RANDOM VARIABLE
+\n\n\n\n\n\n31
+Table A.3 Standard normal cdf
+\n\n\n\n\n\n\n\n\n\n32
+pdf and cdf of the standard normal variable
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+-5
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+5
+PDF
+CDF
+fZ (z) =
+1
+2π
+e−z 2
+Φ z( ) = P Z ≤z
+(
+) =
+1
+2π
+e−u2
+−∞
+z
+∫
+du
+10
+—–F (z)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-z-1-28">P(z)
+1 , 28)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#center-around-m-and">Center
+Around M
+AND</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">. 12) = (0 .12)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-10-p-x-51-2-n-n38-standardizing-example-normal-distribution-standardized-normal-distribution-10-s-1-z-s-50-52-1-x-z-0-z-0-21-47-9-0-21">0 .5478
+E
+10
+= P(X(51 . 2)
+\n\n38
+Standardizing example
+Normal distribution
+Standardized
+normal distribution
+10
+s =
+1
+Z
+s =
+50
+µ =
+52.1
+X
+Z
+0
+Z
+µ =
+0.21
+47.9
+0.21</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-p-47-9-x-52-1-z-x-m">0.0832
+0.0832
+What is P(47.9 ≤ X ≤ 52.1)?
+z =
+X -M</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">&amp;</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="continuous-random-variables-and-distributions">
+<h1>14 Continuous Random Variables and Distributions<a class="headerlink" href="#continuous-random-variables-and-distributions" title="Permalink to this heading">#</a></h1>
+<p>Continuous Random
+Variables and Distributions
+AAE35103
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p1_i1.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p1_i2.png" />\n\nFrom discrete to continuous random variables
+2
+From a discrete random variable…
+Countable set of numbers (e.g., roll of a die)
+… to a continuous random variable
+Range over a continuous set of numbers
+•
+Many experiments lead to random variables with a range that is a
+continuous variable (e.g., measuring voltage across a resistor)
+•
+Models using continuous random variables are finer-grained and possibly
+more accurate than discrete random variables
+•
+Plus they allow use of powerful tools from calculus
+•
+And they admit insightful analysis that’s not possible with discrete models
+All the concepts that we saw previously in the discrete case have
+continuous analogs (e.g., expectation, pmf, cdf). These analogs
+are the subject of this lecture
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p2_i3.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p2_i4.png" />\n\nContinuous random variables
+3
+We assign a number between zero and ten to all events (elements) within the sample
+space
+How many individual outcomes do you have in a continuous interval?
+Distinguishing feature of continuous random variables: the
+probability of any individual outcome is zero! Why?
+!
+&amp;</p>
+<ul class="simple">
+<li><p>Infinite
+For
+example
+, take</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>=<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="randomize-each-digit-you-will-need-a-infinite-number-of-digits-correct-to-getoo-probability-of-that-is-zero-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-4-a-random-variable-is-called-continuous-if-there-is-a-nonnegative-function-fx-called-the-probability-density-function-of-x-or-pdf-such-that-can-be-interpreted-as-the-area-under-the-graph-of-the-pdf-this-is-a-traditional-integral-riemann-and-is-assumed-to-exist-and-is-well-defined-for-a-class-of-well-behaved-functions-for-some-unusual-functions-a-more-subtle-mathematical-treatment-is-required-theory-of-measure-and-lebesgue-integral-these-functions-are-of-no-concern-to-us-p-x-b-yfx-x-dx-for-every-subset-b-of-the-real-one-in-particular-p-a-x-b-bfx-x-dx-area-under-the-fx-x-pa-x-b-curve-between-and-b-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-5-for-any-single-value-a-p-x-a-ax-x-x-a-also-this-means-that-p-n-x-b-p-a-x-b-p-a-x-b-p-a-x-b-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-6-note-that-fx-is-used-to-calculate-probabilities-but-it-is-not-a-probability-itself-only-its-integral-over-an-interval-is-properties-of-fx-or-to-qualify-as-a-pdf-a-function-needs-fx-x-0-for-all-x-non-negative-jex-x-x-1-0-normalization-axiom-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-7-example-is-this-a-valid-pdf-fx-x-1-2-x-for-0-x-1-0-otherwise-yet">
+<h2>3
+. 1415 …., randomize
+each digit &gt; You
+will need
+a infinite
+number
+of digits
+correct
+to getoo
+= Probability
+of
+that
+is zero
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p3_i5.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p3_i6.png" />\n\nContinuous random variables
+4
+A random variable is called continuous if there is a nonnegative function fX, called the probability density
+function of X, or pdf, such that:
+Can be interpreted as the area
+under the graph of the pdf
+*This is a “traditional” integral (Riemann) and is assumed to exist and is well-defined for a class of (well-behaved) functions. For some unusual functions, a more subtle mathematical treatment
+is required (theory of measure and Lebesgue integral). These functions are of no concern to us
+*
+P(x + B)
+= (yfx(x)dx
+For every subset
+B of the real
+one .
+In particular ,
+P(a =X = b) = (bfx(x)dx
+AREA
+under the
+Fx(x)
+Pa=x
+= b)
+curve between
+&amp;
+and b
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p4_i7.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p4_i8.png" />\n\nContinuous random variables
+5
+For any single value, a:
+P(x = a)
+= (ax(x)
+x
+= a
+Also , this
+means
+that
+P(n =
+X (&gt; b)
+= P(a(X(b)
+= P(a
+&lt;x = b)
+= P(a =
+X
+&lt; b)
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p5_i9.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p5_i10.png" />\n\nContinuous random variables
+6
+Note that fX is used to calculate probabilities, but it is not a probability
+itself (only its integral over an interval is)
+!
+Properties of fX (or to qualify as a pdf, a function needs… ):
+fx(x) &gt;0
+for all
+X
+(non negative
+JEx(x)x
+= 1
+. 0
+(Normalization Axiom)
+·
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p6_i11.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p6_i12.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p6_i13.png" />\n\nContinuous random variables
+7
+Example: Is this a valid pdf?
+fX (x) =
+1
+2 x
+for  0 ≤x ≤1
+0         otherwise
+
+ 
+ 
+yet<a class="headerlink" href="#randomize-each-digit-you-will-need-a-infinite-number-of-digits-correct-to-getoo-probability-of-that-is-zero-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-4-a-random-variable-is-called-continuous-if-there-is-a-nonnegative-function-fx-called-the-probability-density-function-of-x-or-pdf-such-that-can-be-interpreted-as-the-area-under-the-graph-of-the-pdf-this-is-a-traditional-integral-riemann-and-is-assumed-to-exist-and-is-well-defined-for-a-class-of-well-behaved-functions-for-some-unusual-functions-a-more-subtle-mathematical-treatment-is-required-theory-of-measure-and-lebesgue-integral-these-functions-are-of-no-concern-to-us-p-x-b-yfx-x-dx-for-every-subset-b-of-the-real-one-in-particular-p-a-x-b-bfx-x-dx-area-under-the-fx-x-pa-x-b-curve-between-and-b-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-5-for-any-single-value-a-p-x-a-ax-x-x-a-also-this-means-that-p-n-x-b-p-a-x-b-p-a-x-b-p-a-x-b-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-6-note-that-fx-is-used-to-calculate-probabilities-but-it-is-not-a-probability-itself-only-its-integral-over-an-interval-is-properties-of-fx-or-to-qualify-as-a-pdf-a-function-needs-fx-x-0-for-all-x-non-negative-jex-x-x-1-0-normalization-axiom-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-7-example-is-this-a-valid-pdf-fx-x-1-2-x-for-0-x-1-0-otherwise-yet" title="Permalink to this heading">#</a></h2>
+<p>By
+Inspection
+,
+we
+see that
+1 a
+For
+0
+&lt;
+X &gt;1
+2
+=&gt;
+fx (x) &gt; 0 , Xt 10
+, 1)
+&amp;
+2nd
+_ /xdx
+= VALID
+P.D. F .
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p7_i14.png" />\n\nExpected value of a continuous random variable
+8
+Similar to the discrete case: pmf is replaced
+by the pdf, and the summation replaced by
+the integral
+Discrete case
+Can be interpreted as the anticipated average value of X in a large
+number of independent repetitions of the experiment, or the “center
+of gravity” of fX
+*</p>
+<ul class="simple">
+<li><p>Some mathematical subtleties involved to avoid that the integral be infinite or undefined; the expected value is well-defined if<br />
+x
+−∞
++∞∫
+⋅fX (x)⋅dx &lt; ∞
+Think of it as a “typical value of X”
+E(x)
+= (*
+X Fx(x)dx
+#(x) = [KP, (x)
+Al K
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p8_i15.png" />\n\nExpected value of a continuous random variable
+9
+Any real valued function of a random variable is also a random variable:
+Y = g(X)
+And the expected value of Y:
+E X −µ
+[
+] = 0
+E aX + b
+[
+] = aE X
+[ ] + b
+Prove the following:
+Elg(x)]
+= [ g(xEx(x)dx
+(LEAVE THIS AS
+a
+, b
+AN Exercise)
+const.
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p9_i16.png" />\n\nVariance of a continuous random variable
+10
+The variance, as in the discrete case, is defined as the expected value of the
+random variable (X - E[X])2
+What is this? Intuitive interpretation? Why is it relevant?
+Show that:
+If
+IE(X)
+is
+a typical value
+of X ;
+variance is
+a measure
+of the dispersion
+of
+X
+around
+E[X]
+Tells
+us how typical E(X)
+and values
+“close to
+#(x)
+are
+Y
+G is
+aug
+. distance
+From aug
+. X”
+Wan[x]
+= E[(X-E[X])&lt;J
+= /X-Ex Exxtd
+O &lt; An[X]
+= E[X]</p></li>
+</ul>
+<ul class="simple">
+<li><p>(E[X])
+?
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p10_i17.png" />\n\nContinuous random variables
+11
+fX (x) =
+3x 2
+2       −1≤x ≤1
+0            otherwise
+
+ 
+ </p></li>
+</ul>
+<ol class="arabic simple">
+<li></li>
+</ol>
+</section>
+<section id="is-this-a-legitimate-pdf-2-sketch-fx-3-calculate-e-x-4-calculate-e-x2-5-calculate-the-variance-and-standard-deviation-of-fx-1-we-see-that-fx-x-0-v-and-8fx-xdx-dx-x-o-valid-pdf-x-x">
+<h2>Is this a “legitimate” pdf?
+2.
+Sketch fX
+3.
+Calculate E[X]
+4.
+Calculate E[X2]
+5.
+Calculate the variance and standard deviation of fX
+1
+We
+see that
+fx(x = 0
+v
+and (8Fx(xdx=
+dx =x
+=o
+=&gt; VALID
+PDF
+#x(X)<a class="headerlink" href="#is-this-a-legitimate-pdf-2-sketch-fx-3-calculate-e-x-4-calculate-e-x2-5-calculate-the-variance-and-standard-deviation-of-fx-1-we-see-that-fx-x-0-v-and-8fx-xdx-dx-x-o-valid-pdf-x-x" title="Permalink to this heading">#</a></h2>
+<p>OfThis
+2)
+i
+I
+“
+~
+.
+AVG .
+VALUE
+I
+CURVE is</p>
+<ul class="simple">
+<li><p>1
+I
+X
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p11_i18.png" />\n\n12</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>E[X]
+= (*xExdx=dxd
+4.[x] : [xxdx …
+5
+. VAR [x]
+= E[x]-(E(x1)”
+= 2</p></li>
+</ol>
+<ul class="simple">
+<li></li>
+</ul>
+<p>x =
+5
+Sx = Nan] =
+s
+\n\nUniform random variables
+13
+Calculate the mean and variance of a uniform random variable over an interval [a; b]
+fX (x) =
+1
+b −a       for x ∈[a; b]
+0             elsewhere
+
+ 
+ 
+fX
+x
+b
+a
+1/(b-a)
+/constant
+in (a
+. b)
+L
+11111
+AuA
+(b -a)
+= 1 .
+(b -a)
+EK1 =[xdx
+E(X)
+= (xdx ……
+WAR(x)
+= E(x2)</p>
+<ul class="simple">
+<li><p>II(x))”=
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p13_i19.png" />\n\n14
+Exponential random variables: definition
+Definition: An exponential random variable X has the following pdf
+x
+fX
+How does this graph change as lambda decreases?
+What does that mean in practice?
+E(x)
+=(Xe
+-xx
+, X z0
+I
+ELSEWHERE
+E(x)
+= (Xxe</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section id="dx-x">
+<h2>dx
+= (-x
+-**))%
+↓<a class="headerlink" href="#dx-x" title="Permalink to this heading">#</a></h2>
+<p>is the rate at
+which events
+occurr
+O
+d = 2</p>
+<ul class="simple">
+<li><p>(e</p></li>
+</ul>
+<ul class="simple">
+<li><p>**
+xx
+= 1 I
+d = 1 .0
+X</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="x4-01dx">
+<h1>(x4) =01dx=…<a class="headerlink" href="#x4-01dx" title="Permalink to this heading">#</a></h1>
+<p>X ↓= 0 . S
+YAR(X)
+= E(x))</p>
+<ul class="simple">
+<li><p>(E(x()”
+=
+1/x2
+· (x)
+= My =x
+HIGHER J =S EVENTS GUSTERED
+AROUND X = 0
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p14_i20.png" />\n\n15
+Exponential random variables: proposition
+Let
+X
+be
+an
+exponential variable
+with
+parameter
+I
+. Them ,
+the
+edf of
+X
+is
+F(x : X)
+=
+0
+X
+O
+E
+1</p></li>
+<li><p>⑪
+-XX
+,
+XXO
+\n\n16
+Exponential random variables: applications
+Suppose the wait time X for service at the post office has an exponential distribution
+with mean 3 minutes. If you enter the post office immediately behind another
+customer, what is the probability you wait over 5 minutes? Sketch the pdf and color
+in the area that you need to find
+Exn
+P(x(5)</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+<section id="wait-time-for-service">
+<h2>=
+Wait
+time
+for
+service<a class="headerlink" href="#wait-time-for-service" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="exponential-distribution-v-min-x">
+<h1>~ exponential
+distribution
+V min
+#(X)<a class="headerlink" href="#exponential-distribution-v-min-x" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="min-1-x-1-x-3-min-p-x-5-min-s">
+<h1>3 min
+= 1
+X
+= 1
+X
+3 min
+P (X &gt;5 min)
+= ?
+S<a class="headerlink" href="#min-1-x-1-x-3-min-p-x-5-min-s" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-x-5">
+<h1>1 - P(X(5)<a class="headerlink" href="#p-x-5" title="Permalink to this heading">#</a></h1>
+<p>1 -
+F(5
+, 1/3)</p>
+<ul class="simple">
+<li><p>1/3
+. 5)
+=
+1</p></li>
+<li></li>
+</ul>
+<section id="id2">
+<h2>11<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="e">
+<h1>e<a class="headerlink" href="#e" title="Permalink to this heading">#</a></h1>
+<p>0 . 18 . 9
+\n\n17
+Exponential random variables: applications
+Under the same conditions, what is the probability of waiting between 2 and 4
+minutes?
+FX
+P(2 &lt; X(h) = =(4 ; 13)</p>
+<ul class="simple">
+<li><p>F(2 ; 1/3)
+= (1</p></li>
+<li><p>y4(3)</p></li>
+<li><p>(1</p></li>
+<li></li>
+</ul>
+<p>e
+-2(3)
+IFin
+X(min</p>
+<ul class="simple">
+<li><p>2/3</p></li>
+<li><p>4/3
+=
+e</p></li>
+<li></li>
+</ul>
+<p>c
+= 201
+\n\n18
+Exponential random variables: the memoryless property
+• If X ~ exponential(l) represents a waiting time, the probability of waiting a given length of time
+is not affected by how long you have already waited:
+• If you have already waited a minutes, the probability you wait b more minutes is the same as
+your initial probability of waiting b minutes
+• =&gt; Memoryless property
+P(X)a + b(x</p>
+<blockquote>
+<div><p>a)
+= P(X)
+-u</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probability-that-given-we-some-as-we-are-we-will-wait-longer-have-already">
+<h1>Probability that
+Given
+We
+Some
+as
+we
+are
+We will
+wait longer
+have already<a class="headerlink" href="#probability-that-given-we-some-as-we-are-we-will-wait-longer-have-already" title="Permalink to this heading">#</a></h1>
+<p>starting
+From
+wait
+time
+thom
+a +
+b
+Zero
+a
+\n\n19
+Exponential random variables: the memoryless property
+• Does this seem reasonable in practice? Can you give examples?
+• What other distribution did we learn about that was also memoryless?
+IT
+DEPENDS
+May
+make
+sense
+for the
+I
+A
+mechanical
+part
+failure may
+time between
+airplanes arriving
+not setisfy this property , since
+at
+an airport (diff
+. aircraft)
+time
+between
+failures may depend
+I
+on the
+operating time.
+Binomial
+discrete distribution
+Uniform
+Distribution
+Fl
+a bp() + 0
+= Mony Bernoulli
+exp
+. w/
+prob
+.
+1</p>
+<ul class="simple">
+<li><p>Pl) = &amp;
+p
+and
+didn’t
+depend
+on prior
+A
+Bab
+Success.
+I
+113 X
+depend
+on where
+you are
+MEMORY LESS
+does
+not satisfy this property
+\n\n20
+Cdf of continuous random variable
+cdf, F(#), for a continuous rv X is defined for every # by
+For each #, F(#) is the area under the density curve to the left of #
+pdf
+cdf
+F(x)
+= P(X(x)
+= [F(y)dy
+DENSITY
+/WRYE
+edf represents the
+I NOT A
+probability of
+P(X(X)
+↑ROBABILITY)
+XX
+&amp;*
+Area</p></li>
+<li><p>D
+under the</p></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<blockquote>
+<div><p>D
+D
+curre
+=&gt;
+F(X)
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p20_i21.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p20_i22.png" />\n\n21
+pdf and cdf of a continuous random variable
+For a continuous random variable, its cdf is continuous (i.e., it has no jumps). The
+second equation is valid for those x for which the cdf has a derivative
+pdf to cdf
+cdf to pdf
+Ex(x)
+=
+P(X =X) = ) x
+(u)du
+E(x) =x
+~
+DischENE</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="n-n-n-nimage-n-n22-using-cdf-to-calculate-probabilities-let-x-be-a-continuous-rv-with-pdf-f-x-and-cdf-f-x-then-for-any-number-a-and-for-any-two-numbers-a-and-b-with-a-b-p-x-a">
+<h1>\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p21_i23.png" />\n\n22
+Using cdf to calculate probabilities
+Let X be a continuous rv with pdf f(x) and cdf F(x). Then for any number
+a,
+and for any two numbers a and b with a &lt; b,
+P(X &gt; a)<a class="headerlink" href="#n-n-n-nimage-n-n22-using-cdf-to-calculate-probabilities-let-x-be-a-continuous-rv-with-pdf-f-x-and-cdf-f-x-then-for-any-number-a-and-for-any-two-numbers-a-and-b-with-a-b-p-x-a" title="Permalink to this heading">#</a></h1>
+<section id="id3">
+<h2>1<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="f-a-p-a-x-b">
+<h1>F(a)
+P(a = X(b)<a class="headerlink" href="#f-a-p-a-x-b" title="Permalink to this heading">#</a></h1>
+<p>f(b)</p>
+<ul class="simple">
+<li><p>F(a)
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p22_i24.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p22_i25.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p22_i26.png" />\n\n23
+Example
+Suppose the pdf of the magnitude X of a dynamic load on a bridge (in Newtons) is
+given by
+a. Find the cdf:
+f(x)
+= ( +
+X
+,
+0 + x+
+①
+,
+OTHERWISE
+F(x) =[Fly)dy
+= (*</p></li>
+</ul>
+<ul class="simple">
+<li><p>zy)dy = +
+f(x)
+= (8</p></li>
+<li><p>30 xxz
+1
+,
+X)2
+\n\n24
+b. Find the probability that the load is between 1 and 1.5 N:
+c. Find the probability that the load exceeds 1 N:
+P(1 = x = 1
+.5)
+=
+F(1
+. 5)</p></li>
+</ul>
+<ul class="simple">
+<li><p>F(1)
+= [t(1
+. 5)</p></li>
+</ul>
+<ul class="simple">
+<li><p>331
+.53]
+-[() +(
+= 19/64
+=
+0
+. 297
+P(X(1)
+=
+1</p></li>
+</ul>
+<ul class="simple">
+<li><p>P(X(1)
+=
+1</p></li>
+<li><p>F(1)
+= 1- [t(1) + 2 (1
+=
+0
+. 688
+\n\n25
+Gaussian or normal random variables
+Bell-shaped curves appear very frequently in many applications of probability*, e.g., often used
+in signal processing
+Their probability models are members of the family of Gaussian random variables
+Because they appear so frequently, Gaussian random variables are also referred to as normal
+random variables (or normally distributed random variables)</p></li>
+</ul>
+<ul class="simple">
+<li><p>Why so many? The central limit theorem explains why many phenomena produce data that can modeled as Gaussian random variables
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p25_i27.png" />\n\n26
+Gaussian or normal random variables
+X is a Gaussian random variable if the pdf of X is:
+-0.1
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+-2
+-1
+0
+1
+2
+3
+4
+5
+6
+7
+Area under the (pdf) curve:</p></li>
+</ul>
+<ul class="simple">
+<li><p>(X -u))
+(x(x)
+=
+E
+1
+2 T
+②
+262
+i
+I
+=
+mean
+E R
+I,</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li></li>
+</ol>
+<p>=
+standard
+-R</p>
+<blockquote>
+<div><p>&#64;
+deviation
+X- N(u
+, 6)
+9((x)dx
+= 1
+.0</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+<p>\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p26_i28.png" />\n\n27
+Gaussian or normal random variables
+6
+SMALIEn
+CENTER of
+8 = LARGETHE
+crvE
+it
+CONTROL
+The
+SHAPE
+Of
+A
+NORMAL
+CURVE
+=&gt; the
+width
+and the location of
+the real
+line
+and the weight of
+the
+peak.
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p27_i29.png" />\n\n28
+Gaussian or normal random variables</p>
+<ol class="arabic simple">
+<li><p>The center of the bell is</p></li>
+<li><p>The height of the peak is given by:</p></li>
+<li><p>σ reflects the width of the bell:
+fX (x) =
+1
+σ 2π
+e
+−x−µ
+(
+)
+2
+2σ 2
+The mean and variance of a Gaussian
+random variable with pdf given by the
+above equation are:
+X
+= M
+E(X)
+=M
+i
+WAR(X) =
+0 2
+6
+-&gt; small
+reflects
+in narrow bell
+, high peak
+6
+-&gt; large
+reflects
+in
+a wide bell , flat peal
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p28_i30.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p28_i31.png" />\n\n29
+How do we compute !(# ≤% ≤&amp;) when %~) *, , ?
+FX (x) = P X ≤x
+(
+) =
+fX (u)⋅du
+−∞
+x
+∫
+pdf to cdf
+fX (x) =
+1
+σ 2π
+e
+−x−µ
+(
+)
+2
+2σ 2
+No closed form expression of FX(x) for a normal random variable. What can we do?</p></li>
+</ol>
+<ol class="arabic simple">
+<li><p>introduce the standard normal random variable, 2) use table (computer…)
+&amp; ‘ ≤) ≤* = ,! * −,! ‘ = .
+“</p></li>
+</ol>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id4">
+<h1><a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h1>
+<p>1
+0 22
+3<span class="math notranslate nohighlight">\( %\)</span>&amp; !
+‘(^’ 4#
+Can we integrate that?
+(pdf)
+YES ,
+NUMERICALLY
+\n\n30
+We define a “standard” normal random variable to be a normal variable with μ = 0 and σ = 1
+Let’s denote the standard normal random variable by Z
+…and we tabulate Φ(z)
+Its cdf is given by Φ(z):
+Standard normal random variable</p>
+<ul class="simple">
+<li><p>(x-</p></li>
+<li><p>z
+(x) = “
+20
+=
+Ez(z)
+=
+1ez
+2
+Particular value</p></li>
+<li></li>
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-z-p-z-z">
+<h1>P(z)
+= P(z
+= z)<a class="headerlink" href="#p-z-p-z-z" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li></li>
+</ul>
+<section id="du-2-random-variable-n-n-n-nimage-n-n31-table-a-3-standard-normal-cdf-n-n-n-nimage-n-n-n-nimage-n-n32-pdf-and-cdf-of-the-standard-normal-variable-0-0-2-0-4-0-6-0-8-1-1-2-5-4-3-2-1-0-1-2-3-4-5-pdf-cdf-fz-z-1-2-ez-2-z-p-z-z-1-2-eu2-z-du-10-f-z">
+<h2>↳
+du
+↑
+2π
+RANDOM VARIABLE
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p30_i32.png" />\n\n31
+Table A.3 Standard normal cdf
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p31_i33.png" />\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p31_i34.png" />\n\n32
+pdf and cdf of the standard normal variable
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+-5
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+5
+PDF
+CDF
+fZ (z) =
+1
+2π
+e−z 2
+Φ z( ) = P Z ≤z
+(
+) =
+1
+2π
+e−u2
+−∞
+z
+∫
+du
+10
+—–F (z)<a class="headerlink" href="#du-2-random-variable-n-n-n-nimage-n-n31-table-a-3-standard-normal-cdf-n-n-n-nimage-n-n-n-nimage-n-n32-pdf-and-cdf-of-the-standard-normal-variable-0-0-2-0-4-0-6-0-8-1-1-2-5-4-3-2-1-0-1-2-3-4-5-pdf-cdf-fz-z-1-2-ez-2-z-p-z-z-1-2-eu2-z-du-10-f-z" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>1
+a
+zx+x
+↓
+PDF
+G = 1 .0
+M = 0
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p32_i35.png" />\n\n33
+Standard normal random variable
+Design for six sigma: A business and design process methodology
+adopted in various industries for product design and improvement
+n
+= =
+=
+26
+h
++36
+E
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p33_i36.png" />\n\n34
+Let’s look at a few examples
+P(z
+=
+1 . 25)
+=(1 , 25)
+=
+0
+. 8944
+(T . A
+. 3)
+T 11 .25)</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="p-z-1-28">
+<h1>P(z)
+1 , 28)<a class="headerlink" href="#p-z-1-28" title="Permalink to this heading">#</a></h1>
+<p>1</p>
+<ul class="simple">
+<li><p>p(z 1
+. 25) ~
+=
+1 -0
+. 8944
+=
+0 . 1056
+↓
+1 .26</p></li>
+</ul>
+<p>P) - 38 1 z
+1
+. 26)
+= P(z = 1
+. 25)</p>
+<ul class="simple">
+<li><p>p(zX</p></li>
+<li><p>0 . 38)
+= (1 . 25)</p></li>
+<li><p>#1-0 . 38)
+=
+0
+. 8944</p></li>
+<li></li>
+</ul>
+<p>0 . 3520
+= 0
+. 5454
+(T . A
+. 3)
+\n\n35
+Linear Transformations
+fX (x) =
+1
+σ 2π
+e
+−x−µ
+(
+)
+2
+2σ 2
+Normality is preserved by linear transformation
+If X is a normal random variable, then:
+Y = aX + b
+(a≠0)
+is also normal, and its mean and variance are:
+E(x)
+= aE(X)</p>
+<ul class="simple">
+<li><p>b
+NAR(x)
+= aWAR(X)
+\n\n36
+Non-standardized normal distributions
+What if the mean is non-zero and standard
+deviation not 1?
+Can we linearly transform our variable to
+standardize it?
+MEAN
+of
+X
+M + 0
+, 6 1 .0</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+<section id="center-around-m-and">
+<h2>Center
+Around M
+AND<a class="headerlink" href="#center-around-m-and" title="Permalink to this heading">#</a></h2>
+<p>SEALED
+with
+8
+Our Continuous
+z =
+X</p>
+<ul class="simple">
+<li><p>M
+NON
+STANDARD RV
+E
+w/X ~N (M , 6)</p></li>
+</ul>
+<ul class="simple">
+<li><p>Z
+has
+the standard
+normal distribution</p></li>
+</ul>
+<ul class="simple">
+<li><p>standard
+deviation
+with M = 0
+and
+6=1 .0
+of X
+\n\n\n\n<img alt="Image" src="../_images/14_Continuous_Random_Variables_and_Distributions_p36_i37.png" />\n\n37
+Standardizing example
+Normal distribution
+Standardized
+normal distribution
+10
+s =
+1
+Z
+s =
+50
+µ =
+51.2
+X
+Z
+0
+Z
+µ =
+0.12
+Given is X ~ N(50,10). What is P(X ≤ 51.2)?
+STA3
+z
+=
+x</p></li>
+<li><p>M
+=
+51 . 2</p></li>
+<li><p>50
+=
+0 .x)4(z</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id5">
+<h1>. 12) = (0 .12)<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h1>
+<section id="e-10-p-x-51-2-n-n38-standardizing-example-normal-distribution-standardized-normal-distribution-10-s-1-z-s-50-52-1-x-z-0-z-0-21-47-9-0-21">
+<h2>0 .5478
+E
+10
+= P(X(51 . 2)
+\n\n38
+Standardizing example
+Normal distribution
+Standardized
+normal distribution
+10
+s =
+1
+Z
+s =
+50
+µ =
+52.1
+X
+Z
+0
+Z
+µ =
+0.21
+47.9
+0.21<a class="headerlink" href="#e-10-p-x-51-2-n-n38-standardizing-example-normal-distribution-standardized-normal-distribution-10-s-1-z-s-50-52-1-x-z-0-z-0-21-47-9-0-21" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="what-is-p-47-9-x-52-1-z-x-m">
+<h2>0.0832
+0.0832
+What is P(47.9 ≤ X ≤ 52.1)?
+z =
+X -M<a class="headerlink" href="#what-is-p-47-9-x-52-1-z-x-m" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id6">
+<h1>&amp;<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h1>
+<p>0.21
+Z=
+M
+&amp;
+z =</p>
+<ul class="simple">
+<li><p>0 . 21
+P( - 0 ,211 x &lt;
+0 ,(1)
+= #10,2) - 1 - 0 ,21)
+= 0 .5832 -04168
+(TA3)
+=
+0.1654 = P(47 .9 XX52.1)
+\n\n0.6217
+Finding Z  values for known probabilities
+0<br />
+1
+Z
+Z
+µ
+s
+=
+=
+0
+Z=0.31
+What is Z given probability of 0.6217?
+39
+↑(z)
+= 10
+. 6277
+=&gt;
+T . A . 3
+z = 0, 31
+\n\nWhat is Z given probability of 0.6217?
+Normal distribution
+Standardized
+normal distribution
+10
+s =
+1
+Z
+s =
+50
+µ = ?
+X
+Z
+0
+Z
+µ =
+0.30
+0.6179
+0.3821
+Recovering X  values for known probabilities
+40
+#(z) = 0 . 6179
+z = 0 .30 (T. A .3)
+zX
+= M + Sz
+=
+50</p></li>
+</ul>
+<ul class="simple">
+<li></li>
+</ul>
+<p>3
+.10
+\n\nReading
+41
+Chapter 3.1 to 3.4 and 3.8 of Carlton and Devore,
+Probability with Applications in Engineering, Science, and
+Technology, 2nd ed., 2017
+\n\n</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="13_Discrete_Random_Variables_and_Distributions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">13 Discrete Random Variables and Distributions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="15_Introduction_to_Reliability.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">15 Introduction to Reliability</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">14 Continuous Random Variables and Distributions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">=</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#randomize-each-digit-you-will-need-a-infinite-number-of-digits-correct-to-getoo-probability-of-that-is-zero-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-4-a-random-variable-is-called-continuous-if-there-is-a-nonnegative-function-fx-called-the-probability-density-function-of-x-or-pdf-such-that-can-be-interpreted-as-the-area-under-the-graph-of-the-pdf-this-is-a-traditional-integral-riemann-and-is-assumed-to-exist-and-is-well-defined-for-a-class-of-well-behaved-functions-for-some-unusual-functions-a-more-subtle-mathematical-treatment-is-required-theory-of-measure-and-lebesgue-integral-these-functions-are-of-no-concern-to-us-p-x-b-yfx-x-dx-for-every-subset-b-of-the-real-one-in-particular-p-a-x-b-bfx-x-dx-area-under-the-fx-x-pa-x-b-curve-between-and-b-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-5-for-any-single-value-a-p-x-a-ax-x-x-a-also-this-means-that-p-n-x-b-p-a-x-b-p-a-x-b-p-a-x-b-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-6-note-that-fx-is-used-to-calculate-probabilities-but-it-is-not-a-probability-itself-only-its-integral-over-an-interval-is-properties-of-fx-or-to-qualify-as-a-pdf-a-function-needs-fx-x-0-for-all-x-non-negative-jex-x-x-1-0-normalization-axiom-n-n-n-nimage-n-n-n-nimage-n-n-n-nimage-n-ncontinuous-random-variables-7-example-is-this-a-valid-pdf-fx-x-1-2-x-for-0-x-1-0-otherwise-yet">3
+. 1415 …., randomize
+each digit &gt; You
+will need
+a infinite
+number
+of digits
+correct
+to getoo
+= Probability
+of
+that
+is zero
+\n\n\n\n\n\n\n\n\n\nContinuous random variables
+4
+A random variable is called continuous if there is a nonnegative function fX, called the probability density
+function of X, or pdf, such that:
+Can be interpreted as the area
+under the graph of the pdf
+*This is a “traditional” integral (Riemann) and is assumed to exist and is well-defined for a class of (well-behaved) functions. For some unusual functions, a more subtle mathematical treatment
+is required (theory of measure and Lebesgue integral). These functions are of no concern to us
+*
+P(x + B)
+= (yfx(x)dx
+For every subset
+B of the real
+one .
+In particular ,
+P(a =X = b) = (bfx(x)dx
+AREA
+under the
+Fx(x)
+Pa=x
+= b)
+curve between
+&amp;
+and b
+\n\n\n\n\n\n\n\n\n\nContinuous random variables
+5
+For any single value, a:
+P(x = a)
+= (ax(x)
+x
+= a
+Also , this
+means
+that
+P(n =
+X (&gt; b)
+= P(a(X(b)
+= P(a
+&lt;x = b)
+= P(a =
+X
+&lt; b)
+\n\n\n\n\n\n\n\n\n\nContinuous random variables
+6
+Note that fX is used to calculate probabilities, but it is not a probability
+itself (only its integral over an interval is)
+!
+Properties of fX (or to qualify as a pdf, a function needs… ):
+fx(x) &gt;0
+for all
+X
+(non negative
+JEx(x)x
+= 1
+. 0
+(Normalization Axiom)
+·
+\n\n\n\n\n\n\n\n\n\n\n\n\n\nContinuous random variables
+7
+Example: Is this a valid pdf?
+fX (x) =
+1
+2 x
+for  0 ≤x ≤1
+0         otherwise
+
+ 
+ 
+yet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-this-a-legitimate-pdf-2-sketch-fx-3-calculate-e-x-4-calculate-e-x2-5-calculate-the-variance-and-standard-deviation-of-fx-1-we-see-that-fx-x-0-v-and-8fx-xdx-dx-x-o-valid-pdf-x-x">Is this a “legitimate” pdf?
+2.
+Sketch fX
+3.
+Calculate E[X]
+4.
+Calculate E[X2]
+5.
+Calculate the variance and standard deviation of fX
+1
+We
+see that
+fx(x = 0
+v
+and (8Fx(xdx=
+dx =x
+=o
+=&gt; VALID
+PDF
+#x(X)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dx-x">dx
+= (-x
+-**))%
+↓</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#x4-01dx">(x4) =01dx=…</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wait-time-for-service">=
+Wait
+time
+for
+service</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exponential-distribution-v-min-x">~ exponential
+distribution
+V min
+#(X)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#min-1-x-1-x-3-min-p-x-5-min-s">3 min
+= 1
+X
+= 1
+X
+3 min
+P (X &gt;5 min)
+= ?
+S</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-x-5">1 - P(X(5)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">11</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#e">e</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-that-given-we-some-as-we-are-we-will-wait-longer-have-already">Probability that
+Given
+We
+Some
+as
+we
+are
+We will
+wait longer
+have already</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-n-n-nimage-n-n22-using-cdf-to-calculate-probabilities-let-x-be-a-continuous-rv-with-pdf-f-x-and-cdf-f-x-then-for-any-number-a-and-for-any-two-numbers-a-and-b-with-a-b-p-x-a">\n\n\n\n\n\n22
+Using cdf to calculate probabilities
+Let X be a continuous rv with pdf f(x) and cdf F(x). Then for any number
+a,
+and for any two numbers a and b with a &lt; b,
+P(X &gt; a)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#f-a-p-a-x-b">F(a)
+P(a = X(b)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-z-p-z-z">P(z)
+= P(z
+= z)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#du-2-random-variable-n-n-n-nimage-n-n31-table-a-3-standard-normal-cdf-n-n-n-nimage-n-n-n-nimage-n-n32-pdf-and-cdf-of-the-standard-normal-variable-0-0-2-0-4-0-6-0-8-1-1-2-5-4-3-2-1-0-1-2-3-4-5-pdf-cdf-fz-z-1-2-ez-2-z-p-z-z-1-2-eu2-z-du-10-f-z">↳
+du
+↑
+2π
+RANDOM VARIABLE
+\n\n\n\n\n\n31
+Table A.3 Standard normal cdf
+\n\n\n\n\n\n\n\n\n\n32
+pdf and cdf of the standard normal variable
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+-5
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+5
+PDF
+CDF
+fZ (z) =
+1
+2π
+e−z 2
+Φ z( ) = P Z ≤z
+(
+) =
+1
+2π
+e−u2
+−∞
+z
+∫
+du
+10
+—–F (z)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-z-1-28">P(z)
+1 , 28)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#center-around-m-and">Center
+Around M
+AND</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">. 12) = (0 .12)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-10-p-x-51-2-n-n38-standardizing-example-normal-distribution-standardized-normal-distribution-10-s-1-z-s-50-52-1-x-z-0-z-0-21-47-9-0-21">0 .5478
+E
+10
+= P(X(51 . 2)
+\n\n38
+Standardizing example
+Normal distribution
+Standardized
+normal distribution
+10
+s =
+1
+Z
+s =
+50
+µ =
+52.1
+X
+Z
+0
+Z
+µ =
+0.21
+47.9
+0.21</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-p-47-9-x-52-1-z-x-m">0.0832
+0.0832
+What is P(47.9 ≤ X ≤ 52.1)?
+z =
+X -M</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">&amp;</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lead Systems Engineering Instructor
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

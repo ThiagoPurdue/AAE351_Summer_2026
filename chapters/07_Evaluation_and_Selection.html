@@ -1,0 +1,1634 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>07 Evaluation and Selection &#8212; AAE351: Aerospace Systems Design - Summer 2026</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/07_Evaluation_and_Selection';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="08 Risk Management" href="08_Risk_Management.html" />
+    <link rel="prev" title="06 Functional Analysis" href="06_Functional_Analysis.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AAE351: Aerospace Systems Design - Summer 2026</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to AAE351
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_Introduction_to_aerospace_system_design%202.html">01 Introduction to aerospace system design 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_The_system_developement_process.html">02 The system developement process</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="03_Needs_Analysis.html">03 Needs Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis%20%281%29.html">04 Requirements Analysis (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Requirements_Analysis.html">04 Requirements Analysis</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="05_Concept_Generation_and_Selection.html">05 Concept Generation and Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_Functional_Analysis.html">06 Functional Analysis</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">07 Evaluation and Selection</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="08_Risk_Management.html">08 Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_Introduction_to_Probability.html">09 Introduction to Probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_Conditional_Probability.html">10 Conditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="11_Unconditional_Probability.html">11 Unconditional Probability</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="12_Independence.html">12 Independence</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="13_Discrete_Random_Variables_and_Distributions.html">13 Discrete Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="14_Continuous_Random_Variables_and_Distributions.html">14 Continuous Random Variables and Distributions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="15_Introduction_to_Reliability.html">15 Introduction to Reliability</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="16_Hazard_Functions.html">16 Hazard Functions</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="17_System_Reliability.html">17 System Reliability</a></li>
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapters/07_Evaluation_and_Selection.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>07 Evaluation and Selection</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">07 Evaluation and Selection</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-and-selection-aae35103-n-n-n-nimage-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-2-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-what-are-the-key-characteristics-of-a-system-concept-that-would-achieve-the-most-beneficial-balance-between-capability-operational-life-and-cost-to-answer-this-question-done-during-the-concept-definition-phase-a-number-of-alternatives-concepts-should-be-developed-evaluate-them-regarding-n-operational-performance-and-compatibility-ii-risks-in-achieving-each-of-the-above-3-ready-to-make-a-liri-prostam-cost-and-schedule-decision-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-3-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-program-risk-can-be-considered-to-consist-of-a-combination-of-two-factors-program-risks-can-result-from-several-sources">Evaluation and Selection
+AAE35103
+\n\n\n\n\n\n\n\n\n\nEvaluating and selecting the system
+concept
+2
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+“What are the key characteristics of a system concept that would
+achieve the most beneficial balance between capability,
+operational life, and cost?”
+To answer this question:
+DONE
+DURING
+THE
+CONCEPT DEFINITION
+PHASE
+· A
+number
+of
+alternatives
+concepts
+should
+be
+developed
+· EVALUATE them regarding
+:
+(n)
+OPERATIONAL
+PERFORMANCE
+AND
+compatibility
+(ii) Risks
+in
+achieving
+each of the
+above 3
+READY
+TO
+Make A
+Liri) Prostam cost
+and
+schedule
+Decision
+\n\n\n\n\n\nEvaluating and selecting the system
+concept
+3
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• Program risk can be considered to consist of a
+combination of two factors:
+•
+Program risks can result from several sources:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dificult-performance-requirements-severe-enviroment">DiFICULT
+PERFORMANCE
+REQUIREMENTS
++
+SEVERE
+Enviroment</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inadequae-funding-more-on-risk-smort-schedules-in-a-dedicated-lecture-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-4-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-justification-for-the-development-of-the-selected-concept-should-o-br-o-br-o-br-o-br-o-br-o-br-o-br-show-there-is-a-valid-need-to-be-met-state-reasons-for-selecting-a-concept-describe-program-risks-x-mitigation-evidence-of-previous-experience-success-evidence-of-detailed-plans-e-g-work-breakdown-structure-was-rife-cycle-costing-other-issues-e-g-environment-impact-n-n-n-nimage-n-nbusiness-decisions-are-not-simple-5-which-engineering-projects-are-worthwhile-o-has-the-space-engineer-shown-that-the-space-system-is-worth-developing-which-engineering-projects-should-have-a-higher-priority-o-has-the-aeronautical-engineer-shown-which-aircraft-improvement-projects-should-be-funded-with-the-available-dollars-how-should-the-engineering-project-be-designed-o-has-the-mechanical-engineer-chosen-the-best-thickness-for-insulation-all-decisions-are-interrelated-o-you-cant-make-one-without-affecting-many-others-o-especially-true-when-multiple-products-periods-and-stages-are-involved-miller-et-al-2004-n-n-n-nimage-n-nwhy-cost-estimation-6-critically-important-part-of-system-design-o-br-o-br-fundamental-estimation-questions-o-how-much-effort-is-required-to-complete-an-activity-o-how-much-calendar-time-is-needed-to-complete-an-activity-o-what-is-the-total-cost-of-an-activity-o-what-are-the-uncertainties-in-these-estimates-project-estimation-and-scheduling-are-interleaved-management-activities-miller-et-al-2004-too-high">INADEQUAE
+FUNDING
+*
+MORE
+ON
+RiSk
++
+SMORT
+SCHEDULES
+IN
+A
+DEDICATED
+LECTURE
+\n\n\n\n\n\nEvaluating and selecting the system
+concept
+4
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Justification for the development of the selected concept should:
+o<br/>
+o<br/>
+o<br/>
+o<br/>
+o<br/>
+o<br/>
+o<br/>
+Show
+there
+is
+a
+valid
+need
+to
+be
+met
+State
+reasons for selecting
+a
+concept
+Describe program risks
+X mitigation
+Evidence
+of previous
+experience&amp; success
+Evidence
+of
+detailed plans
+,
+e. g., work Breakdown structure
+(Was)
+rife
+Cycle Costing
+OTHER
+issues
+,
+e . g., environment impact
+\n\n\n\n\n\nBusiness decisions are not simple
+5
+• Which engineering projects are worthwhile?
+o Has the space engineer shown that the space system is worth developing?
+• Which engineering projects should have a higher priority?
+o Has the aeronautical engineer shown which aircraft improvement projects should be funded
+with the available dollars?
+• How should the engineering project be designed?
+o Has the mechanical engineer chosen the best thickness for insulation?
+• All decisions are interrelated.
+o You can’t make one without affecting many others
+o Especially true when multiple products, periods, and stages are involved
+Miller et al 2004
+\n\n\n\n\n\nWhy cost estimation?
+6
+• Critically important part of system design
+o<br/>
+o<br/>
+• Fundamental estimation questions:
+o How much effort is required to complete an activity?
+o How much calendar time is needed to complete an activity?
+o What is the total cost of an activity?
+o What are the uncertainties in these estimates?
+• Project estimation and scheduling are interleaved management activities
+Miller et al 2004
+TOO
+HIGH</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#lose-contract-award-customer-too-low">lose
+contract
+, award ! customer
+Too
+low</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#to-be-used-as-a-comparison-tool-not-a-budgeting-tool">•
+To be used as a comparison tool, not a budgeting tool!</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-cost">mass
+Cost</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-your-new-linear-system-getthe-best-fit-modeli-i-data-1-ofmartem-n-n-n-nimage-n-nexample-of-cer-use-13-historical-data-has-enabled-the-organization-to-have-a-previously-developed-cer-to-estimate-a-new-it-system-based-on-sloc-cost-sloc-25-sloc-the-cer-is-based-on-systems-ranging-from-1-000-000-to-3-000-000-sloc-you-have-estimated-2-600-000-sloc-for-a-new-system-a-cost-source-lines-of-code">DATA
+YOUR
+NEW
+Linear
+SYSTEM
+/GETTHE
+BEST FIT MODELI(
+I data
+1
+ofmartem
+\n\n\n\n\n\nExample of CER use
+13
+• Historical data has enabled the organization to have a previously developed
+CER to estimate a new IT system based on SLOC
+• Cost = SLOC * 25 $/SLOC
+• The CER is based on systems ranging from 1,000,000 to 3,000,000 SLOC
+• You have estimated 2,600,000 SLOC for a new system
+• à Cost =
+~
+Source
+Lines
+Of
+CODE</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="evaluation-and-selection">
+<h1>07 Evaluation and Selection<a class="headerlink" href="#evaluation-and-selection" title="Permalink to this heading">#</a></h1>
+<section id="evaluation-and-selection-aae35103-n-n-n-nimage-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-2-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-what-are-the-key-characteristics-of-a-system-concept-that-would-achieve-the-most-beneficial-balance-between-capability-operational-life-and-cost-to-answer-this-question-done-during-the-concept-definition-phase-a-number-of-alternatives-concepts-should-be-developed-evaluate-them-regarding-n-operational-performance-and-compatibility-ii-risks-in-achieving-each-of-the-above-3-ready-to-make-a-liri-prostam-cost-and-schedule-decision-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-3-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-program-risk-can-be-considered-to-consist-of-a-combination-of-two-factors-program-risks-can-result-from-several-sources">
+<h2>Evaluation and Selection
+AAE35103
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p1_i1.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p1_i2.png" />\n\nEvaluating and selecting the system
+concept
+2
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+“What are the key characteristics of a system concept that would
+achieve the most beneficial balance between capability,
+operational life, and cost?”
+To answer this question:
+DONE
+DURING
+THE
+CONCEPT DEFINITION
+PHASE
+· A
+number
+of
+alternatives
+concepts
+should
+be
+developed
+· EVALUATE them regarding
+:
+(n)
+OPERATIONAL
+PERFORMANCE
+AND
+compatibility
+(ii) Risks
+in
+achieving
+each of the
+above 3
+READY
+TO
+Make A
+Liri) Prostam cost
+and
+schedule
+Decision
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p2_i3.png" />\n\nEvaluating and selecting the system
+concept
+3
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• Program risk can be considered to consist of a
+combination of two factors:
+•
+Program risks can result from several sources:<a class="headerlink" href="#evaluation-and-selection-aae35103-n-n-n-nimage-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-2-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-what-are-the-key-characteristics-of-a-system-concept-that-would-achieve-the-most-beneficial-balance-between-capability-operational-life-and-cost-to-answer-this-question-done-during-the-concept-definition-phase-a-number-of-alternatives-concepts-should-be-developed-evaluate-them-regarding-n-operational-performance-and-compatibility-ii-risks-in-achieving-each-of-the-above-3-ready-to-make-a-liri-prostam-cost-and-schedule-decision-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-3-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-program-risk-can-be-considered-to-consist-of-a-combination-of-two-factors-program-risks-can-result-from-several-sources" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>Likelihood the system
+will
+fail
+to
+achieve this objective</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+<blockquote>
+<div><p>Import
+of
+the
+failure
+on the
+success
+of the program
+↓
+UMPROVEN
+TECHNOWGY</p>
+</div></blockquote>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+<section id="dificult-performance-requirements-severe-enviroment">
+<h2>DiFICULT
+PERFORMANCE
+REQUIREMENTS
++
+SEVERE
+Enviroment<a class="headerlink" href="#dificult-performance-requirements-severe-enviroment" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="inadequae-funding-more-on-risk-smort-schedules-in-a-dedicated-lecture-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-4-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-justification-for-the-development-of-the-selected-concept-should-o-br-o-br-o-br-o-br-o-br-o-br-o-br-show-there-is-a-valid-need-to-be-met-state-reasons-for-selecting-a-concept-describe-program-risks-x-mitigation-evidence-of-previous-experience-success-evidence-of-detailed-plans-e-g-work-breakdown-structure-was-rife-cycle-costing-other-issues-e-g-environment-impact-n-n-n-nimage-n-nbusiness-decisions-are-not-simple-5-which-engineering-projects-are-worthwhile-o-has-the-space-engineer-shown-that-the-space-system-is-worth-developing-which-engineering-projects-should-have-a-higher-priority-o-has-the-aeronautical-engineer-shown-which-aircraft-improvement-projects-should-be-funded-with-the-available-dollars-how-should-the-engineering-project-be-designed-o-has-the-mechanical-engineer-chosen-the-best-thickness-for-insulation-all-decisions-are-interrelated-o-you-cant-make-one-without-affecting-many-others-o-especially-true-when-multiple-products-periods-and-stages-are-involved-miller-et-al-2004-n-n-n-nimage-n-nwhy-cost-estimation-6-critically-important-part-of-system-design-o-br-o-br-fundamental-estimation-questions-o-how-much-effort-is-required-to-complete-an-activity-o-how-much-calendar-time-is-needed-to-complete-an-activity-o-what-is-the-total-cost-of-an-activity-o-what-are-the-uncertainties-in-these-estimates-project-estimation-and-scheduling-are-interleaved-management-activities-miller-et-al-2004-too-high">
+<h1>INADEQUAE
+FUNDING
+*
+MORE
+ON
+RiSk
++
+SMORT
+SCHEDULES
+IN
+A
+DEDICATED
+LECTURE
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p3_i4.png" />\n\nEvaluating and selecting the system
+concept
+4
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Justification for the development of the selected concept should:
+o<br />
+o<br />
+o<br />
+o<br />
+o<br />
+o<br />
+o<br />
+Show
+there
+is
+a
+valid
+need
+to
+be
+met
+State
+reasons for selecting
+a
+concept
+Describe program risks
+X mitigation
+Evidence
+of previous
+experience&amp; success
+Evidence
+of
+detailed plans
+,
+e. g., work Breakdown structure
+(Was)
+rife
+Cycle Costing
+OTHER
+issues
+,
+e . g., environment impact
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p4_i5.png" />\n\nBusiness decisions are not simple
+5
+• Which engineering projects are worthwhile?
+o Has the space engineer shown that the space system is worth developing?
+• Which engineering projects should have a higher priority?
+o Has the aeronautical engineer shown which aircraft improvement projects should be funded
+with the available dollars?
+• How should the engineering project be designed?
+o Has the mechanical engineer chosen the best thickness for insulation?
+• All decisions are interrelated.
+o You can’t make one without affecting many others
+o Especially true when multiple products, periods, and stages are involved
+Miller et al 2004
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p5_i6.png" />\n\nWhy cost estimation?
+6
+• Critically important part of system design
+o<br />
+o<br />
+• Fundamental estimation questions:
+o How much effort is required to complete an activity?
+o How much calendar time is needed to complete an activity?
+o What is the total cost of an activity?
+o What are the uncertainties in these estimates?
+• Project estimation and scheduling are interleaved management activities
+Miller et al 2004
+TOO
+HIGH<a class="headerlink" href="#inadequae-funding-more-on-risk-smort-schedules-in-a-dedicated-lecture-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-4-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-justification-for-the-development-of-the-selected-concept-should-o-br-o-br-o-br-o-br-o-br-o-br-o-br-show-there-is-a-valid-need-to-be-met-state-reasons-for-selecting-a-concept-describe-program-risks-x-mitigation-evidence-of-previous-experience-success-evidence-of-detailed-plans-e-g-work-breakdown-structure-was-rife-cycle-costing-other-issues-e-g-environment-impact-n-n-n-nimage-n-nbusiness-decisions-are-not-simple-5-which-engineering-projects-are-worthwhile-o-has-the-space-engineer-shown-that-the-space-system-is-worth-developing-which-engineering-projects-should-have-a-higher-priority-o-has-the-aeronautical-engineer-shown-which-aircraft-improvement-projects-should-be-funded-with-the-available-dollars-how-should-the-engineering-project-be-designed-o-has-the-mechanical-engineer-chosen-the-best-thickness-for-insulation-all-decisions-are-interrelated-o-you-cant-make-one-without-affecting-many-others-o-especially-true-when-multiple-products-periods-and-stages-are-involved-miller-et-al-2004-n-n-n-nimage-n-nwhy-cost-estimation-6-critically-important-part-of-system-design-o-br-o-br-fundamental-estimation-questions-o-how-much-effort-is-required-to-complete-an-activity-o-how-much-calendar-time-is-needed-to-complete-an-activity-o-what-is-the-total-cost-of-an-activity-o-what-are-the-uncertainties-in-these-estimates-project-estimation-and-scheduling-are-interleaved-management-activities-miller-et-al-2004-too-high" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="lose-contract-award-customer-too-low">
+<h1>lose
+contract
+, award ! customer
+Too
+low<a class="headerlink" href="#lose-contract-award-customer-too-low" title="Permalink to this heading">#</a></h1>
+<p>over-run costs/company
+loss
+S
+total working hours
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p6_i7.png" />\n\nCost estimation process
+7
+• Determine objectives
+o Who needs what data for what purpose(s)?
+• Gather data
+o Focus should be given to ‘hard’ data
+§ Well-defined requirements
+§ Available Resources
+• Analyze data using a variety of methods
+• Re-estimate costs throughout the project
+o Effective monitoring
+o Refine and make changes as necessary
+• Compare end costs with estimated costs
+o That is, if project actually completes!
+Prakash, Grewal and Chen, 2008
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p7_i8.png" />\n\nCost estimation process
+8
+NASA Cost Estimating Handbook, v4.0
+• Calibrate estimates based on actual
+costs
+• Re-estimate at the end of each phase
+and iteration.
+• Use estimates to identify productivity
+improvement opportunities.
+“A good estimate is an estimate that provides a clear enough view of the project
+reality to allow the project leadership to make good decisions about how to control
+the project to hit its targets”
+Steve McConnell</p>
+<p>Figure C-1. Use of Cost Estimating Methodologies by Phase1
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p8_i9.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p8_i10.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p8_i11.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p8_i12.png" />\n\nCost estimation methods
+9
+Analogy
+• Data-driven
+• Based on similarity
+• Can be applied at any level of
+design
+• Pros:
+o Quick rough order magnitude (ROM)
+estimate with a few known
+characteristics
+• Cons:
+o Getting good data might be difficult
+o Analogy data might not be available
+because of new systems’ uniqueness
+o Inflexible for trade studies
+Parametric
+•
+Data-driven
+•
+Statistical relationship model
+based on historic actual
+between costs and a system or
+performance characteristics
+•
+Typical parametric cost model
+are based on mass and power
+•
+Best for trade studies during the
+conceptual design phase
+•
+Pros:
+o
+Provides estimate confidence based
+on actual data and statistical
+relationship
+•
+Cons:
+o
+Questionable when modeling
+outside of its relevant data range
+Grassroots
+•
+Data-driven
+•
+Also known as “bottoms-up”
+•
+Experienced and/or knowledge
+from subject matter expert
+required
+•
+Applied after an architecture
+has been selected and the
+design is mature
+•
+Pros:
+o
+Most accurate
+o
+Defensible with detailed and
+credible basis of estimate
+•
+Cons:
+o
+Most time consuming
+o
+Not suitable for a quick ROM
+~
+&amp;
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p9_i13.png" />\n\nAnalogy cost estimation example
+10
+•
+Estimate the cost of a spacecraft by analogy method
+•
+Use mass as the characteristic
+•
+Have data based on historic missions
+•
+Average spacecraft mass = ~ 150 kg and cost = ~ $50M
+•
+A new spacecraft which is similar to the ones in the data set has a mass = ~200 kg
+•
+Then, by similarity we can say
+•
+So, new the spacecraft cost is estimated as =
+-K=
+N 67M
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p10_i14.png" />\n\nCost estimation relationships (CERs)
+11
+•
+A parametric cost model is a series of mathematical relationships that relate a
+dependent variable (cost) to one or more independent variables
+o
+E.g., spacecraft cost to physical, technical, and performance parameters
+o
+E.g., aircraft cost to mass
+•
+Based on specific factors that have a high correlation to total cost
+o
+Number of software lines of code (SLOC) or function points
+o
+Square feet for office floor space
+o
+Number of floors in a high rise building for cabling estimates
+o
+Database size, etc.
+•
+Based on regression analysis &amp; the correlation of data
+o
+Requires a historical database
+o</p>
+<section id="to-be-used-as-a-comparison-tool-not-a-budgeting-tool">
+<h2>•
+To be used as a comparison tool, not a budgeting tool!<a class="headerlink" href="#to-be-used-as-a-comparison-tool-not-a-budgeting-tool" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="mass-cost">
+<h1>mass
+Cost<a class="headerlink" href="#mass-cost" title="Permalink to this heading">#</a></h1>
+<p>a + bM’pd
+a ,b ,a, d</p>
+<ul class="simple">
+<li><p>Power
+REGRESSION
+DEFFS .
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p11_i15.png" />\n\nCost estimation relationships (CERs)
+12
+mass
+cost
+S
+Cost
+of
+RANGE of
+PREDICTED -p
+&amp; VALID In THE</p></li>
+<li></li>
+</ul>
+<section id="data-your-new-linear-system-getthe-best-fit-modeli-i-data-1-ofmartem-n-n-n-nimage-n-nexample-of-cer-use-13-historical-data-has-enabled-the-organization-to-have-a-previously-developed-cer-to-estimate-a-new-it-system-based-on-sloc-cost-sloc-25-sloc-the-cer-is-based-on-systems-ranging-from-1-000-000-to-3-000-000-sloc-you-have-estimated-2-600-000-sloc-for-a-new-system-a-cost-source-lines-of-code">
+<h2>DATA
+YOUR
+NEW
+Linear
+SYSTEM
+/GETTHE
+BEST FIT MODELI(
+I data
+1
+ofmartem
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p12_i16.png" />\n\nExample of CER use
+13
+• Historical data has enabled the organization to have a previously developed
+CER to estimate a new IT system based on SLOC
+• Cost = SLOC * 25 $/SLOC
+• The CER is based on systems ranging from 1,000,000 to 3,000,000 SLOC
+• You have estimated 2,600,000 SLOC for a new system
+• à Cost =
+~
+Source
+Lines
+Of
+CODE<a class="headerlink" href="#data-your-new-linear-system-getthe-best-fit-modeli-i-data-1-ofmartem-n-n-n-nimage-n-nexample-of-cer-use-13-historical-data-has-enabled-the-organization-to-have-a-previously-developed-cer-to-estimate-a-new-it-system-based-on-sloc-cost-sloc-25-sloc-the-cer-is-based-on-systems-ranging-from-1-000-000-to-3-000-000-sloc-you-have-estimated-2-600-000-sloc-for-a-new-system-a-cost-source-lines-of-code" title="Permalink to this heading">#</a></h2>
+<p>historical data = Measure size of A computer program</p>
+<ul class="simple">
+<li><p>E
+. JUDGEMENT
+2, 600 , 000
+x
+<span class="math notranslate nohighlight">\(25 =\)</span>65M
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p13_i17.png" />\n\nRDT&amp;E and production CERs for large
+satellites
+14
+Miller et al 2004
+I
+-1992
+RESEARCH
+~dollars
+DEVELOPMENT
+TEST
+AND
+ENGINEERING
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p14_i18.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p14_i19.jpeg" />\n\nHigher-level cost factors
+15
+Miller et al 2004
+• Wraps model non-physical factors
+o Program support, system engineering, management costs, product assurance, integration
+and test
+• Overhead is incurred in support of an activity, but is not solely identifiable to that
+activity
+o Administration, real estate taxes, facility maintenance
+• Program support
+o Activities, systems and hardware development outside the prime contract
+§ Analyses
+§ Government test facilities, equipment and personnel
+§ Program office support contractors for technical oversight
+o Advanced development studies
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p15_i20.png" />\n\nManagement reserves
+16
+Miller et al 2004
+• Account for cost and schedule uncertainty
+o Complexity factor uncertainty
+o Cost driver input uncertainty
+o Time and material cost
+• Generally identified/quantified at the subsystem level
+o Basis
+o Heritage
+o Degree of modification
+o Complexity
+o Is the item on the critical path?
+o Is new development or technology required?
+o Past performance
+o Are long-lead procurements involved?
+o Is an iterative test and retest program required?
+o Availability of people and facilities
+• Reserves should be held at management level
+• Should not be used to accommodate scope changes
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p16_i21.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p16_i22.png" />\n\nImpact of technological risk on cost
+17
+Miller et al 2004
+TRL
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p17_i23.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p17_i24.jpeg" />\n\nPros and cons of parametric models
+18
+• Pros:
+o Can be excellent predictors when implemented correctly
+o Once created, CERs are fast and simple to use
+o Easily changed
+o Useful early on in a program
+o Objective
+• Cons:
+o Often lack of data on software intensive systems for statistically significant CER
+o Does not provide access to subtle changes
+o Top level; lower level may be not visible
+o Need to be properly validated and relevant to system
+GAO, 2003
+· must also determine range
+of date
+for
+which
+the
+CER
+is
+valid
+.
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p18_i25.png" />\n\nEngineering/grassroot build-up cost
+estimates
+19</p></li>
+</ul>
+<p>Figure C-10.  Method for Developing Engineering Build-Up Estimate
+Start
+Segregate Into
+CBS/WBS
+Test for
+Omissions and
+Duplications
+Aggregate
+“Work Packages”
+Estimate
+Individual<br />
+“Work Packages”
+Decompose
+CBS/WBS into
+“Work Packages”
+Perform<br />
+“Sanity Check”
+Aggregate Into
+“Total Estimate”
+NASA Cost Estimating Handbook v4.0
+we
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i26.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i27.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i28.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i29.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i30.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i31.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i32.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i33.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i34.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i35.png" />\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p19_i36.png" />\n\nWork breakdown structure (WBS)
+example
+20
+Project Mgmt
+01
+Project Sys Eng’g
+02
+Mission Assurance<br />
+03
+Science
+04
+Atmospheric
+Flight System
+05
+S/C Flt System
+06
+Mission Ops Sys
+07
+Launch System
+08
+Project Management
+01.01
+Business Mgmt
+01.02
+Project Support
+01.03
+Review Support
+01.04
+Facilities
+01.05
+Foreign Travel
+01.06
+Tech Xfer/Comrcl.
+01.07
+Project Sys. Eng Mgmt
+02.01
+Mission &amp; Nav Design
+02.02
+Risk Management
+02.03
+Project S/W Eng’g
+02.04
+Info. Mgt. &amp; Comm.
+02.05
+Configuration Mgmt.
+02.06
+Planetary Protection
+02.07
+NEPA
+02.08
+E-E Info System
+02.09
+Launch Vehicle Integ.
+02.10
+Project V&amp;V
+02.11
+Mission Assur. Mgmt.
+03.01
+System Safety
+03.02
+Reliability
+03.03
+Environments
+03.04
+Quality Assurance
+03.05
+EEE Parts Eng’g
+03.06
+Materials &amp; Processes
+03.07
+Contamination Cntl
+03.08
+Mission Ops Assurance
+03.09
+IV&amp;V
+03.10
+Science Mgmt
+04.01
+Science Team
+04.02
+Science Data Supt
+04.03
+EPO
+04.04
+Sci. Inves. &amp; Ops Supt
+04.05
+Science Environmental
+Characterization
+04.06
+Atmos. Flight
+System Mgmt.
+05.01
+Atmos. Flight Sys.
+Systems Engr.
+05.02
+Atmos. Flight Sys.
+Mission Assurance
+05.03
+Atmos. Flight Sys.
+Airplane
+05.04
+Atmos. Flight Sys.
+Instrumentation
+05.05
+Atmos. Flight Sys.
+Risk Reduction
+05.06
+Atmos. Flight Sys.
+Mission Ops.
+05.07
+Flight System Contract
+06.00
+Flt System Mgmt
+06.01
+Flt System Eng’g
+06.02
+Flt System Testbeds
+06.03
+Flight System ATLO
+06.04
+Carrier System
+06.05
+EDD System
+06.06
+Mission Syst. Mgmt
+07.01
+Mission Syst. Eng’g
+07.02
+Ground Data System
+07.03
+Mission Ops System
+07.04
+DSMS
+07.05
+Mission &amp; Nav. Design
+07.06
+Mission Syst. V&amp;V
+07.07
+Launch System
+08.01
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p20_i37.png" />\n\nAttributes of a good cost estimate
+21
+• Aligned with integrated master schedule
+• Grass-roots estimation performed by cognizant engineers with sound basis of
+estimate
+• Consistent with validated historical data
+• Key cost drivers and risk are understood
+• Validated with several independent cost models
+• Well documented work content and basis of estimate
+• Developed at lowest level of the work breakdown structure (WBS)
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p21_i38.png" />\n\nResources
+22
+• Aircraft
+o Aircraft Airframe Cost Estimating Relationships by Hess and Romanoff
+§ <a class="reference external" href="https://www.rand.org/pubs/reports/R1854.html">https://www.rand.org/pubs/reports/R1854.html</a>
+o Aircraft Design: A Conceptual Approach by Raymer
+o Fundamentals of Aircraft and Airship Design, Vol. I – Aircraft Design by Nicolai and Carichner
+o General Aviation Aircraft Design by Gudmundsson (Ch. 2 Aircraft Cost Analysis posted on
+Brightspace; also available through the Purdue library website)
+• Spacecraft
+o NASA cost guidance
+§ <a class="reference external" href="https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh">https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh</a>
+§ Lots of interesting information, check it out!
+§ Especially Appendix C
+o Space mission engineering: the new SMAD by Wertz, Everett, and Puschell
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p22_i39.png" />\n\nIdeas for your project
+23
+•
+Development cost
+o
+Discuss the types of costs
+o
+Use any historical data (if available) to obtain rough order of magnitude (ROM) estimates
+o
+Try to use the CER approach to estimate development cost
+o
+If no CERs are available
+§ Try to discuss what major parameters will be important to an eventual CER model
+§ Discuss qualitatively how you would use the CER approach to obtain a cost estimate
+•
+Operating cost
+o
+Discuss the types of costs
+o
+Discuss qualitatively the operating costs
+§ Are they more / less than competing systems?
+§ Competition includes systems that are fundamentally different, but meet the same need
+For
+comparison of
+CONCEPTS , NOT
+BUDGETING
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p23_i40.png" />\n\nReading
+24
+Chapter 8 of Kossiakoff et al., Systems Engineering Principles and Practice,
+Third ed., Wiley, 2020
+Aircraft Airframe Cost Estimating Relationships
+<a class="reference external" href="https://www.rand.org/pubs/reports/R1854.html">https://www.rand.org/pubs/reports/R1854.html</a>
+NASA cost guidance
+<a class="reference external" href="https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh">https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh</a>
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p24_i41.png" />\n\nReading
+24
+Chapter 8 of Kossiakoff et al., Systems Engineering Principles and Practice,
+Third ed., Wiley, 2020
+Aircraft Airframe Cost Estimating Relationships
+<a class="reference external" href="https://www.rand.org/pubs/reports/R1854.html">https://www.rand.org/pubs/reports/R1854.html</a>
+NASA cost guidance
+<a class="reference external" href="https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh">https://www.nasa.gov/offices/ocfo/nasa-cost-estimating-handbook-ceh</a>
+\n\n\n\n<img alt="Image" src="../_images/07_Evaluation_and_Selection_p25_i42.png" />\n\n</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="06_Functional_Analysis.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">06 Functional Analysis</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="08_Risk_Management.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">08 Risk Management</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">07 Evaluation and Selection</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-and-selection-aae35103-n-n-n-nimage-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-2-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-what-are-the-key-characteristics-of-a-system-concept-that-would-achieve-the-most-beneficial-balance-between-capability-operational-life-and-cost-to-answer-this-question-done-during-the-concept-definition-phase-a-number-of-alternatives-concepts-should-be-developed-evaluate-them-regarding-n-operational-performance-and-compatibility-ii-risks-in-achieving-each-of-the-above-3-ready-to-make-a-liri-prostam-cost-and-schedule-decision-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-3-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-program-risk-can-be-considered-to-consist-of-a-combination-of-two-factors-program-risks-can-result-from-several-sources">Evaluation and Selection
+AAE35103
+\n\n\n\n\n\n\n\n\n\nEvaluating and selecting the system
+concept
+2
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+“What are the key characteristics of a system concept that would
+achieve the most beneficial balance between capability,
+operational life, and cost?”
+To answer this question:
+DONE
+DURING
+THE
+CONCEPT DEFINITION
+PHASE
+· A
+number
+of
+alternatives
+concepts
+should
+be
+developed
+· EVALUATE them regarding
+:
+(n)
+OPERATIONAL
+PERFORMANCE
+AND
+compatibility
+(ii) Risks
+in
+achieving
+each of the
+above 3
+READY
+TO
+Make A
+Liri) Prostam cost
+and
+schedule
+Decision
+\n\n\n\n\n\nEvaluating and selecting the system
+concept
+3
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+• Program risk can be considered to consist of a
+combination of two factors:
+•
+Program risks can result from several sources:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dificult-performance-requirements-severe-enviroment">DiFICULT
+PERFORMANCE
+REQUIREMENTS
++
+SEVERE
+Enviroment</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inadequae-funding-more-on-risk-smort-schedules-in-a-dedicated-lecture-n-n-n-nimage-n-nevaluating-and-selecting-the-system-concept-4-kossiakoff-et-al-systems-engineering-principles-and-practice-third-ed-wiley-2020-justification-for-the-development-of-the-selected-concept-should-o-br-o-br-o-br-o-br-o-br-o-br-o-br-show-there-is-a-valid-need-to-be-met-state-reasons-for-selecting-a-concept-describe-program-risks-x-mitigation-evidence-of-previous-experience-success-evidence-of-detailed-plans-e-g-work-breakdown-structure-was-rife-cycle-costing-other-issues-e-g-environment-impact-n-n-n-nimage-n-nbusiness-decisions-are-not-simple-5-which-engineering-projects-are-worthwhile-o-has-the-space-engineer-shown-that-the-space-system-is-worth-developing-which-engineering-projects-should-have-a-higher-priority-o-has-the-aeronautical-engineer-shown-which-aircraft-improvement-projects-should-be-funded-with-the-available-dollars-how-should-the-engineering-project-be-designed-o-has-the-mechanical-engineer-chosen-the-best-thickness-for-insulation-all-decisions-are-interrelated-o-you-cant-make-one-without-affecting-many-others-o-especially-true-when-multiple-products-periods-and-stages-are-involved-miller-et-al-2004-n-n-n-nimage-n-nwhy-cost-estimation-6-critically-important-part-of-system-design-o-br-o-br-fundamental-estimation-questions-o-how-much-effort-is-required-to-complete-an-activity-o-how-much-calendar-time-is-needed-to-complete-an-activity-o-what-is-the-total-cost-of-an-activity-o-what-are-the-uncertainties-in-these-estimates-project-estimation-and-scheduling-are-interleaved-management-activities-miller-et-al-2004-too-high">INADEQUAE
+FUNDING
+*
+MORE
+ON
+RiSk
++
+SMORT
+SCHEDULES
+IN
+A
+DEDICATED
+LECTURE
+\n\n\n\n\n\nEvaluating and selecting the system
+concept
+4
+Kossiakoff et al., Systems Engineering Principles and Practice, Third ed., Wiley, 2020
+Justification for the development of the selected concept should:
+o<br/>
+o<br/>
+o<br/>
+o<br/>
+o<br/>
+o<br/>
+o<br/>
+Show
+there
+is
+a
+valid
+need
+to
+be
+met
+State
+reasons for selecting
+a
+concept
+Describe program risks
+X mitigation
+Evidence
+of previous
+experience&amp; success
+Evidence
+of
+detailed plans
+,
+e. g., work Breakdown structure
+(Was)
+rife
+Cycle Costing
+OTHER
+issues
+,
+e . g., environment impact
+\n\n\n\n\n\nBusiness decisions are not simple
+5
+• Which engineering projects are worthwhile?
+o Has the space engineer shown that the space system is worth developing?
+• Which engineering projects should have a higher priority?
+o Has the aeronautical engineer shown which aircraft improvement projects should be funded
+with the available dollars?
+• How should the engineering project be designed?
+o Has the mechanical engineer chosen the best thickness for insulation?
+• All decisions are interrelated.
+o You can’t make one without affecting many others
+o Especially true when multiple products, periods, and stages are involved
+Miller et al 2004
+\n\n\n\n\n\nWhy cost estimation?
+6
+• Critically important part of system design
+o<br/>
+o<br/>
+• Fundamental estimation questions:
+o How much effort is required to complete an activity?
+o How much calendar time is needed to complete an activity?
+o What is the total cost of an activity?
+o What are the uncertainties in these estimates?
+• Project estimation and scheduling are interleaved management activities
+Miller et al 2004
+TOO
+HIGH</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#lose-contract-award-customer-too-low">lose
+contract
+, award ! customer
+Too
+low</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#to-be-used-as-a-comparison-tool-not-a-budgeting-tool">•
+To be used as a comparison tool, not a budgeting tool!</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-cost">mass
+Cost</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-your-new-linear-system-getthe-best-fit-modeli-i-data-1-ofmartem-n-n-n-nimage-n-nexample-of-cer-use-13-historical-data-has-enabled-the-organization-to-have-a-previously-developed-cer-to-estimate-a-new-it-system-based-on-sloc-cost-sloc-25-sloc-the-cer-is-based-on-systems-ranging-from-1-000-000-to-3-000-000-sloc-you-have-estimated-2-600-000-sloc-for-a-new-system-a-cost-source-lines-of-code">DATA
+YOUR
+NEW
+Linear
+SYSTEM
+/GETTHE
+BEST FIT MODELI(
+I data
+1
+ofmartem
+\n\n\n\n\n\nExample of CER use
+13
+• Historical data has enabled the organization to have a previously developed
+CER to estimate a new IT system based on SLOC
+• Cost = SLOC * 25 $/SLOC
+• The CER is based on systems ranging from 1,000,000 to 3,000,000 SLOC
+• You have estimated 2,600,000 SLOC for a new system
+• à Cost =
+~
+Source
+Lines
+Of
+CODE</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lead Systems Engineering Instructor
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
